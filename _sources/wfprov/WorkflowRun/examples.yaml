@@ -1,5 +1,5 @@
-- title: Mangrove Workflow Run with Provenance
-  description: Real-world WorkflowRun from CWLProv execution showing inputs, outputs, temporal information, and associated agents (cwltool 3.1.20251031082601)
+- title: Mangrove Workflow Run
+  description: Real workflow execution from mangrove biomass analysis showing the complete WorkflowRun activity with inputs, outputs, and associated agents
   snippets:
     - language: json
       ref: examples/mangrove-workflowrun.json

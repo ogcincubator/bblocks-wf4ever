@@ -1,25 +1,46 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-description: A software agent that executes workflows
+description: A software agent that executes workflows (PROV-O Agent)
 allOf:
   - $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Agent
 type: object
 properties:
+  # Accept both id (compact) and @id (expanded)
+  id:
+    type: string
+    format: uri
+    description: Unique identifier (compact form)
+    x-jsonld-id: '@id'
   '@id':
     type: string
     format: uri
-    description: Unique identifier for the workflow engine
+    description: Unique identifier (expanded form)
+  # Type is validated by PROV schema - just add JSON-LD mapping
+  type:
+    description: Type indicator (compact) - should be SoftwareAgent
+    x-jsonld-id: '@type'
   '@type':
-    const: WorkflowEngine
-    description: Type must be WorkflowEngine
+    description: Type in expanded form - must include WorkflowEngine URI
+  'http://www.w3.org/2000/01/rdf-schema#label':
+    description: Label in expanded PROV-O form
+    type: array
+    items:
+      type: object
+      properties:
+        '@value':
+          type: string
+  'http://www.w3.org/ns/prov#type':
+    description: PROV type in expanded form
+    type: array
   name:
     type: string
-    description: Name of the workflow engine
+    description: Name of the workflow engine (compact form)
   version:
     type: string
     description: Version of the workflow engine
   description:
     type: string
     description: Description of the workflow engine
-required:
-  - '@id'
-  - '@type'
+# Accept either compact id or expanded @id
+anyOf:
+  - required: [id]
+  - required: ['@id']

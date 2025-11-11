@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.WorkflowInstance",
   "name": "wfdesc:WorkflowInstance",
   "abstract": "A specialized workflow description that includes all concrete data, parameters, and settings required to execute a specific workflow run. It bridges the gap between abstract workflow descriptions and concrete workflow executions.",
   "status": "under-development",

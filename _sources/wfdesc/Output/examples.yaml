@@ -1,0 +1,5 @@
+- title: Workflow Output Parameter
+  description: Real workflow output from mangrove analysis containing processed results directory
+  snippets:
+    - language: json
+      ref: examples/mangrove-output.json

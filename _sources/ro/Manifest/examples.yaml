@@ -1,0 +1,5 @@
+- title: Real Research Object Manifest from CWLProv
+  description: Actual manifest.json from mangrove analysis Research Object describing all aggregated resources, provenance files, and workflow artifacts
+  snippets:
+    - language: json
+      ref: examples/manifest.json

@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Workflow",
   "name": "wfdesc:Workflow",
   "abstract": "A composite process that contains sub-processes connected by data links. Workflows are directed graphs where nodes are processes and edges are data flow connections.",
   "highlighted": true,

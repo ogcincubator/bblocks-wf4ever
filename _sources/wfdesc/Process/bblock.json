@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Process",
   "name": "wfdesc:Process",
   "abstract": "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows.",
   "status": "under-development",

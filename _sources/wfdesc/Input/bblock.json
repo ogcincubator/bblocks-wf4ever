@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Input",
   "name": "wfdesc:Input",
   "abstract": "An input parameter to a workflow process. Inputs receive data from external sources or from outputs of other processes via DataLinks.",
   "status": "under-development",

@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.DataLink",
   "name": "wfdesc:DataLink",
   "abstract": "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow.",
   "status": "under-development",

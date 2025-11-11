@@ -62,46 +62,46 @@
   },
   "workflow": {
     "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
-    "type": "Workflow",
     "label": "Mangrove Mapping Workflow",
     "hasInput": [
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
-        "type": "Input",
         "label": "cloud_cover_max",
-        "description": "Maximum cloud coverage percentage"
+        "description": "Maximum cloud coverage percentage",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back",
-        "type": "Input",
         "label": "days_back",
-        "description": "Number of days to look back for imagery"
+        "description": "Number of days to look back for imagery",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east",
-        "type": "Input",
         "label": "east",
-        "description": "Eastern boundary longitude"
+        "description": "Eastern boundary longitude",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north",
-        "type": "Input",
         "label": "north",
-        "description": "Northern boundary latitude"
+        "description": "Northern boundary latitude",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north"
       }
     ],
     "hasOutput": [
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs",
-        "type": "Output",
         "label": "outputs",
-        "description": "Processed mangrove mapping results"
+        "description": "Processed mangrove mapping results",
+        "@type": "Output",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs"
       }
-    ]
+    ],
+    "@type": "Workflow"
   },
   "workflowRun": {
     "id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
-    "type": "WorkflowRun",
+    "type": "Activity",
     "label": "Run of workflow/packed.cwl#main",
     "describedByWorkflow": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
     "startedAtTime": "2025-11-03T15:14:02.032122",
@@ -109,7 +109,7 @@
     "wasAssociatedWith": [
       {
         "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
-        "type": "WorkflowEngine",
+        "type": "SoftwareAgent",
         "label": "cwltool 3.1.20251031082601"
       },
       {
@@ -149,16 +149,12 @@
     ]
   },
   "manifest": {
-    "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
-    "type": "Manifest",
+    "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
+    "@type": "Manifest",
+    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/",
     "conformsTo": "https://w3id.org/bundle/2014-11-05/",
-    "authoredBy": {
-      "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
-      "name": "cwltool 3.1.20251031082601"
-    },
-    "authoredOn": "2025-11-03T15:14:17.166945",
-    "retrievedFrom": "https://w3id.org/cwl/prov/0.6.0",
-    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/"
+    "createdBy": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+    "createdOn": "2025-11-03T15:14:17.166945"
   },
   "metadata": {
     "created": "2025-11-03T15:14:17Z",

@@ -4,12 +4,19 @@ allOf:
   - $ref: ../ProcessRun/schema.yaml
   - type: object
     properties:
+      # Compact form
       describedByWorkflow:
         type: string
         format: uri
         description: Links to the workflow description (wfdesc:Workflow) that was executed
         x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByWorkflow
         x-jsonld-type: '@id'
+      # Expanded form
+      'http://purl.org/wf4ever/wfprov#describedByWorkflow':
+        description: Workflow description in expanded form
+        type: array
+        items:
+          type: object
       hadSubProcessRun:
         type: array
         items:
@@ -25,5 +32,7 @@ allOf:
         type: string
         format: uri
         description: The workflow engine that executed this workflow
-    required:
-      - describedByWorkflow
+    # Accept either compact or expanded form
+    anyOf:
+      - required: [describedByWorkflow]
+      - required: ['http://purl.org/wf4ever/wfprov#describedByWorkflow']

@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Artifact",
   "name": "wfdesc:Artifact",
   "abstract": "An artifact representing a data value, file, or resource that can be used as input or generated as output by workflow processes. Artifacts provide concrete data representations for parameter binding.",
   "status": "under-development",
@@ -7,7 +8,6 @@
   "register": "ogc-wf4ever", 
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",
-  "dependsOn": [],
   "sources": [
     {
       "title": "Workflow Description Ontology - Artifact",

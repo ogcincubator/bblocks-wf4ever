@@ -1,0 +1,5 @@
+- title: CWLTool Workflow Engine
+  description: The cwltool 3.1.20251031082601 workflow execution engine from the mangrove analysis workflow run
+  snippets:
+    - language: json
+      ref: examples/cwltool-engine.json

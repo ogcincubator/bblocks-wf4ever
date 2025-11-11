@@ -1,0 +1,7 @@
+{
+  "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
+  "@type": "Input",
+  "name": "cloud_cover_max",
+  "description": "Maximum cloud coverage percentage",
+  "value": 20.0
+}

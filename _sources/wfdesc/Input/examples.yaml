@@ -1,0 +1,5 @@
+- title: Workflow Input Parameter (cloud_cover_max)
+  description: Real workflow input parameter from mangrove analysis specifying maximum cloud coverage percentage
+  snippets:
+    - language: json
+      ref: examples/cloud-cover-input.json

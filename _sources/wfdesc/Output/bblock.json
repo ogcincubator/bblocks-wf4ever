@@ -1,4 +1,5 @@
 {
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Output",
   "name": "wfdesc:Output",
   "abstract": "An output parameter from a workflow process. Outputs produce data that can be consumed by inputs of other processes or as final workflow results.",
   "status": "under-development",
