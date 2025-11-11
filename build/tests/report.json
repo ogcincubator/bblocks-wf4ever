@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro.Resource - ro:Resource",
       "bblockName": "ro:Resource",
       "bblockId": "ogc.bbr.wf4ever.ro.Resource",
-      "generated": "2025-11-11T17:43:11.524790+00:00",
+      "generated": "2025-11-11T20:12:44.377240+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -24,7 +24,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro.Folder - ro:Folder",
       "bblockName": "ro:Folder",
       "bblockId": "ogc.bbr.wf4ever.ro.Folder",
-      "generated": "2025-11-11T17:43:11.541052+00:00",
+      "generated": "2025-11-11T20:12:44.393647+00:00",
       "result": true,
       "items": [
         {
@@ -94,7 +94,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro.SemanticAnnotation - ro:SemanticAnnotation",
       "bblockName": "ro:SemanticAnnotation",
       "bblockId": "ogc.bbr.wf4ever.ro.SemanticAnnotation",
-      "generated": "2025-11-11T17:43:11.548802+00:00",
+      "generated": "2025-11-11T20:12:44.401495+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -108,7 +108,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro - Research Object Ontology (ro)",
       "bblockName": "Research Object Ontology (ro)",
       "bblockId": "ogc.bbr.wf4ever.ro",
-      "generated": "2025-11-11T17:43:11.557849+00:00",
+      "generated": "2025-11-11T20:12:44.411259+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -122,7 +122,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever.Dataset - wf4ever:Dataset",
       "bblockName": "wf4ever:Dataset",
       "bblockId": "ogc.bbr.wf4ever.wf4ever.Dataset",
-      "generated": "2025-11-11T17:43:11.565143+00:00",
+      "generated": "2025-11-11T20:12:44.418807+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -136,7 +136,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever.Document - wf4ever:Document",
       "bblockName": "wf4ever:Document",
       "bblockId": "ogc.bbr.wf4ever.wf4ever.Document",
-      "generated": "2025-11-11T17:43:11.571717+00:00",
+      "generated": "2025-11-11T20:12:44.425497+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -150,7 +150,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever.File - wf4ever:File",
       "bblockName": "wf4ever:File",
       "bblockId": "ogc.bbr.wf4ever.wf4ever.File",
-      "generated": "2025-11-11T17:43:11.578709+00:00",
+      "generated": "2025-11-11T20:12:44.432523+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -164,7 +164,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever.Image - wf4ever:Image",
       "bblockName": "wf4ever:Image",
       "bblockId": "ogc.bbr.wf4ever.wf4ever.Image",
-      "generated": "2025-11-11T17:43:11.585504+00:00",
+      "generated": "2025-11-11T20:12:44.439656+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -178,7 +178,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever.WebServiceProcess - wf4ever:WebServiceProcess",
       "bblockName": "wf4ever:WebServiceProcess",
       "bblockId": "ogc.bbr.wf4ever.wf4ever.WebServiceProcess",
-      "generated": "2025-11-11T17:43:11.592026+00:00",
+      "generated": "2025-11-11T20:12:44.446258+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -192,69 +192,13 @@
       "title": "Validation report for ogc.bbr.wf4ever.wfdesc - Workflow Description Ontology (wfdesc)",
       "bblockName": "Workflow Description Ontology (wfdesc)",
       "bblockId": "ogc.bbr.wf4ever.wfdesc",
-      "generated": "2025-11-11T17:43:11.606244+00:00",
+      "generated": "2025-11-11T20:12:44.455918+00:00",
       "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/wf4ever/wfdesc/example_1_1.json",
-            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 22,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "items": [],
       "globalErrors": {},
       "counts": {
-        "total": 1,
-        "passed": 1,
+        "total": 0,
+        "passed": 0,
         "failed": 0
       }
     },
@@ -262,7 +206,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Artifact - wfdesc:Artifact",
       "bblockName": "wfdesc:Artifact",
       "bblockId": "ogc.bbr.wf4ever.wfdesc.Artifact",
-      "generated": "2025-11-11T17:43:11.616934+00:00",
+      "generated": "2025-11-11T20:12:44.466247+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -276,7 +220,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wfdesc.WorkflowInstance - wfdesc:WorkflowInstance",
       "bblockName": "wfdesc:WorkflowInstance",
       "bblockId": "ogc.bbr.wf4ever.wfdesc.WorkflowInstance",
-      "generated": "2025-11-11T17:43:11.633047+00:00",
+      "generated": "2025-11-11T20:12:44.482314+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -290,7 +234,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro.AggregatedAnnotation - ro:AggregatedAnnotation",
       "bblockName": "ro:AggregatedAnnotation",
       "bblockId": "ogc.bbr.wf4ever.ro.AggregatedAnnotation",
-      "generated": "2025-11-11T17:43:11.640892+00:00",
+      "generated": "2025-11-11T20:12:44.490199+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -304,48 +248,20 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro.Manifest - ro:Manifest",
       "bblockName": "ro:Manifest",
       "bblockId": "ogc.bbr.wf4ever.ro.Manifest",
-      "generated": "2025-11-11T17:43:11.647829+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.ro.FolderEntry": {
-      "title": "Validation report for ogc.bbr.wf4ever.ro.FolderEntry - ro:FolderEntry",
-      "bblockName": "ro:FolderEntry",
-      "bblockId": "ogc.bbr.wf4ever.ro.FolderEntry",
-      "generated": "2025-11-11T17:43:11.654487+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfprov": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfprov - Workflow Provenance Ontology (wfprov)",
-      "bblockName": "Workflow Provenance Ontology (wfprov)",
-      "bblockId": "ogc.bbr.wf4ever.wfprov",
-      "generated": "2025-11-11T17:43:11.668671+00:00",
-      "result": true,
+      "generated": "2025-11-11T20:12:44.942226+00:00",
+      "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/wf4ever/wfprov/example_1_1.json",
-            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.json",
+            "filename": "build/tests/bbr/wf4ever/ro/Manifest/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": true,
+          "result": false,
           "sections": [
             {
               "name": "FILES",
@@ -368,11 +284,11 @@
                 },
                 {
                   "op": "ttl-create",
-                  "empty": false,
+                  "empty": true,
                   "filename": "example_1_1.ttl",
-                  "size": 14,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
                 }
               ]
             },
@@ -394,7 +310,35 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
-        "passed": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.bbr.wf4ever.ro.FolderEntry": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.FolderEntry - ro:FolderEntry",
+      "bblockName": "ro:FolderEntry",
+      "bblockId": "ogc.bbr.wf4ever.ro.FolderEntry",
+      "generated": "2025-11-11T20:12:44.949899+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov - Workflow Provenance Ontology (wfprov)",
+      "bblockName": "Workflow Provenance Ontology (wfprov)",
+      "bblockId": "ogc.bbr.wf4ever.wfprov",
+      "generated": "2025-11-11T20:12:44.959761+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
         "failed": 0
       }
     },
@@ -402,7 +346,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Parameter - wfdesc:Parameter",
       "bblockName": "wfdesc:Parameter",
       "bblockId": "ogc.bbr.wf4ever.wfdesc.Parameter",
-      "generated": "2025-11-11T17:43:11.676793+00:00",
+      "generated": "2025-11-11T20:12:44.967528+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -416,7 +360,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.ro.ResearchObject - ro:ResearchObject",
       "bblockName": "ro:ResearchObject",
       "bblockId": "ogc.bbr.wf4ever.ro.ResearchObject",
-      "generated": "2025-11-11T17:43:11.692213+00:00",
+      "generated": "2025-11-11T20:12:44.982307+00:00",
       "result": true,
       "items": [
         {
@@ -454,7 +398,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 35,
+                  "size": 41,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -486,7 +430,7 @@
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever - Wf4Ever Extension Ontology",
       "bblockName": "Wf4Ever Extension Ontology",
       "bblockId": "ogc.bbr.wf4ever.wf4ever",
-      "generated": "2025-11-11T17:43:11.698390+00:00",
+      "generated": "2025-11-11T20:12:44.988593+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -500,146 +444,20 @@
       "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Input - wfdesc:Input",
       "bblockName": "wfdesc:Input",
       "bblockId": "ogc.bbr.wf4ever.wfdesc.Input",
-      "generated": "2025-11-11T17:43:11.704611+00:00",
+      "generated": "2025-11-11T20:12:44.997377+00:00",
       "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfdesc.Output": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Output - wfdesc:Output",
-      "bblockName": "wfdesc:Output",
-      "bblockId": "ogc.bbr.wf4ever.wfdesc.Output",
-      "generated": "2025-11-11T17:43:11.710906+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfprov.Artifact": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfprov.Artifact - wfprov:Artifact",
-      "bblockName": "wfprov:Artifact",
-      "bblockId": "ogc.bbr.wf4ever.wfprov.Artifact",
-      "generated": "2025-11-11T17:43:11.721539+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfprov.WorkflowEngine": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfprov.WorkflowEngine - wfprov:WorkflowEngine",
-      "bblockName": "wfprov:WorkflowEngine",
-      "bblockId": "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
-      "generated": "2025-11-11T17:43:11.734793+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfdesc.DataLink": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.DataLink - wfdesc:DataLink",
-      "bblockName": "wfdesc:DataLink",
-      "bblockId": "ogc.bbr.wf4ever.wfdesc.DataLink",
-      "generated": "2025-11-11T17:43:11.743817+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfdesc.Process": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Process - wfdesc:Process",
-      "bblockName": "wfdesc:Process",
-      "bblockId": "ogc.bbr.wf4ever.wfdesc.Process",
-      "generated": "2025-11-11T17:43:11.752246+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfdesc.Workflow": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Workflow - wfdesc:Workflow",
-      "bblockName": "wfdesc:Workflow",
-      "bblockId": "ogc.bbr.wf4ever.wfdesc.Workflow",
-      "generated": "2025-11-11T17:43:11.760191+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfprov.ProcessRun": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfprov.ProcessRun - wfprov:ProcessRun",
-      "bblockName": "wfprov:ProcessRun",
-      "bblockId": "ogc.bbr.wf4ever.wfprov.ProcessRun",
-      "generated": "2025-11-11T17:43:11.771028+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject": {
-      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject - wf4ever:WorkflowResearchObject",
-      "bblockName": "wf4ever:WorkflowResearchObject",
-      "bblockId": "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject",
-      "generated": "2025-11-11T17:43:11.777886+00:00",
-      "result": true,
-      "items": [],
-      "globalErrors": {},
-      "counts": {
-        "total": 0,
-        "passed": 0,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.wf4ever.wfprov.WorkflowRun": {
-      "title": "Validation report for ogc.bbr.wf4ever.wfprov.WorkflowRun - wfprov:WorkflowRun",
-      "bblockName": "wfprov:WorkflowRun",
-      "bblockId": "ogc.bbr.wf4ever.wfprov.WorkflowRun",
-      "generated": "2025-11-11T17:43:12.266948+00:00",
-      "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json",
-            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json",
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Input/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Input/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": false,
+          "result": true,
           "sections": [
             {
               "name": "FILES",
@@ -664,7 +482,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 26,
+                  "size": 3,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -676,11 +494,9 @@
               "entries": [
                 {
                   "op": "validation",
-                  "result": false,
-                  "exception": "ValidationError",
-                  "errorMessage": "{'id': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c', 'type': 'WorkflowRun', 'label': 'Run of workflow/packed.cwl#main', 'describedByWorkflow': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main', 'startedAtTime': '2025-11-03T15:14:02.032122', 'endedAtTime': '2025-11-03T15:14:17.060218', 'wasAssociatedWith': [{'id': 'urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60', 'type': 'WorkflowEngine', 'label': 'cwltool 3.1.20251031082601'}, {'id': 'urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f', 'type': 'Agent', 'label': 'Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696'}], 'used': [{'id': 'urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d', 'value': 20.0, 'hadRole': 'cloud_cover_max'}, {'id': 'urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258', 'value': 90, 'hadRole': 'days_back'}, {'id': 'urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea', 'value': 95.35, 'hadRole': 'east'}, {'id': 'urn:uuid:fd57ac88-8716-40ed-8945-f83914857523', 'value': 16.1, 'hadRole': 'north'}], 'generated': [{'id': 'urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539', 'type': 'Artifact', 'basename': 'outputs'}]} is not valid under any of the given schemas",
-                  "isError": true,
-                  "message": "ValidationError: {'id': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c', 'type': 'WorkflowRun', 'label': 'Run of workflow/packed.cwl#main', 'describedByWorkflow': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main', 'startedAtTime': '2025-11-03T15:14:02.032122', 'endedAtTime': '2025-11-03T15:14:17.060218', 'wasAssociatedWith': [{'id': 'urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60', 'type': 'WorkflowEngine', 'label': 'cwltool 3.1.20251031082601'}, {'id': 'urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f', 'type': 'Agent', 'label': 'Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696'}], 'used': [{'id': 'urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d', 'value': 20.0, 'hadRole': 'cloud_cover_max'}, {'id': 'urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258', 'value': 90, 'hadRole': 'days_back'}, {'id': 'urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea', 'value': 95.35, 'hadRole': 'east'}, {'id': 'urn:uuid:fd57ac88-8716-40ed-8945-f83914857523', 'value': 16.1, 'hadRole': 'north'}], 'generated': [{'id': 'urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539', 'type': 'Artifact', 'basename': 'outputs'}]} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][0]:\n    {'$defs': {'Activity': {'$anchor': 'Activity',\n                            'allOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#influenced'}],\n                            'anyOf': [{'required': ['activityType']},\n                                      {'required': ['prov:type']},\n                                      {'required': ['type']},\n                                      {'required': ['used']},\n                                      {'required': ['wasInformedBy']},\n                                      {'required': ['endedAtTime']},\n                                      {'required': ['startedAtTime']},\n                                      {'required': ['wasAssociatedWith']}],\n                            'properties': {'activityType': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreObjectref'},\n                                           'atLocation': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                           'endedAtTime': {'$ref': '#/$defs/dateTime'},\n                                           'generated': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                           'invalidated': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'prov:type': {'$ref': '#/$defs/ActivityTypes'},\n                                           'qualifiedAssociation': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                              {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Association'},\n                                                                              {'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                                   {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Association'}]},\n                                                                               'type': 'array'}]},\n                                           'qualifiedCommunication': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                {'$ref': '#/$defs/Communication'},\n                                                                                {'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                                     {'$ref': '#/$defs/Generation'}]},\n                                                                                 'type': 'array'}]},\n                                           'qualifiedEnd': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                      {'$ref': '#/$defs/End'}]},\n                                           'qualifiedStart': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                        {'$ref': '#/$defs/Start'}]},\n                                           'qualifiedUsage': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                        {'$ref': '#/$defs/Usage'},\n                                                                        {'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                             {'$ref': '#/$defs/Usage'}]},\n                                                                         'type': 'array'}]},\n                                           'type': {'$ref': '#/$defs/ActivityTypes'},\n                                           'used': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'wasAssociatedWith': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreAgentsOrRefIds'},\n                                           'wasEndedBy': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'wasInformedBy': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds'},\n                                           'wasStartedBy': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'}},\n                            'type': 'object'},\n               'ActivityInfluence': {'$anchor': 'ActivityInfluence',\n                                     'properties': {'activity': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds'},\n                                                    'atTime': {'$ref': '#/$defs/dateTime'},\n                                                    'hadActivity': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds'},\n                                                    'hadRole': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreObjectref'},\n                                                    'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                    'influencer': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreObjectref'}},\n                                     'type': 'object'},\n               'ActivityTypes': {'oneOf': [{'enum': ['Activity',\n                                                     'prov:Activity'],\n                                            'type': 'string'},\n                                           {'contains': {'enum': ['Activity',\n                                                                  'prov:Activity'],\n                                                         'type': 'string'},\n                                            'items': {'type': 'string'},\n                                            'type': 'array'}]},\n               'Attribution': {'$anchor': 'Attribution',\n                               'properties': {'agent': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                  {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Agent'}]},\n                                              'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                              'type': {'oneOf': [{'const': 'Attribution',\n                                                                  'type': 'string'},\n                                                                 {'contains': {'const': 'Attribution',\n                                                                               'type': 'string'},\n                                                                  'items': {'type': 'string'},\n                                                                  'type': 'array'}]}},\n                               'type': 'object'},\n               'Communication': {'$anchor': 'Communication',\n                                 'allOf': [{'$ref': '#/$defs/ActivityInfluence'},\n                                           {'properties': {'type': {'oneOf': [{'const': 'Communication',\n                                                                               'type': 'string'},\n                                                                              {'contains': {'const': 'Communication',\n                                                                                            'type': 'string'},\n                                                                               'items': {'type': 'string'},\n                                                                               'type': 'array'}]}},\n                                            'required': ['type'],\n                                            'type': 'object'}]},\n               'Delegation': {'$anchor': 'Delegation',\n                              'properties': {'agent': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                 {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Agent'}]},\n                                             'hadActivity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                       {'$ref': '#/$defs/Activity'}]},\n                                             'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                             'type': {'oneOf': [{'const': 'Delegation',\n                                                                 'type': 'string'},\n                                                                {'contains': {'const': 'Delegation',\n                                                                              'type': 'string'},\n                                                                 'items': {'type': 'string'},\n                                                                 'type': 'array'}]}},\n                              'type': 'object'},\n               'Derivation': {'$anchor': 'Derivation',\n                              'properties': {'entity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                  {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Entity'}]},\n                                             'hadActivity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                       {'$ref': '#/$defs/Activity'}]},\n                                             'hadGeneration': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                         {'$ref': '#/$defs/Generation'}]},\n                                             'hadUsage': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                    {'$ref': '#/$defs/Usage'}]},\n                                             'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                             'type': {'oneOf': [{'const': 'Derivation',\n                                                                 'type': 'string'},\n                                                                {'contains': {'const': 'Derivation',\n                                                                              'type': 'string'},\n                                                                 'items': {'type': 'string'},\n                                                                 'type': 'array'}]}},\n                              'required': ['atTime', 'entity'],\n                              'type': 'object'},\n               'End': {'allOf': [{'$ref': '#/$defs/StartOrEnd'},\n                                 {'properties': {'type': {'anyOf': [{'const': 'End'},\n                                                                    {'contains': {'const': 'End'}}]}}}]},\n               'Generation': {'$anchor': 'Generation',\n                              'allOf': [{'$ref': '#/$defs/ActivityInfluence'},\n                                        {'properties': {'type': {'oneOf': [{'const': 'Generation',\n                                                                            'type': 'string'},\n                                                                           {'contains': {'const': 'Generation',\n                                                                                         'type': 'string'},\n                                                                            'items': {'type': 'string'},\n                                                                            'type': 'array'}]}},\n                                         'required': ['type'],\n                                         'type': 'object'}]},\n               'Invalidation': {'$anchor': 'Invalidation',\n                                'allOf': [{'$ref': '#/$defs/ActivityInfluence'},\n                                          {'properties': {'type': {'oneOf': [{'const': 'Invalidation',\n                                                                              'type': 'string'},\n                                                                             {'contains': {'const': 'Invalidation',\n                                                                                           'type': 'string'},\n                                                                              'items': {'type': 'string'},\n                                                                              'type': 'array'}]}},\n                                           'required': ['type'],\n                                           'type': 'object'}]},\n               'Start': {'allOf': [{'$ref': '#/$defs/StartOrEnd'},\n                                   {'properties': {'type': {'anyOf': [{'const': 'Start'},\n                                                                      {'contains': {'const': 'Start'}}]}}}]},\n               'StartOrEnd': {'properties': {'atTime': {'$ref': '#/$defs/dateTime'},\n                                             'entity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                  {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Entity'}]},\n                                             'hadActivity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                       {'$ref': '#/$defs/Activity'}]},\n                                             'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                             'type': {'oneOf': [{'type': 'string'},\n                                                                {'items': {'type': 'string'},\n                                                                 'type': 'array'}]}},\n                              'required': ['atTime'],\n                              'type': 'object'},\n               'Usage': {'$anchor': 'Usage',\n                         'properties': {'atTime': {'$ref': '#/$defs/dateTime'},\n                                        'entity': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                        'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                        'type': {'oneOf': [{'enum': ['prov:Usage',\n                                                                     'Usage'],\n                                                            'type': 'string'},\n                                                           {'contains': {'enum': ['prov:Usage',\n                                                                                  'Usage'],\n                                                                         'type': 'string'},\n                                                            'items': {'type': 'string'},\n                                                            'type': 'array'}]}},\n                         'required': ['entity'],\n                         'type': 'object'},\n               'dateTime': {'format': 'date-time',\n                            'pattern': '^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}(?:\\\\.\\\\d+)?(?:Z|[+-]\\\\d{2}:\\\\d{2})?$',\n                            'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'anyOf': [{'$ref': '#/$defs/Activity'}],\n     'description': 'PROV Activity object schema'}\n\nOn instance:\n    {'describedByWorkflow': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main',\n     'endedAtTime': '2025-11-03T15:14:17.060218',\n     'generated': [{'basename': 'outputs',\n                    'id': 'urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539',\n                    'type': 'Artifact'}],\n     'id': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c',\n     'label': 'Run of workflow/packed.cwl#main',\n     'startedAtTime': '2025-11-03T15:14:02.032122',\n     'type': 'WorkflowRun',\n     'used': [{'hadRole': 'cloud_cover_max',\n               'id': 'urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d',\n               'value': 20.0},\n              {'hadRole': 'days_back',\n               'id': 'urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258',\n               'value': 90},\n              {'hadRole': 'east',\n               'id': 'urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea',\n               'value': 95.35},\n              {'hadRole': 'north',\n               'id': 'urn:uuid:fd57ac88-8716-40ed-8945-f83914857523',\n               'value': 16.1}],\n     'wasAssociatedWith': [{'id': 'urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60',\n                            'label': 'cwltool 3.1.20251031082601',\n                            'type': 'WorkflowEngine'},\n                           {'id': 'urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f',\n                            'label': 'Container execution of image '\n                                     'r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696',\n                            'type': 'Agent'}]}"
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
                 }
               ]
             }
@@ -690,15 +506,309 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Output": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Output - wfdesc:Output",
+      "bblockName": "wfdesc:Output",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Output",
+      "generated": "2025-11-11T20:12:45.006334+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.Artifact": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.Artifact - wfprov:Artifact",
+      "bblockName": "wfprov:Artifact",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.Artifact",
+      "generated": "2025-11-11T20:12:45.016743+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
         "passed": 0,
-        "failed": 1
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.WorkflowEngine": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.WorkflowEngine - wfprov:WorkflowEngine",
+      "bblockName": "wfprov:WorkflowEngine",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+      "generated": "2025-11-11T20:12:45.230757+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.DataLink": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.DataLink - wfdesc:DataLink",
+      "bblockName": "wfdesc:DataLink",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.DataLink",
+      "generated": "2025-11-11T20:12:45.238339+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Process": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Process - wfdesc:Process",
+      "bblockName": "wfdesc:Process",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Process",
+      "generated": "2025-11-11T20:12:45.247033+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Workflow": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Workflow - wfdesc:Workflow",
+      "bblockName": "wfdesc:Workflow",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Workflow",
+      "generated": "2025-11-11T20:12:45.254915+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.ProcessRun": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.ProcessRun - wfprov:ProcessRun",
+      "bblockName": "wfprov:ProcessRun",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.ProcessRun",
+      "generated": "2025-11-11T20:12:45.268947+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject - wf4ever:WorkflowResearchObject",
+      "bblockName": "wf4ever:WorkflowResearchObject",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject",
+      "generated": "2025-11-11T20:12:45.275962+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.WorkflowRun": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.WorkflowRun - wfprov:WorkflowRun",
+      "bblockName": "wfprov:WorkflowRun",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.WorkflowRun",
+      "generated": "2025-11-11T20:12:45.519424+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 8,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
       }
     },
     "ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace": {
       "title": "Validation report for ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace - Complete Workflow Provenance Trace",
       "bblockName": "Complete Workflow Provenance Trace",
       "bblockId": "ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace",
-      "generated": "2025-11-11T17:43:12.471754+00:00",
+      "generated": "2025-11-11T20:12:45.952498+00:00",
       "result": false,
       "items": [
         {
@@ -736,7 +846,7 @@
                   "op": "ttl-create",
                   "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 104,
+                  "size": 102,
                   "isError": false,
                   "message": "Output Turtle example_1_1.ttl created"
                 }
@@ -750,9 +860,9 @@
                   "op": "validation",
                   "result": false,
                   "exception": "ValidationError",
-                  "errorMessage": "'@type' is a required property",
+                  "errorMessage": "{'id': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c', 'type': 'Activity', 'label': 'Run of workflow/packed.cwl#main', 'describedByWorkflow': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main', 'startedAtTime': '2025-11-03T15:14:02.032122', 'endedAtTime': '2025-11-03T15:14:17.060218', 'wasAssociatedWith': [{'id': 'urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60', 'type': 'SoftwareAgent', 'label': 'cwltool 3.1.20251031082601'}, {'id': 'urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f', 'type': 'Agent', 'label': 'Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696'}], 'used': [{'id': 'urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d', 'value': 20.0, 'hadRole': 'cloud_cover_max'}, {'id': 'urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258', 'value': 90, 'hadRole': 'days_back'}, {'id': 'urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea', 'value': 95.35, 'hadRole': 'east'}, {'id': 'urn:uuid:fd57ac88-8716-40ed-8945-f83914857523', 'value': 16.1, 'hadRole': 'north'}], 'generated': [{'id': 'urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539', 'type': 'Artifact', 'basename': 'outputs'}]} is not valid under any of the given schemas",
                   "isError": true,
-                  "message": "ValidationError: '@type' is a required property\n\nFailed validating 'required' in schema['properties']['workflow']['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'A computational process in a workflow',\n     'properties': {'@id': {'description': 'Unique identifier for this '\n                                           'process',\n                            'format': 'uri',\n                            'type': 'string'},\n                    '@type': {'description': 'Type identifier for a wfdesc '\n                                             'Process or Workflow',\n                              'oneOf': [{'const': 'Process'},\n                                        {'const': 'Workflow'}]},\n                    'description': {'description': 'Description of what '\n                                                   'this process does',\n                                    'type': 'string',\n                                    'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#comment'},\n                    'hasInput': {'description': 'Input parameters for this '\n                                                'process',\n                                 'items': {'$ref': 'https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml'},\n                                 'type': 'array',\n                                 'x-jsonld-container': '@set',\n                                 'x-jsonld-id': 'http://purl.org/wf4ever/wfdesc#hasInput',\n                                 'x-jsonld-type': '@id'},\n                    'hasOutput': {'description': 'Output parameters '\n                                                 'produced by this process',\n                                  'items': {'$ref': 'https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml'},\n                                  'type': 'array',\n                                  'x-jsonld-container': '@set',\n                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfdesc#hasOutput',\n                                  'x-jsonld-type': '@id'},\n                    'name': {'description': 'Name of the process',\n                             'type': 'string',\n                             'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#label'}},\n     'required': ['@type'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Input': 'http://purl.org/wf4ever/wfdesc#Input',\n                              'Output': 'http://purl.org/wf4ever/wfdesc#Output',\n                              'Process': 'http://purl.org/wf4ever/wfdesc#Process'},\n     'x-jsonld-prefixes': {'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#'}}\n\nOn instance['workflow']:\n    {'hasInput': [{'description': 'Maximum cloud coverage percentage',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max',\n                   'label': 'cloud_cover_max',\n                   'type': 'Input'},\n                  {'description': 'Number of days to look back for imagery',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back',\n                   'label': 'days_back',\n                   'type': 'Input'},\n                  {'description': 'Eastern boundary longitude',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east',\n                   'label': 'east',\n                   'type': 'Input'},\n                  {'description': 'Northern boundary latitude',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north',\n                   'label': 'north',\n                   'type': 'Input'}],\n     'hasOutput': [{'description': 'Processed mangrove mapping results',\n                    'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs',\n                    'label': 'outputs',\n                    'type': 'Output'}],\n     'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main',\n     'label': 'Mangrove Mapping Workflow',\n     'type': 'Workflow'}"
+                  "message": "ValidationError: {'id': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c', 'type': 'Activity', 'label': 'Run of workflow/packed.cwl#main', 'describedByWorkflow': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main', 'startedAtTime': '2025-11-03T15:14:02.032122', 'endedAtTime': '2025-11-03T15:14:17.060218', 'wasAssociatedWith': [{'id': 'urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60', 'type': 'SoftwareAgent', 'label': 'cwltool 3.1.20251031082601'}, {'id': 'urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f', 'type': 'Agent', 'label': 'Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696'}], 'used': [{'id': 'urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d', 'value': 20.0, 'hadRole': 'cloud_cover_max'}, {'id': 'urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258', 'value': 90, 'hadRole': 'days_back'}, {'id': 'urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea', 'value': 95.35, 'hadRole': 'east'}, {'id': 'urn:uuid:fd57ac88-8716-40ed-8945-f83914857523', 'value': 16.1, 'hadRole': 'north'}], 'generated': [{'id': 'urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539', 'type': 'Artifact', 'basename': 'outputs'}]} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['properties']['workflowRun']['allOf'][0]['allOf'][0]['allOf'][0]:\n    {'$defs': {'Activity': {'$anchor': 'Activity',\n                            'allOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#influenced'}],\n                            'anyOf': [{'required': ['activityType']},\n                                      {'required': ['prov:type']},\n                                      {'required': ['type']},\n                                      {'required': ['used']},\n                                      {'required': ['wasInformedBy']},\n                                      {'required': ['endedAtTime']},\n                                      {'required': ['startedAtTime']},\n                                      {'required': ['wasAssociatedWith']}],\n                            'properties': {'activityType': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreObjectref'},\n                                           'atLocation': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                           'endedAtTime': {'$ref': '#/$defs/dateTime'},\n                                           'generated': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                           'invalidated': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'prov:type': {'$ref': '#/$defs/ActivityTypes'},\n                                           'qualifiedAssociation': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                              {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Association'},\n                                                                              {'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                                   {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Association'}]},\n                                                                               'type': 'array'}]},\n                                           'qualifiedCommunication': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                {'$ref': '#/$defs/Communication'},\n                                                                                {'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                                     {'$ref': '#/$defs/Generation'}]},\n                                                                                 'type': 'array'}]},\n                                           'qualifiedEnd': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                      {'$ref': '#/$defs/End'}]},\n                                           'qualifiedStart': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                        {'$ref': '#/$defs/Start'}]},\n                                           'qualifiedUsage': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                        {'$ref': '#/$defs/Usage'},\n                                                                        {'items': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                                             {'$ref': '#/$defs/Usage'}]},\n                                                                         'type': 'array'}]},\n                                           'type': {'$ref': '#/$defs/ActivityTypes'},\n                                           'used': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'wasAssociatedWith': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreAgentsOrRefIds'},\n                                           'wasEndedBy': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                           'wasInformedBy': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds'},\n                                           'wasStartedBy': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'}},\n                            'type': 'object'},\n               'ActivityInfluence': {'$anchor': 'ActivityInfluence',\n                                     'properties': {'activity': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds'},\n                                                    'atTime': {'$ref': '#/$defs/dateTime'},\n                                                    'hadActivity': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreActivitiesOrRefIds'},\n                                                    'hadRole': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreObjectref'},\n                                                    'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                    'influencer': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreObjectref'}},\n                                     'type': 'object'},\n               'ActivityTypes': {'oneOf': [{'enum': ['Activity',\n                                                     'prov:Activity'],\n                                            'type': 'string'},\n                                           {'contains': {'enum': ['Activity',\n                                                                  'prov:Activity'],\n                                                         'type': 'string'},\n                                            'items': {'type': 'string'},\n                                            'type': 'array'}]},\n               'Attribution': {'$anchor': 'Attribution',\n                               'properties': {'agent': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                  {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Agent'}]},\n                                              'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                              'type': {'oneOf': [{'const': 'Attribution',\n                                                                  'type': 'string'},\n                                                                 {'contains': {'const': 'Attribution',\n                                                                               'type': 'string'},\n                                                                  'items': {'type': 'string'},\n                                                                  'type': 'array'}]}},\n                               'type': 'object'},\n               'Communication': {'$anchor': 'Communication',\n                                 'allOf': [{'$ref': '#/$defs/ActivityInfluence'},\n                                           {'properties': {'type': {'oneOf': [{'const': 'Communication',\n                                                                               'type': 'string'},\n                                                                              {'contains': {'const': 'Communication',\n                                                                                            'type': 'string'},\n                                                                               'items': {'type': 'string'},\n                                                                               'type': 'array'}]}},\n                                            'required': ['type'],\n                                            'type': 'object'}]},\n               'Delegation': {'$anchor': 'Delegation',\n                              'properties': {'agent': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                 {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Agent'}]},\n                                             'hadActivity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                       {'$ref': '#/$defs/Activity'}]},\n                                             'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                             'type': {'oneOf': [{'const': 'Delegation',\n                                                                 'type': 'string'},\n                                                                {'contains': {'const': 'Delegation',\n                                                                              'type': 'string'},\n                                                                 'items': {'type': 'string'},\n                                                                 'type': 'array'}]}},\n                              'type': 'object'},\n               'Derivation': {'$anchor': 'Derivation',\n                              'properties': {'entity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                  {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Entity'}]},\n                                             'hadActivity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                       {'$ref': '#/$defs/Activity'}]},\n                                             'hadGeneration': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                         {'$ref': '#/$defs/Generation'}]},\n                                             'hadUsage': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                    {'$ref': '#/$defs/Usage'}]},\n                                             'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                             'type': {'oneOf': [{'const': 'Derivation',\n                                                                 'type': 'string'},\n                                                                {'contains': {'const': 'Derivation',\n                                                                              'type': 'string'},\n                                                                 'items': {'type': 'string'},\n                                                                 'type': 'array'}]}},\n                              'required': ['atTime', 'entity'],\n                              'type': 'object'},\n               'End': {'allOf': [{'$ref': '#/$defs/StartOrEnd'},\n                                 {'properties': {'type': {'anyOf': [{'const': 'End'},\n                                                                    {'contains': {'const': 'End'}}]}}}]},\n               'Generation': {'$anchor': 'Generation',\n                              'allOf': [{'$ref': '#/$defs/ActivityInfluence'},\n                                        {'properties': {'type': {'oneOf': [{'const': 'Generation',\n                                                                            'type': 'string'},\n                                                                           {'contains': {'const': 'Generation',\n                                                                                         'type': 'string'},\n                                                                            'items': {'type': 'string'},\n                                                                            'type': 'array'}]}},\n                                         'required': ['type'],\n                                         'type': 'object'}]},\n               'Invalidation': {'$anchor': 'Invalidation',\n                                'allOf': [{'$ref': '#/$defs/ActivityInfluence'},\n                                          {'properties': {'type': {'oneOf': [{'const': 'Invalidation',\n                                                                              'type': 'string'},\n                                                                             {'contains': {'const': 'Invalidation',\n                                                                                           'type': 'string'},\n                                                                              'items': {'type': 'string'},\n                                                                              'type': 'array'}]}},\n                                           'required': ['type'],\n                                           'type': 'object'}]},\n               'Start': {'allOf': [{'$ref': '#/$defs/StartOrEnd'},\n                                   {'properties': {'type': {'anyOf': [{'const': 'Start'},\n                                                                      {'contains': {'const': 'Start'}}]}}}]},\n               'StartOrEnd': {'properties': {'atTime': {'$ref': '#/$defs/dateTime'},\n                                             'entity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                  {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#Entity'}]},\n                                             'hadActivity': {'oneOf': [{'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                                                       {'$ref': '#/$defs/Activity'}]},\n                                             'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                             'type': {'oneOf': [{'type': 'string'},\n                                                                {'items': {'type': 'string'},\n                                                                 'type': 'array'}]}},\n                              'required': ['atTime'],\n                              'type': 'object'},\n               'Usage': {'$anchor': 'Usage',\n                         'properties': {'atTime': {'$ref': '#/$defs/dateTime'},\n                                        'entity': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#oneOrMoreEntitiesOrRefIds'},\n                                        'id': {'$ref': 'https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#objectref'},\n                                        'type': {'oneOf': [{'enum': ['prov:Usage',\n                                                                     'Usage'],\n                                                            'type': 'string'},\n                                                           {'contains': {'enum': ['prov:Usage',\n                                                                                  'Usage'],\n                                                                         'type': 'string'},\n                                                            'items': {'type': 'string'},\n                                                            'type': 'array'}]}},\n                         'required': ['entity'],\n                         'type': 'object'},\n               'dateTime': {'format': 'date-time',\n                            'pattern': '^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}(?:\\\\.\\\\d+)?(?:Z|[+-]\\\\d{2}:\\\\d{2})?$',\n                            'type': 'string'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'anyOf': [{'$ref': '#/$defs/Activity'}],\n     'description': 'PROV Activity object schema'}\n\nOn instance['workflowRun']:\n    {'describedByWorkflow': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main',\n     'endedAtTime': '2025-11-03T15:14:17.060218',\n     'generated': [{'basename': 'outputs',\n                    'id': 'urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539',\n                    'type': 'Artifact'}],\n     'id': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c',\n     'label': 'Run of workflow/packed.cwl#main',\n     'startedAtTime': '2025-11-03T15:14:02.032122',\n     'type': 'Activity',\n     'used': [{'hadRole': 'cloud_cover_max',\n               'id': 'urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d',\n               'value': 20.0},\n              {'hadRole': 'days_back',\n               'id': 'urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258',\n               'value': 90},\n              {'hadRole': 'east',\n               'id': 'urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea',\n               'value': 95.35},\n              {'hadRole': 'north',\n               'id': 'urn:uuid:fd57ac88-8716-40ed-8945-f83914857523',\n               'value': 16.1}],\n     'wasAssociatedWith': [{'id': 'urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60',\n                            'label': 'cwltool 3.1.20251031082601',\n                            'type': 'SoftwareAgent'},\n                           {'id': 'urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f',\n                            'label': 'Container execution of image '\n                                     'r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696',\n                            'type': 'Agent'}]}"
                 }
               ]
             }

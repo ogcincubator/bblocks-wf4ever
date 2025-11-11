@@ -11,8 +11,8 @@
   "version": "1.0",
   "dateOfLastChange": "2025-11-11",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfdesc.Parameter",
-    "ogc.ogc-utils.prov"
+    "ogc.ogc-utils.prov",
+    "ogc.bbr.wf4ever.wfdesc.Parameter"
   ],
   "sources": [
     {

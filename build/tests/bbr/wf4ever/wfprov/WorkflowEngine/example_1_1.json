@@ -1,0 +1,15 @@
+{
+  "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+  "@id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+  "type": "SoftwareAgent",
+  "@type": [
+    "http://www.w3.org/ns/prov#Agent",
+    "http://www.w3.org/ns/prov#SoftwareAgent",
+    "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+    {
+      "@value": "cwltool 3.1.20251031082601"
+    }
+  ]
+}

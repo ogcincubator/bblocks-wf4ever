@@ -15,6 +15,13 @@
           "x-jsonld-id": "http://purl.org/wf4ever/wfprov#describedByWorkflow",
           "x-jsonld-type": "@id"
         },
+        "http://purl.org/wf4ever/wfprov#describedByWorkflow": {
+          "description": "Workflow description in expanded form",
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
         "hadSubProcessRun": {
           "type": "array",
           "items": {
@@ -42,8 +49,17 @@
           "x-jsonld-type": "@id"
         }
       },
-      "required": [
-        "describedByWorkflow"
+      "anyOf": [
+        {
+          "required": [
+            "describedByWorkflow"
+          ]
+        },
+        {
+          "required": [
+            "http://purl.org/wf4ever/wfprov#describedByWorkflow"
+          ]
+        }
       ]
     }
   ],

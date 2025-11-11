@@ -19,9 +19,9 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfprov",
+    "ogc.bbr.wf4ever.ro",
     "ogc.bbr.wf4ever.wfdesc",
-    "ogc.bbr.wf4ever.ro"
+    "ogc.bbr.wf4ever.wfprov"
   ],
   "tags": [
     "wf4ever",

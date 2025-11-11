@@ -28,25 +28,100 @@ A **WorkflowEngine** represents a software agent that executes workflows. The wo
 - Snakemake
 - CWL Runner
 
+## Examples
+
+### CWLTool Workflow Engine
+#### json
+```json
+{
+  "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+  "@id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+  "type": "SoftwareAgent",
+  "@type": [
+    "http://www.w3.org/ns/prov#Agent",
+    "http://www.w3.org/ns/prov#SoftwareAgent",
+    "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+    {
+      "@value": "cwltool 3.1.20251031082601"
+    }
+  ]
+}
+
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld",
+  "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+  "@id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+  "type": "SoftwareAgent",
+  "@type": [
+    "http://www.w3.org/ns/prov#Agent",
+    "http://www.w3.org/ns/prov#SoftwareAgent",
+    "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+    {
+      "@value": "cwltool 3.1.20251031082601"
+    }
+  ]
+}
+```
+
+#### ttl
+```ttl
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+
+<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine,
+        prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "cwltool 3.1.20251031082601" .
+
+
+```
+
 ## Schema
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: A software agent that executes workflows
+description: A software agent that executes workflows (PROV-O Agent)
 allOf:
 - $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Agent
 type: object
 properties:
+  id:
+    type: string
+    format: uri
+    description: Unique identifier (compact form)
+    x-jsonld-id: '@id'
   '@id':
     type: string
     format: uri
-    description: Unique identifier for the workflow engine
+    description: Unique identifier (expanded form)
+  type:
+    description: Type indicator (compact) - should be SoftwareAgent
+    x-jsonld-id: '@type'
   '@type':
-    const: WorkflowEngine
-    description: Type must be WorkflowEngine
+    description: Type in expanded form - must include WorkflowEngine URI
+  http://www.w3.org/2000/01/rdf-schema#label:
+    description: Label in expanded PROV-O form
+    type: array
+    items:
+      type: object
+      properties:
+        '@value':
+          type: string
+  http://www.w3.org/ns/prov#type:
+    description: PROV type in expanded form
+    type: array
   name:
     type: string
-    description: Name of the workflow engine
+    description: Name of the workflow engine (compact form)
     x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
   version:
     type: string
@@ -56,9 +131,11 @@ properties:
     type: string
     description: Description of the workflow engine
     x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment
-required:
-- '@id'
-- '@type'
+anyOf:
+- required:
+  - id
+- required:
+  - '@id'
 x-jsonld-extra-terms:
   WorkflowEngine: http://purl.org/wf4ever/wfprov#WorkflowEngine
 x-jsonld-vocab: http://purl.org/wf4ever/wfprov#
@@ -82,10 +159,43 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/wfprov#",
     "wasInfluencedBy": {
+      "@context": {
+        "type": "dct:type"
+      },
       "@id": "prov:wasInfluencedBy",
       "@type": "@id"
     },
     "qualifiedInfluence": {
+      "@context": {
+        "influencer": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:influencer",
+          "@type": "@id"
+        },
+        "entity": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:entity",
+          "@type": "@id"
+        },
+        "activity": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:activity",
+          "@type": "@id"
+        },
+        "agent": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:agent",
+          "@type": "@id"
+        }
+      },
       "@id": "prov:qualifiedInfluence",
       "@type": "@id"
     },
@@ -100,11 +210,12 @@ Links to the schema:
       "@id": "http://www.iana.org/assignments/relation",
       "@type": "@id"
     },
-    "type": "dct:type",
+    "type": "@type",
     "hreflang": "dct:language",
     "title": "rdfs:label",
     "length": "dct:extent",
     "WorkflowEngine": "wfprov:WorkflowEngine",
+    "id": "@id",
     "name": "rdfs:label",
     "version": "http://schema.org/version",
     "description": "rdfs:comment",
@@ -421,7 +532,6 @@ Links to the schema:
       "@id": "prov:mentionOf",
       "@type": "@id"
     },
-    "id": "@id",
     "links": "rdfs:seeAlso",
     "prov": "http://www.w3.org/ns/prov#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",

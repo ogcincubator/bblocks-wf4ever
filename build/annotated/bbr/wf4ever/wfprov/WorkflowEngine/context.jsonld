@@ -2,10 +2,43 @@
   "@context": {
     "@vocab": "http://purl.org/wf4ever/wfprov#",
     "wasInfluencedBy": {
+      "@context": {
+        "type": "dct:type"
+      },
       "@id": "prov:wasInfluencedBy",
       "@type": "@id"
     },
     "qualifiedInfluence": {
+      "@context": {
+        "influencer": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:influencer",
+          "@type": "@id"
+        },
+        "entity": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:entity",
+          "@type": "@id"
+        },
+        "activity": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:activity",
+          "@type": "@id"
+        },
+        "agent": {
+          "@context": {
+            "type": "dct:type"
+          },
+          "@id": "prov:agent",
+          "@type": "@id"
+        }
+      },
       "@id": "prov:qualifiedInfluence",
       "@type": "@id"
     },
@@ -20,11 +53,12 @@
       "@id": "http://www.iana.org/assignments/relation",
       "@type": "@id"
     },
-    "type": "dct:type",
+    "type": "@type",
     "hreflang": "dct:language",
     "title": "rdfs:label",
     "length": "dct:extent",
     "WorkflowEngine": "wfprov:WorkflowEngine",
+    "id": "@id",
     "name": "rdfs:label",
     "version": "http://schema.org/version",
     "description": "rdfs:comment",
@@ -341,7 +375,6 @@
       "@id": "prov:mentionOf",
       "@type": "@id"
     },
-    "id": "@id",
     "links": "rdfs:seeAlso",
     "prov": "http://www.w3.org/ns/prov#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",

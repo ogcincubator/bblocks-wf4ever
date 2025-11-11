@@ -96,11 +96,11 @@ path	@id
 /qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
 /qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
 /provType	
-/type	
+/type	@type
 /agentType	
 /prov:type	
 /name	http://www.w3.org/2000/01/rdf-schema#label
-/id	
+/id	@id
 /actedOnBehalfOf	
 /atLocation	
 /qualifiedDelegation	
@@ -110,5 +110,8 @@ path	@id
 /qualifiedDelegation/hadActivity	
 /@id	
 /@type	
+/http://www.w3.org/2000/01/rdf-schema#label	
+/http://www.w3.org/2000/01/rdf-schema#label/@value	
+/http://www.w3.org/ns/prov#type	
 /version	http://schema.org/version
 /description	http://www.w3.org/2000/01/rdf-schema#comment

@@ -40,6 +40,44 @@ Inputs can be connected to Outputs via DataLinks.
 - **DataLink**: Connects Outputs to Inputs
 - **Process**: Container that has inputs via `hasInput` property
 
+## Examples
+
+### Workflow Input Parameter (cloud_cover_max)
+#### json
+```json
+{
+  "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
+  "@type": "Input",
+  "name": "cloud_cover_max",
+  "description": "Maximum cloud coverage percentage",
+  "value": 20.0
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/context.jsonld",
+  "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
+  "@type": "Input",
+  "name": "cloud_cover_max",
+  "description": "Maximum cloud coverage percentage",
+  "value": 20.0
+}
+```
+
+#### ttl
+```ttl
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max> a wfdesc:Input ;
+    rdfs:label "cloud_cover_max" ;
+    rdfs:comment "Maximum cloud coverage percentage" .
+
+
+```
+
 ## Schema
 
 ```yaml

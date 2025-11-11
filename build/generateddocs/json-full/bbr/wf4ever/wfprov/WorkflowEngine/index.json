@@ -39,8 +39,33 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/",
   "rdfData": [],
   "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/",
   "description": "# wfprov:WorkflowEngine\n\n## Description\n\nA **WorkflowEngine** represents a software agent that executes workflows. The workflow engine is responsible for enacting workflow and process executions, managing the execution environment and resources.\n\n## Relations\n\n- Process runs and workflow runs reference the engine via `wfprov:wasEnactedBy`\n- This is the inverse relationship: the engine enacts the executions\n\n## Examples of engines\n\n- ZOO-Project WPS\n- Apache Airflow\n- Nextflow\n- Snakemake\n- CWL Runner\n",
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A software agent that executes workflows\nallOf:\n- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Agent\ntype: object\nproperties:\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for the workflow engine\n  '@type':\n    const: WorkflowEngine\n    description: Type must be WorkflowEngine\n  name:\n    type: string\n    description: Name of the workflow engine\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  version:\n    type: string\n    description: Version of the workflow engine\n    x-jsonld-id: http://schema.org/version\n  description:\n    type: string\n    description: Description of the workflow engine\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\nrequired:\n- '@id'\n- '@type'\nx-jsonld-extra-terms:\n  WorkflowEngine: http://purl.org/wf4ever/wfprov#WorkflowEngine\nx-jsonld-vocab: http://purl.org/wf4ever/wfprov#\nx-jsonld-prefixes:\n  wfprov: http://purl.org/wf4ever/wfprov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  prov: http://www.w3.org/ns/prov#\n",
+  "examples": [
+    {
+      "title": "CWLTool Workflow Engine",
+      "description": "The cwltool 3.1.20251031082601 workflow execution engine from the mangrove analysis workflow run",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/cwltool-engine.json",
+          "code": "{\n  \"id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n  \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n  \"type\": \"SoftwareAgent\",\n  \"@type\": [\n    \"http://www.w3.org/ns/prov#Agent\",\n    \"http://www.w3.org/ns/prov#SoftwareAgent\",\n    \"http://purl.org/wf4ever/wfprov#WorkflowEngine\"\n  ],\n  \"http://www.w3.org/2000/01/rdf-schema#label\": [\n    {\n      \"@value\": \"cwltool 3.1.20251031082601\"\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld\",\n  \"id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n  \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n  \"type\": \"SoftwareAgent\",\n  \"@type\": [\n    \"http://www.w3.org/ns/prov#Agent\",\n    \"http://www.w3.org/ns/prov#SoftwareAgent\",\n    \"http://purl.org/wf4ever/wfprov#WorkflowEngine\"\n  ],\n  \"http://www.w3.org/2000/01/rdf-schema#label\": [\n    {\n      \"@value\": \"cwltool 3.1.20251031082601\"\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .\n\n<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine,\n        prov:Agent,\n        prov:SoftwareAgent ;\n    rdfs:label \"cwltool 3.1.20251031082601\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A software agent that executes workflows (PROV-O Agent)\nallOf:\n- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Agent\ntype: object\nproperties:\n  id:\n    type: string\n    format: uri\n    description: Unique identifier (compact form)\n    x-jsonld-id: '@id'\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier (expanded form)\n  type:\n    description: Type indicator (compact) - should be SoftwareAgent\n    x-jsonld-id: '@type'\n  '@type':\n    description: Type in expanded form - must include WorkflowEngine URI\n  http://www.w3.org/2000/01/rdf-schema#label:\n    description: Label in expanded PROV-O form\n    type: array\n    items:\n      type: object\n      properties:\n        '@value':\n          type: string\n  http://www.w3.org/ns/prov#type:\n    description: PROV type in expanded form\n    type: array\n  name:\n    type: string\n    description: Name of the workflow engine (compact form)\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  version:\n    type: string\n    description: Version of the workflow engine\n    x-jsonld-id: http://schema.org/version\n  description:\n    type: string\n    description: Description of the workflow engine\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\nanyOf:\n- required:\n  - id\n- required:\n  - '@id'\nx-jsonld-extra-terms:\n  WorkflowEngine: http://purl.org/wf4ever/wfprov#WorkflowEngine\nx-jsonld-vocab: http://purl.org/wf4ever/wfprov#\nx-jsonld-prefixes:\n  wfprov: http://purl.org/wf4ever/wfprov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  prov: http://www.w3.org/ns/prov#\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
   "gitPath": "_sources/wfprov/WorkflowEngine"
 }

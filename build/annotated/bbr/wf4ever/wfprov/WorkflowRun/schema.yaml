@@ -10,6 +10,11 @@ allOf:
       description: Links to the workflow description (wfdesc:Workflow) that was executed
       x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByWorkflow
       x-jsonld-type: '@id'
+    http://purl.org/wf4ever/wfprov#describedByWorkflow:
+      description: Workflow description in expanded form
+      type: array
+      items:
+        type: object
     hadSubProcessRun:
       type: array
       items:
@@ -30,8 +35,11 @@ allOf:
       description: The workflow engine that executed this workflow
       x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith
       x-jsonld-type: '@id'
-  required:
-  - describedByWorkflow
+  anyOf:
+  - required:
+    - describedByWorkflow
+  - required:
+    - http://purl.org/wf4ever/wfprov#describedByWorkflow
 x-jsonld-extra-terms:
   WorkflowRun: http://purl.org/wf4ever/wfprov#WorkflowRun
 x-jsonld-vocab: http://purl.org/wf4ever/wfprov#

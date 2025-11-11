@@ -40,6 +40,42 @@ Outputs can be connected to Inputs via DataLinks.
 - **DataLink**: Connects Outputs to Inputs (Output is source)
 - **Process**: Container that has outputs via `hasOutput` property
 
+## Examples
+
+### Workflow Output Parameter
+#### json
+```json
+{
+  "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs",
+  "@type": "Output",
+  "name": "outputs",
+  "description": "Processed mangrove mapping results"
+}
+```
+
+#### jsonld
+```jsonld
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld",
+  "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs",
+  "@type": "Output",
+  "name": "outputs",
+  "description": "Processed mangrove mapping results"
+}
+```
+
+#### ttl
+```ttl
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> a wfdesc:Output ;
+    rdfs:label "outputs" ;
+    rdfs:comment "Processed mangrove mapping results" .
+
+
+```
+
 ## Schema
 
 ```yaml

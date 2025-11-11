@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.wf4ever.ro.ResearchObject - ro:ResearchObject
-Generated 2025-11-11T17:43:11.692164+00:00
+Generated 2025-11-11T20:12:44.982256+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

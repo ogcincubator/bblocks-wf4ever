@@ -10,7 +10,6 @@
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-11",
-  "dependsOn": [],
   "sources": [
     {
       "title": "Workflow Description Ontology - Artifact",

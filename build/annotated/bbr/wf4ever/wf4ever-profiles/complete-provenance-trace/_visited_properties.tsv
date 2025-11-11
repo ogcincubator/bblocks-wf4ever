@@ -194,6 +194,16 @@ path	@id
 /workflowRun/qualifiedAssociation/agent	
 /workflowRun/qualifiedAssociation/hadRole	
 /workflowRun/qualifiedAssociation/hadPlan	
+/workflowRun/@id	
+/workflowRun/@type	
+/workflowRun/http://www.w3.org/2000/01/rdf-schema#label	
+/workflowRun/http://www.w3.org/ns/prov#startedAtTime	
+/workflowRun/http://www.w3.org/ns/prov#startedAtTime/@type	
+/workflowRun/http://www.w3.org/ns/prov#startedAtTime/@value	
+/workflowRun/http://www.w3.org/ns/prov#endedAtTime	
+/workflowRun/http://www.w3.org/ns/prov#wasAssociatedWith	
+/workflowRun/http://purl.org/wf4ever/wfprov#describedByProcess	
+/workflowRun/http://purl.org/wf4ever/wfprov#describedByWorkflow	
 /workflowRun/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
 /workflowRun/usedInput	http://purl.org/wf4ever/wfprov#usedInput
 /workflowRun/usedInput/id	

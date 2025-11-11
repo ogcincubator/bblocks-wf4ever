@@ -108,6 +108,16 @@ path	@id
 /qualifiedAssociation/agent	
 /qualifiedAssociation/hadRole	
 /qualifiedAssociation/hadPlan	
+/@id	
+/@type	
+/http://www.w3.org/2000/01/rdf-schema#label	
+/http://www.w3.org/ns/prov#startedAtTime	
+/http://www.w3.org/ns/prov#startedAtTime/@type	
+/http://www.w3.org/ns/prov#startedAtTime/@value	
+/http://www.w3.org/ns/prov#endedAtTime	
+/http://www.w3.org/ns/prov#wasAssociatedWith	
+/http://purl.org/wf4ever/wfprov#describedByProcess	
+/http://purl.org/wf4ever/wfprov#describedByWorkflow	
 /describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
 /usedInput	http://purl.org/wf4ever/wfprov#usedInput
 /usedInput/id	

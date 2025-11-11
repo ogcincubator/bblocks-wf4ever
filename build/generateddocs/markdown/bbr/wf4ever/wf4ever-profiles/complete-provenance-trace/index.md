@@ -301,46 +301,46 @@ To complete the master profile validation:
   },
   "workflow": {
     "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
-    "type": "Workflow",
     "label": "Mangrove Mapping Workflow",
     "hasInput": [
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
-        "type": "Input",
         "label": "cloud_cover_max",
-        "description": "Maximum cloud coverage percentage"
+        "description": "Maximum cloud coverage percentage",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back",
-        "type": "Input",
         "label": "days_back",
-        "description": "Number of days to look back for imagery"
+        "description": "Number of days to look back for imagery",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east",
-        "type": "Input",
         "label": "east",
-        "description": "Eastern boundary longitude"
+        "description": "Eastern boundary longitude",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north",
-        "type": "Input",
         "label": "north",
-        "description": "Northern boundary latitude"
+        "description": "Northern boundary latitude",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north"
       }
     ],
     "hasOutput": [
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs",
-        "type": "Output",
         "label": "outputs",
-        "description": "Processed mangrove mapping results"
+        "description": "Processed mangrove mapping results",
+        "@type": "Output",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs"
       }
-    ]
+    ],
+    "@type": "Workflow"
   },
   "workflowRun": {
     "id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
-    "type": "WorkflowRun",
+    "type": "Activity",
     "label": "Run of workflow/packed.cwl#main",
     "describedByWorkflow": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
     "startedAtTime": "2025-11-03T15:14:02.032122",
@@ -348,7 +348,7 @@ To complete the master profile validation:
     "wasAssociatedWith": [
       {
         "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
-        "type": "WorkflowEngine",
+        "type": "SoftwareAgent",
         "label": "cwltool 3.1.20251031082601"
       },
       {
@@ -388,16 +388,12 @@ To complete the master profile validation:
     ]
   },
   "manifest": {
-    "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
-    "type": "Manifest",
+    "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
+    "@type": "Manifest",
+    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/",
     "conformsTo": "https://w3id.org/bundle/2014-11-05/",
-    "authoredBy": {
-      "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
-      "name": "cwltool 3.1.20251031082601"
-    },
-    "authoredOn": "2025-11-03T15:14:17.166945",
-    "retrievedFrom": "https://w3id.org/cwl/prov/0.6.0",
-    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/"
+    "createdBy": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+    "createdOn": "2025-11-03T15:14:17.166945"
   },
   "metadata": {
     "created": "2025-11-03T15:14:17Z",
@@ -413,7 +409,6 @@ To complete the master profile validation:
     ]
   }
 }
-
 ```
 
 #### jsonld
@@ -483,46 +478,46 @@ To complete the master profile validation:
   },
   "workflow": {
     "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
-    "type": "Workflow",
     "label": "Mangrove Mapping Workflow",
     "hasInput": [
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
-        "type": "Input",
         "label": "cloud_cover_max",
-        "description": "Maximum cloud coverage percentage"
+        "description": "Maximum cloud coverage percentage",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back",
-        "type": "Input",
         "label": "days_back",
-        "description": "Number of days to look back for imagery"
+        "description": "Number of days to look back for imagery",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east",
-        "type": "Input",
         "label": "east",
-        "description": "Eastern boundary longitude"
+        "description": "Eastern boundary longitude",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east"
       },
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north",
-        "type": "Input",
         "label": "north",
-        "description": "Northern boundary latitude"
+        "description": "Northern boundary latitude",
+        "@type": "Input",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north"
       }
     ],
     "hasOutput": [
       {
-        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs",
-        "type": "Output",
         "label": "outputs",
-        "description": "Processed mangrove mapping results"
+        "description": "Processed mangrove mapping results",
+        "@type": "Output",
+        "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs"
       }
-    ]
+    ],
+    "@type": "Workflow"
   },
   "workflowRun": {
     "id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
-    "type": "WorkflowRun",
+    "type": "Activity",
     "label": "Run of workflow/packed.cwl#main",
     "describedByWorkflow": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
     "startedAtTime": "2025-11-03T15:14:02.032122",
@@ -530,7 +525,7 @@ To complete the master profile validation:
     "wasAssociatedWith": [
       {
         "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
-        "type": "WorkflowEngine",
+        "type": "SoftwareAgent",
         "label": "cwltool 3.1.20251031082601"
       },
       {
@@ -570,16 +565,12 @@ To complete the master profile validation:
     ]
   },
   "manifest": {
-    "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
-    "type": "Manifest",
+    "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
+    "@type": "Manifest",
+    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/",
     "conformsTo": "https://w3id.org/bundle/2014-11-05/",
-    "authoredBy": {
-      "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
-      "name": "cwltool 3.1.20251031082601"
-    },
-    "authoredOn": "2025-11-03T15:14:17.166945",
-    "retrievedFrom": "https://w3id.org/cwl/prov/0.6.0",
-    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/"
+    "createdBy": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+    "createdOn": "2025-11-03T15:14:17.166945"
   },
   "metadata": {
     "created": "2025-11-03T15:14:17Z",
@@ -611,31 +602,30 @@ To complete the master profile validation:
 @prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json> ro:authoredBy <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> ;
-    ro:authoredOn "2025-11-03T15:14:17.166945" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json> a ro:Manifest ;
+    dct:created "2025-11-03T15:14:17.166945"^^xsd:dateTime ;
+    dct:creator <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> ;
     ro:conformsTo "https://w3id.org/bundle/2014-11-05/" ;
-    ro:retrievedFrom "https://w3id.org/cwl/prov/0.6.0" ;
-    ro:type "Manifest" ;
     ore:describes <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/> .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max> :label "cloud_cover_max" ;
-    :type "Input" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max> a wfdesc:Input ;
+    :label "cloud_cover_max" ;
     rdfs:comment "Maximum cloud coverage percentage" .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back> :label "days_back" ;
-    :type "Input" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back> a wfdesc:Input ;
+    :label "days_back" ;
     rdfs:comment "Number of days to look back for imagery" .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east> :label "east" ;
-    :type "Input" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east> a wfdesc:Input ;
+    :label "east" ;
     rdfs:comment "Eastern boundary longitude" .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north> :label "north" ;
-    :type "Input" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north> a wfdesc:Input ;
+    :label "north" ;
     rdfs:comment "Northern boundary latitude" .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> :label "outputs" ;
-    :type "Output" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> a wfdesc:Output ;
+    :label "outputs" ;
     rdfs:comment "Processed mangrove mapping results" .
 
 <file:///github/workspace/metadata/provenance/primary.cwlprov.jsonld> ro:conformsTo "http://www.w3.org/TR/2013/REC-prov-o-20130430/",
@@ -678,7 +668,7 @@ To complete the master profile validation:
 <urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea> prov:hadRole <file:///github/workspace/east> ;
     prov:value 9.535e+01 .
 
-<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;
+<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a prov:Activity ;
     wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;
     wfprov:label "Run of workflow/packed.cwl#main" ;
     prov:endedAtTime "2025-11-03T15:14:17.060218"^^xsd:dateTime ;
@@ -706,16 +696,15 @@ To complete the master profile validation:
         <file:///github/workspace/workflow/packed.cwl>,
         <urn:hash::sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439> .
 
-<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> :label "Mangrove Mapping Workflow" ;
-    :type "Workflow" ;
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> a wfdesc:Workflow ;
+    :label "Mangrove Mapping Workflow" ;
     wfdesc:hasInput <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max>,
         <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back>,
         <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east>,
         <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north> ;
     wfdesc:hasOutput <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> .
 
-<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;
-    rdfs:label "cwltool 3.1.20251031082601" ;
+<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a prov:SoftwareAgent ;
     wfprov:label "cwltool 3.1.20251031082601" .
 
 [] ns1:metadata [ dct:created "2025-11-03T15:14:17+00:00"^^xsd:dateTime ;

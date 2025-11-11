@@ -1,5 +1,5 @@
-Validation report for ogc.bbr.wf4ever.wfdesc - Workflow Description Ontology (wfdesc)
-Generated 2025-11-11T17:43:11.606194+00:00
+Validation report for ogc.bbr.wf4ever.wfprov.WorkflowRun - wfprov:WorkflowRun
+Generated 2025-11-11T20:12:45.519368+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

@@ -42,7 +42,32 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Output/",
   "rdfData": [],
   "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfdesc/Output/",
   "description": "# wfdesc:Output\n\n## Description\n\nAn **Output** is a parameter that produces data from a workflow process. Outputs can:\n- Produce final workflow results\n- Feed data to inputs of other processes via DataLinks\n- Be intermediate results in a workflow\n\n## Class Hierarchy\n\n```\nwfdesc:Parameter\n\u2514\u2500\u2500 wfdesc:Output\n```\n\n## Usage in Workflows\n\nOutputs are declared using the `hasOutput` property on a Process.\n\n## Data Flow\n\nOutputs can be connected to Inputs via DataLinks.\n\n## Related Classes\n\n- **Parameter**: Base class (parent)\n- **Input**: Complementary class for process inputs\n- **DataLink**: Connects Outputs to Inputs (Output is source)\n- **Process**: Container that has outputs via `hasOutput` property\n",
+  "examples": [
+    {
+      "title": "Workflow Output Parameter",
+      "description": "Real workflow output from mangrove analysis containing processed results directory",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/mangrove-output.json",
+          "code": "{\n  \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs\",\n  \"@type\": \"Output\",\n  \"name\": \"outputs\",\n  \"description\": \"Processed mangrove mapping results\"\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld\",\n  \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs\",\n  \"@type\": \"Output\",\n  \"name\": \"outputs\",\n  \"description\": \"Processed mangrove mapping results\"\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n\n<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> a wfdesc:Output ;\n    rdfs:label \"outputs\" ;\n    rdfs:comment \"Processed mangrove mapping results\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An output parameter from a workflow process\ntype: object\nallOf:\n- $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml\nproperties:\n  '@type':\n    const: Output\n    description: Type identifier for a wfdesc Output\nx-jsonld-extra-terms:\n  Output: http://purl.org/wf4ever/wfdesc#Output\n  name: http://www.w3.org/2000/01/rdf-schema#label\n  description: http://www.w3.org/2000/01/rdf-schema#comment\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
   "gitPath": "_sources/wfdesc/Output"
