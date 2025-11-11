@@ -1,0 +1,108 @@
+{
+  "@type": "WorkflowInstance",
+  "@id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c-instance",
+  "name": "KindGrove Mangrove Biomass Analysis - Myanmar Instance",
+  "description": "Execution-ready configuration for analyzing mangrove biomass in Myanmar using satellite imagery",
+  "describedBy": "#kindgrove-workflow",
+  "hasInput": [
+    {
+      "@id": "#bound-north",
+      "@type": "Input",
+      "name": "north",
+      "description": "Northern boundary of analysis area",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 16.1,
+        "@id": "urn:sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439"
+      }
+    },
+    {
+      "@id": "#bound-south",
+      "@type": "Input",
+      "name": "south",
+      "description": "Southern boundary of analysis area",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 15.9
+      }
+    },
+    {
+      "@id": "#bound-east",
+      "@type": "Input",
+      "name": "east",
+      "description": "Eastern boundary of analysis area",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 95.35
+      }
+    },
+    {
+      "@id": "#bound-west",
+      "@type": "Input",
+      "name": "west",
+      "description": "Western boundary of analysis area",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 95.15
+      }
+    },
+    {
+      "@id": "#bound-cloud-cover",
+      "@type": "Input",
+      "name": "cloud_cover_max",
+      "description": "Maximum allowed cloud cover percentage",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 20
+      }
+    },
+    {
+      "@id": "#bound-days-back",
+      "@type": "Input",
+      "name": "days_back",
+      "description": "Number of days back to search for imagery",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 90
+      }
+    },
+    {
+      "@id": "#bound-output-dir",
+      "@type": "Input",
+      "name": "output_dir",
+      "description": "Directory for output results",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": "results"
+      }
+    }
+  ],
+  "hasOutput": [
+    {
+      "@id": "#expected-biomass-map",
+      "@type": "Output",
+      "name": "biomass_map",
+      "description": "Generated mangrove biomass map"
+    },
+    {
+      "@id": "#expected-statistics",
+      "@type": "Output",
+      "name": "statistics",
+      "description": "Statistical analysis results"
+    }
+  ],
+  "executionSettings": {
+    "engine": "cwltool",
+    "version": "3.1.20251031082601",
+    "environment": "container",
+    "scheduler": "local",
+    "resources": {
+      "cpu": "4",
+      "memory": "8GB",
+      "disk": "50GB"
+    }
+  },
+  "readyForExecution": true,
+  "validatedAt": "2025-11-03T10:15:30Z",
+  "configurationHash": "sha256:a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890"
+}

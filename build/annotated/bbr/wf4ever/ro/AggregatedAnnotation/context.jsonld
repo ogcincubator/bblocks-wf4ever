@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@vocab": "http://purl.org/wf4ever/ro#",
+    "AggregatedAnnotation": "ro:AggregatedAnnotation",
+    "annotatesAggregatedResource": {
+      "@id": "ro:annotatesAggregatedResource",
+      "@type": "@id"
+    },
+    "body": {
+      "@id": "oa:hasBody",
+      "@type": "@id"
+    },
+    "created": {
+      "@id": "dcterms:created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "ro": "http://purl.org/wf4ever/ro#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "@version": 1.1
+  }
+}

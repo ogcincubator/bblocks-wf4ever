@@ -1,0 +1,10 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/.ro/manifest.json> a ro:Manifest ;
+    dcterms:created "2025-11-07T10:00:00+00:00"^^xsd:dateTime ;
+    dcterms:creator <https://orcid.org/0000-0001-2345-6789> ;
+    ore:describes <file:///github/> .
+

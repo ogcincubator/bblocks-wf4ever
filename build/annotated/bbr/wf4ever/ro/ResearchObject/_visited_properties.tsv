@@ -1,0 +1,9 @@
+path	@id
+/@id	
+/@type	
+/title	http://purl.org/dc/terms/title
+/description	http://purl.org/dc/terms/description
+/aggregates	http://www.openarchives.org/ore/terms/aggregates
+/aggregates/@id	
+/manifest	http://purl.org/wf4ever/ro#manifest
+/created	http://purl.org/dc/terms/created

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "An input parameter to a workflow process",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.json"
+    }
+  ],
+  "properties": {
+    "@type": {
+      "const": "Input",
+      "description": "Type identifier for a wfdesc Input"
+    }
+  },
+  "x-jsonld-extra-terms": {
+    "Input": "http://purl.org/wf4ever/wfdesc#Input",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "description": "http://www.w3.org/2000/01/rdf-schema#comment"
+  },
+  "x-jsonld-prefixes": {
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

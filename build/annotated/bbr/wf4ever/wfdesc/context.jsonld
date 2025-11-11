@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "Workflow": "wfdesc:Workflow",
+    "Process": "wfdesc:Process",
+    "Input": "wfdesc:Input",
+    "Output": "wfdesc:Output",
+    "Parameter": "wfdesc:Parameter",
+    "DataLink": "wfdesc:DataLink",
+    "Configuration": "wfdesc:Configuration",
+    "name": "rdfs:label",
+    "description": "rdfs:comment",
+    "hasInput": {
+      "@id": "wfdesc:hasInput",
+      "@type": "@id"
+    },
+    "hasOutput": {
+      "@id": "wfdesc:hasOutput",
+      "@type": "@id"
+    },
+    "hasSubProcess": {
+      "@id": "wfdesc:hasSubProcess",
+      "@type": "@id"
+    },
+    "hasDataLink": {
+      "@id": "wfdesc:hasDataLink",
+      "@type": "@id"
+    },
+    "hasSource": {
+      "@id": "wfdesc:hasSource",
+      "@type": "@id"
+    },
+    "hasSink": {
+      "@id": "wfdesc:hasSink",
+      "@type": "@id"
+    },
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@version": 1.1
+  }
+}

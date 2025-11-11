@@ -1,0 +1,25 @@
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+
+<urn:uuid:f1477d81-2d56-4874-9d5b-eb5de2a571af> a ro:Folder,
+        <wfprov:Artifact> ;
+    rdfs:label "mangrove-analysis-20251103-151416" ;
+    ore:aggregates <urn:uuid:3aade478-9f4e-4feb-8cdb-26d31d3467e7>,
+        <urn:uuid:8de4c1ce-3576-4f00-aa02-7c7fe7e92370>,
+        <urn:uuid:9b2f4291-1391-4dc1-b587-193d86d95afc>,
+        <urn:uuid:a7bbd47e-94ae-4baa-b2ff-ddd2667ac7f0> ;
+    ore:isDescribedBy <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/directory-f1477d81-2d56-4874-9d5b-eb5de2a571af.ttl> .
+
+<urn:uuid:3aade478-9f4e-4feb-8cdb-26d31d3467e7> a ro:FolderEntry ;
+    ro:entryName "mangrove_mask.tif" .
+
+<urn:uuid:8de4c1ce-3576-4f00-aa02-7c7fe7e92370> a ro:FolderEntry ;
+    ro:entryName "mangrove-analysis-20251103-151416.json" .
+
+<urn:uuid:9b2f4291-1391-4dc1-b587-193d86d95afc> a ro:FolderEntry ;
+    ro:entryName "carbon_summary.csv" .
+
+<urn:uuid:a7bbd47e-94ae-4baa-b2ff-ddd2667ac7f0> a ro:FolderEntry ;
+    ro:entryName "biomass_summary.csv" .
+

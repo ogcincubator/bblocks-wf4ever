@@ -1,0 +1,7 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld",
+  "@type": "Output",
+  "@id": "http://example.org/workflow/output/ndvi",
+  "name": "ndviResult",
+  "description": "Calculated NDVI raster layer showing vegetation health"
+}

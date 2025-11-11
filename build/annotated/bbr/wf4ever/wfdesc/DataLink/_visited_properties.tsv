@@ -1,0 +1,23 @@
+path	@id
+/@type	
+/@id	
+/hasSource	http://purl.org/wf4ever/wfdesc#hasSource
+/hasSource/@type	
+/hasSource/@id	
+/hasSource/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasSource/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSource/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasSource/hasArtifact/@type	
+/hasSource/hasArtifact/@id	
+/hasSource/hasArtifact/value	
+/hasSource/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSink	http://purl.org/wf4ever/wfdesc#hasSink
+/hasSink/@type	
+/hasSink/@id	
+/hasSink/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasSink/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSink/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasSink/hasArtifact/@type	
+/hasSink/hasArtifact/@id	
+/hasSink/hasArtifact/value	
+/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment

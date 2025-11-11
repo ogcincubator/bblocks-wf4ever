@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "WorkflowRun": "wfprov:WorkflowRun",
+    "ProcessRun": "wfprov:ProcessRun",
+    "WorkflowEngine": "wfprov:WorkflowEngine",
+    "Artifact": "wfprov:Artifact",
+    "name": "rdfs:label",
+    "describedByWorkflow": {
+      "@id": "wfprov:describedByWorkflow",
+      "@type": "@id"
+    },
+    "describedByProcess": {
+      "@id": "wfprov:describedByProcess",
+      "@type": "@id"
+    },
+    "wasPartOfWorkflowRun": {
+      "@id": "wfprov:wasPartOfWorkflowRun",
+      "@type": "@id"
+    },
+    "usedInput": {
+      "@id": "wfprov:usedInput",
+      "@type": "@id"
+    },
+    "wasOutputFrom": {
+      "@id": "wfprov:wasOutputFrom",
+      "@type": "@id"
+    },
+    "wasAssociatedWith": {
+      "@id": "prov:wasAssociatedWith",
+      "@type": "@id"
+    },
+    "wasEnactedBy": {
+      "@id": "wfprov:wasEnactedBy",
+      "@type": "@id"
+    },
+    "value": "prov:value",
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "@version": 1.1
+  }
+}

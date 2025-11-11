@@ -1,0 +1,73 @@
+path	@id
+/@type	
+/@id	
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
+/hasInput/@type	
+/hasInput/@id	
+/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasInput/hasArtifact/@type	
+/hasInput/hasArtifact/@id	
+/hasInput/hasArtifact/value	
+/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
+/hasOutput/@type	
+/hasOutput/@id	
+/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasOutput/hasArtifact/@type	
+/hasOutput/hasArtifact/@id	
+/hasOutput/hasArtifact/value	
+/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess
+/hasSubProcess/@type	
+/hasSubProcess/@id	
+/hasSubProcess/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasSubProcess/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSubProcess/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
+/hasSubProcess/hasInput/@type	
+/hasSubProcess/hasInput/@id	
+/hasSubProcess/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasSubProcess/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSubProcess/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasSubProcess/hasInput/hasArtifact/@type	
+/hasSubProcess/hasInput/hasArtifact/@id	
+/hasSubProcess/hasInput/hasArtifact/value	
+/hasSubProcess/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSubProcess/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
+/hasSubProcess/hasOutput/@type	
+/hasSubProcess/hasOutput/@id	
+/hasSubProcess/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasSubProcess/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasSubProcess/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasSubProcess/hasOutput/hasArtifact/@type	
+/hasSubProcess/hasOutput/hasArtifact/@id	
+/hasSubProcess/hasOutput/hasArtifact/value	
+/hasSubProcess/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink
+/hasDataLink/@type	
+/hasDataLink/@id	
+/hasDataLink/hasSource	http://purl.org/wf4ever/wfdesc#hasSource
+/hasDataLink/hasSource/@type	
+/hasDataLink/hasSource/@id	
+/hasDataLink/hasSource/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasDataLink/hasSource/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasDataLink/hasSource/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasDataLink/hasSource/hasArtifact/@type	
+/hasDataLink/hasSource/hasArtifact/@id	
+/hasDataLink/hasSource/hasArtifact/value	
+/hasDataLink/hasSource/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasDataLink/hasSink	http://purl.org/wf4ever/wfdesc#hasSink
+/hasDataLink/hasSink/@type	
+/hasDataLink/hasSink/@id	
+/hasDataLink/hasSink/name	http://www.w3.org/2000/01/rdf-schema#label
+/hasDataLink/hasSink/description	http://www.w3.org/2000/01/rdf-schema#comment
+/hasDataLink/hasSink/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/hasDataLink/hasSink/hasArtifact/@type	
+/hasDataLink/hasSink/hasArtifact/@id	
+/hasDataLink/hasSink/hasArtifact/value	
+/hasDataLink/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment

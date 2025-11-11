@@ -1,0 +1,66 @@
+{
+  "@id": "https://github.com/starling-foundries/KindGrove#mangrove-analysis",
+  "@type": "Process",
+  "name": "Mangrove Biomass Analysis",
+  "description": "Analyzes mangrove biomass using Sentinel-2 satellite imagery within a specified bounding box",
+  "hasInput": [
+    {
+      "@id": "#input-north",
+      "@type": "Input",
+      "name": "north",
+      "description": "Northern latitude of bounding box",
+      "datatype": "float"
+    },
+    {
+      "@id": "#input-south",
+      "@type": "Input",
+      "name": "south",
+      "description": "Southern latitude of bounding box",
+      "datatype": "float"
+    },
+    {
+      "@id": "#input-east",
+      "@type": "Input",
+      "name": "east",
+      "description": "Eastern longitude of bounding box",
+      "datatype": "float"
+    },
+    {
+      "@id": "#input-west",
+      "@type": "Input",
+      "name": "west",
+      "description": "Western longitude of bounding box",
+      "datatype": "float"
+    },
+    {
+      "@id": "#input-cloud-cover",
+      "@type": "Input",
+      "name": "cloud_cover_max",
+      "description": "Maximum acceptable cloud cover percentage",
+      "datatype": "float"
+    },
+    {
+      "@id": "#input-days-back",
+      "@type": "Input",
+      "name": "days_back",
+      "description": "Number of days to look back for imagery",
+      "datatype": "integer"
+    },
+    {
+      "@id": "#input-output-dir",
+      "@type": "Input",
+      "name": "output_dir",
+      "description": "Output directory name",
+      "datatype": "string"
+    }
+  ],
+  "hasOutput": [
+    {
+      "@id": "#output-result",
+      "@type": "Output",
+      "name": "result",
+      "description": "Directory containing analysis results including biomass maps and statistics",
+      "datatype": "Directory"
+    }
+  ]
+}

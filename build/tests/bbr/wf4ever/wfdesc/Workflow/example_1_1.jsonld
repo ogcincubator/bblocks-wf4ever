@@ -1,0 +1,52 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/context.jsonld",
+  "@type": "Workflow",
+  "@id": "#simple-workflow",
+  "name": "Simple Processing Pipeline",
+  "description": "Loads and processes data",
+  "hasSubProcess": [
+    {
+      "@type": "Process",
+      "@id": "#load",
+      "name": "Load Data",
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "#load-output",
+          "name": "data"
+        }
+      ]
+    },
+    {
+      "@type": "Process",
+      "@id": "#process",
+      "name": "Process Data",
+      "hasInput": [
+        {
+          "@type": "Input",
+          "@id": "#process-input",
+          "name": "inputData"
+        }
+      ],
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "#process-output",
+          "name": "result"
+        }
+      ]
+    }
+  ],
+  "hasDataLink": [
+    {
+      "@type": "DataLink",
+      "@id": "#link1",
+      "hasSource": {
+        "@id": "#load-output"
+      },
+      "hasSink": {
+        "@id": "#process-input"
+      }
+    }
+  ]
+}

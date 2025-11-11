@@ -1,0 +1,6 @@
+{
+  "@type": "Output",
+  "@id": "http://example.org/workflow/output/ndvi",
+  "name": "ndviResult",
+  "description": "Calculated NDVI raster layer showing vegetation health"
+}

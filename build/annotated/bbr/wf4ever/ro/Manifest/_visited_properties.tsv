@@ -1,0 +1,6 @@
+path	@id
+/@id	
+/@type	
+/describes	http://www.openarchives.org/ore/terms/describes
+/createdBy	http://purl.org/dc/terms/creator
+/createdOn	http://purl.org/dc/terms/created

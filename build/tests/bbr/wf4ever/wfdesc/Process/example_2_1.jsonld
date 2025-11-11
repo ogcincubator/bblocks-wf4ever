@@ -1,0 +1,29 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld",
+  "@type": "Process",
+  "@id": "#reproject-process",
+  "name": "Reproject Raster",
+  "description": "Reprojects a raster dataset to a target coordinate reference system",
+  "hasInput": [
+    {
+      "@type": "Input",
+      "@id": "#input-source-raster",
+      "name": "sourceRaster",
+      "description": "Source raster in original CRS"
+    },
+    {
+      "@type": "Input",
+      "@id": "#input-target-crs",
+      "name": "targetCRS",
+      "description": "Target coordinate reference system (EPSG code)"
+    }
+  ],
+  "hasOutput": [
+    {
+      "@type": "Output",
+      "@id": "#output-reprojected",
+      "name": "reprojectedRaster",
+      "description": "Raster reprojected to target CRS"
+    }
+  ]
+}

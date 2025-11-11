@@ -1,0 +1,91 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.Manifest",
+  "name": "ro:Manifest",
+  "abstract": "A manifest that describes the structure and contents of a Research Object. The manifest provides metadata about the Research Object, its aggregated resources, annotations, and organizational structure.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Research Object Ontology - Manifest",
+      "link": "http://purl.org/wf4ever/ro#Manifest"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.Resource"
+  ],
+  "tags": [
+    "ro",
+    "manifest",
+    "metadata"
+  ],
+  "group": "Wf4Ever - ro",
+  "shaclShapes": {},
+  "ldContext": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld",
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Manifest/schema.yaml",
+  "sourceLdContext": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Manifest/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Manifest/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/ro/Manifest/",
+  "description": "# ro:Manifest\n\n## Description\n\nA **Manifest** describes the structure and content of a Research Object. The manifest provides metadata about the Research Object, its aggregated resources, annotations, and organizational structure.\n\n## Relations\n\n- Describes a `ro:ResearchObject` via `ore:describes`\n- Created by an agent (person or system) via `dcterms:creator`\n",
+  "examples": [
+    {
+      "title": "Simple manifest",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "simple-manifest.json",
+          "code": "{\n  \"@id\": \".ro/manifest.json\",\n  \"@type\": \"Manifest\",\n  \"describes\": \"../\",\n  \"createdBy\": \"https://orcid.org/0000-0001-2345-6789\",\n  \"createdOn\": \"2025-11-07T10:00:00Z\"\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld\",\n  \"@id\": \".ro/manifest.json\",\n  \"@type\": \"Manifest\",\n  \"describes\": \"../\",\n  \"createdBy\": \"https://orcid.org/0000-0001-2345-6789\",\n  \"createdOn\": \"2025-11-07T10:00:00Z\"\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ore: <http://www.openarchives.org/ore/terms/> .\n@prefix ro: <http://purl.org/wf4ever/ro#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<file:///github/workspace/.ro/manifest.json> a ro:Manifest ;\n    dcterms:created \"2025-11-07T10:00:00+00:00\"^^xsd:dateTime ;\n    dcterms:creator <https://orcid.org/0000-0001-2345-6789> ;\n    ore:describes <file:///github/> .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "KindGrove Research Object Manifest",
+      "description": "RO manifest from real CWL provenance (arcp URI scheme, CWLProv 0.6.0)",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/kindgrove-manifest.json",
+          "code": "{\n  \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json\",\n  \"@type\": \"Manifest\",\n  \"describes\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/\",\n  \"conformsTo\": \"https://w3id.org/cwl/prov/0.6.0\",\n  \"createdOn\": \"2025-11-03T15:14:17.166945\",\n  \"createdBy\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\"\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld\",\n  \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json\",\n  \"@type\": \"Manifest\",\n  \"describes\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/\",\n  \"conformsTo\": \"https://w3id.org/cwl/prov/0.6.0\",\n  \"createdOn\": \"2025-11-03T15:14:17.166945\",\n  \"createdBy\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\"\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix ore: <http://www.openarchives.org/ore/terms/> .\n@prefix ro: <http://purl.org/wf4ever/ro#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json> a ro:Manifest ;\n    dcterms:created \"2025-11-03T15:14:17.166945\"^^xsd:dateTime ;\n    dcterms:creator <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> ;\n    ro:conformsTo \"https://w3id.org/cwl/prov/0.6.0\" ;\n    ore:describes <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/> .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A manifest describing a Research Object\ntype: object\nproperties:\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for the manifest\n  '@type':\n    const: Manifest\n    description: Type must be Manifest\n  describes:\n    type: string\n    format: uri\n    description: The Research Object that this manifest describes\n    x-jsonld-id: http://www.openarchives.org/ore/terms/describes\n    x-jsonld-type: '@id'\n  createdBy:\n    type: string\n    format: uri\n    description: Agent that created this manifest\n    x-jsonld-id: http://purl.org/dc/terms/creator\n    x-jsonld-type: '@id'\n  createdOn:\n    type: string\n    format: date-time\n    description: Creation date of the manifest\n    x-jsonld-id: http://purl.org/dc/terms/created\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\nrequired:\n- '@id'\n- '@type'\n- describes\nx-jsonld-extra-terms:\n  Manifest: http://purl.org/wf4ever/ro#Manifest\nx-jsonld-vocab: http://purl.org/wf4ever/ro#\nx-jsonld-prefixes:\n  ro: http://purl.org/wf4ever/ro#\n  ore: http://www.openarchives.org/ore/terms/\n  dcterms: http://purl.org/dc/terms/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/ro/Manifest"
+}

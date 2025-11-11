@@ -1,0 +1,28 @@
+{
+  "@type": "Process",
+  "@id": "http://example.org/processes/ndvi",
+  "name": "NDVI Calculator",
+  "description": "Calculates Normalized Difference Vegetation Index from NIR and Red bands",
+  "hasInput": [
+    {
+      "@type": "Input",
+      "@id": "#input-nir",
+      "name": "nearInfrared",
+      "description": "Near-infrared band"
+    },
+    {
+      "@type": "Input",
+      "@id": "#input-red",
+      "name": "redBand",
+      "description": "Red band"
+    }
+  ],
+  "hasOutput": [
+    {
+      "@type": "Output",
+      "@id": "#output-ndvi",
+      "name": "ndviLayer",
+      "description": "Calculated NDVI raster layer"
+    }
+  ]
+}

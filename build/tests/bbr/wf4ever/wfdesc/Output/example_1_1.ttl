@@ -1,0 +1,7 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<http://example.org/workflow/output/ndvi> a wfdesc:Output ;
+    rdfs:label "ndviResult" ;
+    rdfs:comment "Calculated NDVI raster layer showing vegetation health" .
+

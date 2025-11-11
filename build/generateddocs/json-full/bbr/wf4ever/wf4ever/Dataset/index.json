@@ -1,0 +1,58 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.Dataset",
+  "name": "wf4ever:Dataset",
+  "abstract": "A dataset artifact - a collection of data values or files representing a scientific dataset.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology - Dataset",
+      "link": "http://purl.org/wf4ever/wf4ever#Dataset"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Artifact"
+  ],
+  "tags": [
+    "wf4ever",
+    "artifact",
+    "dataset"
+  ],
+  "group": "Wf4Ever - wf4ever",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wf4ever/Dataset/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wf4ever/Dataset/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wf4ever/Dataset/",
+  "description": "# wf4ever:Dataset\n\n## Description\n\nA **Dataset** is a specialization of `wfdesc:Artifact` representing a collection of data values or files that constitute a scientific dataset. Datasets are high-level data entities commonly consumed or produced by scientific workflows.\n\n## Properties\n\n- `@type` : Must include \"Dataset\"\n- `title` : Dataset title or name\n- `description` : Description of dataset contents\n- `creator` : Dataset creator or owner\n- `temporalCoverage` : Temporal extent (date range)\n- `spatialCoverage` : Spatial extent (bounding box, region)\n\n",
+  "examples": [
+    {
+      "title": "Remote Sensing Dataset",
+      "description": "Sentinel-2 imagery dataset for Myanmar mangrove analysis",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "sentinel2-dataset.json",
+          "code": "{\n  \"@id\": \"#sentinel2-dataset\",\n  \"@type\": \"Dataset\",\n  \"title\": \"Sentinel-2 Imagery - Myanmar Mangroves\",\n  \"description\": \"Multispectral satellite imagery\",\n  \"temporalCoverage\": \"2025-08-01/2025-11-01\",\n  \"spatialCoverage\": {\n    \"west\": 95.15,\n    \"south\": 15.9,\n    \"east\": 95.35,\n    \"north\": 16.1\n  }\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/Dataset/example_1_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A dataset artifact\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: Dataset\n    - type: array\n      contains:\n        const: Dataset\n    description: Type must include Dataset\n  title:\n    type: string\n    description: Dataset title\n  description:\n    type: string\n    description: Dataset description\n  creator:\n    type: string\n    description: Dataset creator or owner\n  temporalCoverage:\n    type: string\n    description: Temporal coverage (e.g., date range)\n  spatialCoverage:\n    type: object\n    description: Spatial coverage (e.g., bounding box, region)\nrequired:\n- '@type'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wf4ever/Dataset"
+}

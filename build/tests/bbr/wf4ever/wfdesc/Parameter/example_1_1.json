@@ -1,0 +1,6 @@
+{
+  "@type": "Parameter",
+  "@id": "http://example.org/workflow/param1",
+  "name": "dataParameter",
+  "description": "A generic parameter for data flow"
+}

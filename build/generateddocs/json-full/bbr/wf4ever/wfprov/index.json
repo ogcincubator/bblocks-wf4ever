@@ -1,0 +1,76 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov",
+  "name": "Workflow Provenance Ontology (wfprov)",
+  "abstract": "The Workflow Provenance ontology (wfprov) extends PROV-O to describe workflow execution traces, linking workflow runs to their descriptions.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology",
+      "link": "http://purl.org/wf4ever/wfprov"
+    },
+    {
+      "title": "PROV-O",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc"
+  ],
+  "tags": [
+    "workflow",
+    "provenance",
+    "wfprov",
+    "ontology",
+    "wf4ever",
+    "prov"
+  ],
+  "group": "Wf4Ever Ontologies",
+  "shaclShapes": {},
+  "ldContext": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/context.jsonld",
+  "ontology": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/schema.yaml",
+  "sourceLdContext": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfprov/",
+  "description": "# Workflow Provenance Ontology (wfprov)\n\n## Overview\n\nThe Workflow Provenance ontology (wfprov) extends PROV-O to describe workflow execution traces. It links workflow runs to their descriptions and tracks the provenance of workflow executions.\n\n## Namespace\n\n`http://purl.org/wf4ever/wfprov#`\n\n## Key Classes\n\n- **WorkflowRun** - An execution of a workflow\n- **ProcessRun** - An execution of a process\n- **WorkflowEngine** - Software that executes workflows\n- **Artifact** - Data entity used or generated\n\n## Key Properties\n\n- `wasPartOfWorkflowRun` - Links process run to workflow run\n- `usedInput` - Input artifacts used\n- `wasOutputFrom` - Output artifacts generated\n- `describedByWorkflow` - Links run to workflow description\n- `describedByProcess` - Links process run to process description\n- `wasEnactedBy` - Links run to workflow engine\n\n## Usage\n\nThis ontology is used to describe the retrospective provenance of workflows - what actually happened during execution, linking it to the workflow description (wfdesc).\n",
+  "examples": [
+    {
+      "title": "Workflow Run from CWL Execution",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"@type\": \"WorkflowRun\",\n  \"name\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": {\n    \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n    \"@type\": [\"wfdesc:Workflow\", \"wfdesc:Process\"]\n  },\n  \"wasAssociatedWith\": [\n    {\n      \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"@type\": \"WorkflowEngine\",\n      \"name\": \"cwltool 3.1.20251031082601\"\n    }\n  ],\n  \"usedInput\": [\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0\n    },\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/context.jsonld\",\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"@type\": \"WorkflowRun\",\n  \"name\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": {\n    \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n    \"@type\": [\n      \"wfdesc:Workflow\",\n      \"wfdesc:Process\"\n    ]\n  },\n  \"wasAssociatedWith\": [\n    {\n      \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"@type\": \"WorkflowEngine\",\n      \"name\": \"cwltool 3.1.20251031082601\"\n    }\n  ],\n  \"usedInput\": [\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0\n    },\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;\n    rdfs:label \"Run of workflow/packed.cwl#main\" ;\n    wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;\n    wfprov:usedInput <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d>,\n        <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> ;\n    prov:wasAssociatedWith <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> .\n\n<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> a wfdesc:Process,\n        wfdesc:Workflow .\n\n<urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> a wfprov:Artifact ;\n    prov:value 2e+01 .\n\n<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;\n    rdfs:label \"cwltool 3.1.20251031082601\" .\n\n<urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> a wfprov:Artifact ;\n    prov:value 90 .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Workflow Provenance schema based on wfprov ontology\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - type: string\n      enum:\n      - WorkflowRun\n      - ProcessRun\n      - WorkflowEngine\n      - Artifact\n    - type: array\n      items:\n        type: string\n  name:\n    type: string\n    description: Name of the run or artifact\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  describedByWorkflow:\n    type: object\n    description: Links workflow run to its description\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByWorkflow\n    x-jsonld-type: '@id'\n  describedByProcess:\n    type: object\n    description: Links process run to its description\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByProcess\n    x-jsonld-type: '@id'\n  wasPartOfWorkflowRun:\n    type: object\n    description: Links process run to workflow run\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun\n    x-jsonld-type: '@id'\n  usedInput:\n    type: array\n    items:\n      type: object\n    description: Input artifacts used\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#usedInput\n    x-jsonld-type: '@id'\n  wasOutputFrom:\n    type: array\n    items:\n      type: object\n    description: Output artifacts generated\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#wasOutputFrom\n    x-jsonld-type: '@id'\n  wasAssociatedWith:\n    type: array\n    items:\n      type: object\n    description: Agents associated with execution\n    x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith\n    x-jsonld-type: '@id'\n  wasEnactedBy:\n    type: object\n    description: Workflow engine that executed the run\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#wasEnactedBy\n    x-jsonld-type: '@id'\n  value:\n    description: Value of an artifact or parameter\n    x-jsonld-id: http://www.w3.org/ns/prov#value\nx-jsonld-extra-terms:\n  WorkflowRun: http://purl.org/wf4ever/wfprov#WorkflowRun\n  ProcessRun: http://purl.org/wf4ever/wfprov#ProcessRun\n  WorkflowEngine: http://purl.org/wf4ever/wfprov#WorkflowEngine\n  Artifact: http://purl.org/wf4ever/wfprov#Artifact\nx-jsonld-prefixes:\n  wfprov: http://purl.org/wf4ever/wfprov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  prov: http://www.w3.org/ns/prov#\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wfprov"
+}

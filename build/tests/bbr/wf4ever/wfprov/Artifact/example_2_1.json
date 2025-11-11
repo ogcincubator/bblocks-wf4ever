@@ -1,0 +1,7 @@
+{
+  "@id": "artifact/ndvi_result.tif",
+  "@type": "Artifact",
+  "describedByParameter": "#ndvi-output",
+  "value": "file:///data/ndvi_result.tif",
+  "wasOutputFrom": "#ndvi-process-run-1"
+}

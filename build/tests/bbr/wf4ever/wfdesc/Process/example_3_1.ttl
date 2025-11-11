@@ -1,0 +1,27 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<file:///github/workspace/#stats-calculator> a wfdesc:Process ;
+    rdfs:label "Statistics Calculator" ;
+    wfdesc:hasInput <file:///github/workspace/#input-raster> ;
+    wfdesc:hasOutput <file:///github/workspace/#output-histogram>,
+        <file:///github/workspace/#output-mean>,
+        <file:///github/workspace/#output-stdev> ;
+    rdfs:comment "Computes statistical metrics from raster data" .
+
+<file:///github/workspace/#input-raster> a wfdesc:Input ;
+    rdfs:label "inputRaster" ;
+    rdfs:comment "Input raster for statistical analysis" .
+
+<file:///github/workspace/#output-histogram> a wfdesc:Output ;
+    rdfs:label "histogram" ;
+    rdfs:comment "Histogram of value distribution" .
+
+<file:///github/workspace/#output-mean> a wfdesc:Output ;
+    rdfs:label "meanValue" ;
+    rdfs:comment "Mean pixel value" .
+
+<file:///github/workspace/#output-stdev> a wfdesc:Output ;
+    rdfs:label "standardDeviation" ;
+    rdfs:comment "Standard deviation of pixel values" .
+

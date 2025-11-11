@@ -1,0 +1,17 @@
+{
+  "@id": "#ndvi-process-run-1",
+  "@type": "ProcessRun",
+  "describedByProcess": "#ndvi-process",
+  "usedInput": [
+    {
+      "@id": "artifact/landsat_band4.tif"
+    },
+    {
+      "@id": "artifact/landsat_band5.tif"
+    }
+  ],
+  "startedAtTime": "2025-11-07T10:00:00Z",
+  "endedAtTime": "2025-11-07T10:05:00Z",
+  "wasPartOfWorkflowRun": "#ndvi-workflow-run-1",
+  "wasEnactedBy": "#zoo-wps-engine"
+}

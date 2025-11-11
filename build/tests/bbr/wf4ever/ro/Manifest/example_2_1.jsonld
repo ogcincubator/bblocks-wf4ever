@@ -1,0 +1,9 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld",
+  "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
+  "@type": "Manifest",
+  "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/",
+  "conformsTo": "https://w3id.org/cwl/prov/0.6.0",
+  "createdOn": "2025-11-03T15:14:17.166945",
+  "createdBy": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60"
+}

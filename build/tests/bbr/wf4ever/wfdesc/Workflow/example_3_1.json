@@ -1,0 +1,115 @@
+{
+  "@type": "Workflow",
+  "@id": "#parallel-workflow",
+  "name": "Parallel Analysis Workflow",
+  "hasSubProcess": [
+    {
+      "@type": "Process",
+      "@id": "#source",
+      "name": "Load Source",
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "#source-out"
+        }
+      ]
+    },
+    {
+      "@type": "Process",
+      "@id": "#analyze-vegetation",
+      "name": "Vegetation Analysis",
+      "hasInput": [
+        {
+          "@type": "Input",
+          "@id": "#veg-in"
+        }
+      ],
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "#veg-out"
+        }
+      ]
+    },
+    {
+      "@type": "Process",
+      "@id": "#analyze-water",
+      "name": "Water Analysis",
+      "hasInput": [
+        {
+          "@type": "Input",
+          "@id": "#water-in"
+        }
+      ],
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "#water-out"
+        }
+      ]
+    },
+    {
+      "@type": "Process",
+      "@id": "#merge-results",
+      "name": "Merge Results",
+      "hasInput": [
+        {
+          "@type": "Input",
+          "@id": "#merge-in1"
+        },
+        {
+          "@type": "Input",
+          "@id": "#merge-in2"
+        }
+      ],
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "#final-out"
+        }
+      ]
+    }
+  ],
+  "hasDataLink": [
+    {
+      "@type": "DataLink",
+      "@id": "#link-to-veg",
+      "hasSource": {
+        "@id": "#source-out"
+      },
+      "hasSink": {
+        "@id": "#veg-in"
+      }
+    },
+    {
+      "@type": "DataLink",
+      "@id": "#link-to-water",
+      "hasSource": {
+        "@id": "#source-out"
+      },
+      "hasSink": {
+        "@id": "#water-in"
+      }
+    },
+    {
+      "@type": "DataLink",
+      "@id": "#link-veg-to-merge",
+      "hasSource": {
+        "@id": "#veg-out"
+      },
+      "hasSink": {
+        "@id": "#merge-in1"
+      }
+    },
+    {
+      "@type": "DataLink",
+      "@id": "#link-water-to-merge",
+      "hasSource": {
+        "@id": "#water-out"
+      },
+      "hasSink": {
+        "@id": "#merge-in2"
+      }
+    }
+  ]
+}

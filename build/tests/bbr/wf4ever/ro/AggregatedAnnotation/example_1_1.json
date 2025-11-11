@@ -1,0 +1,7 @@
+{
+  "@id": ".ro/annotations/workflow-annotation.json",
+  "@type": "AggregatedAnnotation",
+  "annotatesAggregatedResource": "workflow/ndvi.cwl",
+  "body": ".ro/annotations/workflow-metadata.ttl",
+  "created": "2025-11-07T10:00:00Z"
+}

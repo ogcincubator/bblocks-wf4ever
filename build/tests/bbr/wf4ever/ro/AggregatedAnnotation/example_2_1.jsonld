@@ -1,0 +1,11 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/context.jsonld",
+  "@id": ".ro/annotations/multi-annotation.json",
+  "@type": "AggregatedAnnotation",
+  "annotatesAggregatedResource": [
+    "data/input/band4.tif",
+    "data/input/band5.tif"
+  ],
+  "body": ".ro/annotations/input-provenance.ttl",
+  "created": "2025-11-07T11:00:00Z"
+}

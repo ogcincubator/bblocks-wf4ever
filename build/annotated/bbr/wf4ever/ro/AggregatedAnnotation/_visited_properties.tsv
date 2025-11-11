@@ -1,0 +1,6 @@
+path	@id
+/@id	
+/@type	
+/annotatesAggregatedResource	http://purl.org/wf4ever/ro#annotatesAggregatedResource
+/body	http://www.w3.org/ns/oa#hasBody
+/created	http://purl.org/dc/terms/created

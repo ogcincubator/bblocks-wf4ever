@@ -1,0 +1,50 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A workflow composed of sub-processes and data links
+type: object
+allOf:
+- $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+properties:
+  '@type':
+    const: Workflow
+    description: Type identifier for a wfdesc Workflow
+  hasSubProcess:
+    type: array
+    items:
+      $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+    description: Sub-processes within this workflow
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSubProcess
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+  hasDataLink:
+    type: array
+    items:
+      $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml
+    description: Data flow connections between sub-processes
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasDataLink
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+x-jsonld-extra-terms:
+  Workflow: http://purl.org/wf4ever/wfdesc#Workflow
+  Process: http://purl.org/wf4ever/wfdesc#Process
+  DataLink: http://purl.org/wf4ever/wfdesc#DataLink
+  Input: http://purl.org/wf4ever/wfdesc#Input
+  Output: http://purl.org/wf4ever/wfdesc#Output
+  name: http://www.w3.org/2000/01/rdf-schema#label
+  description: http://www.w3.org/2000/01/rdf-schema#comment
+  hasInput:
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasInput
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+  hasOutput:
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasOutput
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+  hasSource:
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSource
+    x-jsonld-type: '@id'
+  hasSink:
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSink
+    x-jsonld-type: '@id'
+x-jsonld-prefixes:
+  wfdesc: http://purl.org/wf4ever/wfdesc#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#

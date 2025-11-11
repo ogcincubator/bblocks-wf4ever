@@ -1,0 +1,37 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A semantic annotation with an RDF Graph body
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the annotation
+  '@type':
+    const: SemanticAnnotation
+    description: Type must be SemanticAnnotation
+  body:
+    type: string
+    format: uri
+    description: URI pointing to an RDF Graph containing the semantic annotation content
+  annotatesResource:
+    oneOf:
+    - type: string
+      format: uri
+    - type: array
+      items:
+        type: string
+        format: uri
+    description: The resource(s) that this annotation describes
+  created:
+    type: string
+    format: date-time
+    description: Creation date of the annotation
+  creator:
+    type: string
+    format: uri
+    description: The agent (person or organization) who created this annotation
+required:
+- '@id'
+- '@type'
+- body
+- annotatesResource

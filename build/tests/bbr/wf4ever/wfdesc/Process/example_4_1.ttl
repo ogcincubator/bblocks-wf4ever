@@ -1,0 +1,47 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<https://github.com/starling-foundries/KindGrove#mangrove-analysis> a wfdesc:Process ;
+    rdfs:label "Mangrove Biomass Analysis" ;
+    wfdesc:hasInput <file:///github/workspace/#input-cloud-cover>,
+        <file:///github/workspace/#input-days-back>,
+        <file:///github/workspace/#input-east>,
+        <file:///github/workspace/#input-north>,
+        <file:///github/workspace/#input-output-dir>,
+        <file:///github/workspace/#input-south>,
+        <file:///github/workspace/#input-west> ;
+    wfdesc:hasOutput <file:///github/workspace/#output-result> ;
+    rdfs:comment "Analyzes mangrove biomass using Sentinel-2 satellite imagery within a specified bounding box" .
+
+<file:///github/workspace/#input-cloud-cover> a wfdesc:Input ;
+    rdfs:label "cloud_cover_max" ;
+    rdfs:comment "Maximum acceptable cloud cover percentage" .
+
+<file:///github/workspace/#input-days-back> a wfdesc:Input ;
+    rdfs:label "days_back" ;
+    rdfs:comment "Number of days to look back for imagery" .
+
+<file:///github/workspace/#input-east> a wfdesc:Input ;
+    rdfs:label "east" ;
+    rdfs:comment "Eastern longitude of bounding box" .
+
+<file:///github/workspace/#input-north> a wfdesc:Input ;
+    rdfs:label "north" ;
+    rdfs:comment "Northern latitude of bounding box" .
+
+<file:///github/workspace/#input-output-dir> a wfdesc:Input ;
+    rdfs:label "output_dir" ;
+    rdfs:comment "Output directory name" .
+
+<file:///github/workspace/#input-south> a wfdesc:Input ;
+    rdfs:label "south" ;
+    rdfs:comment "Southern latitude of bounding box" .
+
+<file:///github/workspace/#input-west> a wfdesc:Input ;
+    rdfs:label "west" ;
+    rdfs:comment "Western longitude of bounding box" .
+
+<file:///github/workspace/#output-result> a wfdesc:Output ;
+    rdfs:label "result" ;
+    rdfs:comment "Directory containing analysis results including biomass maps and statistics" .
+

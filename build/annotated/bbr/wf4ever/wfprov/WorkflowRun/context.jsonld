@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "@vocab": "http://purl.org/wf4ever/wfprov#",
+    "ProcessRun": "wfprov:ProcessRun",
+    "WorkflowRun": "wfprov:WorkflowRun",
+    "wasOutputFrom": {
+      "@id": "prov:generated",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "id": "@id",
+    "type": "@type",
+    "describedByProcess": {
+      "@id": "wfprov:describedByProcess",
+      "@type": "@id"
+    },
+    "usedInput": {
+      "@id": "wfprov:usedInput",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "startedAtTime": {
+      "@id": "prov:startedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endedAtTime": {
+      "@id": "prov:endedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wasPartOfWorkflowRun": {
+      "@id": "wfprov:wasPartOfWorkflowRun",
+      "@type": "@id"
+    },
+    "wasEnactedBy": {
+      "@id": "prov:wasAssociatedWith",
+      "@type": "@id"
+    },
+    "describedByWorkflow": {
+      "@id": "wfprov:describedByWorkflow",
+      "@type": "@id"
+    },
+    "hadSubProcessRun": {
+      "@reverse": "wfprov:wasPartOfWorkflowRun",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "@version": 1.1
+  }
+}

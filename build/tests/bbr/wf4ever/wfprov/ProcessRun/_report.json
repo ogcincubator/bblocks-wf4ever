@@ -1,0 +1,129 @@
+{
+  "title": "Validation report for ogc.bbr.wf4ever.wfprov.ProcessRun - wfprov:ProcessRun",
+  "bblockName": "wfprov:ProcessRun",
+  "bblockId": "ogc.bbr.wf4ever.wfprov.ProcessRun",
+  "generated": "2025-11-11T12:31:28.931584+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/wf4ever/wfprov/ProcessRun/example_1_1.json",
+        "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/ProcessRun/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 6,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'An execution instance of a process (based on '\n                    'prov:Activity)',\n     'properties': {'describedByProcess': {'description': 'Links to the '\n                                                          'process '\n                                                          'description '\n                                                          '(wfdesc:Process) '\n                                                          'that was '\n                                                          'executed',\n                                           'format': 'uri',\n                                           'type': 'string',\n                                           'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByProcess',\n                                           'x-jsonld-type': '@id'},\n                    'endedAtTime': {'description': 'End time of the '\n                                                   'execution',\n                                    'format': 'date-time',\n                                    'type': 'string',\n                                    'x-jsonld-id': 'http://www.w3.org/ns/prov#endedAtTime',\n                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'process run',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'startedAtTime': {'description': 'Start time of the '\n                                                     'execution',\n                                      'format': 'date-time',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://www.w3.org/ns/prov#startedAtTime',\n                                      'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'type': {'description': 'Type indicator (Activity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'usedInput': {'description': 'Input artifacts used by '\n                                                 'this process run',\n                                  'items': {'properties': {'id': {'format': 'uri',\n                                                                  'type': 'string'}},\n                                            'required': ['id'],\n                                            'type': 'object'},\n                                  'type': 'array',\n                                  'x-jsonld-container': '@set',\n                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#usedInput',\n                                  'x-jsonld-type': '@id'},\n                    'wasEnactedBy': {'description': 'The workflow engine '\n                                                    'that enacted this '\n                                                    'process run',\n                                     'format': 'uri',\n                                     'type': 'string',\n                                     'x-jsonld-id': 'http://www.w3.org/ns/prov#wasAssociatedWith',\n                                     'x-jsonld-type': '@id'},\n                    'wasPartOfWorkflowRun': {'description': 'The workflow '\n                                                            'run that this '\n                                                            'process run '\n                                                            'was part of',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun',\n                                             'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'ProcessRun': 'http://purl.org/wf4ever/wfprov#ProcessRun',\n                              'WorkflowRun': 'http://purl.org/wf4ever/wfprov#WorkflowRun',\n                              'wasOutputFrom': {'x-jsonld-container': '@set',\n                                                'x-jsonld-id': 'http://www.w3.org/ns/prov#generated',\n                                                'x-jsonld-type': '@id'}},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': '#reproject-run-1',\n     '@type': 'ProcessRun',\n     'describedByProcess': '#reproject-process',\n     'endedAtTime': '2025-11-07T10:02:00Z',\n     'startedAtTime': '2025-11-07T10:00:00Z',\n     'usedInput': [{'@id': 'artifact/input_data.tif'}],\n     'wasPartOfWorkflowRun': '#workflow-run-1'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/wf4ever/wfprov/ProcessRun/example_2_1.json",
+        "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/ProcessRun/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_2_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_2_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 8,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'id' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'An execution instance of a process (based on '\n                    'prov:Activity)',\n     'properties': {'describedByProcess': {'description': 'Links to the '\n                                                          'process '\n                                                          'description '\n                                                          '(wfdesc:Process) '\n                                                          'that was '\n                                                          'executed',\n                                           'format': 'uri',\n                                           'type': 'string',\n                                           'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByProcess',\n                                           'x-jsonld-type': '@id'},\n                    'endedAtTime': {'description': 'End time of the '\n                                                   'execution',\n                                    'format': 'date-time',\n                                    'type': 'string',\n                                    'x-jsonld-id': 'http://www.w3.org/ns/prov#endedAtTime',\n                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'process run',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'startedAtTime': {'description': 'Start time of the '\n                                                     'execution',\n                                      'format': 'date-time',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://www.w3.org/ns/prov#startedAtTime',\n                                      'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'type': {'description': 'Type indicator (Activity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'usedInput': {'description': 'Input artifacts used by '\n                                                 'this process run',\n                                  'items': {'properties': {'id': {'format': 'uri',\n                                                                  'type': 'string'}},\n                                            'required': ['id'],\n                                            'type': 'object'},\n                                  'type': 'array',\n                                  'x-jsonld-container': '@set',\n                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#usedInput',\n                                  'x-jsonld-type': '@id'},\n                    'wasEnactedBy': {'description': 'The workflow engine '\n                                                    'that enacted this '\n                                                    'process run',\n                                     'format': 'uri',\n                                     'type': 'string',\n                                     'x-jsonld-id': 'http://www.w3.org/ns/prov#wasAssociatedWith',\n                                     'x-jsonld-type': '@id'},\n                    'wasPartOfWorkflowRun': {'description': 'The workflow '\n                                                            'run that this '\n                                                            'process run '\n                                                            'was part of',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun',\n                                             'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'ProcessRun': 'http://purl.org/wf4ever/wfprov#ProcessRun',\n                              'WorkflowRun': 'http://purl.org/wf4ever/wfprov#WorkflowRun',\n                              'wasOutputFrom': {'x-jsonld-container': '@set',\n                                                'x-jsonld-id': 'http://www.w3.org/ns/prov#generated',\n                                                'x-jsonld-type': '@id'}},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': '#ndvi-process-run-1',\n     '@type': 'ProcessRun',\n     'describedByProcess': '#ndvi-process',\n     'endedAtTime': '2025-11-07T10:05:00Z',\n     'startedAtTime': '2025-11-07T10:00:00Z',\n     'usedInput': [{'@id': 'artifact/landsat_band4.tif'},\n                   {'@id': 'artifact/landsat_band5.tif'}],\n     'wasEnactedBy': '#zoo-wps-engine',\n     'wasPartOfWorkflowRun': '#ndvi-workflow-run-1'}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 2,
+    "passed": 0,
+    "failed": 2
+  }
+}

@@ -1,0 +1,69 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.SemanticAnnotation",
+  "name": "ro:SemanticAnnotation",
+  "abstract": "A semantic annotation is a specialization of ao:Annotation which requires that the annotation body points to an RDF Graph containing semantic information about the annotated resource.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Research Object Ontology - SemanticAnnotation",
+      "link": "http://purl.org/wf4ever/ro#SemanticAnnotation"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [],
+  "tags": [
+    "ro",
+    "research-object",
+    "annotation",
+    "semantic"
+  ],
+  "group": "Wf4Ever - ro",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/SemanticAnnotation/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/SemanticAnnotation/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/ro/SemanticAnnotation/",
+  "description": "# ro:SemanticAnnotation\n\n## Description\n\nA **SemanticAnnotation** is a specialization of `ao:Annotation` which requires that the annotation body (`ao:body`) points to an **RDF Graph**. This graph contains semantic information about the annotated resource, expressed using RDF triples.\n\nThis might be a Named Graph or a resource which can be resolved separately from the URI given by `ao:body`.\n\nThe RDF graph SHOULD mention the resources identified by `ao:annotatesResource`, preferably by using their URIs as subject or object of RDF statements.\n\n## Relations\n\n- Annotates resources via `ao:annotatesResource`\n- Has a semantic body (RDF Graph) via `ao:body`\n- Subclass of `ao:Annotation` from the Annotation Ontology\n\n## Difference from ao:hasTopic\n\nNote that the use of `ao:body` in SemanticAnnotation is distinct from `ao:hasTopic`:\n- **`ao:body`**: The RDF graph is the annotation content (it describes/mentions the annotated resource)\n- **`ao:hasTopic`**: The RDF graph is the \"topic\" or \"bookmark\" of the annotated resource\n\nFor `ro:SemanticAnnotation`, the graph body merely needs to **mention** the annotated resource (e.g., to give it a `dc:title` or to relate it to other resources), without necessarily being its \"topic\".\n\n## Use Cases\n\n- Semantic metadata expressed in RDF (e.g., Dublin Core, FOAF, PROV-O)\n- Linking resources using semantic relationships\n- Provenance graphs describing resource creation\n- Quality assessments with structured vocabularies\n",
+  "examples": [
+    {
+      "title": "Basic Semantic Annotation",
+      "description": "Simple semantic annotation linking a resource to an RDF graph",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/basic-semantic-annotation.json",
+          "code": "{\n  \"@id\": \"#semantic-annotation-1\",\n  \"@type\": \"SemanticAnnotation\",\n  \"annotatesResource\": \"data/results.csv\",\n  \"body\": \".ro/annotations/metadata-1.ttl\",\n  \"created\": \"2025-11-07T10:00:00Z\",\n  \"creator\": \"https://orcid.org/0000-0002-1825-0097\"\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/SemanticAnnotation/example_1_1.json"
+        }
+      ]
+    },
+    {
+      "title": "Multi-resource Annotation",
+      "description": "Semantic annotation describing multiple related resources",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/multi-resource-annotation.json",
+          "code": "{\n  \"@id\": \".ro/annotations/provenance-annotation\",\n  \"@type\": \"SemanticAnnotation\",\n  \"annotatesResource\": [\n    \"workflow/ndvi-calculation.cwl\",\n    \"data/ndvi-result.tif\"\n  ],\n  \"body\": \".ro/annotations/provenance-graph.ttl\",\n  \"created\": \"2025-11-07T14:30:00Z\",\n  \"creator\": \"https://orcid.org/0000-0002-1825-0097\"\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/SemanticAnnotation/example_2_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A semantic annotation with an RDF Graph body\ntype: object\nproperties:\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for the annotation\n  '@type':\n    const: SemanticAnnotation\n    description: Type must be SemanticAnnotation\n  body:\n    type: string\n    format: uri\n    description: URI pointing to an RDF Graph containing the semantic annotation content\n  annotatesResource:\n    oneOf:\n    - type: string\n      format: uri\n    - type: array\n      items:\n        type: string\n        format: uri\n    description: The resource(s) that this annotation describes\n  created:\n    type: string\n    format: date-time\n    description: Creation date of the annotation\n  creator:\n    type: string\n    format: uri\n    description: The agent (person or organization) who created this annotation\nrequired:\n- '@id'\n- '@type'\n- body\n- annotatesResource\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/ro/SemanticAnnotation"
+}

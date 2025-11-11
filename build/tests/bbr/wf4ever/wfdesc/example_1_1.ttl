@@ -1,0 +1,30 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<http://example.org/workflow/my-analysis> a wfdesc:Workflow ;
+    rdfs:label "Data Analysis Workflow" ;
+    wfdesc:hasDataLink [ a wfdesc:DataLink ;
+            wfdesc:hasSink <http://example.org/workflow/my-analysis/process/transform/input> ;
+            wfdesc:hasSource <http://example.org/workflow/my-analysis/input/data> ] ;
+    wfdesc:hasInput <http://example.org/workflow/my-analysis/input/data> ;
+    wfdesc:hasOutput <http://example.org/workflow/my-analysis/output/result> ;
+    wfdesc:hasSubProcess <http://example.org/workflow/my-analysis/process/transform> ;
+    rdfs:comment "A simple workflow for data analysis" .
+
+<http://example.org/workflow/my-analysis/output/result> a wfdesc:Output ;
+    rdfs:label "analysis-result" .
+
+<http://example.org/workflow/my-analysis/process/transform> a wfdesc:Process ;
+    rdfs:label "Data Transformation" ;
+    wfdesc:hasInput <http://example.org/workflow/my-analysis/process/transform/input> ;
+    wfdesc:hasOutput <http://example.org/workflow/my-analysis/process/transform/output> .
+
+<http://example.org/workflow/my-analysis/process/transform/output> a wfdesc:Output ;
+    rdfs:label "transformed-data" .
+
+<http://example.org/workflow/my-analysis/input/data> a wfdesc:Input ;
+    rdfs:label "input-data" .
+
+<http://example.org/workflow/my-analysis/process/transform/input> a wfdesc:Input ;
+    rdfs:label "raw-data" .
+

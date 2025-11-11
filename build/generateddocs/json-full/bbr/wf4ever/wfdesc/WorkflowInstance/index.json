@@ -1,0 +1,72 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.WorkflowInstance",
+  "name": "wfdesc:WorkflowInstance",
+  "abstract": "A specialized workflow description that includes all concrete data, parameters, and settings required to execute a specific workflow run. It bridges the gap between abstract workflow descriptions and concrete workflow executions.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Workflow"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - WorkflowInstance",
+      "link": "http://purl.org/wf4ever/wfdesc#WorkflowInstance"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "instance",
+    "execution",
+    "configuration"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/",
+  "description": "## Workflow Instance\n\nA `WorkflowInstance` represents a specialized workflow description that includes all the concrete data, parameters, and settings required to execute a specific workflow run.\n\n### Purpose\n\nA `WorkflowInstance` is a specialization of `wfdesc:Workflow` that bridges the gap between abstract workflow descriptions and concrete workflow executions. While a `wfdesc:Workflow` defines the general structure and capabilities, a `WorkflowInstance` contains all the specific values, configurations, and bound parameters needed to create a `wfprov:WorkflowRun`.\n\n### Key Characteristics\n\n- **Inherits from Workflow**: A `WorkflowInstance` is a subclass of `wfdesc:Workflow`, so it has all the structural properties (processes, data links, inputs, outputs)\n- **Execution-ready**: Contains all bound parameters and concrete values needed for execution\n- **Provenance bridge**: Forms the link between workflow descriptions and their execution traces\n- **Reproducible**: Captures the exact configuration needed to reproduce a specific workflow execution\n\n### Relationship to Other Classes\n\n- **Extends**: `wfdesc:Workflow` (inherits structure)\n- **Prepares**: `wfprov:WorkflowRun` (execution configuration)\n- **Contains**: Concrete parameter values and execution settings\n\n### Use Cases\n\n1. **Workflow Execution Preparation**: Creating execution-ready configurations from abstract workflow definitions\n2. **Reproducible Science**: Storing exact parameter combinations for reproducible research\n3. **Provenance Linkage**: Connecting workflow descriptions to their execution traces  \n4. **Parameterization**: Managing different parameter sets for the same workflow template\n5. **Execution Planning**: Validating that all required inputs are provided before execution\n\n### JSON-LD Context\n\nWhen used in JSON-LD, the workflow instance inherits the wfdesc context and adds execution-specific terms:\n\n```json\n{\n  \"@context\": {\n    \"@vocab\": \"http://purl.org/wf4ever/wfdesc#\",\n    \"describedBy\": {\"@type\": \"@id\"},\n    \"hasArtifact\": {\"@type\": \"@id\"},\n    \"executionSettings\": \"http://purl.org/wf4ever/wfprov#executionSettings\",\n    \"readyForExecution\": {\"@type\": \"http://www.w3.org/2001/XMLSchema#boolean\"}\n  }\n}\n```\n\n### Best Practices\n\n- **Complete Parameter Binding**: Ensure all required inputs have bound artifacts\n- **Version Tracking**: Include workflow definition version and execution engine details\n- **Validation**: Verify parameter types and constraints before marking as execution-ready\n- **Documentation**: Include human-readable descriptions of the parameter choices\n- **Provenance Preparation**: Structure data to facilitate easy transition to workflow runs",
+  "examples": [
+    {
+      "title": "KindGrove Workflow Instance",
+      "description": "Execution-ready configuration for the KindGrove mangrove analysis workflow with all parameters bound to concrete values",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/kindgrove-instance.json",
+          "code": "{\n  \"@type\": \"WorkflowInstance\",\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c-instance\",\n  \"name\": \"KindGrove Mangrove Biomass Analysis - Myanmar Instance\",\n  \"description\": \"Execution-ready configuration for analyzing mangrove biomass in Myanmar using satellite imagery\",\n  \"describedBy\": \"#kindgrove-workflow\",\n  \"hasInput\": [\n    {\n      \"@id\": \"#bound-north\",\n      \"@type\": \"Input\",\n      \"name\": \"north\",\n      \"description\": \"Northern boundary of analysis area\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": 16.1,\n        \"@id\": \"urn:sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439\"\n      }\n    },\n    {\n      \"@id\": \"#bound-south\", \n      \"@type\": \"Input\",\n      \"name\": \"south\",\n      \"description\": \"Southern boundary of analysis area\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": 15.9\n      }\n    },\n    {\n      \"@id\": \"#bound-east\",\n      \"@type\": \"Input\", \n      \"name\": \"east\",\n      \"description\": \"Eastern boundary of analysis area\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": 95.35\n      }\n    },\n    {\n      \"@id\": \"#bound-west\",\n      \"@type\": \"Input\",\n      \"name\": \"west\", \n      \"description\": \"Western boundary of analysis area\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": 95.15\n      }\n    },\n    {\n      \"@id\": \"#bound-cloud-cover\",\n      \"@type\": \"Input\",\n      \"name\": \"cloud_cover_max\",\n      \"description\": \"Maximum allowed cloud cover percentage\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\", \n        \"value\": 20\n      }\n    },\n    {\n      \"@id\": \"#bound-days-back\",\n      \"@type\": \"Input\",\n      \"name\": \"days_back\", \n      \"description\": \"Number of days back to search for imagery\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": 90\n      }\n    },\n    {\n      \"@id\": \"#bound-output-dir\",\n      \"@type\": \"Input\",\n      \"name\": \"output_dir\",\n      \"description\": \"Directory for output results\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": \"results\"\n      }\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@id\": \"#expected-biomass-map\",\n      \"@type\": \"Output\", \n      \"name\": \"biomass_map\",\n      \"description\": \"Generated mangrove biomass map\"\n    },\n    {\n      \"@id\": \"#expected-statistics\",\n      \"@type\": \"Output\",\n      \"name\": \"statistics\", \n      \"description\": \"Statistical analysis results\"\n    }\n  ],\n  \"executionSettings\": {\n    \"engine\": \"cwltool\",\n    \"version\": \"3.1.20251031082601\",\n    \"environment\": \"container\",\n    \"scheduler\": \"local\",\n    \"resources\": {\n      \"cpu\": \"4\",\n      \"memory\": \"8GB\", \n      \"disk\": \"50GB\"\n    }\n  },\n  \"readyForExecution\": true,\n  \"validatedAt\": \"2025-11-03T10:15:30Z\",\n  \"configurationHash\": \"sha256:a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890\"\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/example_1_1.json"
+        }
+      ]
+    },
+    {
+      "title": "Basic Workflow Instance",
+      "description": "Simple workflow instance with minimal configuration for data processing",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/basic-instance.json",
+          "code": "{\n  \"@type\": \"WorkflowInstance\", \n  \"@id\": \"#simple-analysis-instance\",\n  \"name\": \"Basic Data Analysis Instance\",\n  \"describedBy\": \"#data-processing-workflow\",\n  \"hasInput\": [\n    {\n      \"@id\": \"#input-file\",\n      \"@type\": \"Input\",\n      \"name\": \"input_file\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\",\n        \"value\": \"data.csv\"\n      }\n    },\n    {\n      \"@id\": \"#threshold-param\", \n      \"@type\": \"Input\",\n      \"name\": \"threshold\",\n      \"hasArtifact\": {\n        \"@type\": \"Artifact\", \n        \"value\": 0.5\n      }\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@id\": \"#output-results\",\n      \"@type\": \"Output\",\n      \"name\": \"results\",\n      \"description\": \"Analysis results\"\n    }\n  ],\n  \"executionSettings\": {\n    \"engine\": \"local-python\",\n    \"environment\": \"conda\",\n    \"scheduler\": \"local\"\n  },\n  \"readyForExecution\": true\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/example_2_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A specialized workflow description that includes all concrete data, parameters,\n  and settings required to execute a specific workflow run\ntype: object\nproperties:\n  '@type':\n    const: WorkflowInstance\n    description: Type identifier for workflow instance\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for this workflow instance\n  name:\n    type: string\n    description: Human-readable name for this workflow instance\n  description:\n    type: string\n    description: Description of this workflow instance\n  describedBy:\n    type: string\n    format: uri\n    description: URI reference to the workflow definition this instance is based on\n  hasInput:\n    type: array\n    description: Input parameters with bound artifacts and concrete values\n    items:\n      type: object\n      properties:\n        '@type':\n          const: Input\n        '@id':\n          type: string\n          format: uri\n        name:\n          type: string\n        description:\n          type: string\n        hasArtifact:\n          type: object\n          properties:\n            '@type':\n              const: Artifact\n            '@id':\n              type: string\n              format: uri\n            value:\n              description: Concrete value bound to this parameter\n          required:\n          - '@type'\n          - value\n      required:\n      - '@type'\n      - hasArtifact\n  hasOutput:\n    type: array\n    description: Expected output parameters for this workflow instance\n    items:\n      type: object\n      properties:\n        '@type':\n          const: Output\n        '@id':\n          type: string\n          format: uri\n        name:\n          type: string\n        description:\n          type: string\n      required:\n      - '@type'\n  hasSubProcess:\n    type: array\n    description: Sub-processes contained in this workflow instance\n    items:\n      type: object\n      properties:\n        '@type':\n          enum:\n          - Process\n          - Workflow\n        '@id':\n          type: string\n          format: uri\n        name:\n          type: string\n      required:\n      - '@type'\n  hasDataLink:\n    type: array\n    description: Data links between processes in this workflow instance\n    items:\n      type: object\n      properties:\n        '@type':\n          const: DataLink\n        '@id':\n          type: string\n          format: uri\n        hasSource:\n          type: string\n          format: uri\n        hasSink:\n          type: string\n          format: uri\n      required:\n      - '@type'\n  executionSettings:\n    type: object\n    description: Engine and environment configuration for execution\n    properties:\n      engine:\n        type: string\n        description: Name of the workflow execution engine\n        examples:\n        - cwltool\n        - zoo-project\n        - nextflow\n        - snakemake\n      version:\n        type: string\n        description: Version of the execution engine\n      environment:\n        type: string\n        description: Execution environment type\n        enum:\n        - container\n        - conda\n        - local\n        - hpc\n        - cloud\n        default: local\n      scheduler:\n        type: string\n        description: Job scheduler or execution backend\n        examples:\n        - local\n        - slurm\n        - kubernetes\n        - aws-batch\n      resources:\n        type: object\n        description: Resource requirements and limits\n        properties:\n          cpu:\n            type:\n            - string\n            - number\n            description: CPU requirement (cores or description)\n          memory:\n            type: string\n            description: Memory requirement (e.g., '4GB', '512MB')\n          disk:\n            type: string\n            description: Disk space requirement\n          gpu:\n            type:\n            - string\n            - number\n            description: GPU requirement\n    additionalProperties: true\n  readyForExecution:\n    type: boolean\n    description: Whether all required parameters are bound and the workflow is ready\n      to execute\n    default: false\n  validatedAt:\n    type: string\n    format: date-time\n    description: Timestamp when this workflow instance was validated as execution-ready\n  configurationHash:\n    type: string\n    description: Hash of the configuration for reproducibility tracking\nrequired:\n- '@type'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/WorkflowInstance"
+}

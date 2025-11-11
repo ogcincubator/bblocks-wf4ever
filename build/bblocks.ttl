@@ -1,0 +1,910 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://geolabs.github.io/bblocks-wf4ever/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N7af4c6e384904456a9cd7a5feeb8b73c ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2025-11-11T12:31:29.108787"^^xsd:dateTime ;
+            prov:startedAtTime "2025-11-11T12:31:28.998857"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:7a65bf9cbca958bac85249db49b134bb8432e414" ;
+                    rdfs:seeAlso <https://geolabs.github.io/bblocks-wf4ever/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:N7af4c6e384904456a9cd7a5feeb8b73c ] .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.AggregatedAnnotation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:AggregatedAnnotation" ;
+    dct:abstract "An annotation about resources within a Research Object. Annotations provide additional metadata, provenance information, or contextual details about aggregated resources, stored as part of the Research Object itself."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/AggregatedAnnotation/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.AggregatedAnnotation" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/AggregatedAnnotation/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#AggregatedAnnotation> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "annotation",
+        "metadata",
+        "ro" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Resource>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.ro.SemanticAnnotation> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/AggregatedAnnotation/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.FolderEntry> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:FolderEntry" ;
+    dct:abstract "An entry within a folder that associates a name with a resource. FolderEntries provide the mapping between folder paths and actual resources, similar to filesystem directory entries."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/FolderEntry/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/FolderEntry/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.FolderEntry" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#FolderEntry> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "folder-entry",
+        "organization",
+        "ro" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Folder>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Resource> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/FolderEntry/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Wf4Ever Extension Ontology" ;
+    dct:abstract "The wf4ever ontology extends ro, wfdesc and wfprov with specialized artifact and process types commonly used in workflow research objects."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact-types",
+        "research-object",
+        "wf4ever",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfprov> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever.Dataset> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wf4ever:Dataset" ;
+    dct:abstract "A dataset artifact - a collection of data values or files representing a scientific dataset."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Dataset/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/Dataset/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.Dataset" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever#Dataset> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact",
+        "dataset",
+        "wf4ever" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Artifact> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever.Document> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wf4ever:Document" ;
+    dct:abstract "A document artifact - textual or formatted content such as PDF, HTML, or text files."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.Document" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/Document/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Document/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever#Document> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact",
+        "document",
+        "wf4ever" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Artifact> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever.File> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wf4ever:File" ;
+    dct:abstract "A file artifact - a specialization of wfdesc:Artifact representing a file-based data entity used or produced by workflow execution."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.File" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/File/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/File/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever#File> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact",
+        "file",
+        "wf4ever" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Artifact> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever.Image> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wf4ever:Image" ;
+    dct:abstract "An image artifact - visual representation such as PNG, JPEG, or raster geospatial imagery."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Image/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/Image/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.Image" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever#Image> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact",
+        "image",
+        "wf4ever" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Artifact> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever.WebServiceProcess> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wf4ever:WebServiceProcess" ;
+    dct:abstract "A web service process - a process description whose enactment involves making a web service call."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/WebServiceProcess/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.WebServiceProcess" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/WebServiceProcess/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever#WebServiceProcess> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "process",
+        "web-service",
+        "wf4ever" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Process> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wf4ever:WorkflowResearchObject" ;
+    dct:abstract "A research object that aggregates at least one workflow description, along with associated resources and provenance."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/WorkflowResearchObject/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/WorkflowResearchObject/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wf4ever#WorkflowResearchObject> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "research-object",
+        "wf4ever",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro.ResearchObject>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Workflow> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.WorkflowInstance> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:WorkflowInstance" ;
+    dct:abstract "A specialized workflow description that includes all concrete data, parameters, and settings required to execute a specific workflow run. It bridges the gap between abstract workflow descriptions and concrete workflow executions."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/WorkflowInstance/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/WorkflowInstance/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.WorkflowInstance" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#WorkflowInstance> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "configuration",
+        "execution",
+        "instance",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Workflow> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.WorkflowRun> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfprov:WorkflowRun" ;
+    dct:abstract "An execution instance of a workflow. A WorkflowRun is a special type of ProcessRun that represents the execution of a complete workflow (wfdesc:Workflow), containing multiple ProcessRuns for its sub-processes."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.WorkflowRun" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowRun/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowRun/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "execution",
+        "provenance",
+        "wfprov",
+        "workflow-run" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Workflow>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.ProcessRun> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowRun/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<http://purl.org/wf4ever/ro> rdfs:label "Research Object Ontology" .
+
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> rdfs:label "Research Object Ontology - AggregatedAnnotation" .
+
+<http://purl.org/wf4ever/ro#Folder> rdfs:label "Research Object Ontology - Folder" .
+
+<http://purl.org/wf4ever/ro#FolderEntry> rdfs:label "Research Object Ontology - FolderEntry" .
+
+<http://purl.org/wf4ever/ro#Manifest> rdfs:label "Research Object Ontology - Manifest" .
+
+<http://purl.org/wf4ever/ro#ResearchObject> rdfs:label "Research Object Ontology - ResearchObject" .
+
+<http://purl.org/wf4ever/ro#Resource> rdfs:label "Research Object Ontology - Resource" .
+
+<http://purl.org/wf4ever/ro#SemanticAnnotation> rdfs:label "Research Object Ontology - SemanticAnnotation" .
+
+<http://purl.org/wf4ever/wf4ever> rdfs:label "Wf4Ever Ontology" .
+
+<http://purl.org/wf4ever/wf4ever#Dataset> rdfs:label "Wf4Ever Ontology - Dataset" .
+
+<http://purl.org/wf4ever/wf4ever#Document> rdfs:label "Wf4Ever Ontology - Document" .
+
+<http://purl.org/wf4ever/wf4ever#File> rdfs:label "Wf4Ever Ontology - File" .
+
+<http://purl.org/wf4ever/wf4ever#Image> rdfs:label "Wf4Ever Ontology - Image" .
+
+<http://purl.org/wf4ever/wf4ever#WebServiceProcess> rdfs:label "Wf4Ever Ontology - WebServiceProcess" .
+
+<http://purl.org/wf4ever/wf4ever#WorkflowResearchObject> rdfs:label "Wf4Ever Ontology - WorkflowResearchObject" .
+
+<http://purl.org/wf4ever/wfdesc> rdfs:label "Workflow Description Ontology" .
+
+<http://purl.org/wf4ever/wfdesc#Artifact> rdfs:label "Workflow Description Ontology - Artifact" .
+
+<http://purl.org/wf4ever/wfdesc#DataLink> rdfs:label "Workflow Description Ontology - DataLink" .
+
+<http://purl.org/wf4ever/wfdesc#Input> rdfs:label "Workflow Description Ontology - Input" .
+
+<http://purl.org/wf4ever/wfdesc#Output> rdfs:label "Workflow Description Ontology - Output" .
+
+<http://purl.org/wf4ever/wfdesc#Parameter> rdfs:label "Workflow Description Ontology - Parameter" .
+
+<http://purl.org/wf4ever/wfdesc#Process> rdfs:label "Workflow Description Ontology - Process" .
+
+<http://purl.org/wf4ever/wfdesc#Workflow> rdfs:label "Workflow Description Ontology - Workflow" .
+
+<http://purl.org/wf4ever/wfdesc#WorkflowInstance> rdfs:label "Workflow Description Ontology - WorkflowInstance" .
+
+<http://purl.org/wf4ever/wfprov> rdfs:label "Workflow Provenance Ontology" .
+
+<http://purl.org/wf4ever/wfprov#Artifact> rdfs:label "Workflow Provenance Ontology - Artifact" .
+
+<http://purl.org/wf4ever/wfprov#ProcessRun> rdfs:label "Workflow Provenance Ontology - ProcessRun" .
+
+<http://purl.org/wf4ever/wfprov#WorkflowEngine> rdfs:label "Workflow Provenance Ontology - WorkflowEngine" .
+
+<http://purl.org/wf4ever/wfprov#WorkflowRun> rdfs:label "Workflow Provenance Ontology - WorkflowRun" .
+
+<http://www.openarchives.org/ore/> rdfs:label "OAI-ORE" .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Research Object Ontology (ro)" ;
+    dct:abstract "The Research Object ontology (ro) provides concepts for bundling and aggregating research artifacts, describing folder structures and annotations."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro>,
+        <http://www.openarchives.org/ore/> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "aggregation",
+        "ontology",
+        "research-object",
+        "ro",
+        "wf4ever" ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.Folder> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:Folder" ;
+    dct:abstract "A folder that organizes resources within a Research Object. Folders provide hierarchical structure, similar to filesystem directories, allowing logical grouping of related resources."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Folder/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.Folder" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/Folder/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#Folder> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "folder",
+        "organization",
+        "ro" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Resource> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Folder/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.Manifest> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:Manifest" ;
+    dct:abstract "A manifest that describes the structure and contents of a Research Object. The manifest provides metadata about the Research Object, its aggregated resources, annotations, and organizational structure."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Manifest/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/Manifest/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.Manifest" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#Manifest> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "manifest",
+        "metadata",
+        "ro" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Resource> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Manifest/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.ResearchObject> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:ResearchObject" ;
+    dct:abstract "A Research Object that bundles resources, data, methods, and contextual information. It provides a structured way to package research outputs with their provenance, making them portable, shareable, and preservable."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/ResearchObject/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/ResearchObject/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.ResearchObject" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#ResearchObject> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "aggregation",
+        "research-object",
+        "ro" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Manifest>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.ro.Resource> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/ResearchObject/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.SemanticAnnotation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:SemanticAnnotation" ;
+    dct:abstract "A semantic annotation is a specialization of ao:Annotation which requires that the annotation body points to an RDF Graph containing semantic information about the annotated resource."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/SemanticAnnotation/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.SemanticAnnotation" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/SemanticAnnotation/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#SemanticAnnotation> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "annotation",
+        "research-object",
+        "ro",
+        "semantic" ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.DataLink> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:DataLink" ;
+    dct:abstract "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/DataLink/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.DataLink" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/DataLink/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#DataLink> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "dataflow",
+        "datalink",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Input>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Output> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/DataLink/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfprov> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Workflow Provenance Ontology (wfprov)" ;
+    dct:abstract "The Workflow Provenance ontology (wfprov) extends PROV-O to describe workflow execution traces, linking workflow runs to their descriptions."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfprov>,
+        <https://www.w3.org/TR/prov-o/> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "ontology",
+        "prov",
+        "provenance",
+        "wf4ever",
+        "wfprov",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.Artifact> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfprov:Artifact" ;
+    dct:abstract "A data entity that was used as input or generated as output during a workflow execution. Artifacts are the data products consumed or produced by process runs."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/Artifact/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/Artifact/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.Artifact" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfprov#Artifact> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact",
+        "data",
+        "provenance",
+        "wfprov" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Parameter> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/Artifact/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.ProcessRun> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfprov:ProcessRun" ;
+    dct:abstract "An execution instance of a process. A ProcessRun represents the actual execution of a process described by wfdesc:Process, tracking what happened during that execution including inputs used, outputs generated, and timing information."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/ProcessRun/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.ProcessRun" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/ProcessRun/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfprov#ProcessRun> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "execution",
+        "process-run",
+        "provenance",
+        "wfprov" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Process>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.Artifact>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.WorkflowEngine> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/ProcessRun/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfprov.WorkflowEngine> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfprov:WorkflowEngine" ;
+    dct:abstract "A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowEngine/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowEngine/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.WorkflowEngine" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfprov#WorkflowEngine> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "agent",
+        "execution",
+        "wfprov",
+        "workflow-engine" ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://www.w3.org/TR/prov-o/> rdfs:label "PROV-O" .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Workflow Description Ontology (wfdesc)" ;
+    dct:abstract "The Workflow Description ontology (wfdesc) describes the structure of workflows, including processes, inputs, outputs, and data flow."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "ontology",
+        "wf4ever",
+        "wfdesc",
+        "workflow" ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Input> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:Input" ;
+    dct:abstract "An input parameter to a workflow process. Inputs receive data from external sources or from outputs of other processes via DataLinks."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Input" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Input/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Input/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#Input> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "input",
+        "parameter",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Parameter> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Input/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Output> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:Output" ;
+    dct:abstract "An output parameter from a workflow process. Outputs produce data that can be consumed by inputs of other processes or as final workflow results."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Output" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Output/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Output/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#Output> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "output",
+        "parameter",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Parameter> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Output/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Parameter> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:Parameter" ;
+    dct:abstract "A parameter (input or output) of a workflow process. This is the base class for Input, Output, and Configuration."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Parameter/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Parameter" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Parameter/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#Parameter> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "ontology",
+        "parameter",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Artifact> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Parameter/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Process> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:Process" ;
+    dct:abstract "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Process/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Process" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Process/index.md" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#Process> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "computation",
+        "process",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Input>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Output> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Process/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Workflow> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:Workflow" ;
+    dct:abstract "A composite process that contains sub-processes connected by data links. Workflows are directed graphs where nodes are processes and edges are data flow connections."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Workflow/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Workflow/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Workflow" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#Workflow> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "composite",
+        "graph",
+        "wfdesc",
+        "workflow" ;
+    bblocks:dependsOn <https://geolabs.github.io/ogc.api.processes.v1.schemas.process>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.DataLink>,
+        <https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Process> ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Workflow/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.ro.Resource> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "ro:Resource" ;
+    dct:abstract "A resource that can be aggregated in a Research Object. Resources represent any artifact that contributes to the research outcome, such as data files, workflows, documentation, or external references."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Resource/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.Resource" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/Resource/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/ro#Resource> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "research-object",
+        "resource",
+        "ro" ;
+    bblocks:hasJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/context.jsonld> ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Resource/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/ogc.bbr.wf4ever.wfdesc.Artifact> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Datatype ;
+    rdfs:label "wfdesc:Artifact" ;
+    dct:abstract "An artifact representing a data value, file, or resource that can be used as input or generated as output by workflow processes. Artifacts provide concrete data representations for parameter binding."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Artifact/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Artifact" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://geolabs.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Artifact/index.json" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2025-11-11"^^xsd:date ;
+    dct:source <http://purl.org/wf4ever/wfdesc#Artifact> ;
+    skos:inScheme <https://geolabs.github.io/bblocks-wf4ever/> ;
+    dcat:keyword "artifact",
+        "data",
+        "parameter",
+        "wfdesc",
+        "workflow" ;
+    bblocks:hasSchema <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/schema.json>,
+        <https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://geolabs.github.io/bblocks-wf4ever/> a skos:ConceptScheme,
+        dcat:Catalog ;
+    rdfs:label "Building Blocks - Wf4Ever Building Blocks" ;
+    dct:abstract """Building blocks for the Wf4Ever ontologies suite (wfdesc, wfprov, ro, wf4ever) enabling
+workflow description, provenance tracking, research object aggregation, and specialized artifact types.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:description """This repository contains four separate building blocks for the **Wf4Ever ontologies**:
+
+- **wfdesc**: Workflow Description Ontology for describing workflow structure (prospective provenance)
+- **wfprov**: Workflow Provenance Ontology for tracking execution traces (retrospective provenance)
+- **ro**: Research Object Ontology for packaging and aggregating research artifacts
+- **wf4ever**: Extension ontology providing specialized artifact types (File, Dataset, Document, Image) and process types (WebServiceProcess, WorkflowResearchObject)
+
+All examples are based on real CWL (Common Workflow Language) provenance data from
+scientific workflow executions.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    skos:prefLabel "Building Blocks - Wf4Ever Building Blocks" ;
+    bblocks:hasValidationReport <https://geolabs.github.io/bblocks-wf4ever/build/tests/report.html> ;
+    bblocks:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-cwl/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
+        <https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json>,
+        <https://opengeospatial.github.io/bblocks/register.json> .
+
+_:N7af4c6e384904456a9cd7a5feeb8b73c a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.4.9" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

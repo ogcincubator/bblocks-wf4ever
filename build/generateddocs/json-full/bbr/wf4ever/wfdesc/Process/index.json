@@ -1,0 +1,135 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Process",
+  "name": "wfdesc:Process",
+  "abstract": "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Output",
+    "ogc.bbr.wf4ever.wfdesc.Input"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Process",
+      "link": "http://purl.org/wf4ever/wfdesc#Process"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "process",
+    "computation"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "ldContext": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld",
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Process/schema.yaml",
+  "sourceLdContext": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Process/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Process/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfdesc/Process/",
+  "description": "# wfdesc:Process\n\n## Description\n\nA **Process** represents a unit of computation in a workflow. It is the base class that can be:\n- An **atomic process**: A single computational task (e.g., running a command-line tool)\n- A **Workflow**: A composite process containing sub-processes\n\nProcesses are characterized by their inputs (what data they consume) and outputs (what data they produce).\n\n## Class Hierarchy\n\n```\nwfdesc:Process (base class)\n\u2514\u2500\u2500 wfdesc:Workflow (composite process with sub-processes)\n```\n\n## Process Interface\n\nThe interface of a process is defined by its inputs and outputs.\n\n## Atomic vs Composite\n\n### Atomic Process\n- Performs a single computational task\n- Cannot be decomposed further in the workflow model\n- Examples: Run GDAL command, Execute Python script, Call web service\n\n### Composite Process (Workflow)\n- Contains sub-processes via `hasSubProcess`\n- Has internal data flow via `hasDataLink`\n- Can be treated as a black box via its inputs/outputs\n\n## Related Classes\n\n- **Input**: Parameters that feed data into the process\n- **Output**: Parameters that produce data from the process\n- **Workflow**: Subclass that represents composite processes\n- **DataLink**: Connects processes together in a workflow\n",
+  "examples": [
+    {
+      "title": "Simple Process - NDVI Calculator",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "ndvi-process.json",
+          "code": "{\n  \"@type\": \"Process\",\n  \"@id\": \"http://example.org/processes/ndvi\",\n  \"name\": \"NDVI Calculator\",\n  \"description\": \"Calculates Normalized Difference Vegetation Index from NIR and Red bands\",\n  \"hasInput\": [\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-nir\",\n      \"name\": \"nearInfrared\",\n      \"description\": \"Near-infrared band\"\n    },\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-red\",\n      \"name\": \"redBand\",\n      \"description\": \"Red band\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-ndvi\",\n      \"name\": \"ndviLayer\",\n      \"description\": \"Calculated NDVI raster layer\"\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld\",\n  \"@type\": \"Process\",\n  \"@id\": \"http://example.org/processes/ndvi\",\n  \"name\": \"NDVI Calculator\",\n  \"description\": \"Calculates Normalized Difference Vegetation Index from NIR and Red bands\",\n  \"hasInput\": [\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-nir\",\n      \"name\": \"nearInfrared\",\n      \"description\": \"Near-infrared band\"\n    },\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-red\",\n      \"name\": \"redBand\",\n      \"description\": \"Red band\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-ndvi\",\n      \"name\": \"ndviLayer\",\n      \"description\": \"Calculated NDVI raster layer\"\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n\n<http://example.org/processes/ndvi> a wfdesc:Process ;\n    rdfs:label \"NDVI Calculator\" ;\n    wfdesc:hasInput <file:///github/workspace/#input-nir>,\n        <file:///github/workspace/#input-red> ;\n    wfdesc:hasOutput <file:///github/workspace/#output-ndvi> ;\n    rdfs:comment \"Calculates Normalized Difference Vegetation Index from NIR and Red bands\" .\n\n<file:///github/workspace/#input-nir> a wfdesc:Input ;\n    rdfs:label \"nearInfrared\" ;\n    rdfs:comment \"Near-infrared band\" .\n\n<file:///github/workspace/#input-red> a wfdesc:Input ;\n    rdfs:label \"redBand\" ;\n    rdfs:comment \"Red band\" .\n\n<file:///github/workspace/#output-ndvi> a wfdesc:Output ;\n    rdfs:label \"ndviLayer\" ;\n    rdfs:comment \"Calculated NDVI raster layer\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Geospatial Reprojection Process",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "reproject-process.json",
+          "code": "{\n  \"@type\": \"Process\",\n  \"@id\": \"#reproject-process\",\n  \"name\": \"Reproject Raster\",\n  \"description\": \"Reprojects a raster dataset to a target coordinate reference system\",\n  \"hasInput\": [\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-source-raster\",\n      \"name\": \"sourceRaster\",\n      \"description\": \"Source raster in original CRS\"\n    },\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-target-crs\",\n      \"name\": \"targetCRS\",\n      \"description\": \"Target coordinate reference system (EPSG code)\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-reprojected\",\n      \"name\": \"reprojectedRaster\",\n      \"description\": \"Raster reprojected to target CRS\"\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld\",\n  \"@type\": \"Process\",\n  \"@id\": \"#reproject-process\",\n  \"name\": \"Reproject Raster\",\n  \"description\": \"Reprojects a raster dataset to a target coordinate reference system\",\n  \"hasInput\": [\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-source-raster\",\n      \"name\": \"sourceRaster\",\n      \"description\": \"Source raster in original CRS\"\n    },\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-target-crs\",\n      \"name\": \"targetCRS\",\n      \"description\": \"Target coordinate reference system (EPSG code)\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-reprojected\",\n      \"name\": \"reprojectedRaster\",\n      \"description\": \"Raster reprojected to target CRS\"\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n\n<file:///github/workspace/#reproject-process> a wfdesc:Process ;\n    rdfs:label \"Reproject Raster\" ;\n    wfdesc:hasInput <file:///github/workspace/#input-source-raster>,\n        <file:///github/workspace/#input-target-crs> ;\n    wfdesc:hasOutput <file:///github/workspace/#output-reprojected> ;\n    rdfs:comment \"Reprojects a raster dataset to a target coordinate reference system\" .\n\n<file:///github/workspace/#input-source-raster> a wfdesc:Input ;\n    rdfs:label \"sourceRaster\" ;\n    rdfs:comment \"Source raster in original CRS\" .\n\n<file:///github/workspace/#input-target-crs> a wfdesc:Input ;\n    rdfs:label \"targetCRS\" ;\n    rdfs:comment \"Target coordinate reference system (EPSG code)\" .\n\n<file:///github/workspace/#output-reprojected> a wfdesc:Output ;\n    rdfs:label \"reprojectedRaster\" ;\n    rdfs:comment \"Raster reprojected to target CRS\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_2_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Multi-Output Statistics Process",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "stats-process.json",
+          "code": "{\n  \"@type\": \"Process\",\n  \"@id\": \"#stats-calculator\",\n  \"name\": \"Statistics Calculator\",\n  \"description\": \"Computes statistical metrics from raster data\",\n  \"hasInput\": [\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-raster\",\n      \"name\": \"inputRaster\",\n      \"description\": \"Input raster for statistical analysis\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-mean\",\n      \"name\": \"meanValue\",\n      \"description\": \"Mean pixel value\"\n    },\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-stdev\",\n      \"name\": \"standardDeviation\",\n      \"description\": \"Standard deviation of pixel values\"\n    },\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-histogram\",\n      \"name\": \"histogram\",\n      \"description\": \"Histogram of value distribution\"\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_3_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld\",\n  \"@type\": \"Process\",\n  \"@id\": \"#stats-calculator\",\n  \"name\": \"Statistics Calculator\",\n  \"description\": \"Computes statistical metrics from raster data\",\n  \"hasInput\": [\n    {\n      \"@type\": \"Input\",\n      \"@id\": \"#input-raster\",\n      \"name\": \"inputRaster\",\n      \"description\": \"Input raster for statistical analysis\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-mean\",\n      \"name\": \"meanValue\",\n      \"description\": \"Mean pixel value\"\n    },\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-stdev\",\n      \"name\": \"standardDeviation\",\n      \"description\": \"Standard deviation of pixel values\"\n    },\n    {\n      \"@type\": \"Output\",\n      \"@id\": \"#output-histogram\",\n      \"name\": \"histogram\",\n      \"description\": \"Histogram of value distribution\"\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_3_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n\n<file:///github/workspace/#stats-calculator> a wfdesc:Process ;\n    rdfs:label \"Statistics Calculator\" ;\n    wfdesc:hasInput <file:///github/workspace/#input-raster> ;\n    wfdesc:hasOutput <file:///github/workspace/#output-histogram>,\n        <file:///github/workspace/#output-mean>,\n        <file:///github/workspace/#output-stdev> ;\n    rdfs:comment \"Computes statistical metrics from raster data\" .\n\n<file:///github/workspace/#input-raster> a wfdesc:Input ;\n    rdfs:label \"inputRaster\" ;\n    rdfs:comment \"Input raster for statistical analysis\" .\n\n<file:///github/workspace/#output-histogram> a wfdesc:Output ;\n    rdfs:label \"histogram\" ;\n    rdfs:comment \"Histogram of value distribution\" .\n\n<file:///github/workspace/#output-mean> a wfdesc:Output ;\n    rdfs:label \"meanValue\" ;\n    rdfs:comment \"Mean pixel value\" .\n\n<file:///github/workspace/#output-stdev> a wfdesc:Output ;\n    rdfs:label \"standardDeviation\" ;\n    rdfs:comment \"Standard deviation of pixel values\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_3_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "KindGrove Mangrove Analysis Process",
+      "description": "Real CWL workflow for analyzing mangrove biomass using Sentinel-2 satellite imagery (Myanmar region)",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/kindgrove-process.json",
+          "code": "{\n  \"@id\": \"https://github.com/starling-foundries/KindGrove#mangrove-analysis\",\n  \"@type\": \"Process\",\n  \"name\": \"Mangrove Biomass Analysis\",\n  \"description\": \"Analyzes mangrove biomass using Sentinel-2 satellite imagery within a specified bounding box\",\n  \"hasInput\": [\n    {\n      \"@id\": \"#input-north\",\n      \"@type\": \"Input\",\n      \"name\": \"north\",\n      \"description\": \"Northern latitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-south\",\n      \"@type\": \"Input\",\n      \"name\": \"south\",\n      \"description\": \"Southern latitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-east\",\n      \"@type\": \"Input\",\n      \"name\": \"east\",\n      \"description\": \"Eastern longitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-west\",\n      \"@type\": \"Input\",\n      \"name\": \"west\",\n      \"description\": \"Western longitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-cloud-cover\",\n      \"@type\": \"Input\",\n      \"name\": \"cloud_cover_max\",\n      \"description\": \"Maximum acceptable cloud cover percentage\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-days-back\",\n      \"@type\": \"Input\",\n      \"name\": \"days_back\",\n      \"description\": \"Number of days to look back for imagery\",\n      \"datatype\": \"integer\"\n    },\n    {\n      \"@id\": \"#input-output-dir\",\n      \"@type\": \"Input\",\n      \"name\": \"output_dir\",\n      \"description\": \"Output directory name\",\n      \"datatype\": \"string\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@id\": \"#output-result\",\n      \"@type\": \"Output\",\n      \"name\": \"result\",\n      \"description\": \"Directory containing analysis results including biomass maps and statistics\",\n      \"datatype\": \"Directory\"\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_4_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld\",\n  \"@id\": \"https://github.com/starling-foundries/KindGrove#mangrove-analysis\",\n  \"@type\": \"Process\",\n  \"name\": \"Mangrove Biomass Analysis\",\n  \"description\": \"Analyzes mangrove biomass using Sentinel-2 satellite imagery within a specified bounding box\",\n  \"hasInput\": [\n    {\n      \"@id\": \"#input-north\",\n      \"@type\": \"Input\",\n      \"name\": \"north\",\n      \"description\": \"Northern latitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-south\",\n      \"@type\": \"Input\",\n      \"name\": \"south\",\n      \"description\": \"Southern latitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-east\",\n      \"@type\": \"Input\",\n      \"name\": \"east\",\n      \"description\": \"Eastern longitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-west\",\n      \"@type\": \"Input\",\n      \"name\": \"west\",\n      \"description\": \"Western longitude of bounding box\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-cloud-cover\",\n      \"@type\": \"Input\",\n      \"name\": \"cloud_cover_max\",\n      \"description\": \"Maximum acceptable cloud cover percentage\",\n      \"datatype\": \"float\"\n    },\n    {\n      \"@id\": \"#input-days-back\",\n      \"@type\": \"Input\",\n      \"name\": \"days_back\",\n      \"description\": \"Number of days to look back for imagery\",\n      \"datatype\": \"integer\"\n    },\n    {\n      \"@id\": \"#input-output-dir\",\n      \"@type\": \"Input\",\n      \"name\": \"output_dir\",\n      \"description\": \"Output directory name\",\n      \"datatype\": \"string\"\n    }\n  ],\n  \"hasOutput\": [\n    {\n      \"@id\": \"#output-result\",\n      \"@type\": \"Output\",\n      \"name\": \"result\",\n      \"description\": \"Directory containing analysis results including biomass maps and statistics\",\n      \"datatype\": \"Directory\"\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_4_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n\n<https://github.com/starling-foundries/KindGrove#mangrove-analysis> a wfdesc:Process ;\n    rdfs:label \"Mangrove Biomass Analysis\" ;\n    wfdesc:hasInput <file:///github/workspace/#input-cloud-cover>,\n        <file:///github/workspace/#input-days-back>,\n        <file:///github/workspace/#input-east>,\n        <file:///github/workspace/#input-north>,\n        <file:///github/workspace/#input-output-dir>,\n        <file:///github/workspace/#input-south>,\n        <file:///github/workspace/#input-west> ;\n    wfdesc:hasOutput <file:///github/workspace/#output-result> ;\n    rdfs:comment \"Analyzes mangrove biomass using Sentinel-2 satellite imagery within a specified bounding box\" .\n\n<file:///github/workspace/#input-cloud-cover> a wfdesc:Input ;\n    rdfs:label \"cloud_cover_max\" ;\n    rdfs:comment \"Maximum acceptable cloud cover percentage\" .\n\n<file:///github/workspace/#input-days-back> a wfdesc:Input ;\n    rdfs:label \"days_back\" ;\n    rdfs:comment \"Number of days to look back for imagery\" .\n\n<file:///github/workspace/#input-east> a wfdesc:Input ;\n    rdfs:label \"east\" ;\n    rdfs:comment \"Eastern longitude of bounding box\" .\n\n<file:///github/workspace/#input-north> a wfdesc:Input ;\n    rdfs:label \"north\" ;\n    rdfs:comment \"Northern latitude of bounding box\" .\n\n<file:///github/workspace/#input-output-dir> a wfdesc:Input ;\n    rdfs:label \"output_dir\" ;\n    rdfs:comment \"Output directory name\" .\n\n<file:///github/workspace/#input-south> a wfdesc:Input ;\n    rdfs:label \"south\" ;\n    rdfs:comment \"Southern latitude of bounding box\" .\n\n<file:///github/workspace/#input-west> a wfdesc:Input ;\n    rdfs:label \"west\" ;\n    rdfs:comment \"Western longitude of bounding box\" .\n\n<file:///github/workspace/#output-result> a wfdesc:Output ;\n    rdfs:label \"result\" ;\n    rdfs:comment \"Directory containing analysis results including biomass maps and statistics\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_4_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A computational process in a workflow\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: Process\n    - const: Workflow\n    description: Type identifier for a wfdesc Process or Workflow\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for this process\n  name:\n    type: string\n    description: Name of the process\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  description:\n    type: string\n    description: Description of what this process does\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\n  hasInput:\n    type: array\n    items:\n      $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml\n    description: Input parameters for this process\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasInput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\n  hasOutput:\n    type: array\n    items:\n      $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml\n    description: Output parameters produced by this process\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasOutput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\nrequired:\n- '@type'\nx-jsonld-extra-terms:\n  Process: http://purl.org/wf4ever/wfdesc#Process\n  Input: http://purl.org/wf4ever/wfdesc#Input\n  Output: http://purl.org/wf4ever/wfdesc#Output\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/Process"
+}

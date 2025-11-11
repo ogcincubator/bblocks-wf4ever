@@ -1,0 +1,41 @@
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix wf4ever: <http://purl.org/wf4ever/wf4ever#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+wf4ever:Dataset a owl:Class ;
+    rdfs:label "Dataset"@en ;
+    rdfs:comment "A dataset artifact"@en ;
+    rdfs:subClassOf wfdesc:Artifact .
+
+wf4ever:Document a owl:Class ;
+    rdfs:label "Document"@en ;
+    rdfs:comment "A document artifact"@en ;
+    rdfs:subClassOf wfdesc:Artifact .
+
+wf4ever:File a owl:Class ;
+    rdfs:label "File"@en ;
+    rdfs:comment "A file artifact"@en ;
+    rdfs:subClassOf wfdesc:Artifact .
+
+wf4ever:Image a owl:Class ;
+    rdfs:label "Image"@en ;
+    rdfs:comment "An image artifact"@en ;
+    rdfs:subClassOf wfdesc:Artifact .
+
+wf4ever:WebServiceProcess a owl:Class ;
+    rdfs:label "Web Service Process"@en ;
+    rdfs:comment "A process executed as a web service call"@en ;
+    rdfs:subClassOf wfdesc:Process .
+
+wf4ever:WorkflowResearchObject a owl:Class ;
+    rdfs:label "Workflow Research Object"@en ;
+    rdfs:comment "A research object that contains at least one workflow description"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ro:ResearchObject [ a owl:Restriction ;
+                        owl:onProperty ore:aggregates ;
+                        owl:someValuesFrom wfdesc:Workflow ] ) ] .
+

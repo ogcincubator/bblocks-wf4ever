@@ -1,0 +1,73 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov.WorkflowRun",
+  "name": "wfprov:WorkflowRun",
+  "abstract": "An execution instance of a workflow. A WorkflowRun is a special type of ProcessRun that represents the execution of a complete workflow (wfdesc:Workflow), containing multiple ProcessRuns for its sub-processes.",
+  "highlighted": true,
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology - WorkflowRun",
+      "link": "http://purl.org/wf4ever/wfprov#WorkflowRun"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Workflow",
+    "ogc.bbr.wf4ever.wfprov.ProcessRun"
+  ],
+  "tags": [
+    "wfprov",
+    "workflow-run",
+    "execution",
+    "provenance"
+  ],
+  "group": "Wf4Ever - wfprov",
+  "shaclShapes": {},
+  "ldContext": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/context.jsonld",
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowRun/schema.yaml",
+  "sourceLdContext": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowRun/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowRun/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfprov/WorkflowRun/",
+  "description": "# wfprov:WorkflowRun\n\n## Description\n\nA **WorkflowRun** represents an execution instance of a complete workflow. It is a specialized type of ProcessRun that represents the execution of a `wfdesc:Workflow`, containing multiple ProcessRuns for its sub-processes.\n\n## Class Hierarchy\n\nInherits all properties from `wfprov:ProcessRun`.\n\n## Relations\n\n- Extends `wfprov:ProcessRun`\n- Must be linked to a `wfdesc:Workflow` via `describedByWorkflow`\n- Contains `wfprov:ProcessRun` via `hadSubProcessRun`\n- Can be executed by a `wfprov:WorkflowEngine` via `wasEnactedBy`\n\n## Example\n\nSee the real-world example from a CWLProv execution showing complete workflow provenance with temporal information (startedAtTime, endedAtTime), associated agents (cwltool), and artifacts used/generated during execution.\n",
+  "examples": [
+    {
+      "title": "Mangrove Workflow Run with Provenance",
+      "description": "Real-world WorkflowRun from CWLProv execution showing inputs, outputs, temporal information, and associated agents (cwltool 3.1.20251031082601)",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/mangrove-workflowrun.json",
+          "code": "{\n  \"id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"type\": \"WorkflowRun\",\n  \"label\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n  \"startedAtTime\": \"2025-11-03T15:14:02.032122\",\n  \"endedAtTime\": \"2025-11-03T15:14:17.060218\",\n  \"wasAssociatedWith\": [\n    {\n      \"id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"type\": \"WorkflowEngine\",\n      \"label\": \"cwltool 3.1.20251031082601\"\n    },\n    {\n      \"id\": \"urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f\",\n      \"type\": \"Agent\",\n      \"label\": \"Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696\"\n    }\n  ],\n  \"used\": [\n    {\n      \"id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0,\n      \"hadRole\": \"cloud_cover_max\"\n    },\n    {\n      \"id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90,\n      \"hadRole\": \"days_back\"\n    },\n    {\n      \"id\": \"urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea\",\n      \"value\": 95.35,\n      \"hadRole\": \"east\"\n    },\n    {\n      \"id\": \"urn:uuid:fd57ac88-8716-40ed-8945-f83914857523\",\n      \"value\": 16.1,\n      \"hadRole\": \"north\"\n    }\n  ],\n  \"generated\": [\n    {\n      \"id\": \"urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539\",\n      \"type\": \"Artifact\",\n      \"basename\": \"outputs\"\n    }\n  ]\n}\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/context.jsonld\",\n  \"id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"type\": \"WorkflowRun\",\n  \"label\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n  \"startedAtTime\": \"2025-11-03T15:14:02.032122\",\n  \"endedAtTime\": \"2025-11-03T15:14:17.060218\",\n  \"wasAssociatedWith\": [\n    {\n      \"id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"type\": \"WorkflowEngine\",\n      \"label\": \"cwltool 3.1.20251031082601\"\n    },\n    {\n      \"id\": \"urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f\",\n      \"type\": \"Agent\",\n      \"label\": \"Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696\"\n    }\n  ],\n  \"used\": [\n    {\n      \"id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0,\n      \"hadRole\": \"cloud_cover_max\"\n    },\n    {\n      \"id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90,\n      \"hadRole\": \"days_back\"\n    },\n    {\n      \"id\": \"urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea\",\n      \"value\": 95.35,\n      \"hadRole\": \"east\"\n    },\n    {\n      \"id\": \"urn:uuid:fd57ac88-8716-40ed-8945-f83914857523\",\n      \"value\": 16.1,\n      \"hadRole\": \"north\"\n    }\n  ],\n  \"generated\": [\n    {\n      \"id\": \"urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539\",\n      \"type\": \"Artifact\",\n      \"basename\": \"outputs\"\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;\n    wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;\n    wfprov:generated <urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> ;\n    wfprov:label \"Run of workflow/packed.cwl#main\" ;\n    wfprov:used <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d>,\n        <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258>,\n        <urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea>,\n        <urn:uuid:fd57ac88-8716-40ed-8945-f83914857523> ;\n    wfprov:wasAssociatedWith <urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f>,\n        <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> ;\n    prov:endedAtTime \"2025-11-03T15:14:17.060218\"^^xsd:dateTime ;\n    prov:startedAtTime \"2025-11-03T15:14:02.032122\"^^xsd:dateTime .\n\n<urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> wfprov:hadRole \"cloud_cover_max\" ;\n    wfprov:value 2e+01 .\n\n<urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f> a wfprov:Agent ;\n    wfprov:label \"Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696\" .\n\n<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;\n    wfprov:label \"cwltool 3.1.20251031082601\" .\n\n<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> a wfprov:Artifact ;\n    wfprov:basename \"outputs\" .\n\n<urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> wfprov:hadRole \"days_back\" ;\n    wfprov:value 90 .\n\n<urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea> wfprov:hadRole \"east\" ;\n    wfprov:value 9.535e+01 .\n\n<urn:uuid:fd57ac88-8716-40ed-8945-f83914857523> wfprov:hadRole \"north\" ;\n    wfprov:value 1.61e+01 .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An execution instance of a workflow\nallOf:\n- $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml\n- type: object\n  properties:\n    describedByWorkflow:\n      type: string\n      format: uri\n      description: Links to the workflow description (wfdesc:Workflow) that was executed\n      x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByWorkflow\n      x-jsonld-type: '@id'\n    hadSubProcessRun:\n      type: array\n      items:\n        type: object\n        properties:\n          id:\n            type: string\n            format: uri\n        required:\n        - id\n      description: The process runs that were part of this workflow execution\n      x-jsonld-reverse: wfprov:wasPartOfWorkflowRun\n      x-jsonld-type: '@id'\n      x-jsonld-container: '@set'\n    wasEnactedBy:\n      type: string\n      format: uri\n      description: The workflow engine that executed this workflow\n      x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith\n      x-jsonld-type: '@id'\n  required:\n  - describedByWorkflow\nx-jsonld-extra-terms:\n  WorkflowRun: http://purl.org/wf4ever/wfprov#WorkflowRun\nx-jsonld-vocab: http://purl.org/wf4ever/wfprov#\nx-jsonld-prefixes:\n  wfprov: http://purl.org/wf4ever/wfprov#\n  prov: http://www.w3.org/ns/prov#\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wfprov/WorkflowRun"
+}

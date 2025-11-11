@@ -1,0 +1,57 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever.WebServiceProcess",
+  "name": "wf4ever:WebServiceProcess",
+  "abstract": "A web service process - a process description whose enactment involves making a web service call.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology - WebServiceProcess",
+      "link": "http://purl.org/wf4ever/wf4ever#WebServiceProcess"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Process"
+  ],
+  "tags": [
+    "wf4ever",
+    "process",
+    "web-service"
+  ],
+  "group": "Wf4Ever - wf4ever",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wf4ever/WebServiceProcess/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wf4ever/WebServiceProcess/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wf4ever/WebServiceProcess/",
+  "description": "# wf4ever:WebServiceProcess\n\nA process whose enactment involves making a web service call (e.g., OGC API Processes, WPS).\n",
+  "examples": [
+    {
+      "title": "OGC API Processes Service",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "ogcapi-process.json",
+          "code": "{\"@id\": \"#ndvi-service\", \"@type\": \"WebServiceProcess\", \"endpoint\": \"https://zoo-project.org/ogcapi/processes/ndvi\", \"method\": \"POST\"}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/WebServiceProcess/example_1_1.json"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A web service process\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: WebServiceProcess\n    - type: array\n      contains:\n        const: WebServiceProcess\n  endpoint:\n    type: string\n    format: uri\n    description: Web service endpoint URL\n  method:\n    type: string\n    description: HTTP method (GET, POST, etc.)\nrequired:\n- '@type'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wf4ever/WebServiceProcess"
+}

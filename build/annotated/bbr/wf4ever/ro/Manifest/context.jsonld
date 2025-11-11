@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@vocab": "http://purl.org/wf4ever/ro#",
+    "Manifest": "ro:Manifest",
+    "describes": {
+      "@id": "ore:describes",
+      "@type": "@id"
+    },
+    "createdBy": {
+      "@id": "dcterms:creator",
+      "@type": "@id"
+    },
+    "createdOn": {
+      "@id": "dcterms:created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "ro": "http://purl.org/wf4ever/ro#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "@version": 1.1
+  }
+}

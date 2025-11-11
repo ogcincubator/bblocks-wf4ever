@@ -1,0 +1,32 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<file:///github/workspace/#simple-workflow> a wfdesc:Workflow ;
+    rdfs:label "Simple Processing Pipeline" ;
+    wfdesc:hasDataLink <file:///github/workspace/#link1> ;
+    wfdesc:hasSubProcess <file:///github/workspace/#load>,
+        <file:///github/workspace/#process> ;
+    rdfs:comment "Loads and processes data" .
+
+<file:///github/workspace/#link1> a wfdesc:DataLink ;
+    wfdesc:hasSink <file:///github/workspace/#process-input> ;
+    wfdesc:hasSource <file:///github/workspace/#load-output> .
+
+<file:///github/workspace/#load> a wfdesc:Process ;
+    rdfs:label "Load Data" ;
+    wfdesc:hasOutput <file:///github/workspace/#load-output> .
+
+<file:///github/workspace/#process> a wfdesc:Process ;
+    rdfs:label "Process Data" ;
+    wfdesc:hasInput <file:///github/workspace/#process-input> ;
+    wfdesc:hasOutput <file:///github/workspace/#process-output> .
+
+<file:///github/workspace/#process-output> a wfdesc:Output ;
+    rdfs:label "result" .
+
+<file:///github/workspace/#load-output> a wfdesc:Output ;
+    rdfs:label "data" .
+
+<file:///github/workspace/#process-input> a wfdesc:Input ;
+    rdfs:label "inputData" .
+

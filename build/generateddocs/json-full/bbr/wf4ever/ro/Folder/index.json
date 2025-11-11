@@ -1,0 +1,70 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.Folder",
+  "name": "ro:Folder",
+  "abstract": "A folder that organizes resources within a Research Object. Folders provide hierarchical structure, similar to filesystem directories, allowing logical grouping of related resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "sources": [
+    {
+      "title": "Research Object Ontology - Folder",
+      "link": "http://purl.org/wf4ever/ro#Folder"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.Resource"
+  ],
+  "tags": [
+    "ro",
+    "folder",
+    "organization"
+  ],
+  "group": "Wf4Ever - ro",
+  "shaclShapes": {},
+  "ldContext": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/context.jsonld",
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Folder/schema.yaml",
+  "sourceLdContext": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Folder/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/ro/Folder/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/ro/Folder/",
+  "description": "# ro:Folder\n\n## Description\n\nA **Folder** organizes resources within a Research Object. Folders provide a hierarchical structure, similar to file system directories, allowing logical grouping of related resources.\n\n## Relations\n\n- Contains `ro:FolderEntry` via `ore:aggregates`\n- Can be aggregated in a `ro:ResearchObject`\n- Can contain other Folders (recursive structure)\n\n## Example\n\nSee the real-world example from a CWLProv execution showing a workflow output folder with multiple file entries (mangrove_mask.tif, biomass_summary.csv, carbon_summary.csv, analysis.json).\n",
+  "examples": [
+    {
+      "title": "Mangrove Analysis Output Folder",
+      "description": "Real-world folder structure from mangrove biomass analysis with FolderEntry aggregates (from CWLProv execution)",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/mangrove-folder.json",
+          "code": "{\n  \"@id\": \"urn:uuid:f1477d81-2d56-4874-9d5b-eb5de2a571af\",\n  \"@type\": \"Folder\",\n  \"basename\": \"mangrove-analysis-20251103-151416\",\n  \"isDescribedBy\": \"metadata/directory-f1477d81-2d56-4874-9d5b-eb5de2a571af.ttl\",\n  \"aggregates\": [\n    {\n      \"@id\": \"urn:uuid:3aade478-9f4e-4feb-8cdb-26d31d3467e7\",\n      \"@type\": [\"FolderEntry\"],\n      \"entryName\": \"mangrove_mask.tif\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:04c0ef72-14c0-4248-b042-6dec318c56c5\",\n        \"@type\": \"File\",\n        \"basename\": \"mangrove_mask.tif\"\n      }\n    },\n    {\n      \"@id\": \"urn:uuid:8de4c1ce-3576-4f00-aa02-7c7fe7e92370\",\n      \"@type\": [\"FolderEntry\"],\n      \"entryName\": \"mangrove-analysis-20251103-151416.json\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:b5c14d0c-6065-4171-96c8-dadbcde3822a\",\n        \"@type\": \"File\",\n        \"basename\": \"mangrove-analysis-20251103-151416.json\"\n      }\n    },\n    {\n      \"@id\": \"urn:uuid:9b2f4291-1391-4dc1-b587-193d86d95afc\",\n      \"@type\": [\"FolderEntry\"],\n      \"entryName\": \"carbon_summary.csv\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:f59664cc-4bda-4c8f-a5b1-b02d8bfcf369\",\n        \"@type\": \"File\",\n        \"basename\": \"carbon_summary.csv\"\n      }\n    },\n    {\n      \"@id\": \"urn:uuid:a7bbd47e-94ae-4baa-b2ff-ddd2667ac7f0\",\n      \"@type\": [\"FolderEntry\"],\n      \"entryName\": \"biomass_summary.csv\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:6dd8ef39-c040-4038-b2ee-0696ee7c712f\",\n        \"@type\": \"File\",\n        \"basename\": \"biomass_summary.csv\"\n      }\n    }\n  ]\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Folder/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/context.jsonld\",\n  \"@id\": \"urn:uuid:f1477d81-2d56-4874-9d5b-eb5de2a571af\",\n  \"@type\": \"Folder\",\n  \"basename\": \"mangrove-analysis-20251103-151416\",\n  \"isDescribedBy\": \"metadata/directory-f1477d81-2d56-4874-9d5b-eb5de2a571af.ttl\",\n  \"aggregates\": [\n    {\n      \"@id\": \"urn:uuid:3aade478-9f4e-4feb-8cdb-26d31d3467e7\",\n      \"@type\": [\n        \"FolderEntry\"\n      ],\n      \"entryName\": \"mangrove_mask.tif\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:04c0ef72-14c0-4248-b042-6dec318c56c5\",\n        \"@type\": \"File\",\n        \"basename\": \"mangrove_mask.tif\"\n      }\n    },\n    {\n      \"@id\": \"urn:uuid:8de4c1ce-3576-4f00-aa02-7c7fe7e92370\",\n      \"@type\": [\n        \"FolderEntry\"\n      ],\n      \"entryName\": \"mangrove-analysis-20251103-151416.json\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:b5c14d0c-6065-4171-96c8-dadbcde3822a\",\n        \"@type\": \"File\",\n        \"basename\": \"mangrove-analysis-20251103-151416.json\"\n      }\n    },\n    {\n      \"@id\": \"urn:uuid:9b2f4291-1391-4dc1-b587-193d86d95afc\",\n      \"@type\": [\n        \"FolderEntry\"\n      ],\n      \"entryName\": \"carbon_summary.csv\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:f59664cc-4bda-4c8f-a5b1-b02d8bfcf369\",\n        \"@type\": \"File\",\n        \"basename\": \"carbon_summary.csv\"\n      }\n    },\n    {\n      \"@id\": \"urn:uuid:a7bbd47e-94ae-4baa-b2ff-ddd2667ac7f0\",\n      \"@type\": [\n        \"FolderEntry\"\n      ],\n      \"entryName\": \"biomass_summary.csv\",\n      \"proxyFor\": {\n        \"@id\": \"urn:uuid:6dd8ef39-c040-4038-b2ee-0696ee7c712f\",\n        \"@type\": \"File\",\n        \"basename\": \"biomass_summary.csv\"\n      }\n    }\n  ]\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Folder/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix ro: <http://purl.org/wf4ever/ro#> .\n\n<urn:uuid:f1477d81-2d56-4874-9d5b-eb5de2a571af> a ro:Folder ;\n    ro:aggregates <urn:uuid:3aade478-9f4e-4feb-8cdb-26d31d3467e7>,\n        <urn:uuid:8de4c1ce-3576-4f00-aa02-7c7fe7e92370>,\n        <urn:uuid:9b2f4291-1391-4dc1-b587-193d86d95afc>,\n        <urn:uuid:a7bbd47e-94ae-4baa-b2ff-ddd2667ac7f0> ;\n    ro:basename \"mangrove-analysis-20251103-151416\" ;\n    ro:isDescribedBy \"metadata/directory-f1477d81-2d56-4874-9d5b-eb5de2a571af.ttl\" .\n\n<urn:uuid:04c0ef72-14c0-4248-b042-6dec318c56c5> a ro:File ;\n    ro:basename \"mangrove_mask.tif\" .\n\n<urn:uuid:3aade478-9f4e-4feb-8cdb-26d31d3467e7> a ro:FolderEntry ;\n    ro:entryName \"mangrove_mask.tif\" ;\n    ro:proxyFor <urn:uuid:04c0ef72-14c0-4248-b042-6dec318c56c5> .\n\n<urn:uuid:6dd8ef39-c040-4038-b2ee-0696ee7c712f> a ro:File ;\n    ro:basename \"biomass_summary.csv\" .\n\n<urn:uuid:8de4c1ce-3576-4f00-aa02-7c7fe7e92370> a ro:FolderEntry ;\n    ro:entryName \"mangrove-analysis-20251103-151416.json\" ;\n    ro:proxyFor <urn:uuid:b5c14d0c-6065-4171-96c8-dadbcde3822a> .\n\n<urn:uuid:9b2f4291-1391-4dc1-b587-193d86d95afc> a ro:FolderEntry ;\n    ro:entryName \"carbon_summary.csv\" ;\n    ro:proxyFor <urn:uuid:f59664cc-4bda-4c8f-a5b1-b02d8bfcf369> .\n\n<urn:uuid:a7bbd47e-94ae-4baa-b2ff-ddd2667ac7f0> a ro:FolderEntry ;\n    ro:entryName \"biomass_summary.csv\" ;\n    ro:proxyFor <urn:uuid:6dd8ef39-c040-4038-b2ee-0696ee7c712f> .\n\n<urn:uuid:b5c14d0c-6065-4171-96c8-dadbcde3822a> a ro:File ;\n    ro:basename \"mangrove-analysis-20251103-151416.json\" .\n\n<urn:uuid:f59664cc-4bda-4c8f-a5b1-b02d8bfcf369> a ro:File ;\n    ro:basename \"carbon_summary.csv\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Folder/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A folder organizing resources in a Research Object\ntype: object\nproperties:\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for the folder\n  '@type':\n    const: Folder\n    description: Type must be Folder\n  name:\n    type: string\n    description: Name of the folder\n    x-jsonld-id: http://purl.org/dc/terms/title\n  description:\n    type: string\n    description: Description of the folder\n    x-jsonld-id: http://purl.org/dc/terms/description\n  hasEntry:\n    type: array\n    items:\n      type: object\n      properties:\n        '@id':\n          type: string\n          format: uri\n      required:\n      - '@id'\n    description: Entries contained in this folder\n    x-jsonld-id: http://purl.org/wf4ever/ro#hasEntry\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\nrequired:\n- '@id'\n- '@type'\nx-jsonld-extra-terms:\n  Folder: http://purl.org/wf4ever/ro#Folder\nx-jsonld-vocab: http://purl.org/wf4ever/ro#\nx-jsonld-prefixes:\n  ro: http://purl.org/wf4ever/ro#\n  dcterms: http://purl.org/dc/terms/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/ro/Folder"
+}

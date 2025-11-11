@@ -1,0 +1,25 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;
+    rdfs:label "Run of workflow/packed.cwl#main" ;
+    wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;
+    wfprov:usedInput <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d>,
+        <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> ;
+    prov:wasAssociatedWith <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> a wfdesc:Process,
+        wfdesc:Workflow .
+
+<urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> a wfprov:Artifact ;
+    prov:value 2e+01 .
+
+<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;
+    rdfs:label "cwltool 3.1.20251031082601" .
+
+<urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> a wfprov:Artifact ;
+    prov:value 90 .
+

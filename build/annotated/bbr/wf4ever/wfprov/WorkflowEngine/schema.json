@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A software agent that executes workflows",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for the workflow engine"
+    },
+    "@type": {
+      "const": "WorkflowEngine",
+      "description": "Type must be WorkflowEngine"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the workflow engine",
+      "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "version": {
+      "type": "string",
+      "description": "Version of the workflow engine",
+      "x-jsonld-id": "http://schema.org/version"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the workflow engine",
+      "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#comment"
+    }
+  },
+  "required": [
+    "@id",
+    "@type"
+  ],
+  "x-jsonld-extra-terms": {
+    "WorkflowEngine": "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+  },
+  "x-jsonld-vocab": "http://purl.org/wf4ever/wfprov#",
+  "x-jsonld-prefixes": {
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

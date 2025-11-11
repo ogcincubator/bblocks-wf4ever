@@ -1,0 +1,40 @@
+{
+  "@type": "WorkflowInstance",
+  "@id": "#simple-analysis-instance",
+  "name": "Basic Data Analysis Instance",
+  "describedBy": "#data-processing-workflow",
+  "hasInput": [
+    {
+      "@id": "#input-file",
+      "@type": "Input",
+      "name": "input_file",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": "data.csv"
+      }
+    },
+    {
+      "@id": "#threshold-param",
+      "@type": "Input",
+      "name": "threshold",
+      "hasArtifact": {
+        "@type": "Artifact",
+        "value": 0.5
+      }
+    }
+  ],
+  "hasOutput": [
+    {
+      "@id": "#output-results",
+      "@type": "Output",
+      "name": "results",
+      "description": "Analysis results"
+    }
+  ],
+  "executionSettings": {
+    "engine": "local-python",
+    "environment": "conda",
+    "scheduler": "local"
+  },
+  "readyForExecution": true
+}

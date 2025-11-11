@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A file artifact",
+  "type": "object",
+  "properties": {
+    "@type": {
+      "oneOf": [
+        {
+          "const": "File"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "File"
+          }
+        }
+      ],
+      "description": "Type must include File"
+    },
+    "basename": {
+      "type": "string",
+      "description": "The base filename"
+    },
+    "checksum": {
+      "type": "string",
+      "description": "File integrity checksum (e.g., SHA256)"
+    },
+    "size": {
+      "type": "integer",
+      "description": "File size in bytes"
+    },
+    "format": {
+      "type": "string",
+      "description": "Media type or file format"
+    }
+  },
+  "required": [
+    "@type"
+  ]
+}

@@ -1,0 +1,17 @@
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+
+<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> a ro:Folder,
+        <wfprov:Artifact> ;
+    rdfs:label "outputs" ;
+    ore:aggregates <urn:uuid:cef10a06-9879-4354-8543-833951388c61>,
+        <urn:uuid:f03ce803-f175-437f-bc7a-3888a62c1d4e> ;
+    ore:isDescribedBy <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/directory-83c8708e-ccbd-494e-b939-1298b65b1539.ttl> .
+
+<urn:uuid:cef10a06-9879-4354-8543-833951388c61> a ro:FolderEntry ;
+    ro:entryName "catalog.json" .
+
+<urn:uuid:f03ce803-f175-437f-bc7a-3888a62c1d4e> a ro:FolderEntry ;
+    ro:entryName "mangrove-analysis-20251103-151416" .
+

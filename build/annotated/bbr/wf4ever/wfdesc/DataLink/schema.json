@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A data flow connection between an output and an input in a workflow",
+  "type": "object",
+  "properties": {
+    "@type": {
+      "const": "DataLink",
+      "description": "Type identifier for a wfdesc DataLink"
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for this data link"
+    },
+    "hasSource": {
+      "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.json",
+      "description": "The source output that produces data",
+      "x-jsonld-id": "http://purl.org/wf4ever/wfdesc#hasSource",
+      "x-jsonld-type": "@id"
+    },
+    "hasSink": {
+      "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.json",
+      "description": "The sink input that consumes data",
+      "x-jsonld-id": "http://purl.org/wf4ever/wfdesc#hasSink",
+      "x-jsonld-type": "@id"
+    }
+  },
+  "required": [
+    "@type",
+    "hasSource",
+    "hasSink"
+  ],
+  "x-jsonld-extra-terms": {
+    "DataLink": "http://purl.org/wf4ever/wfdesc#DataLink"
+  },
+  "x-jsonld-prefixes": {
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#"
+  }
+}

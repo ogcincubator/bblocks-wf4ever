@@ -1,0 +1,15 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/context.jsonld",
+  "@type": "DataLink",
+  "@id": "#link-reproject-to-ndvi",
+  "hasSource": {
+    "@type": "Output",
+    "@id": "#reproject-output",
+    "name": "reprojectedImage"
+  },
+  "hasSink": {
+    "@type": "Input",
+    "@id": "#ndvi-input",
+    "name": "sourceImage"
+  }
+}

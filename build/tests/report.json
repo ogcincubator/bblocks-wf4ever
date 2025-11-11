@@ -1,0 +1,2993 @@
+{
+  "summary": {
+    "total": 29,
+    "passed": 27,
+    "failed": 2,
+    "result": false
+  },
+  "bblocks": {
+    "ogc.bbr.wf4ever.ro.SemanticAnnotation": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.SemanticAnnotation - ro:SemanticAnnotation",
+      "bblockName": "ro:SemanticAnnotation",
+      "bblockId": "ogc.bbr.wf4ever.ro.SemanticAnnotation",
+      "generated": "2025-11-11T12:31:28.586087+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/SemanticAnnotation/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/SemanticAnnotation/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/SemanticAnnotation/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/SemanticAnnotation/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro.Resource": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.Resource - ro:Resource",
+      "bblockName": "ro:Resource",
+      "bblockId": "ogc.bbr.wf4ever.ro.Resource",
+      "generated": "2025-11-11T12:31:28.597929+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/Resource/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Resource/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro - Research Object Ontology (ro)",
+      "bblockName": "Research Object Ontology (ro)",
+      "bblockId": "ogc.bbr.wf4ever.ro",
+      "generated": "2025-11-11T12:31:28.615878+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 16,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 10,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Artifact": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Artifact - wfdesc:Artifact",
+      "bblockName": "wfdesc:Artifact",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Artifact",
+      "generated": "2025-11-11T12:31:28.628935+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Artifact/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Artifact/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Artifact/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Artifact/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Artifact/example_3_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Artifact/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_3_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc - Workflow Description Ontology (wfdesc)",
+      "bblockName": "Workflow Description Ontology (wfdesc)",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc",
+      "generated": "2025-11-11T12:31:28.644385+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 22,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.WorkflowEngine": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.WorkflowEngine - wfprov:WorkflowEngine",
+      "bblockName": "wfprov:WorkflowEngine",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+      "generated": "2025-11-11T12:31:28.660016+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_3_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_3_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_4_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowEngine/example_4_1.json",
+            "exampleIndex": 4,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_4_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_4_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_4_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_4_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_4_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro.AggregatedAnnotation": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.AggregatedAnnotation - ro:AggregatedAnnotation",
+      "bblockName": "ro:AggregatedAnnotation",
+      "bblockId": "ogc.bbr.wf4ever.ro.AggregatedAnnotation",
+      "generated": "2025-11-11T12:31:28.676571+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/AggregatedAnnotation/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/AggregatedAnnotation/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/AggregatedAnnotation/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/AggregatedAnnotation/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 5,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro.Folder": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.Folder - ro:Folder",
+      "bblockName": "ro:Folder",
+      "bblockId": "ogc.bbr.wf4ever.ro.Folder",
+      "generated": "2025-11-11T12:31:28.689969+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/Folder/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Folder/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 27,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro.Manifest": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.Manifest - ro:Manifest",
+      "bblockName": "ro:Manifest",
+      "bblockId": "ogc.bbr.wf4ever.ro.Manifest",
+      "generated": "2025-11-11T12:31:28.702087+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/Manifest/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/Manifest/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/Manifest/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 5,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.Dataset": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.Dataset - wf4ever:Dataset",
+      "bblockName": "wf4ever:Dataset",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.Dataset",
+      "generated": "2025-11-11T12:31:28.711012+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/Dataset/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/Dataset/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.Document": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.Document - wf4ever:Document",
+      "bblockName": "wf4ever:Document",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.Document",
+      "generated": "2025-11-11T12:31:28.718156+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/Document/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/Document/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.File": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.File - wf4ever:File",
+      "bblockName": "wf4ever:File",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.File",
+      "generated": "2025-11-11T12:31:28.726610+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/File/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/File/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/File/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/File/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.Image": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.Image - wf4ever:Image",
+      "bblockName": "wf4ever:Image",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.Image",
+      "generated": "2025-11-11T12:31:28.734091+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/Image/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/Image/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Parameter": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Parameter - wfdesc:Parameter",
+      "bblockName": "wfdesc:Parameter",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Parameter",
+      "generated": "2025-11-11T12:31:28.743874+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Parameter/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Parameter/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov - Workflow Provenance Ontology (wfprov)",
+      "bblockName": "Workflow Provenance Ontology (wfprov)",
+      "bblockId": "ogc.bbr.wf4ever.wfprov",
+      "generated": "2025-11-11T12:31:28.758151+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 14,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro.FolderEntry": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.FolderEntry - ro:FolderEntry",
+      "bblockName": "ro:FolderEntry",
+      "bblockId": "ogc.bbr.wf4ever.ro.FolderEntry",
+      "generated": "2025-11-11T12:31:28.769128+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/FolderEntry/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/FolderEntry/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/FolderEntry/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/FolderEntry/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.ro.ResearchObject": {
+      "title": "Validation report for ogc.bbr.wf4ever.ro.ResearchObject - ro:ResearchObject",
+      "bblockName": "ro:ResearchObject",
+      "bblockId": "ogc.bbr.wf4ever.ro.ResearchObject",
+      "generated": "2025-11-11T12:31:28.783860+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/ro/ResearchObject/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/ro/ResearchObject/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 35,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Input": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Input - wfdesc:Input",
+      "bblockName": "wfdesc:Input",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Input",
+      "generated": "2025-11-11T12:31:28.795392+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Input/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Input/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Input/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Input/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Output": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Output - wfdesc:Output",
+      "bblockName": "wfdesc:Output",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Output",
+      "generated": "2025-11-11T12:31:28.806248+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Output/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Output/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Output/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.Artifact": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.Artifact - wfprov:Artifact",
+      "bblockName": "wfprov:Artifact",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.Artifact",
+      "generated": "2025-11-11T12:31:28.823954+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/Artifact/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/Artifact/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'id' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'A data entity used or generated during workflow '\n                    'execution (based on prov:Entity)',\n     'properties': {'checksum': {'description': 'Checksum information for '\n                                                'data integrity',\n                                 'properties': {'algorithm': {'enum': ['MD5',\n                                                                       'SHA-1',\n                                                                       'SHA-256',\n                                                                       'SHA-512'],\n                                                              'type': 'string'},\n                                                'value': {'type': 'string',\n                                                          'x-jsonld-id': 'http://www.w3.org/ns/prov#value'}},\n                                 'type': 'object'},\n                    'describedByParameter': {'description': 'Links to the '\n                                                            'parameter '\n                                                            'description '\n                                                            '(Input or '\n                                                            'Output) that '\n                                                            'this artifact '\n                                                            'corresponds '\n                                                            'to',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByParameter',\n                                             'x-jsonld-type': '@id'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'artifact',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'type': {'description': 'Type indicator (Entity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'value': {'description': 'The actual value or '\n                                             'reference to the artifact '\n                                             'data',\n                              'x-jsonld-id': 'http://www.w3.org/ns/prov#value'},\n                    'wasOutputFrom': {'description': 'The process run that '\n                                                     'generated this '\n                                                     'artifact',\n                                      'format': 'uri',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasOutputFrom',\n                                      'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Artifact': 'http://purl.org/wf4ever/wfprov#Artifact'},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': 'artifact/landsat_band4.tif',\n     '@type': 'Artifact',\n     'describedByParameter': '#band4-input',\n     'value': 'file:///data/landsat_band4.tif'}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/Artifact/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/Artifact/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 4,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'id' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'A data entity used or generated during workflow '\n                    'execution (based on prov:Entity)',\n     'properties': {'checksum': {'description': 'Checksum information for '\n                                                'data integrity',\n                                 'properties': {'algorithm': {'enum': ['MD5',\n                                                                       'SHA-1',\n                                                                       'SHA-256',\n                                                                       'SHA-512'],\n                                                              'type': 'string'},\n                                                'value': {'type': 'string',\n                                                          'x-jsonld-id': 'http://www.w3.org/ns/prov#value'}},\n                                 'type': 'object'},\n                    'describedByParameter': {'description': 'Links to the '\n                                                            'parameter '\n                                                            'description '\n                                                            '(Input or '\n                                                            'Output) that '\n                                                            'this artifact '\n                                                            'corresponds '\n                                                            'to',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByParameter',\n                                             'x-jsonld-type': '@id'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'artifact',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'type': {'description': 'Type indicator (Entity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'value': {'description': 'The actual value or '\n                                             'reference to the artifact '\n                                             'data',\n                              'x-jsonld-id': 'http://www.w3.org/ns/prov#value'},\n                    'wasOutputFrom': {'description': 'The process run that '\n                                                     'generated this '\n                                                     'artifact',\n                                      'format': 'uri',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasOutputFrom',\n                                      'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Artifact': 'http://purl.org/wf4ever/wfprov#Artifact'},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': 'artifact/ndvi_result.tif',\n     '@type': 'Artifact',\n     'describedByParameter': '#ndvi-output',\n     'value': 'file:///data/ndvi_result.tif',\n     'wasOutputFrom': '#ndvi-process-run-1'}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/Artifact/example_3_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/Artifact/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_3_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 5,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'id' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'A data entity used or generated during workflow '\n                    'execution (based on prov:Entity)',\n     'properties': {'checksum': {'description': 'Checksum information for '\n                                                'data integrity',\n                                 'properties': {'algorithm': {'enum': ['MD5',\n                                                                       'SHA-1',\n                                                                       'SHA-256',\n                                                                       'SHA-512'],\n                                                              'type': 'string'},\n                                                'value': {'type': 'string',\n                                                          'x-jsonld-id': 'http://www.w3.org/ns/prov#value'}},\n                                 'type': 'object'},\n                    'describedByParameter': {'description': 'Links to the '\n                                                            'parameter '\n                                                            'description '\n                                                            '(Input or '\n                                                            'Output) that '\n                                                            'this artifact '\n                                                            'corresponds '\n                                                            'to',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByParameter',\n                                             'x-jsonld-type': '@id'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'artifact',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'type': {'description': 'Type indicator (Entity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'value': {'description': 'The actual value or '\n                                             'reference to the artifact '\n                                             'data',\n                              'x-jsonld-id': 'http://www.w3.org/ns/prov#value'},\n                    'wasOutputFrom': {'description': 'The process run that '\n                                                     'generated this '\n                                                     'artifact',\n                                      'format': 'uri',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasOutputFrom',\n                                      'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Artifact': 'http://purl.org/wf4ever/wfprov#Artifact'},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': 'urn:hash::sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439',\n     '@type': 'Artifact',\n     'describedByParameter': '#output-result',\n     'mediatype': \"text/plain; charset='UTF-8'\",\n     'value': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/data/e7/e71003c6b7dd4093ce139ac0c51a6ba38d54a439',\n     'wasOutputFrom': 'urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c'}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 3,
+        "passed": 0,
+        "failed": 3
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever - Wf4Ever Extension Ontology",
+      "bblockName": "Wf4Ever Extension Ontology",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever",
+      "generated": "2025-11-11T12:31:28.830586+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.DataLink": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.DataLink - wfdesc:DataLink",
+      "bblockName": "wfdesc:DataLink",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.DataLink",
+      "generated": "2025-11-11T12:31:28.843286+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/DataLink/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/DataLink/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 7,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/DataLink/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/DataLink/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Process": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Process - wfdesc:Process",
+      "bblockName": "wfdesc:Process",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Process",
+      "generated": "2025-11-11T12:31:28.871516+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Process/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 15,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Process/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 15,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Process/example_3_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_3_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 19,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Process/example_4_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Process/example_4_1.json",
+            "exampleIndex": 4,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_4_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_4_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_4_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_4_1.ttl",
+                  "size": 35,
+                  "isError": false,
+                  "message": "Output Turtle example_4_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.WebServiceProcess": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.WebServiceProcess - wf4ever:WebServiceProcess",
+      "bblockName": "wf4ever:WebServiceProcess",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.WebServiceProcess",
+      "generated": "2025-11-11T12:31:28.879952+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/WebServiceProcess/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/WebServiceProcess/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.Workflow": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.Workflow - wfdesc:Workflow",
+      "bblockName": "wfdesc:Workflow",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.Workflow",
+      "generated": "2025-11-11T12:31:28.914304+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Workflow/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Workflow/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 22,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Workflow/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Workflow/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 44,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/Workflow/example_3_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Workflow/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_3_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 46,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.ProcessRun": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.ProcessRun - wfprov:ProcessRun",
+      "bblockName": "wfprov:ProcessRun",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.ProcessRun",
+      "generated": "2025-11-11T12:31:28.931584+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/ProcessRun/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/ProcessRun/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 6,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'id' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'An execution instance of a process (based on '\n                    'prov:Activity)',\n     'properties': {'describedByProcess': {'description': 'Links to the '\n                                                          'process '\n                                                          'description '\n                                                          '(wfdesc:Process) '\n                                                          'that was '\n                                                          'executed',\n                                           'format': 'uri',\n                                           'type': 'string',\n                                           'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByProcess',\n                                           'x-jsonld-type': '@id'},\n                    'endedAtTime': {'description': 'End time of the '\n                                                   'execution',\n                                    'format': 'date-time',\n                                    'type': 'string',\n                                    'x-jsonld-id': 'http://www.w3.org/ns/prov#endedAtTime',\n                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'process run',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'startedAtTime': {'description': 'Start time of the '\n                                                     'execution',\n                                      'format': 'date-time',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://www.w3.org/ns/prov#startedAtTime',\n                                      'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'type': {'description': 'Type indicator (Activity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'usedInput': {'description': 'Input artifacts used by '\n                                                 'this process run',\n                                  'items': {'properties': {'id': {'format': 'uri',\n                                                                  'type': 'string'}},\n                                            'required': ['id'],\n                                            'type': 'object'},\n                                  'type': 'array',\n                                  'x-jsonld-container': '@set',\n                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#usedInput',\n                                  'x-jsonld-type': '@id'},\n                    'wasEnactedBy': {'description': 'The workflow engine '\n                                                    'that enacted this '\n                                                    'process run',\n                                     'format': 'uri',\n                                     'type': 'string',\n                                     'x-jsonld-id': 'http://www.w3.org/ns/prov#wasAssociatedWith',\n                                     'x-jsonld-type': '@id'},\n                    'wasPartOfWorkflowRun': {'description': 'The workflow '\n                                                            'run that this '\n                                                            'process run '\n                                                            'was part of',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun',\n                                             'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'ProcessRun': 'http://purl.org/wf4ever/wfprov#ProcessRun',\n                              'WorkflowRun': 'http://purl.org/wf4ever/wfprov#WorkflowRun',\n                              'wasOutputFrom': {'x-jsonld-container': '@set',\n                                                'x-jsonld-id': 'http://www.w3.org/ns/prov#generated',\n                                                'x-jsonld-type': '@id'}},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': '#reproject-run-1',\n     '@type': 'ProcessRun',\n     'describedByProcess': '#reproject-process',\n     'endedAtTime': '2025-11-07T10:02:00Z',\n     'startedAtTime': '2025-11-07T10:00:00Z',\n     'usedInput': [{'@id': 'artifact/input_data.tif'}],\n     'wasPartOfWorkflowRun': '#workflow-run-1'}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/ProcessRun/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/ProcessRun/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 8,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'id' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'id' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'An execution instance of a process (based on '\n                    'prov:Activity)',\n     'properties': {'describedByProcess': {'description': 'Links to the '\n                                                          'process '\n                                                          'description '\n                                                          '(wfdesc:Process) '\n                                                          'that was '\n                                                          'executed',\n                                           'format': 'uri',\n                                           'type': 'string',\n                                           'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#describedByProcess',\n                                           'x-jsonld-type': '@id'},\n                    'endedAtTime': {'description': 'End time of the '\n                                                   'execution',\n                                    'format': 'date-time',\n                                    'type': 'string',\n                                    'x-jsonld-id': 'http://www.w3.org/ns/prov#endedAtTime',\n                                    'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'id': {'description': 'Unique identifier for the '\n                                          'process run',\n                           'format': 'uri',\n                           'type': 'string',\n                           'x-jsonld-id': '@id'},\n                    'startedAtTime': {'description': 'Start time of the '\n                                                     'execution',\n                                      'format': 'date-time',\n                                      'type': 'string',\n                                      'x-jsonld-id': 'http://www.w3.org/ns/prov#startedAtTime',\n                                      'x-jsonld-type': 'http://www.w3.org/2001/XMLSchema#dateTime'},\n                    'type': {'description': 'Type indicator (Activity or '\n                                            'sub-type)',\n                             'type': 'string',\n                             'x-jsonld-id': '@type'},\n                    'usedInput': {'description': 'Input artifacts used by '\n                                                 'this process run',\n                                  'items': {'properties': {'id': {'format': 'uri',\n                                                                  'type': 'string'}},\n                                            'required': ['id'],\n                                            'type': 'object'},\n                                  'type': 'array',\n                                  'x-jsonld-container': '@set',\n                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#usedInput',\n                                  'x-jsonld-type': '@id'},\n                    'wasEnactedBy': {'description': 'The workflow engine '\n                                                    'that enacted this '\n                                                    'process run',\n                                     'format': 'uri',\n                                     'type': 'string',\n                                     'x-jsonld-id': 'http://www.w3.org/ns/prov#wasAssociatedWith',\n                                     'x-jsonld-type': '@id'},\n                    'wasPartOfWorkflowRun': {'description': 'The workflow '\n                                                            'run that this '\n                                                            'process run '\n                                                            'was part of',\n                                             'format': 'uri',\n                                             'type': 'string',\n                                             'x-jsonld-id': 'http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun',\n                                             'x-jsonld-type': '@id'}},\n     'required': ['id'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'ProcessRun': 'http://purl.org/wf4ever/wfprov#ProcessRun',\n                              'WorkflowRun': 'http://purl.org/wf4ever/wfprov#WorkflowRun',\n                              'wasOutputFrom': {'x-jsonld-container': '@set',\n                                                'x-jsonld-id': 'http://www.w3.org/ns/prov#generated',\n                                                'x-jsonld-type': '@id'}},\n     'x-jsonld-prefixes': {'prov': 'http://www.w3.org/ns/prov#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#',\n                           'wfprov': 'http://purl.org/wf4ever/wfprov#'},\n     'x-jsonld-vocab': 'http://purl.org/wf4ever/wfprov#'}\n\nOn instance:\n    {'@id': '#ndvi-process-run-1',\n     '@type': 'ProcessRun',\n     'describedByProcess': '#ndvi-process',\n     'endedAtTime': '2025-11-07T10:05:00Z',\n     'startedAtTime': '2025-11-07T10:00:00Z',\n     'usedInput': [{'@id': 'artifact/landsat_band4.tif'},\n                   {'@id': 'artifact/landsat_band5.tif'}],\n     'wasEnactedBy': '#zoo-wps-engine',\n     'wasPartOfWorkflowRun': '#ndvi-workflow-run-1'}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject": {
+      "title": "Validation report for ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject - wf4ever:WorkflowResearchObject",
+      "bblockName": "wf4ever:WorkflowResearchObject",
+      "bblockId": "ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject",
+      "generated": "2025-11-11T12:31:28.939383+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wf4ever/WorkflowResearchObject/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever/WorkflowResearchObject/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfdesc.WorkflowInstance": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfdesc.WorkflowInstance - wfdesc:WorkflowInstance",
+      "bblockName": "wfdesc:WorkflowInstance",
+      "bblockId": "ogc.bbr.wf4ever.wfdesc.WorkflowInstance",
+      "generated": "2025-11-11T12:31:28.957548+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/example_2_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/WorkflowInstance/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 2,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.wf4ever.wfprov.WorkflowRun": {
+      "title": "Validation report for ogc.bbr.wf4ever.wfprov.WorkflowRun - wfprov:WorkflowRun",
+      "bblockName": "wfprov:WorkflowRun",
+      "bblockId": "ogc.bbr.wf4ever.wfprov.WorkflowRun",
+      "generated": "2025-11-11T12:31:28.972055+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json",
+            "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 26,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  }
+}

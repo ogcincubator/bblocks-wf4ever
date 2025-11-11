@@ -1,0 +1,14 @@
+{
+  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/context.jsonld",
+  "@id": "#reproject-run-1",
+  "@type": "ProcessRun",
+  "describedByProcess": "#reproject-process",
+  "usedInput": [
+    {
+      "@id": "artifact/input_data.tif"
+    }
+  ],
+  "startedAtTime": "2025-11-07T10:00:00Z",
+  "endedAtTime": "2025-11-07T10:02:00Z",
+  "wasPartOfWorkflowRun": "#workflow-run-1"
+}

@@ -1,0 +1,69 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Parameter",
+  "name": "wfdesc:Parameter",
+  "abstract": "A parameter (input or output) of a workflow process. This is the base class for Input, Output, and Configuration.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-11",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Artifact"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Parameter",
+      "link": "http://purl.org/wf4ever/wfdesc#Parameter"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "parameter",
+    "ontology"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "ldContext": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/context.jsonld",
+  "schema": {
+    "application/yaml": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.json"
+  },
+  "sourceSchema": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Parameter/schema.yaml",
+  "sourceLdContext": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Parameter/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-wf4ever/_sources/wfdesc/Parameter/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfdesc/Parameter/",
+  "description": "# wfdesc:Parameter\n\n## Description\n\nA **Parameter** is the base class for describing parameters of workflow processes. In wfdesc, parameters represent any kind of data port that can be connected in a workflow.\n\n## Class Hierarchy\n\n```\nwfdesc:Parameter (base class)\n\u251c\u2500\u2500 wfdesc:Input (input parameter)\n\u2514\u2500\u2500 wfdesc:Output (output parameter)\n```\n\n## Usage\n\nParameters are typically not used directly but through their subclasses (Input, Output). They represent the interface points of a Process and can be associated with Artifacts that describe the data types.\n\n## Related Classes\n\n- **Input**: A parameter that receives data into a process\n- **Output**: A parameter that produces data from a process\n- **Artifact**: Describes the type of data associated with a parameter\n- **Process**: The class that has parameters\n",
+  "examples": [
+    {
+      "title": "Simple Parameter",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"@type\": \"Parameter\",\n  \"@id\": \"http://example.org/workflow/param1\",\n  \"name\": \"dataParameter\",\n  \"description\": \"A generic parameter for data flow\"\n}\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Parameter/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/context.jsonld\",\n  \"@type\": \"Parameter\",\n  \"@id\": \"http://example.org/workflow/param1\",\n  \"name\": \"dataParameter\",\n  \"description\": \"A generic parameter for data flow\"\n}",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Parameter/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n\n<http://example.org/workflow/param1> a wfdesc:Parameter ;\n    rdfs:label \"dataParameter\" ;\n    rdfs:comment \"A generic parameter for data flow\" .\n\n",
+          "url": "https://geolabs.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfdesc/Parameter/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A parameter of a workflow process\ntype: object\nproperties:\n  '@type':\n    type: string\n    description: Type identifier for a wfdesc Parameter or its subclasses\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for this parameter\n  name:\n    type: string\n    description: Name of the parameter\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  description:\n    type: string\n    description: Description of the parameter\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\n  hasArtifact:\n    type: object\n    description: Links this parameter to an artifact containing concrete data or values\n    properties:\n      '@type':\n        const: Artifact\n      '@id':\n        type: string\n        format: uri\n      value:\n        description: The concrete value or data reference\n      description:\n        type: string\n        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\n    required:\n    - '@type'\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasArtifact\n    x-jsonld-type: '@id'\nx-jsonld-extra-terms:\n  Parameter: http://purl.org/wf4ever/wfdesc#Parameter\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/Parameter"
+}

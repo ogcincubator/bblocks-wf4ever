@@ -1,0 +1,7 @@
+path	@id
+/@id	
+/@type	
+/name	http://purl.org/dc/terms/title
+/description	http://purl.org/dc/terms/description
+/hasEntry	http://purl.org/wf4ever/ro#hasEntry
+/hasEntry/@id	

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A Research Object bundling resources and contextual information",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for the research object"
+    },
+    "@type": {
+      "const": "ResearchObject",
+      "description": "Type must be ResearchObject"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the research object",
+      "x-jsonld-id": "http://purl.org/dc/terms/title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the research object",
+      "x-jsonld-id": "http://purl.org/dc/terms/description"
+    },
+    "aggregates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "description": "Resources aggregated in this research object",
+      "x-jsonld-id": "http://www.openarchives.org/ore/terms/aggregates",
+      "x-jsonld-type": "@id",
+      "x-jsonld-container": "@set"
+    },
+    "manifest": {
+      "type": "string",
+      "format": "uri",
+      "description": "The manifest describing this research object",
+      "x-jsonld-id": "http://purl.org/wf4ever/ro#manifest",
+      "x-jsonld-type": "@id"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date of the research object",
+      "x-jsonld-id": "http://purl.org/dc/terms/created",
+      "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "required": [
+    "@id",
+    "@type"
+  ],
+  "x-jsonld-extra-terms": {
+    "ResearchObject": "http://purl.org/wf4ever/ro#ResearchObject"
+  },
+  "x-jsonld-vocab": "http://purl.org/wf4ever/ro#",
+  "x-jsonld-prefixes": {
+    "ro": "http://purl.org/wf4ever/ro#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "ore": "http://www.openarchives.org/ore/terms/"
+  }
+}

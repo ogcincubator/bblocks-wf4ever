@@ -1,0 +1,41 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An execution instance of a workflow
+allOf:
+- $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+- type: object
+  properties:
+    describedByWorkflow:
+      type: string
+      format: uri
+      description: Links to the workflow description (wfdesc:Workflow) that was executed
+      x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByWorkflow
+      x-jsonld-type: '@id'
+    hadSubProcessRun:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+            format: uri
+        required:
+        - id
+      description: The process runs that were part of this workflow execution
+      x-jsonld-reverse: wfprov:wasPartOfWorkflowRun
+      x-jsonld-type: '@id'
+      x-jsonld-container: '@set'
+    wasEnactedBy:
+      type: string
+      format: uri
+      description: The workflow engine that executed this workflow
+      x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith
+      x-jsonld-type: '@id'
+  required:
+  - describedByWorkflow
+x-jsonld-extra-terms:
+  WorkflowRun: http://purl.org/wf4ever/wfprov#WorkflowRun
+x-jsonld-vocab: http://purl.org/wf4ever/wfprov#
+x-jsonld-prefixes:
+  wfprov: http://purl.org/wf4ever/wfprov#
+  prov: http://www.w3.org/ns/prov#
+  wfdesc: http://purl.org/wf4ever/wfdesc#

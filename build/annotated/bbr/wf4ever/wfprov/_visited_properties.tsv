@@ -1,0 +1,11 @@
+path	@id
+/@type	
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/describedByWorkflow	http://purl.org/wf4ever/wfprov#describedByWorkflow
+/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
+/wasPartOfWorkflowRun	http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun
+/usedInput	http://purl.org/wf4ever/wfprov#usedInput
+/wasOutputFrom	http://purl.org/wf4ever/wfprov#wasOutputFrom
+/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
+/wasEnactedBy	http://purl.org/wf4ever/wfprov#wasEnactedBy
+/value	http://www.w3.org/ns/prov#value

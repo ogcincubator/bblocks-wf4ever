@@ -1,0 +1,6 @@
+{
+  "@type": "Input",
+  "@id": "http://example.org/workflow/input/image",
+  "name": "sourceImage",
+  "description": "Source satellite image in GeoTIFF format"
+}

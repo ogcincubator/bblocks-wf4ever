@@ -1,0 +1,46 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A computational process in a workflow
+type: object
+properties:
+  '@type':
+    oneOf:
+    - const: Process
+    - const: Workflow
+    description: Type identifier for a wfdesc Process or Workflow
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for this process
+  name:
+    type: string
+    description: Name of the process
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+  description:
+    type: string
+    description: Description of what this process does
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment
+  hasInput:
+    type: array
+    items:
+      $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml
+    description: Input parameters for this process
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasInput
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+  hasOutput:
+    type: array
+    items:
+      $ref: https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml
+    description: Output parameters produced by this process
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasOutput
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+required:
+- '@type'
+x-jsonld-extra-terms:
+  Process: http://purl.org/wf4ever/wfdesc#Process
+  Input: http://purl.org/wf4ever/wfdesc#Input
+  Output: http://purl.org/wf4ever/wfdesc#Output
+x-jsonld-prefixes:
+  wfdesc: http://purl.org/wf4ever/wfdesc#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#

@@ -1,0 +1,6 @@
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<file:///github/workspace/#link1> a wfdesc:DataLink ;
+    wfdesc:hasSink <file:///github/workspace/#process2-input> ;
+    wfdesc:hasSource <file:///github/workspace/#process1-output> .
+

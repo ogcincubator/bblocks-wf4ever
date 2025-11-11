@@ -1,0 +1,7 @@
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+
+<file:///github/workspace/data/.ro/entry-output> a ro:FolderEntry ;
+    ro:entryName "ndvi_result.tif" ;
+    ore:proxyFor <file:///github/workspace/data/output/ndvi_result.tif> .
+

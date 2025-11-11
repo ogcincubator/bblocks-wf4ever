@@ -1,0 +1,7 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+
+<http://example.org/workflow/param1> a wfdesc:Parameter ;
+    rdfs:label "dataParameter" ;
+    rdfs:comment "A generic parameter for data flow" .
+
