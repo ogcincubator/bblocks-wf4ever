@@ -4,6 +4,10 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "Parameter": "wfdesc:Parameter",
     "name": "rdfs:label",
-    "description": "rdfs:comment"
+    "description": "rdfs:comment",
+    "hasArtifact": {
+      "@id": "wfdesc:hasArtifact",
+      "@type": "@id"
+    }
   }
 }

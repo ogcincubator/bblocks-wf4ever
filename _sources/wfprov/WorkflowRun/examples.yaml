@@ -1,15 +1,5 @@
-- title: Simple workflow run
+- title: Mangrove Workflow Run with Provenance
+  description: Real-world WorkflowRun from CWLProv execution showing inputs, outputs, temporal information, and associated agents (cwltool 3.1.20251031082601)
   snippets:
     - language: json
-      ref: simple-workflow-run.json
-
-- title: Complex workflow run with multiple processes
-  snippets:
-    - language: json
-      ref: ndvi-workflow-run.json
-
-- title: KindGrove Mangrove Analysis Execution
-  description: Real CWL workflow execution for mangrove biomass analysis in Myanmar (UUID f02b8997...)
-  snippets:
-    - language: json
-      ref: examples/kindgrove-run.json
+      ref: examples/mangrove-workflowrun.json

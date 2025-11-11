@@ -26,6 +26,8 @@ imports:
   - default
   - https://ogcincubator.github.io/bblocks-ogcapi-processes/
   - https://ogcincubator.github.io/geodcat-ogcapi-records/
+  # PROV-O Building Blocks - W3C PROV model schemas
+  - https://ogcincubator.github.io/bblock-prov-schema/
   # CWL Building Blocks - Common Workflow Language schemas and validation
   # Note: Reference for future integration when bblocks-cwl is published
   - https://ogcincubator.github.io/bblocks-cwl/

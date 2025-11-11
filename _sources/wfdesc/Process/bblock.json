@@ -3,7 +3,7 @@
   "abstract": "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

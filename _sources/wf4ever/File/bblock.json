@@ -3,7 +3,7 @@
   "abstract": "A file artifact - a specialization of wfdesc:Artifact representing a file-based data entity used or produced by workflow execution.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

@@ -3,7 +3,7 @@
   "abstract": "A folder that organizes resources within a Research Object. Folders provide hierarchical structure, similar to filesystem directories, allowing logical grouping of related resources.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

@@ -4,24 +4,26 @@ allOf:
   - $ref: ../ProcessRun/schema.yaml
   - type: object
     properties:
-      '@type':
-        const: WorkflowRun
       describedByWorkflow:
         type: string
         format: uri
         description: Links to the workflow description (wfdesc:Workflow) that was executed
+        x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByWorkflow
+        x-jsonld-type: '@id'
       hadSubProcessRun:
         type: array
         items:
           type: object
           properties:
-            '@id':
+            id:
               type: string
               format: uri
           required:
-            - '@id'
+            - id
         description: The process runs that were part of this workflow execution
       wasEnactedBy:
         type: string
         format: uri
         description: The workflow engine that executed this workflow
+    required:
+      - describedByWorkflow

@@ -3,7 +3,7 @@
   "abstract": "An execution instance of a process. A ProcessRun represents the actual execution of a process described by wfdesc:Process, tracking what happened during that execution including inputs used, outputs generated, and timing information.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

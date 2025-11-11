@@ -3,7 +3,7 @@
   "abstract": "An output parameter from a workflow process. Outputs produce data that can be consumed by inputs of other processes or as final workflow results.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

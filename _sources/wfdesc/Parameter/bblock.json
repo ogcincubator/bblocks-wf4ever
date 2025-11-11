@@ -3,7 +3,7 @@
   "abstract": "A parameter (input or output) of a workflow process. This is the base class for Input, Output, and Configuration.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

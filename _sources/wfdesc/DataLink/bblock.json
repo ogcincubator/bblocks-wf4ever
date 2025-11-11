@@ -3,7 +3,7 @@
   "abstract": "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

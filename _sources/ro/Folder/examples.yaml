@@ -1,10 +1,5 @@
-- title: Workflow folder
+- title: Mangrove Analysis Output Folder
+  description: Real-world folder structure from mangrove biomass analysis with FolderEntry aggregates (from CWLProv execution)
   snippets:
     - language: json
-      ref: workflow-folder.json
-
-- title: KindGrove Outputs Folder
-  description: Output directory from real mangrove analysis workflow execution
-  snippets:
-    - language: json
-      ref: examples/kindgrove-folder.json
+      ref: examples/mangrove-folder.json

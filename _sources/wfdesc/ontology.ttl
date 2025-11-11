@@ -45,11 +45,6 @@ wfdesc:DataLink a owl:Class ;
     rdfs:label "Data Link"@en ;
     rdfs:comment "A link between an output and an input, representing data flow."@en .
 
-wfdesc:Configuration a owl:Class ;
-    rdfs:label "Configuration"@en ;
-    rdfs:comment "A configuration parameter for a process."@en ;
-    rdfs:subClassOf wfdesc:Parameter .
-
 wfdesc:WorkflowInstance a owl:Class ;
     rdfs:label "Workflow Instance"@en ;
     rdfs:comment "A wfdesc:WorkflowInstance is a specialisation of a wfdesc:Workflow description which defines all data/parameters/settings that are required to form a wfprov:WorkflowRun."@en ;
@@ -78,6 +73,13 @@ wfdesc:hasSubProcess a owl:ObjectProperty ;
     rdfs:comment "This workflow contains a sub-process."@en ;
     rdfs:domain wfdesc:Workflow ;
     rdfs:range wfdesc:Process .
+
+wfdesc:hasSubWorkflow a owl:ObjectProperty ;
+    rdfs:label "has sub-workflow"@en ;
+    rdfs:comment "This object property is used to associate a wfdesc:Workflow description to another wfdesc:Workflow, specifying that the first workflow has the given sub-workflow as a contained process. This is a specialisation of wfdesc:hasSubProcess."@en ;
+    rdfs:domain wfdesc:Workflow ;
+    rdfs:range wfdesc:Workflow ;
+    rdfs:subPropertyOf wfdesc:hasSubProcess .
 
 wfdesc:hasDataLink a owl:ObjectProperty ;
     rdfs:label "has data link"@en ;

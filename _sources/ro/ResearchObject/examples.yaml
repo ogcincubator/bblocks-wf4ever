@@ -1,10 +1,5 @@
-- title: NDVI Research Object
+- title: Mangrove Workflow Research Object
+  description: Real-world Research Object from a mangrove biomass analysis workflow execution (CWLProv 0.6.0, BagIt format)
   snippets:
     - language: json
-      ref: ndvi-ro.json
-
-- title: KindGrove Research Object
-  description: Complete research object from real cwltool execution with --provenance (BagIt format, conforming to CWLProv 0.6.0)
-  snippets:
-    - language: json
-      ref: examples/kindgrove-ro.json
+      ref: examples/mangrove-ro.json

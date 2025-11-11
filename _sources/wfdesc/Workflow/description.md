@@ -43,7 +43,7 @@ Process1 --> Process2 --> Process3
 
 ## Nested Workflows
 
-Workflows can contain other workflows as sub-processes.
+Workflows can contain other workflows as sub-processes using the `hasSubWorkflow` property, which is a specialization of `hasSubProcess`. This allows for hierarchical workflow composition and modular design.
 
 ## Workflow as a Black Box
 

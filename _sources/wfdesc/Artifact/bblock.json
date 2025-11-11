@@ -3,7 +3,7 @@
   "abstract": "An artifact representing a data value, file, or resource that can be used as input or generated as output by workflow processes. Artifacts provide concrete data representations for parameter binding.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever", 
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

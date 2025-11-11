@@ -3,7 +3,7 @@
   "abstract": "A document artifact - textual or formatted content such as PDF, HTML, or text files.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

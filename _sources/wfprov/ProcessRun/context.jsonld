@@ -31,6 +31,10 @@
     "wasPartOfWorkflowRun": {
       "@id": "wfprov:wasPartOfWorkflowRun",
       "@type": "@id"
+    },
+    "wasEnactedBy": {
+      "@id": "wfprov:wasEnactedBy",
+      "@type": "@id"
     }
   }
 }

@@ -3,7 +3,7 @@
   "abstract": "An entry within a folder that associates a name with a resource. FolderEntries provide the mapping between folder paths and actual resources, similar to filesystem directory entries.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-07T00:00:00Z",
-  "itemClass": "schema",
+  "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
   "dateOfLastChange": "2025-11-07",

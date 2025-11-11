@@ -57,26 +57,14 @@ ro:Manifest a owl:Class ;
 
 # Properties
 
-ro:rootFolder a owl:ObjectProperty ;
-    rdfs:label "root folder"@en ;
-    rdfs:comment "The root folder of a research object."@en ;
-    rdfs:domain ro:ResearchObject ;
-    rdfs:range ro:Folder .
-
 ro:entryName a owl:DatatypeProperty ;
     rdfs:label "entry name"@en ;
-    rdfs:comment "The name of a folder entry."@en ;
+    rdfs:comment "This functional property specifies the name of a ro:FolderEntry within an ro:Folder."@en ;
     rdfs:domain ro:FolderEntry ;
     rdfs:range xsd:string .
 
 ro:annotatesAggregatedResource a owl:ObjectProperty ;
     rdfs:label "annotates aggregated resource"@en ;
-    rdfs:comment "Links an annotation to the resource it annotates."@en ;
+    rdfs:comment "ro:annotatesAggregatedResource specifies that an annotation annotates an aggregated ro:Resource."@en ;
     rdfs:domain ro:AggregatedAnnotation ;
     rdfs:range ro:Resource .
-
-ro:manifest a owl:ObjectProperty ;
-    rdfs:label "manifest"@en ;
-    rdfs:comment "Links a research object to its manifest."@en ;
-    rdfs:domain ro:ResearchObject ;
-    rdfs:range ro:Manifest .

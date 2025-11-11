@@ -9,17 +9,16 @@ A **Parameter** is the base class for describing parameters of workflow processe
 ```
 wfdesc:Parameter (base class)
 ├── wfdesc:Input (input parameter)
-├── wfdesc:Output (output parameter)
-└── wfdesc:Configuration (configuration parameter)
+└── wfdesc:Output (output parameter)
 ```
 
 ## Usage
 
-Parameters are typically not used directly but through their subclasses (Input, Output, Configuration). They represent the interface points of a Process.
+Parameters are typically not used directly but through their subclasses (Input, Output). They represent the interface points of a Process and can be associated with Artifacts that describe the data types.
 
 ## Related Classes
 
 - **Input**: A parameter that receives data into a process
 - **Output**: A parameter that produces data from a process
-- **Configuration**: A parameter that configures process behavior
+- **Artifact**: Describes the type of data associated with a parameter
 - **Process**: The class that has parameters
