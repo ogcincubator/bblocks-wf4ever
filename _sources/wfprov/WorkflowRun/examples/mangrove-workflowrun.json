@@ -1,0 +1,50 @@
+{
+  "id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
+  "type": "WorkflowRun",
+  "label": "Run of workflow/packed.cwl#main",
+  "describedByWorkflow": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
+  "startedAtTime": "2025-11-03T15:14:02.032122",
+  "endedAtTime": "2025-11-03T15:14:17.060218",
+  "wasAssociatedWith": [
+    {
+      "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+      "type": "WorkflowEngine",
+      "label": "cwltool 3.1.20251031082601"
+    },
+    {
+      "id": "urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f",
+      "type": "Agent",
+      "label": "Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696"
+    }
+  ],
+  "used": [
+    {
+      "id": "urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d",
+      "value": 20.0,
+      "hadRole": "cloud_cover_max"
+    },
+    {
+      "id": "urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258",
+      "value": 90,
+      "hadRole": "days_back"
+    },
+    {
+      "id": "urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea",
+      "value": 95.35,
+      "hadRole": "east"
+    },
+    {
+      "id": "urn:uuid:fd57ac88-8716-40ed-8945-f83914857523",
+      "value": 16.1,
+      "hadRole": "north"
+    }
+  ],
+  "generated": [
+    {
+      "id": "urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539",
+      "type": "Artifact",
+      "basename": "outputs"
+    }
+  ]
+}
+
