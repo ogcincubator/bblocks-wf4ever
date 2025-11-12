@@ -1,9 +1,0 @@
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
-
-<urn:hash::sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439> a wfprov:Artifact ;
-    wfprov:describedByParameter <file:///github/workspace/#output-result> ;
-    wfprov:mediatype "text/plain; charset='UTF-8'" ;
-    wfprov:wasOutputFrom <urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> ;
-    prov:value "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/data/e7/e71003c6b7dd4093ce139ac0c51a6ba38d54a439" .
-

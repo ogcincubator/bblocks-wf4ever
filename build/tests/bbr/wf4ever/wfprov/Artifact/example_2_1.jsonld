@@ -1,8 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/context.jsonld",
-  "@id": "artifact/ndvi_result.tif",
-  "@type": "Artifact",
-  "describedByParameter": "#ndvi-output",
-  "value": "file:///data/ndvi_result.tif",
-  "wasOutputFrom": "#ndvi-process-run-1"
-}

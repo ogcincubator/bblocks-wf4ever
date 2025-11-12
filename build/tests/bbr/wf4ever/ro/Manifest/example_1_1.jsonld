@@ -1,8 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld",
-  "@id": ".ro/manifest.json",
-  "@type": "Manifest",
-  "describes": "../",
-  "createdBy": "https://orcid.org/0000-0001-2345-6789",
-  "createdOn": "2025-11-07T10:00:00Z"
-}

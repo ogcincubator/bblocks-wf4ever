@@ -1,7 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/context.jsonld",
-  "@type": "Input",
-  "@id": "http://example.org/workflow/input/image",
-  "name": "sourceImage",
-  "description": "Source satellite image in GeoTIFF format"
-}

@@ -1,8 +1,0 @@
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
-
-<file:///github/workspace/artifact/ndvi_result.tif> a wfprov:Artifact ;
-    wfprov:describedByParameter <file:///github/workspace/#ndvi-output> ;
-    wfprov:wasOutputFrom <file:///github/workspace/#ndvi-process-run-1> ;
-    prov:value "file:///data/ndvi_result.tif" .
-

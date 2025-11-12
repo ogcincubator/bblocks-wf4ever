@@ -1,6 +1,0 @@
-{
-  "@id": "#ndvi-service",
-  "@type": "WebServiceProcess",
-  "endpoint": "https://zoo-project.org/ogcapi/processes/ndvi",
-  "method": "POST"
-}

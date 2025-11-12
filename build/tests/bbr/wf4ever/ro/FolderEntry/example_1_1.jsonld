@@ -1,7 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/context.jsonld",
-  "@id": "workflow/.ro/entry-ndvi-cwl",
-  "@type": "FolderEntry",
-  "entryName": "ndvi.cwl",
-  "proxyFor": "workflow/ndvi.cwl"
-}

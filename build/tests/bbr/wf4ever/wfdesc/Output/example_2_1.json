@@ -1,8 +1,0 @@
-{
-  "@id": "#output-mangrove-analysis",
-  "@type": "Output",
-  "name": "result",
-  "description": "Directory containing mangrove biomass analysis results: NDVI maps, biomass estimates, and statistical summaries",
-  "datatype": "Directory",
-  "format": "application/x-directory"
-}

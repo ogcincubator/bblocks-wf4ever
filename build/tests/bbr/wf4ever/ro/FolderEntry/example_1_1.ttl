@@ -1,7 +1,0 @@
-@prefix ore: <http://www.openarchives.org/ore/terms/> .
-@prefix ro: <http://purl.org/wf4ever/ro#> .
-
-<file:///github/workspace/workflow/.ro/entry-ndvi-cwl> a ro:FolderEntry ;
-    ro:entryName "ndvi.cwl" ;
-    ore:proxyFor <file:///github/workspace/workflow/ndvi.cwl> .
-

@@ -1,7 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/context.jsonld",
-  "@id": "data/.ro/entry-output",
-  "@type": "FolderEntry",
-  "entryName": "ndvi_result.tif",
-  "proxyFor": "data/output/ndvi_result.tif"
-}

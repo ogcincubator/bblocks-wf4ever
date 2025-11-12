@@ -1,7 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/context.jsonld",
-  "@id": "artifact/landsat_band4.tif",
-  "@type": "Artifact",
-  "describedByParameter": "#band4-input",
-  "value": "file:///data/landsat_band4.tif"
-}

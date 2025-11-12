@@ -1,7 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
-
-<file:///github/workspace/#input-bbox-north> a wfdesc:Input ;
-    rdfs:label "north" ;
-    rdfs:comment "Northern latitude boundary for Sentinel-2 image query (Myanmar mangrove area)" .
-

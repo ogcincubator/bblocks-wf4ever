@@ -1,6 +1,0 @@
-{
-  "@id": "workflow/.ro/entry-ndvi-cwl",
-  "@type": "FolderEntry",
-  "entryName": "ndvi.cwl",
-  "proxyFor": "workflow/ndvi.cwl"
-}

@@ -1,9 +1,0 @@
-{
-  "@context": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld",
-  "@id": "#output-mangrove-analysis",
-  "@type": "Output",
-  "name": "result",
-  "description": "Directory containing mangrove biomass analysis results: NDVI maps, biomass estimates, and statistical summaries",
-  "datatype": "Directory",
-  "format": "application/x-directory"
-}

@@ -1,7 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
-
-<file:///github/workspace/#output-mangrove-analysis> a wfdesc:Output ;
-    rdfs:label "result" ;
-    rdfs:comment "Directory containing mangrove biomass analysis results: NDVI maps, biomass estimates, and statistical summaries" .
-
