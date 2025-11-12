@@ -1,0 +1,28 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A dataset artifact
+type: object
+properties:
+  '@type':
+    oneOf:
+    - const: Dataset
+    - type: array
+      contains:
+        const: Dataset
+    description: Type must include Dataset
+  title:
+    type: string
+    description: Dataset title
+  description:
+    type: string
+    description: Dataset description
+  creator:
+    type: string
+    description: Dataset creator or owner
+  temporalCoverage:
+    type: string
+    description: Temporal coverage (e.g., date range)
+  spatialCoverage:
+    type: object
+    description: Spatial coverage (e.g., bounding box, region)
+required:
+- '@type'

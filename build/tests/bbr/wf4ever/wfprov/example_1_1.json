@@ -1,0 +1,31 @@
+{
+  "@id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
+  "@type": "WorkflowRun",
+  "name": "Run of workflow/packed.cwl#main",
+  "describedByWorkflow": {
+    "@id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
+    "@type": [
+      "wfdesc:Workflow",
+      "wfdesc:Process"
+    ]
+  },
+  "wasAssociatedWith": [
+    {
+      "@id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+      "@type": "WorkflowEngine",
+      "name": "cwltool 3.1.20251031082601"
+    }
+  ],
+  "usedInput": [
+    {
+      "@type": "Artifact",
+      "@id": "urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d",
+      "value": 20.0
+    },
+    {
+      "@type": "Artifact",
+      "@id": "urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258",
+      "value": 90
+    }
+  ]
+}

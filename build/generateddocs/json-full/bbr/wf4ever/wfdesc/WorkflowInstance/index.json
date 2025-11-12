@@ -1,0 +1,45 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.WorkflowInstance",
+  "name": "wfdesc:WorkflowInstance",
+  "abstract": "A specialized workflow description that includes all concrete data, parameters, and settings required to execute a specific workflow run. It bridges the gap between abstract workflow descriptions and concrete workflow executions.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Workflow"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - WorkflowInstance",
+      "link": "http://purl.org/wf4ever/wfdesc#WorkflowInstance"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "instance",
+    "execution",
+    "configuration"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "## Workflow Instance\n\nA `WorkflowInstance` represents a specialized workflow description that includes all the concrete data, parameters, and settings required to execute a specific workflow run.\n\n### Purpose\n\nA `WorkflowInstance` is a specialization of `wfdesc:Workflow` that bridges the gap between abstract workflow descriptions and concrete workflow executions. While a `wfdesc:Workflow` defines the general structure and capabilities, a `WorkflowInstance` contains all the specific values, configurations, and bound parameters needed to create a `wfprov:WorkflowRun`.\n\n### Key Characteristics\n\n- **Inherits from Workflow**: A `WorkflowInstance` is a subclass of `wfdesc:Workflow`, so it has all the structural properties (processes, data links, inputs, outputs)\n- **Execution-ready**: Contains all bound parameters and concrete values needed for execution\n- **Provenance bridge**: Forms the link between workflow descriptions and their execution traces\n- **Reproducible**: Captures the exact configuration needed to reproduce a specific workflow execution\n\n### Relationship to Other Classes\n\n- **Extends**: `wfdesc:Workflow` (inherits structure)\n- **Prepares**: `wfprov:WorkflowRun` (execution configuration)\n- **Contains**: Concrete parameter values and execution settings\n\n### Use Cases\n\n1. **Workflow Execution Preparation**: Creating execution-ready configurations from abstract workflow definitions\n2. **Reproducible Science**: Storing exact parameter combinations for reproducible research\n3. **Provenance Linkage**: Connecting workflow descriptions to their execution traces  \n4. **Parameterization**: Managing different parameter sets for the same workflow template\n5. **Execution Planning**: Validating that all required inputs are provided before execution\n\n### JSON-LD Context\n\nWhen used in JSON-LD, the workflow instance inherits the wfdesc context and adds execution-specific terms:\n\n```json\n{\n  \"@context\": {\n    \"@vocab\": \"http://purl.org/wf4ever/wfdesc#\",\n    \"describedBy\": {\"@type\": \"@id\"},\n    \"hasArtifact\": {\"@type\": \"@id\"},\n    \"executionSettings\": \"http://purl.org/wf4ever/wfprov#executionSettings\",\n    \"readyForExecution\": {\"@type\": \"http://www.w3.org/2001/XMLSchema#boolean\"}\n  }\n}\n```\n\n### Best Practices\n\n- **Complete Parameter Binding**: Ensure all required inputs have bound artifacts\n- **Version Tracking**: Include workflow definition version and execution engine details\n- **Validation**: Verify parameter types and constraints before marking as execution-ready\n- **Documentation**: Include human-readable descriptions of the parameter choices\n- **Provenance Preparation**: Structure data to facilitate easy transition to workflow runs",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A specialized workflow description that includes all concrete data, parameters,\n  and settings required to execute a specific workflow run\ntype: object\nproperties:\n  '@type':\n    const: WorkflowInstance\n    description: Type identifier for workflow instance\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for this workflow instance\n  name:\n    type: string\n    description: Human-readable name for this workflow instance\n  description:\n    type: string\n    description: Description of this workflow instance\n  describedBy:\n    type: string\n    format: uri\n    description: URI reference to the workflow definition this instance is based on\n  hasInput:\n    type: array\n    description: Input parameters with bound artifacts and concrete values\n    items:\n      type: object\n      properties:\n        '@type':\n          const: Input\n        '@id':\n          type: string\n          format: uri\n        name:\n          type: string\n        description:\n          type: string\n        hasArtifact:\n          type: object\n          properties:\n            '@type':\n              const: Artifact\n            '@id':\n              type: string\n              format: uri\n            value:\n              description: Concrete value bound to this parameter\n          required:\n          - '@type'\n          - value\n      required:\n      - '@type'\n      - hasArtifact\n  hasOutput:\n    type: array\n    description: Expected output parameters for this workflow instance\n    items:\n      type: object\n      properties:\n        '@type':\n          const: Output\n        '@id':\n          type: string\n          format: uri\n        name:\n          type: string\n        description:\n          type: string\n      required:\n      - '@type'\n  hasSubProcess:\n    type: array\n    description: Sub-processes contained in this workflow instance\n    items:\n      type: object\n      properties:\n        '@type':\n          enum:\n          - Process\n          - Workflow\n        '@id':\n          type: string\n          format: uri\n        name:\n          type: string\n      required:\n      - '@type'\n  hasDataLink:\n    type: array\n    description: Data links between processes in this workflow instance\n    items:\n      type: object\n      properties:\n        '@type':\n          const: DataLink\n        '@id':\n          type: string\n          format: uri\n        hasSource:\n          type: string\n          format: uri\n        hasSink:\n          type: string\n          format: uri\n      required:\n      - '@type'\n  executionSettings:\n    type: object\n    description: Engine and environment configuration for execution\n    properties:\n      engine:\n        type: string\n        description: Name of the workflow execution engine\n        examples:\n        - cwltool\n        - zoo-project\n        - nextflow\n        - snakemake\n      version:\n        type: string\n        description: Version of the execution engine\n      environment:\n        type: string\n        description: Execution environment type\n        enum:\n        - container\n        - conda\n        - local\n        - hpc\n        - cloud\n        default: local\n      scheduler:\n        type: string\n        description: Job scheduler or execution backend\n        examples:\n        - local\n        - slurm\n        - kubernetes\n        - aws-batch\n      resources:\n        type: object\n        description: Resource requirements and limits\n        properties:\n          cpu:\n            type:\n            - string\n            - number\n            description: CPU requirement (cores or description)\n          memory:\n            type: string\n            description: Memory requirement (e.g., '4GB', '512MB')\n          disk:\n            type: string\n            description: Disk space requirement\n          gpu:\n            type:\n            - string\n            - number\n            description: GPU requirement\n    additionalProperties: true\n  readyForExecution:\n    type: boolean\n    description: Whether all required parameters are bound and the workflow is ready\n      to execute\n    default: false\n  validatedAt:\n    type: string\n    format: date-time\n    description: Timestamp when this workflow instance was validated as execution-ready\n  configurationHash:\n    type: string\n    description: Hash of the configuration for reproducibility tracking\nrequired:\n- '@type'\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/WorkflowInstance"
+}

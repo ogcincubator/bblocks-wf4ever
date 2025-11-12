@@ -1,0 +1,52 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Workflow",
+  "name": "wfdesc:Workflow",
+  "abstract": "A composite process that contains sub-processes connected by data links. Workflows are directed graphs where nodes are processes and edges are data flow connections.",
+  "highlighted": true,
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Process"
+  ],
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.DataLink",
+    "ogc.bbr.wf4ever.wfdesc.Process",
+    "ogc.api.processes.v1.schemas.process"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Workflow",
+      "link": "http://purl.org/wf4ever/wfdesc#Workflow"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "composite",
+    "graph"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Workflow/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Workflow/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Workflow/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# wfdesc:Workflow\n\n## Description\n\nA **Workflow** is a composite process that orchestrates multiple sub-processes connected by data flow. Workflows are directed acyclic graphs (DAGs) where:\n- **Nodes** are processes (sub-processes)\n- **Edges** are data links (data flow)\n\nWorkflows inherit from **Process**, so they also have inputs and outputs that define their external interface.\n\n## Class Hierarchy\n\n```\nwfdesc:Process\n\u2514\u2500\u2500 wfdesc:Workflow\n```\n\n## Workflow Structure\n\nA workflow has two main components:\n\n### 1. Sub-Processes (Nodes)\nThe computational steps in the workflow.\n\n### 2. Data Links (Edges)\nThe data flow between processes.\n\n## Workflow Patterns\n\n### Sequential Pipeline\n```\nProcess1 --> Process2 --> Process3\n```\n\n### Parallel Branches (Fan-out)\n\n![Fan-out pattern](../fan-out.png)\n\n\n### Data Aggregation (Fan-in)\n\n![Fan-in pattern](../fan-in.png)\n\n## Nested Workflows\n\nWorkflows can contain other workflows as sub-processes using the `hasSubWorkflow` property, which is a specialization of `hasSubProcess`. This allows for hierarchical workflow composition and modular design.\n\n## Workflow as a Black Box\n\nFrom the outside, a workflow looks like a single process:\n- Defined interface (hasInput, hasOutput)\n- Internal structure hidden (hasSubProcess, hasDataLink)\n- Can be reused as a component in larger workflows\n\n## Related Classes\n\n- **Process**: Parent class (Workflow is a specialized Process)\n- **DataLink**: Defines data flow between sub-processes\n- **Input/Output**: Define workflow interface\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A workflow composed of sub-processes and data links\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml\nproperties:\n  '@type':\n    const: Workflow\n    description: Type identifier for a wfdesc Workflow\n  hasSubProcess:\n    type: array\n    items:\n      $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml\n    description: Sub-processes within this workflow\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSubProcess\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\n  hasDataLink:\n    type: array\n    items:\n      $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml\n    description: Data flow connections between sub-processes\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasDataLink\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\nx-jsonld-extra-terms:\n  Workflow: http://purl.org/wf4ever/wfdesc#Workflow\n  Process: http://purl.org/wf4ever/wfdesc#Process\n  DataLink: http://purl.org/wf4ever/wfdesc#DataLink\n  Input: http://purl.org/wf4ever/wfdesc#Input\n  Output: http://purl.org/wf4ever/wfdesc#Output\n  name: http://www.w3.org/2000/01/rdf-schema#label\n  description: http://www.w3.org/2000/01/rdf-schema#comment\n  hasInput:\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasInput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\n  hasOutput:\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasOutput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\n  hasSource:\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSource\n    x-jsonld-type: '@id'\n  hasSink:\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSink\n    x-jsonld-type: '@id'\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/Workflow"
+}

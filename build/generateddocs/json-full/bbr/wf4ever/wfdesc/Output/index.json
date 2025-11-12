@@ -1,0 +1,49 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Output",
+  "name": "wfdesc:Output",
+  "abstract": "An output parameter from a workflow process. Outputs produce data that can be consumed by inputs of other processes or as final workflow results.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "profileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Parameter"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Output",
+      "link": "http://purl.org/wf4ever/wfdesc#Output"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "output",
+    "parameter"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Parameter"
+  ],
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Output/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Output/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Output/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# wfdesc:Output\n\n## Description\n\nAn **Output** is a parameter that produces data from a workflow process. Outputs can:\n- Produce final workflow results\n- Feed data to inputs of other processes via DataLinks\n- Be intermediate results in a workflow\n\n## Class Hierarchy\n\n```\nwfdesc:Parameter\n\u2514\u2500\u2500 wfdesc:Output\n```\n\n## Usage in Workflows\n\nOutputs are declared using the `hasOutput` property on a Process.\n\n## Data Flow\n\nOutputs can be connected to Inputs via DataLinks.\n\n## Related Classes\n\n- **Parameter**: Base class (parent)\n- **Input**: Complementary class for process inputs\n- **DataLink**: Connects Outputs to Inputs (Output is source)\n- **Process**: Container that has outputs via `hasOutput` property\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An output parameter from a workflow process\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml\nproperties:\n  '@type':\n    const: Output\n    description: Type identifier for a wfdesc Output\nx-jsonld-extra-terms:\n  Output: http://purl.org/wf4ever/wfdesc#Output\n  name: http://www.w3.org/2000/01/rdf-schema#label\n  description: http://www.w3.org/2000/01/rdf-schema#comment\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/Output"
+}

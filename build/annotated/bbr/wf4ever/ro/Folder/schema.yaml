@@ -1,0 +1,42 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A folder organizing resources in a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the folder
+  '@type':
+    const: Folder
+    description: Type must be Folder
+  name:
+    type: string
+    description: Name of the folder
+    x-jsonld-id: http://purl.org/dc/terms/title
+  description:
+    type: string
+    description: Description of the folder
+    x-jsonld-id: http://purl.org/dc/terms/description
+  hasEntry:
+    type: array
+    items:
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      required:
+      - '@id'
+    description: Entries contained in this folder
+    x-jsonld-id: http://purl.org/wf4ever/ro#hasEntry
+    x-jsonld-type: '@id'
+    x-jsonld-container: '@set'
+required:
+- '@id'
+- '@type'
+x-jsonld-extra-terms:
+  Folder: http://purl.org/wf4ever/ro#Folder
+x-jsonld-vocab: http://purl.org/wf4ever/ro#
+x-jsonld-prefixes:
+  ro: http://purl.org/wf4ever/ro#
+  dcterms: http://purl.org/dc/terms/

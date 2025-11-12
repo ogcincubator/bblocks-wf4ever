@@ -1,0 +1,46 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.ro.FolderEntry",
+  "name": "ro:FolderEntry",
+  "abstract": "An entry within a folder that associates a name with a resource. FolderEntries provide the mapping between folder paths and actual resources, similar to filesystem directory entries.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "sources": [
+    {
+      "title": "Research Object Ontology - FolderEntry",
+      "link": "http://purl.org/wf4ever/ro#FolderEntry"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.Resource",
+    "ogc.bbr.wf4ever.ro.Folder"
+  ],
+  "tags": [
+    "ro",
+    "folder-entry",
+    "organization"
+  ],
+  "group": "Wf4Ever - ro",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/FolderEntry/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/FolderEntry/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/FolderEntry/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# ro:FolderEntry\n\n## Description\n\nA **FolderEntry** is an entry in a folder that maps a name to a resource. FolderEntries provide the mapping between folder paths and actual resources, similar to file system directory entries.\n\n## Relations\n\n- Contained in a `ro:Folder` (via inverse of `ro:hasEntry`)\n- Represents a `ro:Resource` via `ore:proxyFor`\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An entry within a folder associating a name with a resource\ntype: object\nproperties:\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for the folder entry\n  '@type':\n    const: FolderEntry\n    description: Type must be FolderEntry\n  entryName:\n    type: string\n    description: Name of this entry within the folder\n    x-jsonld-id: http://purl.org/wf4ever/ro#entryName\n  proxyFor:\n    type: string\n    format: uri\n    description: The resource that this entry represents\n    x-jsonld-id: http://www.openarchives.org/ore/terms/proxyFor\n    x-jsonld-type: '@id'\nrequired:\n- '@id'\n- '@type'\n- entryName\n- proxyFor\nx-jsonld-extra-terms:\n  FolderEntry: http://purl.org/wf4ever/ro#FolderEntry\nx-jsonld-vocab: http://purl.org/wf4ever/ro#\nx-jsonld-prefixes:\n  ro: http://purl.org/wf4ever/ro#\n  ore: http://www.openarchives.org/ore/terms/\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/ro/FolderEntry"
+}

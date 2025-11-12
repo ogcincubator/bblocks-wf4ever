@@ -1,0 +1,47 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.DataLink",
+  "name": "wfdesc:DataLink",
+  "abstract": "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Input",
+    "ogc.bbr.wf4ever.wfdesc.Output"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - DataLink",
+      "link": "http://purl.org/wf4ever/wfdesc#DataLink"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "datalink",
+    "dataflow"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/DataLink/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/DataLink/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/DataLink/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# wfdesc:DataLink\n\n## Description\n\nA **DataLink** represents a data flow connection between processes in a workflow. It describes how the output of one process is connected to the input of another process, defining the data dependencies between workflow steps.\n\n## Relations\n\n- Links a `wfdesc:Output` (source) to a `wfdesc:Input` (sink)\n- Used by `wfdesc:Workflow` via `hasDataLink`\n- Defines the data flow between processes\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A data flow connection between an output and an input in a workflow\ntype: object\nproperties:\n  '@type':\n    const: DataLink\n    description: Type identifier for a wfdesc DataLink\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for this data link\n  hasSource:\n    $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml\n    description: The source output that produces data\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSource\n    x-jsonld-type: '@id'\n  hasSink:\n    $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml\n    description: The sink input that consumes data\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSink\n    x-jsonld-type: '@id'\nrequired:\n- '@type'\n- hasSource\n- hasSink\nx-jsonld-extra-terms:\n  DataLink: http://purl.org/wf4ever/wfdesc#DataLink\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/DataLink"
+}

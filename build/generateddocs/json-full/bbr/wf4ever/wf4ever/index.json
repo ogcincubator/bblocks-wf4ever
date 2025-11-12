@@ -1,0 +1,47 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wf4ever",
+  "name": "Wf4Ever Extension Ontology",
+  "abstract": "The wf4ever ontology extends ro, wfdesc and wfprov with specialized artifact and process types commonly used in workflow research objects.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "sources": [
+    {
+      "title": "Wf4Ever Ontology",
+      "link": "http://purl.org/wf4ever/wf4ever"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfprov",
+    "ogc.bbr.wf4ever.wfdesc",
+    "ogc.bbr.wf4ever.ro"
+  ],
+  "tags": [
+    "wf4ever",
+    "workflow",
+    "research-object",
+    "artifact-types"
+  ],
+  "group": "Wf4Ever - wf4ever",
+  "shaclShapes": {},
+  "ontology": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# Wf4Ever Extension Ontology\n\n## Overview\n\nThe **wf4ever ontology** extends the base Wf4Ever ontologies (ro, wfdesc, wfprov) with specialized classes for common artifact and process types used in workflow research objects.\n\n## Purpose\n\nWhile the base ontologies provide generic concepts (wfdesc:Artifact, wfdesc:Process), the wf4ever ontology adds **semantic precision** by defining specialized types that are commonly encountered in scientific workflows:\n\n- **Artifact specializations**: File, Dataset, Document, Image\n- **Process specializations**: WebServiceProcess\n- **Research Object specializations**: WorkflowResearchObject\n\n## Imported Ontologies\n\nThe wf4ever ontology imports and extends:\n- **ro** (Research Object): Research object structure and annotations\n- **wfdesc** (Workflow Description): Workflow structure and composition\n- **wfprov** (Workflow Provenance): Workflow execution provenance\n\n## Classes Defined\n\n### Artifact Types (subClassOf wfdesc:Artifact)\n\n1. **wf4ever:File** - A file artifact (e.g., .json, .csv, .tif)\n2. **wf4ever:Dataset** - A data collection or dataset\n3. **wf4ever:Document** - A document artifact (e.g., PDF, HTML)\n4. **wf4ever:Image** - An image file (e.g., PNG, JPEG, GeoTIFF)\n\n### Process Types (subClassOf wfdesc:Process)\n\n5. **wf4ever:WebServiceProcess** - A process executed as a web service call\n\n### Research Object Types\n\n6. **wf4ever:WorkflowResearchObject** - A research object containing at least one workflow\n\n## Usage in CWL Provenance\n\nIn CWLProv (Common Workflow Language Provenance), wf4ever types are used to provide semantic precision through dual typing.\n\nThis dual typing allows:\n- **Generic queries**: Find all `wfprov:Artifact` entities\n- **Specific queries**: Find only `wf4ever:File` entities\n- **Type-specific processing**: Handle files differently from generic artifacts\n\n## Version\n\n- **Version**: 0.1.1\n- **Based on**: Wf4Ever Research Object ontologies v0.1.1\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Wf4Ever ontology - extension vocabulary for workflow research objects\ntype: object\nproperties:\n  '@context':\n    type: object\nrequired: []\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wf4ever"
+}

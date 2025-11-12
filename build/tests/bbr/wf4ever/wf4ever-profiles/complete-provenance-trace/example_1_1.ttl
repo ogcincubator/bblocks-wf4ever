@@ -1,0 +1,133 @@
+@prefix : <http://purl.org/wf4ever/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/wf4ever/profiles#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ro: <http://purl.org/wf4ever/ro#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json> ro:authoredBy <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> ;
+    ro:authoredOn "2025-11-03T15:14:17.166945" ;
+    ro:conformsTo "https://w3id.org/bundle/2014-11-05/" ;
+    ro:retrievedFrom "https://w3id.org/cwl/prov/0.6.0" ;
+    ro:type "Manifest" ;
+    ore:describes <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/> .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max> :label "cloud_cover_max" ;
+    :type "Input" ;
+    rdfs:comment "Maximum cloud coverage percentage" .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back> :label "days_back" ;
+    :type "Input" ;
+    rdfs:comment "Number of days to look back for imagery" .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east> :label "east" ;
+    :type "Input" ;
+    rdfs:comment "Eastern boundary longitude" .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north> :label "north" ;
+    :type "Input" ;
+    rdfs:comment "Northern boundary latitude" .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> :label "outputs" ;
+    :type "Output" ;
+    rdfs:comment "Processed mangrove mapping results" .
+
+<file:///github/workspace/metadata/provenance/primary.cwlprov.jsonld> ro:conformsTo "http://www.w3.org/TR/2013/REC-prov-o-20130430/",
+        "https://w3id.org/cwl/prov/0.6.0" ;
+    ro:createdBy [ rdfs:label "cwltool 3.1.20251031082601" ;
+            ro:uri "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60" ] ;
+    ro:createdOn "2025-11-03T15:14:17.167324" ;
+    ro:mediatype "application/ld+json" .
+
+<file:///github/workspace/workflow/packed.cwl> ro:conformsTo "https://w3id.org/cwl/" ;
+    ro:createdBy [ rdfs:label "cwltool 3.1.20251031082601" ;
+            ro:uri "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60" ] ;
+    ro:createdOn "2025-11-03T15:14:17.167396" ;
+    ro:mediatype "text/x+yaml; charset=\"UTF-8\"" .
+
+<urn:hash::sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439> ro:bundledAs [ ro:filename "e71003c6b7dd4093ce139ac0c51a6ba38d54a439" ;
+            ro:folder "/data/e7/" ;
+            ro:uri "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/data/e7/e71003c6b7dd4093ce139ac0c51a6ba38d54a439" ] ;
+    ro:mediatype "text/plain; charset='UTF-8'" .
+
+<urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> prov:hadRole <file:///github/workspace/cloud_cover_max> ;
+    prov:value 2e+01 .
+
+<urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f> a prov:Agent ;
+    wfprov:label "Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696" .
+
+<urn:uuid:55443a59-6a39-4b4c-89de-871dbceb5b84> ro:about "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c" ;
+    ro:content "provenance/primary.cwlprov.json",
+        "provenance/primary.cwlprov.jsonld",
+        "provenance/primary.cwlprov.nt" .
+
+<urn:uuid:5ac7d6f3-79c4-4b27-988f-56232cbb9999> ro:about "workflow/packed.cwl" .
+
+<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> a wfprov:Artifact ;
+    wfprov:basename "outputs" .
+
+<urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> prov:hadRole <file:///github/workspace/days_back> ;
+    prov:value 90 .
+
+<urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea> prov:hadRole <file:///github/workspace/east> ;
+    prov:value 9.535e+01 .
+
+<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;
+    wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;
+    wfprov:label "Run of workflow/packed.cwl#main" ;
+    prov:endedAtTime "2025-11-03T15:14:17.060218"^^xsd:dateTime ;
+    prov:generated <urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> ;
+    prov:startedAtTime "2025-11-03T15:14:02.032122"^^xsd:dateTime ;
+    prov:used <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d>,
+        <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258>,
+        <urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea>,
+        <urn:uuid:fd57ac88-8716-40ed-8945-f83914857523> ;
+    prov:wasAssociatedWith <urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f>,
+        <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> .
+
+<urn:uuid:fd57ac88-8716-40ed-8945-f83914857523> prov:hadRole <file:///github/workspace/north> ;
+    prov:value 1.61e+01 .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/> ro:annotations <urn:uuid:55443a59-6a39-4b4c-89de-871dbceb5b84>,
+        <urn:uuid:5ac7d6f3-79c4-4b27-988f-56232cbb9999> ;
+    ro:conformsTo "https://w3id.org/cwl/prov/0.6.0" ;
+    ro:createdBy [ rdfs:label "cwltool 3.1.20251031082601" ;
+            ro:uri "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60" ] ;
+    ro:createdOn "2025-11-03T15:14:17.166945" ;
+    ro:manifest <file:///github/workspace/metadata/manifest.json> ;
+    ro:type "ResearchObject" ;
+    ore:aggregates <file:///github/workspace/metadata/provenance/primary.cwlprov.jsonld>,
+        <file:///github/workspace/workflow/packed.cwl>,
+        <urn:hash::sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439> .
+
+<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> :label "Mangrove Mapping Workflow" ;
+    :type "Workflow" ;
+    wfdesc:hasInput <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max>,
+        <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back>,
+        <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east>,
+        <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north> ;
+    wfdesc:hasOutput <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> .
+
+<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;
+    rdfs:label "cwltool 3.1.20251031082601" ;
+    wfprov:label "cwltool 3.1.20251031082601" .
+
+[] ns1:metadata [ dct:created "2025-11-03T15:14:17+00:00"^^xsd:dateTime ;
+            dct:creator <file:///github/workspace/> ;
+            dct:description "Complete provenance trace for mangrove mapping workflow execution using CWL and Sentinel-2 imagery" ;
+            dcat:keyword "cwl",
+                "mangrove",
+                "provenance",
+                "remote-sensing",
+                "sentinel-2",
+                "workflow" ] ;
+    ro:Manifest <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json> ;
+    ro:ResearchObject <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/> ;
+    wfdesc:Workflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;
+    wfprov:WorkflowRun <urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> .
+

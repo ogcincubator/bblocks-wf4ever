@@ -1,0 +1,176 @@
+{
+  "researchObject": {
+    "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/",
+    "type": "ResearchObject",
+    "conformsTo": "https://w3id.org/cwl/prov/0.6.0",
+    "manifest": "metadata/manifest.json",
+    "createdOn": "2025-11-03T15:14:17.166945",
+    "createdBy": {
+      "uri": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+      "name": "cwltool 3.1.20251031082601"
+    },
+    "aggregates": [
+      {
+        "id": "urn:hash::sha1:e71003c6b7dd4093ce139ac0c51a6ba38d54a439",
+        "bundledAs": {
+          "uri": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/data/e7/e71003c6b7dd4093ce139ac0c51a6ba38d54a439",
+          "folder": "/data/e7/",
+          "filename": "e71003c6b7dd4093ce139ac0c51a6ba38d54a439"
+        },
+        "mediatype": "text/plain; charset='UTF-8'"
+      },
+      {
+        "id": "metadata/provenance/primary.cwlprov.jsonld",
+        "mediatype": "application/ld+json",
+        "conformsTo": [
+          "http://www.w3.org/TR/2013/REC-prov-o-20130430/",
+          "https://w3id.org/cwl/prov/0.6.0"
+        ],
+        "createdOn": "2025-11-03T15:14:17.167324",
+        "createdBy": {
+          "uri": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+          "name": "cwltool 3.1.20251031082601"
+        }
+      },
+      {
+        "id": "workflow/packed.cwl",
+        "mediatype": "text/x+yaml; charset=\"UTF-8\"",
+        "conformsTo": "https://w3id.org/cwl/",
+        "createdOn": "2025-11-03T15:14:17.167396",
+        "createdBy": {
+          "uri": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+          "name": "cwltool 3.1.20251031082601"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "id": "urn:uuid:55443a59-6a39-4b4c-89de-871dbceb5b84",
+        "about": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
+        "content": [
+          "provenance/primary.cwlprov.nt",
+          "provenance/primary.cwlprov.json",
+          "provenance/primary.cwlprov.jsonld"
+        ]
+      },
+      {
+        "id": "urn:uuid:5ac7d6f3-79c4-4b27-988f-56232cbb9999",
+        "about": "workflow/packed.cwl",
+        "content": null
+      }
+    ]
+  },
+  "workflow": {
+    "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
+    "type": "Workflow",
+    "label": "Mangrove Mapping Workflow",
+    "hasInput": [
+      {
+        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max",
+        "type": "Input",
+        "label": "cloud_cover_max",
+        "description": "Maximum cloud coverage percentage"
+      },
+      {
+        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back",
+        "type": "Input",
+        "label": "days_back",
+        "description": "Number of days to look back for imagery"
+      },
+      {
+        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east",
+        "type": "Input",
+        "label": "east",
+        "description": "Eastern boundary longitude"
+      },
+      {
+        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north",
+        "type": "Input",
+        "label": "north",
+        "description": "Northern boundary latitude"
+      }
+    ],
+    "hasOutput": [
+      {
+        "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs",
+        "type": "Output",
+        "label": "outputs",
+        "description": "Processed mangrove mapping results"
+      }
+    ]
+  },
+  "workflowRun": {
+    "id": "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c",
+    "type": "WorkflowRun",
+    "label": "Run of workflow/packed.cwl#main",
+    "describedByWorkflow": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main",
+    "startedAtTime": "2025-11-03T15:14:02.032122",
+    "endedAtTime": "2025-11-03T15:14:17.060218",
+    "wasAssociatedWith": [
+      {
+        "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+        "type": "WorkflowEngine",
+        "label": "cwltool 3.1.20251031082601"
+      },
+      {
+        "id": "urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f",
+        "type": "Agent",
+        "label": "Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696"
+      }
+    ],
+    "used": [
+      {
+        "id": "urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d",
+        "value": 20.0,
+        "hadRole": "cloud_cover_max"
+      },
+      {
+        "id": "urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258",
+        "value": 90,
+        "hadRole": "days_back"
+      },
+      {
+        "id": "urn:uuid:ced76ef7-e660-4798-9442-06c17a45bbea",
+        "value": 95.35,
+        "hadRole": "east"
+      },
+      {
+        "id": "urn:uuid:fd57ac88-8716-40ed-8945-f83914857523",
+        "value": 16.1,
+        "hadRole": "north"
+      }
+    ],
+    "generated": [
+      {
+        "id": "urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539",
+        "type": "Artifact",
+        "basename": "outputs"
+      }
+    ]
+  },
+  "manifest": {
+    "id": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/metadata/manifest.json",
+    "type": "Manifest",
+    "conformsTo": "https://w3id.org/bundle/2014-11-05/",
+    "authoredBy": {
+      "id": "urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60",
+      "name": "cwltool 3.1.20251031082601"
+    },
+    "authoredOn": "2025-11-03T15:14:17.166945",
+    "retrievedFrom": "https://w3id.org/cwl/prov/0.6.0",
+    "describes": "arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/"
+  },
+  "metadata": {
+    "created": "2025-11-03T15:14:17Z",
+    "creator": "cwltool 3.1.20251031082601",
+    "description": "Complete provenance trace for mangrove mapping workflow execution using CWL and Sentinel-2 imagery",
+    "keywords": [
+      "mangrove",
+      "remote-sensing",
+      "sentinel-2",
+      "cwl",
+      "provenance",
+      "workflow"
+    ]
+  }
+}

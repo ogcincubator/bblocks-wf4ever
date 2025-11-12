@@ -1,0 +1,47 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.Process",
+  "name": "wfdesc:Process",
+  "abstract": "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfdesc.Input",
+    "ogc.bbr.wf4ever.wfdesc.Output"
+  ],
+  "sources": [
+    {
+      "title": "Workflow Description Ontology - Process",
+      "link": "http://purl.org/wf4ever/wfdesc#Process"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "workflow",
+    "wfdesc",
+    "process",
+    "computation"
+  ],
+  "group": "Wf4Ever - wfdesc",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Process/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Process/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Process/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# wfdesc:Process\n\n## Description\n\nA **Process** represents a unit of computation in a workflow. It is the base class that can be:\n- An **atomic process**: A single computational task (e.g., running a command-line tool)\n- A **Workflow**: A composite process containing sub-processes\n\nProcesses are characterized by their inputs (what data they consume) and outputs (what data they produce).\n\n## Class Hierarchy\n\n```\nwfdesc:Process (base class)\n\u2514\u2500\u2500 wfdesc:Workflow (composite process with sub-processes)\n```\n\n## Process Interface\n\nThe interface of a process is defined by its inputs and outputs.\n\n## Atomic vs Composite\n\n### Atomic Process\n- Performs a single computational task\n- Cannot be decomposed further in the workflow model\n- Examples: Run GDAL command, Execute Python script, Call web service\n\n### Composite Process (Workflow)\n- Contains sub-processes via `hasSubProcess`\n- Has internal data flow via `hasDataLink`\n- Can be treated as a black box via its inputs/outputs\n\n## Related Classes\n\n- **Input**: Parameters that feed data into the process\n- **Output**: Parameters that produce data from the process\n- **Workflow**: Subclass that represents composite processes\n- **DataLink**: Connects processes together in a workflow\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A computational process in a workflow\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: Process\n    - const: Workflow\n    description: Type identifier for a wfdesc Process or Workflow\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for this process\n  name:\n    type: string\n    description: Name of the process\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  description:\n    type: string\n    description: Description of what this process does\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\n  hasInput:\n    type: array\n    items:\n      $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml\n    description: Input parameters for this process\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasInput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\n  hasOutput:\n    type: array\n    items:\n      $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml\n    description: Output parameters produced by this process\n    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasOutput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\nrequired:\n- '@type'\nx-jsonld-extra-terms:\n  Process: http://purl.org/wf4ever/wfdesc#Process\n  Input: http://purl.org/wf4ever/wfdesc#Input\n  Output: http://purl.org/wf4ever/wfdesc#Output\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfdesc/Process"
+}

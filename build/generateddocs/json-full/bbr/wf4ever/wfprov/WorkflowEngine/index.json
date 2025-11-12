@@ -1,0 +1,46 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+  "name": "wfprov:WorkflowEngine",
+  "abstract": "A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology - WorkflowEngine",
+      "link": "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "wfprov",
+    "workflow-engine",
+    "agent",
+    "execution"
+  ],
+  "group": "Wf4Ever - wfprov",
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.ogc-utils.prov"
+  ],
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# wfprov:WorkflowEngine\n\n## Description\n\nA **WorkflowEngine** represents a software agent that executes workflows. The workflow engine is responsible for enacting workflow and process executions, managing the execution environment and resources.\n\n## Relations\n\n- Process runs and workflow runs reference the engine via `wfprov:wasEnactedBy`\n- This is the inverse relationship: the engine enacts the executions\n\n## Examples of engines\n\n- ZOO-Project WPS\n- Apache Airflow\n- Nextflow\n- Snakemake\n- CWL Runner\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A software agent that executes workflows\nallOf:\n- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Agent\ntype: object\nproperties:\n  '@id':\n    type: string\n    format: uri\n    description: Unique identifier for the workflow engine\n  '@type':\n    const: WorkflowEngine\n    description: Type must be WorkflowEngine\n  name:\n    type: string\n    description: Name of the workflow engine\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  version:\n    type: string\n    description: Version of the workflow engine\n    x-jsonld-id: http://schema.org/version\n  description:\n    type: string\n    description: Description of the workflow engine\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment\nrequired:\n- '@id'\n- '@type'\nx-jsonld-extra-terms:\n  WorkflowEngine: http://purl.org/wf4ever/wfprov#WorkflowEngine\nx-jsonld-vocab: http://purl.org/wf4ever/wfprov#\nx-jsonld-prefixes:\n  wfprov: http://purl.org/wf4ever/wfprov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  prov: http://www.w3.org/ns/prov#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfprov/WorkflowEngine"
+}

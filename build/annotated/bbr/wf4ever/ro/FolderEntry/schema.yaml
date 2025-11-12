@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An entry within a folder associating a name with a resource
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the folder entry
+  '@type':
+    const: FolderEntry
+    description: Type must be FolderEntry
+  entryName:
+    type: string
+    description: Name of this entry within the folder
+    x-jsonld-id: http://purl.org/wf4ever/ro#entryName
+  proxyFor:
+    type: string
+    format: uri
+    description: The resource that this entry represents
+    x-jsonld-id: http://www.openarchives.org/ore/terms/proxyFor
+    x-jsonld-type: '@id'
+required:
+- '@id'
+- '@type'
+- entryName
+- proxyFor
+x-jsonld-extra-terms:
+  FolderEntry: http://purl.org/wf4ever/ro#FolderEntry
+x-jsonld-vocab: http://purl.org/wf4ever/ro#
+x-jsonld-prefixes:
+  ro: http://purl.org/wf4ever/ro#
+  ore: http://www.openarchives.org/ore/terms/

@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.bbr.wf4ever.ro.FolderEntry - ro:FolderEntry",
+  "bblockName": "ro:FolderEntry",
+  "bblockId": "ogc.bbr.wf4ever.ro.FolderEntry",
+  "generated": "2025-11-12T08:22:34.238820+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

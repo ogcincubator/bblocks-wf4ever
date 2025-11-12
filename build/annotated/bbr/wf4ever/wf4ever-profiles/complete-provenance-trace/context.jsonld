@@ -1,0 +1,576 @@
+{
+  "@context": {
+    "@vocab": "http://purl.org/wf4ever/",
+    "CompleteProvenanceTrace": "http://purl.org/wf4ever/profiles#CompleteProvenanceTrace",
+    "researchObject": {
+      "@context": {
+        "@vocab": "http://purl.org/wf4ever/ro#",
+        "title": "dcterms:title",
+        "description": "dcterms:description",
+        "aggregates": {
+          "@id": "ore:aggregates",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "manifest": {
+          "@id": "ro:manifest",
+          "@type": "@id"
+        },
+        "created": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      },
+      "@id": "ro:ResearchObject",
+      "@type": "@id"
+    },
+    "workflow": {
+      "@context": {
+        "hasInput": {
+          "@context": {
+            "hasArtifact": {
+              "@id": "wfdesc:hasArtifact",
+              "@type": "@id"
+            }
+          },
+          "@id": "wfdesc:hasInput",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "hasOutput": {
+          "@context": {
+            "hasArtifact": {
+              "@id": "wfdesc:hasArtifact",
+              "@type": "@id"
+            }
+          },
+          "@id": "wfdesc:hasOutput",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "hasSubProcess": {
+          "@id": "wfdesc:hasSubProcess",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "hasDataLink": {
+          "@context": {
+            "hasSource": {
+              "@context": {
+                "hasArtifact": {
+                  "@id": "wfdesc:hasArtifact",
+                  "@type": "@id"
+                }
+              },
+              "@id": "wfdesc:hasSource",
+              "@type": "@id"
+            },
+            "hasSink": {
+              "@context": {
+                "hasArtifact": {
+                  "@id": "wfdesc:hasArtifact",
+                  "@type": "@id"
+                }
+              },
+              "@id": "wfdesc:hasSink",
+              "@type": "@id"
+            }
+          },
+          "@id": "wfdesc:hasDataLink",
+          "@type": "@id",
+          "@container": "@set"
+        }
+      },
+      "@id": "wfdesc:Workflow",
+      "@type": "@id"
+    },
+    "workflowRun": {
+      "@context": {
+        "@vocab": "http://purl.org/wf4ever/wfprov#",
+        "wasInfluencedBy": {
+          "@context": {
+            "type": "dcterms:type"
+          },
+          "@id": "prov:wasInfluencedBy",
+          "@type": "@id"
+        },
+        "qualifiedInfluence": {
+          "@context": {
+            "influencer": {
+              "@context": {
+                "type": "dcterms:type"
+              },
+              "@id": "prov:influencer",
+              "@type": "@id"
+            },
+            "entity": {
+              "@context": {
+                "type": "dcterms:type"
+              },
+              "@id": "prov:entity",
+              "@type": "@id"
+            },
+            "agent": {
+              "@context": {
+                "type": "dcterms:type"
+              },
+              "@id": "prov:agent",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:qualifiedInfluence",
+          "@type": "@id"
+        },
+        "href": {
+          "@type": "@id",
+          "@id": "oa:hasTarget"
+        },
+        "rel": {
+          "@context": {
+            "@base": "http://www.iana.org/assignments/relation/"
+          },
+          "@id": "http://www.iana.org/assignments/relation",
+          "@type": "@id"
+        },
+        "type": "@type",
+        "hreflang": "dcterms:language",
+        "title": "rdfs:label",
+        "length": "dcterms:extent",
+        "describedByProcess": {
+          "@id": "wfprov:describedByProcess",
+          "@type": "@id"
+        },
+        "usedInput": {
+          "@id": "wfprov:usedInput",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "wasPartOfWorkflowRun": {
+          "@id": "wfprov:wasPartOfWorkflowRun",
+          "@type": "@id"
+        },
+        "wasEnactedBy": {
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id"
+        },
+        "describedByWorkflow": {
+          "@id": "wfprov:describedByWorkflow",
+          "@type": "@id"
+        },
+        "hadSubProcessRun": {
+          "@reverse": "wfprov:wasPartOfWorkflowRun",
+          "@type": "@id",
+          "@container": "@set"
+        }
+      },
+      "@id": "wfprov:WorkflowRun",
+      "@type": "@id"
+    },
+    "manifest": {
+      "@context": {
+        "@vocab": "http://purl.org/wf4ever/ro#",
+        "describes": {
+          "@id": "ore:describes",
+          "@type": "@id"
+        },
+        "createdBy": {
+          "@id": "dcterms:creator",
+          "@type": "@id"
+        },
+        "createdOn": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      },
+      "@id": "ro:Manifest",
+      "@type": "@id"
+    },
+    "metadata": {
+      "@context": {
+        "created": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        },
+        "creator": {
+          "@id": "dcterms:creator",
+          "@type": "@id"
+        },
+        "description": "dcterms:description",
+        "keywords": "dcat:keyword"
+      },
+      "@id": "http://purl.org/wf4ever/profiles#metadata"
+    },
+    "ResearchObject": "ro:ResearchObject",
+    "Process": "wfdesc:Process",
+    "Input": "wfdesc:Input",
+    "Output": "wfdesc:Output",
+    "Parameter": "wfdesc:Parameter",
+    "name": "rdfs:label",
+    "description": "rdfs:comment",
+    "Workflow": "wfdesc:Workflow",
+    "DataLink": "wfdesc:DataLink",
+    "hasInput": {
+      "@id": "wfdesc:hasInput",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasOutput": {
+      "@id": "wfdesc:hasOutput",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasSource": {
+      "@id": "wfdesc:hasSource",
+      "@type": "@id"
+    },
+    "hasSink": {
+      "@id": "wfdesc:hasSink",
+      "@type": "@id"
+    },
+    "activityType": "@type",
+    "agentType": "@type",
+    "entityType": "@type",
+    "featureType": "@type",
+    "provType": "@type",
+    "Activity": "prov:Activity",
+    "ActivityInfluence": "prov:ActivityInfluence",
+    "Agent": "prov:Agent",
+    "AgentInfluence": "prov:AgentInfluence",
+    "Association": "prov:Association",
+    "Attribution": "prov:Attribution",
+    "Bundle": "prov:Bundle",
+    "Collection": "prov:Collection",
+    "Communication": "prov:Communication",
+    "Delegation": "prov:Delegation",
+    "Derivation": "prov:Derivation",
+    "EmptyCollection": "prov:EmptyCollection",
+    "End": "prov:End",
+    "Entity": "prov:Entity",
+    "EntityInfluence": "prov:EntityInfluence",
+    "Generation": "prov:Generation",
+    "Influence": "prov:Influence",
+    "InstantaneousEvent": "prov:InstantaneousEvent",
+    "Invalidation": "prov:Invalidation",
+    "Location": "prov:Location",
+    "Organization": "prov:Organization",
+    "Person": "prov:Person",
+    "Plan": "prov:Plan",
+    "PrimarySource": "prov:PrimarySource",
+    "Quotation": "prov:Quotation",
+    "Revision": "prov:Revision",
+    "Role": "prov:Role",
+    "SoftwareAgent": "prov:SoftwareAgent",
+    "Start": "prov:Start",
+    "Usage": "prov:Usage",
+    "ServiceDescription": "prov:ServiceDescription",
+    "DirectQueryService": "prov:DirectQueryService",
+    "Accept": "prov:Accept",
+    "Contribute": "prov:Contribute",
+    "Contributor": "prov:Contributor",
+    "Copyright": "prov:Copyright",
+    "Create": "prov:Create",
+    "Creator": "prov:Creator",
+    "Modify": "prov:Modify",
+    "Publish": "prov:Publish",
+    "Publisher": "prov:Publisher",
+    "Replace": "prov:Replace",
+    "RightsAssignment": "prov:RightsAssignment",
+    "RightsHolder": "prov:RightsHolder",
+    "Submit": "prov:Submit",
+    "Dictionary": "prov:Dictionary",
+    "EmptyDictionary": "prov:EmptyDictionary",
+    "KeyEntityPair": "prov:KeyEntityPair",
+    "Insertion": "prov:Insertion",
+    "Removal": "prov:Removal",
+    "atTime": {
+      "@id": "prov:atTime",
+      "@type": "xsd:dateTime"
+    },
+    "endedAtTime": {
+      "@id": "prov:endedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "generatedAtTime": {
+      "@id": "prov:generatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "invalidatedAtTime": {
+      "@id": "prov:invalidatedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "startedAtTime": {
+      "@id": "prov:startedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "value": "prov:value",
+    "provenanceUriTemplate": "prov:provenanceUriTemplate",
+    "pairKey": {
+      "@id": "prov:pairKey",
+      "@type": "rdfs:Literal"
+    },
+    "removedKey": {
+      "@id": "prov:removedKey",
+      "@type": "rdfs:Literal"
+    },
+    "actedOnBehalfOf": {
+      "@id": "prov:actedOnBehalfOf",
+      "@type": "@id"
+    },
+    "agent": {
+      "@id": "prov:agent",
+      "@type": "@id"
+    },
+    "alternateOf": {
+      "@id": "prov:alternateOf",
+      "@type": "@id"
+    },
+    "atLocation": {
+      "@id": "prov:atLocation",
+      "@type": "@id"
+    },
+    "entity": {
+      "@id": "prov:entity",
+      "@type": "@id"
+    },
+    "generated": {
+      "@id": "prov:generated",
+      "@type": "@id"
+    },
+    "hadActivity": {
+      "@id": "prov:hadActivity",
+      "@type": "@id"
+    },
+    "activity": {
+      "@id": "prov:activity",
+      "@type": "@id"
+    },
+    "hadGeneration": {
+      "@id": "prov:hadGeneration",
+      "@type": "@id"
+    },
+    "hadMember": {
+      "@id": "prov:hadMember",
+      "@type": "@id"
+    },
+    "hadPlan": {
+      "@id": "prov:hadPlan",
+      "@type": "@id"
+    },
+    "hadPrimarySource": {
+      "@id": "prov:hadPrimarySource",
+      "@type": "@id"
+    },
+    "hadRole": {
+      "@id": "prov:hadRole",
+      "@type": "@id"
+    },
+    "hadUsage": {
+      "@id": "prov:hadUsage",
+      "@type": "@id"
+    },
+    "influenced": {
+      "@id": "prov:influenced",
+      "@type": "@id"
+    },
+    "influencer": {
+      "@id": "prov:influencer",
+      "@type": "@id"
+    },
+    "invalidated": {
+      "@id": "prov:invalidated",
+      "@type": "@id"
+    },
+    "qualifiedAssociation": {
+      "@id": "prov:qualifiedAssociation",
+      "@type": "@id"
+    },
+    "qualifiedAttribution": {
+      "@id": "prov:qualifiedAttribution",
+      "@type": "@id"
+    },
+    "qualifiedCommunication": {
+      "@id": "prov:qualifiedCommunication",
+      "@type": "@id"
+    },
+    "qualifiedDelegation": {
+      "@id": "prov:qualifiedDelegation",
+      "@type": "@id"
+    },
+    "qualifiedDerivation": {
+      "@id": "prov:qualifiedDerivation",
+      "@type": "@id"
+    },
+    "qualifiedEnd": {
+      "@id": "prov:qualifiedEnd",
+      "@type": "@id"
+    },
+    "qualifiedGeneration": {
+      "@id": "prov:qualifiedGeneration",
+      "@type": "@id"
+    },
+    "qualifiedInfluence": {
+      "@id": "prov:qualifiedInfluence",
+      "@type": "@id"
+    },
+    "qualifiedInvalidation": {
+      "@id": "prov:qualifiedInvalidation",
+      "@type": "@id"
+    },
+    "qualifiedPrimarySource": {
+      "@id": "prov:qualifiedPrimarySource",
+      "@type": "@id"
+    },
+    "qualifiedQuotation": {
+      "@id": "prov:qualifiedQuotation",
+      "@type": "@id"
+    },
+    "qualifiedRevision": {
+      "@id": "prov:qualifiedRevision",
+      "@type": "@id"
+    },
+    "qualifiedStart": {
+      "@id": "prov:qualifiedStart",
+      "@type": "@id"
+    },
+    "qualifiedUsage": {
+      "@id": "prov:qualifiedUsage",
+      "@type": "@id"
+    },
+    "specializationOf": {
+      "@id": "prov:specializationOf",
+      "@type": "@id"
+    },
+    "used": {
+      "@id": "prov:used",
+      "@type": "@id"
+    },
+    "wasAssociatedWith": {
+      "@id": "prov:wasAssociatedWith",
+      "@type": "@id"
+    },
+    "wasAttributedTo": {
+      "@id": "prov:wasAttributedTo",
+      "@type": "@id"
+    },
+    "wasDerivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "wasEndedBy": {
+      "@id": "prov:wasEndedBy",
+      "@type": "@id"
+    },
+    "wasGeneratedBy": {
+      "@id": "prov:wasGeneratedBy",
+      "@type": "@id"
+    },
+    "wasInfluencedBy": {
+      "@id": "prov:wasInfluencedBy",
+      "@type": "@id"
+    },
+    "wasInformedBy": {
+      "@id": "prov:wasInformedBy",
+      "@type": "@id"
+    },
+    "wasInvalidatedBy": {
+      "@id": "prov:wasInvalidatedBy",
+      "@type": "@id"
+    },
+    "wasQuotedFrom": {
+      "@id": "prov:wasQuotedFrom",
+      "@type": "@id"
+    },
+    "wasRevisionOf": {
+      "@id": "prov:wasRevisionOf",
+      "@type": "@id"
+    },
+    "wasStartedBy": {
+      "@id": "prov:wasStartedBy",
+      "@type": "@id"
+    },
+    "has_anchor": {
+      "@id": "prov:has_anchor",
+      "@type": "@id"
+    },
+    "has_provenance": {
+      "@id": "dcterms:provenance",
+      "@type": "@id"
+    },
+    "has_query_service": {
+      "@id": "prov:has_query_service",
+      "@type": "@id"
+    },
+    "describesService": {
+      "@id": "prov:describesService",
+      "@type": "@id"
+    },
+    "pingback": {
+      "@id": "prov:pingback",
+      "@type": "@id"
+    },
+    "dictionary": {
+      "@id": "prov:dictionary",
+      "@type": "@id"
+    },
+    "derivedByInsertionFrom": {
+      "@id": "prov:derivedByInsertionFrom",
+      "@type": "@id"
+    },
+    "derivedByRemovalFrom": {
+      "@id": "prov:derivedByRemovalFrom",
+      "@type": "@id"
+    },
+    "insertedKeyEntityPair": {
+      "@id": "prov:insertedKeyEntityPair",
+      "@type": "@id"
+    },
+    "hadDictionaryMember": {
+      "@id": "prov:hadDictionaryMember",
+      "@type": "@id"
+    },
+    "pairEntity": {
+      "@id": "prov:pairEntity",
+      "@type": "@id"
+    },
+    "qualifiedInsertion": {
+      "@id": "prov:qualifiedInsertion",
+      "@type": "@id"
+    },
+    "qualifiedRemoval": {
+      "@id": "prov:qualifiedRemoval",
+      "@type": "@id"
+    },
+    "asInBundle": {
+      "@id": "prov:asInBundle",
+      "@type": "@id"
+    },
+    "mentionOf": {
+      "@id": "prov:mentionOf",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "links": "rdfs:seeAlso",
+    "ProcessRun": "wfprov:ProcessRun",
+    "WorkflowRun": "wfprov:WorkflowRun",
+    "wasOutputFrom": {
+      "@id": "prov:generated",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "Manifest": "ro:Manifest",
+    "ro": "http://purl.org/wf4ever/ro#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "@version": 1.1
+  }
+}

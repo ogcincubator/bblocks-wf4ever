@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A document artifact
+type: object
+properties:
+  '@type':
+    oneOf:
+    - const: Document
+    - type: array
+      contains:
+        const: Document
+  title:
+    type: string
+  format:
+    type: string
+    description: Document format (e.g., "application/pdf", "text/html")
+required:
+- '@type'

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Wf4Ever ontology - extension vocabulary for workflow research objects",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "object"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,174 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A specialized workflow description that includes all concrete data, parameters,
+  and settings required to execute a specific workflow run
+type: object
+properties:
+  '@type':
+    const: WorkflowInstance
+    description: Type identifier for workflow instance
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for this workflow instance
+  name:
+    type: string
+    description: Human-readable name for this workflow instance
+  description:
+    type: string
+    description: Description of this workflow instance
+  describedBy:
+    type: string
+    format: uri
+    description: URI reference to the workflow definition this instance is based on
+  hasInput:
+    type: array
+    description: Input parameters with bound artifacts and concrete values
+    items:
+      type: object
+      properties:
+        '@type':
+          const: Input
+        '@id':
+          type: string
+          format: uri
+        name:
+          type: string
+        description:
+          type: string
+        hasArtifact:
+          type: object
+          properties:
+            '@type':
+              const: Artifact
+            '@id':
+              type: string
+              format: uri
+            value:
+              description: Concrete value bound to this parameter
+          required:
+          - '@type'
+          - value
+      required:
+      - '@type'
+      - hasArtifact
+  hasOutput:
+    type: array
+    description: Expected output parameters for this workflow instance
+    items:
+      type: object
+      properties:
+        '@type':
+          const: Output
+        '@id':
+          type: string
+          format: uri
+        name:
+          type: string
+        description:
+          type: string
+      required:
+      - '@type'
+  hasSubProcess:
+    type: array
+    description: Sub-processes contained in this workflow instance
+    items:
+      type: object
+      properties:
+        '@type':
+          enum:
+          - Process
+          - Workflow
+        '@id':
+          type: string
+          format: uri
+        name:
+          type: string
+      required:
+      - '@type'
+  hasDataLink:
+    type: array
+    description: Data links between processes in this workflow instance
+    items:
+      type: object
+      properties:
+        '@type':
+          const: DataLink
+        '@id':
+          type: string
+          format: uri
+        hasSource:
+          type: string
+          format: uri
+        hasSink:
+          type: string
+          format: uri
+      required:
+      - '@type'
+  executionSettings:
+    type: object
+    description: Engine and environment configuration for execution
+    properties:
+      engine:
+        type: string
+        description: Name of the workflow execution engine
+        examples:
+        - cwltool
+        - zoo-project
+        - nextflow
+        - snakemake
+      version:
+        type: string
+        description: Version of the execution engine
+      environment:
+        type: string
+        description: Execution environment type
+        enum:
+        - container
+        - conda
+        - local
+        - hpc
+        - cloud
+        default: local
+      scheduler:
+        type: string
+        description: Job scheduler or execution backend
+        examples:
+        - local
+        - slurm
+        - kubernetes
+        - aws-batch
+      resources:
+        type: object
+        description: Resource requirements and limits
+        properties:
+          cpu:
+            type:
+            - string
+            - number
+            description: CPU requirement (cores or description)
+          memory:
+            type: string
+            description: Memory requirement (e.g., '4GB', '512MB')
+          disk:
+            type: string
+            description: Disk space requirement
+          gpu:
+            type:
+            - string
+            - number
+            description: GPU requirement
+    additionalProperties: true
+  readyForExecution:
+    type: boolean
+    description: Whether all required parameters are bound and the workflow is ready
+      to execute
+    default: false
+  validatedAt:
+    type: string
+    format: date-time
+    description: Timestamp when this workflow instance was validated as execution-ready
+  configurationHash:
+    type: string
+    description: Hash of the configuration for reproducibility tracking
+required:
+- '@type'

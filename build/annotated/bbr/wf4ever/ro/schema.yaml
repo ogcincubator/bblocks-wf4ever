@@ -1,0 +1,63 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Research Object schema based on ro ontology
+type: object
+properties:
+  '@type':
+    oneOf:
+    - type: string
+      enum:
+      - ResearchObject
+      - Resource
+      - Folder
+      - FolderEntry
+      - AggregatedAnnotation
+      - Manifest
+    - type: array
+      items:
+        type: string
+  name:
+    type: string
+    description: Name of the resource
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+  aggregates:
+    type: array
+    items:
+      type: object
+    description: Resources aggregated
+    x-jsonld-id: http://www.openarchives.org/ore/terms/aggregates
+    x-jsonld-type: '@id'
+  rootFolder:
+    type: object
+    description: Root folder
+    x-jsonld-id: http://purl.org/wf4ever/ro#rootFolder
+    x-jsonld-type: '@id'
+  entryName:
+    type: string
+    description: Name of folder entry
+    x-jsonld-id: http://purl.org/wf4ever/ro#entryName
+  annotatesAggregatedResource:
+    type: object
+    description: Resource being annotated
+    x-jsonld-id: http://purl.org/wf4ever/ro#annotatesAggregatedResource
+    x-jsonld-type: '@id'
+  manifest:
+    type: object
+    description: Manifest
+    x-jsonld-id: http://purl.org/wf4ever/ro#manifest
+    x-jsonld-type: '@id'
+  isDescribedBy:
+    type: object
+    description: Description of resource
+    x-jsonld-id: http://www.openarchives.org/ore/terms/isDescribedBy
+    x-jsonld-type: '@id'
+x-jsonld-extra-terms:
+  ResearchObject: http://purl.org/wf4ever/ro#ResearchObject
+  Resource: http://purl.org/wf4ever/ro#Resource
+  Folder: http://purl.org/wf4ever/ro#Folder
+  FolderEntry: http://purl.org/wf4ever/ro#FolderEntry
+  AggregatedAnnotation: http://purl.org/wf4ever/ro#AggregatedAnnotation
+  Manifest: http://purl.org/wf4ever/ro#Manifest
+x-jsonld-prefixes:
+  ro: http://purl.org/wf4ever/ro#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  ore: http://www.openarchives.org/ore/terms/

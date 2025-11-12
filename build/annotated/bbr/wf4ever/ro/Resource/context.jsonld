@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "@vocab": "http://purl.org/wf4ever/ro#",
+    "Resource": "ro:Resource",
+    "name": "dcterms:title",
+    "description": "dcterms:description",
+    "ro": "http://purl.org/wf4ever/ro#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "@version": 1.1
+  }
+}

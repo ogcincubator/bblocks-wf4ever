@@ -1,0 +1,28 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A resource that can be aggregated in a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Unique identifier for the resource
+  '@type':
+    type: string
+    description: Type of the resource
+  name:
+    type: string
+    description: Name of the resource
+    x-jsonld-id: http://purl.org/dc/terms/title
+  description:
+    type: string
+    description: Description of the resource
+    x-jsonld-id: http://purl.org/dc/terms/description
+required:
+- '@id'
+x-jsonld-extra-terms:
+  Resource: http://purl.org/wf4ever/ro#Resource
+x-jsonld-vocab: http://purl.org/wf4ever/ro#
+x-jsonld-prefixes:
+  ro: http://purl.org/wf4ever/ro#
+  dcterms: http://purl.org/dc/terms/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#

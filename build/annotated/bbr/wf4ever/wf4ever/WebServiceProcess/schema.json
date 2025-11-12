@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A web service process",
+  "type": "object",
+  "properties": {
+    "@type": {
+      "oneOf": [
+        {
+          "const": "WebServiceProcess"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "WebServiceProcess"
+          }
+        }
+      ]
+    },
+    "endpoint": {
+      "type": "string",
+      "format": "uri",
+      "description": "Web service endpoint URL"
+    },
+    "method": {
+      "type": "string",
+      "description": "HTTP method (GET, POST, etc.)"
+    }
+  },
+  "required": [
+    "@type"
+  ]
+}

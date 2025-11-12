@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A manifest describing a Research Object",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for the manifest"
+    },
+    "@type": {
+      "const": "Manifest",
+      "description": "Type must be Manifest"
+    },
+    "describes": {
+      "type": "string",
+      "format": "uri",
+      "description": "The Research Object that this manifest describes",
+      "x-jsonld-id": "http://www.openarchives.org/ore/terms/describes",
+      "x-jsonld-type": "@id"
+    },
+    "createdBy": {
+      "type": "string",
+      "format": "uri",
+      "description": "Agent that created this manifest",
+      "x-jsonld-id": "http://purl.org/dc/terms/creator",
+      "x-jsonld-type": "@id"
+    },
+    "createdOn": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date of the manifest",
+      "x-jsonld-id": "http://purl.org/dc/terms/created",
+      "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "describes"
+  ],
+  "x-jsonld-extra-terms": {
+    "Manifest": "http://purl.org/wf4ever/ro#Manifest"
+  },
+  "x-jsonld-vocab": "http://purl.org/wf4ever/ro#",
+  "x-jsonld-prefixes": {
+    "ro": "http://purl.org/wf4ever/ro#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "dcterms": "http://purl.org/dc/terms/"
+  }
+}

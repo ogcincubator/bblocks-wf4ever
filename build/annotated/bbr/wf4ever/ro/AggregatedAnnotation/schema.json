@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "An annotation about resources in a Research Object",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Unique identifier for the annotation"
+    },
+    "@type": {
+      "const": "AggregatedAnnotation",
+      "description": "Type must be AggregatedAnnotation"
+    },
+    "annotatesAggregatedResource": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      ],
+      "description": "The resource(s) that this annotation describes",
+      "x-jsonld-id": "http://purl.org/wf4ever/ro#annotatesAggregatedResource",
+      "x-jsonld-type": "@id"
+    },
+    "body": {
+      "type": "string",
+      "format": "uri",
+      "description": "The body of the annotation (typically a URI to an annotation document)",
+      "x-jsonld-id": "http://www.w3.org/ns/oa#hasBody",
+      "x-jsonld-type": "@id"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation date of the annotation",
+      "x-jsonld-id": "http://purl.org/dc/terms/created",
+      "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "annotatesAggregatedResource"
+  ],
+  "x-jsonld-extra-terms": {
+    "AggregatedAnnotation": "http://purl.org/wf4ever/ro#AggregatedAnnotation"
+  },
+  "x-jsonld-vocab": "http://purl.org/wf4ever/ro#",
+  "x-jsonld-prefixes": {
+    "ro": "http://purl.org/wf4ever/ro#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "dcterms": "http://purl.org/dc/terms/"
+  }
+}

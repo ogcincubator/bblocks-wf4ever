@@ -1,0 +1,72 @@
+{
+  "title": "Validation report for ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace - Complete Workflow Provenance Trace",
+  "bblockName": "Complete Workflow Provenance Trace",
+  "bblockId": "ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace",
+  "generated": "2025-11-12T08:22:35.158827+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/example_1_1.json",
+        "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 104,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'@type' is a required property",
+              "isError": true,
+              "message": "ValidationError: '@type' is a required property\n\nFailed validating 'required' in schema['properties']['workflow']['allOf'][0]['allOf'][0]:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'A computational process in a workflow',\n     'properties': {'@id': {'description': 'Unique identifier for this '\n                                           'process',\n                            'format': 'uri',\n                            'type': 'string'},\n                    '@type': {'description': 'Type identifier for a wfdesc '\n                                             'Process or Workflow',\n                              'oneOf': [{'const': 'Process'},\n                                        {'const': 'Workflow'}]},\n                    'description': {'description': 'Description of what '\n                                                   'this process does',\n                                    'type': 'string',\n                                    'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#comment'},\n                    'hasInput': {'description': 'Input parameters for this '\n                                                'process',\n                                 'items': {'$ref': 'https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml'},\n                                 'type': 'array',\n                                 'x-jsonld-container': '@set',\n                                 'x-jsonld-id': 'http://purl.org/wf4ever/wfdesc#hasInput',\n                                 'x-jsonld-type': '@id'},\n                    'hasOutput': {'description': 'Output parameters '\n                                                 'produced by this process',\n                                  'items': {'$ref': 'https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml'},\n                                  'type': 'array',\n                                  'x-jsonld-container': '@set',\n                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfdesc#hasOutput',\n                                  'x-jsonld-type': '@id'},\n                    'name': {'description': 'Name of the process',\n                             'type': 'string',\n                             'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#label'}},\n     'required': ['@type'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'Input': 'http://purl.org/wf4ever/wfdesc#Input',\n                              'Output': 'http://purl.org/wf4ever/wfdesc#Output',\n                              'Process': 'http://purl.org/wf4ever/wfdesc#Process'},\n     'x-jsonld-prefixes': {'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',\n                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#'}}\n\nOn instance['workflow']:\n    {'hasInput': [{'description': 'Maximum cloud coverage percentage',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max',\n                   'label': 'cloud_cover_max',\n                   'type': 'Input'},\n                  {'description': 'Number of days to look back for imagery',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back',\n                   'label': 'days_back',\n                   'type': 'Input'},\n                  {'description': 'Eastern boundary longitude',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east',\n                   'label': 'east',\n                   'type': 'Input'},\n                  {'description': 'Northern boundary latitude',\n                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north',\n                   'label': 'north',\n                   'type': 'Input'}],\n     'hasOutput': [{'description': 'Processed mangrove mapping results',\n                    'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs',\n                    'label': 'outputs',\n                    'type': 'Output'}],\n     'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main',\n     'label': 'Mangrove Mapping Workflow',\n     'type': 'Workflow'}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  }
+}

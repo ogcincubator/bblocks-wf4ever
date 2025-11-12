@@ -1,0 +1,52 @@
+{
+  "@type": "Workflow",
+  "@id": "http://example.org/workflow/my-analysis",
+  "name": "Data Analysis Workflow",
+  "description": "A simple workflow for data analysis",
+  "hasInput": [
+    {
+      "@type": "Input",
+      "@id": "http://example.org/workflow/my-analysis/input/data",
+      "name": "input-data"
+    }
+  ],
+  "hasOutput": [
+    {
+      "@type": "Output",
+      "@id": "http://example.org/workflow/my-analysis/output/result",
+      "name": "analysis-result"
+    }
+  ],
+  "hasSubProcess": [
+    {
+      "@type": "Process",
+      "@id": "http://example.org/workflow/my-analysis/process/transform",
+      "name": "Data Transformation",
+      "hasInput": [
+        {
+          "@type": "Input",
+          "@id": "http://example.org/workflow/my-analysis/process/transform/input",
+          "name": "raw-data"
+        }
+      ],
+      "hasOutput": [
+        {
+          "@type": "Output",
+          "@id": "http://example.org/workflow/my-analysis/process/transform/output",
+          "name": "transformed-data"
+        }
+      ]
+    }
+  ],
+  "hasDataLink": [
+    {
+      "@type": "DataLink",
+      "hasSource": {
+        "@id": "http://example.org/workflow/my-analysis/input/data"
+      },
+      "hasSink": {
+        "@id": "http://example.org/workflow/my-analysis/process/transform/input"
+      }
+    }
+  ]
+}

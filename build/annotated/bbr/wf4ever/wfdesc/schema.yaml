@@ -1,0 +1,75 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Workflow Description schema based on wfdesc ontology
+type: object
+properties:
+  '@type':
+    oneOf:
+    - type: string
+      enum:
+      - Workflow
+      - Process
+      - Input
+      - Output
+      - Parameter
+      - DataLink
+      - Configuration
+    - type: array
+      items:
+        type: string
+  name:
+    type: string
+    description: Name of the workflow or process
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+  description:
+    type: string
+    description: Description of the workflow or process
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#comment
+  hasInput:
+    type: array
+    items:
+      type: object
+    description: Input parameters
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasInput
+    x-jsonld-type: '@id'
+  hasOutput:
+    type: array
+    items:
+      type: object
+    description: Output parameters
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasOutput
+    x-jsonld-type: '@id'
+  hasSubProcess:
+    type: array
+    items:
+      type: object
+    description: Sub-processes within the workflow
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSubProcess
+    x-jsonld-type: '@id'
+  hasDataLink:
+    type: array
+    items:
+      type: object
+    description: Data flow links
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasDataLink
+    x-jsonld-type: '@id'
+  hasSource:
+    type: object
+    description: Source output of a data link
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSource
+    x-jsonld-type: '@id'
+  hasSink:
+    type: object
+    description: Sink input of a data link
+    x-jsonld-id: http://purl.org/wf4ever/wfdesc#hasSink
+    x-jsonld-type: '@id'
+x-jsonld-extra-terms:
+  Workflow: http://purl.org/wf4ever/wfdesc#Workflow
+  Process: http://purl.org/wf4ever/wfdesc#Process
+  Input: http://purl.org/wf4ever/wfdesc#Input
+  Output: http://purl.org/wf4ever/wfdesc#Output
+  Parameter: http://purl.org/wf4ever/wfdesc#Parameter
+  DataLink: http://purl.org/wf4ever/wfdesc#DataLink
+  Configuration: http://purl.org/wf4ever/wfdesc#Configuration
+x-jsonld-prefixes:
+  wfdesc: http://purl.org/wf4ever/wfdesc#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#

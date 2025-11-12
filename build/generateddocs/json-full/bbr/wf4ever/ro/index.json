@@ -1,0 +1,49 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.ro",
+  "name": "Research Object Ontology (ro)",
+  "abstract": "The Research Object ontology (ro) provides concepts for bundling and aggregating research artifacts, describing folder structures and annotations.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "sources": [
+    {
+      "title": "Research Object Ontology",
+      "link": "http://purl.org/wf4ever/ro"
+    },
+    {
+      "title": "OAI-ORE",
+      "link": "http://www.openarchives.org/ore/"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "research-object",
+    "ro",
+    "ontology",
+    "wf4ever",
+    "aggregation"
+  ],
+  "group": "Wf4Ever Ontologies",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/context.jsonld",
+  "ontology": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# Research Object Ontology (ro)\n\n## Overview\n\nThe Research Object ontology (ro) provides concepts for bundling and aggregating research artifacts. It enables the packaging of workflows, data, and metadata into a single research object.\n\n## Namespace\n\n`http://purl.org/wf4ever/ro#`\n\n## Key Classes\n\n- **ResearchObject** - A bundled collection of resources\n- **Resource** - Any research artifact\n- **Folder** - Directory structure\n- **FolderEntry** - Entry in a folder\n- **AggregatedAnnotation** - Annotation about resources\n- **Manifest** - Manifest describing the research object\n\n## Key Properties\n\n- `aggregates` - Resources in the research object\n- `rootFolder` - Main folder\n- `entryName` - Name of a folder entry\n- `annotatesAggregatedResource` - Annotation target\n- `manifest` - Manifest of the research object\n\n## Usage\n\nThis ontology is used to package workflow descriptions, execution provenance, and data into cohesive research objects that can be shared and preserved.\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Research Object schema based on ro ontology\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - type: string\n      enum:\n      - ResearchObject\n      - Resource\n      - Folder\n      - FolderEntry\n      - AggregatedAnnotation\n      - Manifest\n    - type: array\n      items:\n        type: string\n  name:\n    type: string\n    description: Name of the resource\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  aggregates:\n    type: array\n    items:\n      type: object\n    description: Resources aggregated\n    x-jsonld-id: http://www.openarchives.org/ore/terms/aggregates\n    x-jsonld-type: '@id'\n  rootFolder:\n    type: object\n    description: Root folder\n    x-jsonld-id: http://purl.org/wf4ever/ro#rootFolder\n    x-jsonld-type: '@id'\n  entryName:\n    type: string\n    description: Name of folder entry\n    x-jsonld-id: http://purl.org/wf4ever/ro#entryName\n  annotatesAggregatedResource:\n    type: object\n    description: Resource being annotated\n    x-jsonld-id: http://purl.org/wf4ever/ro#annotatesAggregatedResource\n    x-jsonld-type: '@id'\n  manifest:\n    type: object\n    description: Manifest\n    x-jsonld-id: http://purl.org/wf4ever/ro#manifest\n    x-jsonld-type: '@id'\n  isDescribedBy:\n    type: object\n    description: Description of resource\n    x-jsonld-id: http://www.openarchives.org/ore/terms/isDescribedBy\n    x-jsonld-type: '@id'\nx-jsonld-extra-terms:\n  ResearchObject: http://purl.org/wf4ever/ro#ResearchObject\n  Resource: http://purl.org/wf4ever/ro#Resource\n  Folder: http://purl.org/wf4ever/ro#Folder\n  FolderEntry: http://purl.org/wf4ever/ro#FolderEntry\n  AggregatedAnnotation: http://purl.org/wf4ever/ro#AggregatedAnnotation\n  Manifest: http://purl.org/wf4ever/ro#Manifest\nx-jsonld-prefixes:\n  ro: http://purl.org/wf4ever/ro#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  ore: http://www.openarchives.org/ore/terms/\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/ro"
+}

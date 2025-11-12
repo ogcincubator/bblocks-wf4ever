@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "An image artifact",
+  "type": "object",
+  "properties": {
+    "@type": {
+      "oneOf": [
+        {
+          "const": "Image"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Image"
+          }
+        }
+      ]
+    },
+    "format": {
+      "type": "string",
+      "description": "Image format (e.g., \"image/png\", \"image/tiff\")"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "@type"
+  ]
+}

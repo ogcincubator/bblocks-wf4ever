@@ -1,0 +1,49 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.wf4ever.wfprov.ProcessRun",
+  "name": "wfprov:ProcessRun",
+  "abstract": "An execution instance of a process. A ProcessRun represents the actual execution of a process described by wfdesc:Process, tracking what happened during that execution including inputs used, outputs generated, and timing information.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-07T00:00:00Z",
+  "itemClass": "datatype",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-12",
+  "sources": [
+    {
+      "title": "Workflow Provenance Ontology - ProcessRun",
+      "link": "http://purl.org/wf4ever/wfprov#ProcessRun"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+    "ogc.bbr.wf4ever.wfprov.Artifact",
+    "ogc.bbr.wf4ever.wfdesc.Process",
+    "ogc.ogc-utils.prov"
+  ],
+  "tags": [
+    "wfprov",
+    "process-run",
+    "execution",
+    "provenance"
+  ],
+  "group": "Wf4Ever - wfprov",
+  "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/context.jsonld",
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/ProcessRun/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/ProcessRun/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/ProcessRun/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "# wfprov:ProcessRun\n\n## Description\n\nA **ProcessRun** represents an execution instance of a process. It captures what actually happened during the execution of a process described by `wfdesc:Process`, including the input artifacts used, output artifacts generated, and timing information.\n\n## Relations\n\n- Must be linked to a `wfdesc:Process` via `describedByProcess`\n- Uses `wfprov:Artifact` via `usedInput`\n- Output artifacts reference this ProcessRun via their `wasOutputFrom` property\n- Can be part of a `wfprov:WorkflowRun` via `wasPartOfWorkflowRun`\n- Can be enacted by a `wfprov:WorkflowEngine` via `wasEnactedBy`\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An execution instance of a process (based on prov:Activity)\nallOf:\n- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Activity\ntype: object\nproperties:\n  id:\n    type: string\n    format: uri\n    description: Unique identifier for the process run\n    x-jsonld-id: '@id'\n  type:\n    type: string\n    description: Type indicator (Activity or sub-type)\n    x-jsonld-id: '@type'\n  describedByProcess:\n    type: string\n    format: uri\n    description: Links to the process description (wfdesc:Process) that was executed\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByProcess\n    x-jsonld-type: '@id'\n  usedInput:\n    type: array\n    items:\n      type: object\n      properties:\n        id:\n          type: string\n          format: uri\n      required:\n      - id\n    description: Input artifacts used by this process run\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#usedInput\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\n  startedAtTime:\n    type: string\n    format: date-time\n    description: Start time of the execution\n    x-jsonld-id: http://www.w3.org/ns/prov#startedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  endedAtTime:\n    type: string\n    format: date-time\n    description: End time of the execution\n    x-jsonld-id: http://www.w3.org/ns/prov#endedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  wasPartOfWorkflowRun:\n    type: string\n    format: uri\n    description: The workflow run that this process run was part of\n    x-jsonld-id: http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun\n    x-jsonld-type: '@id'\n  wasEnactedBy:\n    type: string\n    format: uri\n    description: The workflow engine that enacted this process run\n    x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith\n    x-jsonld-type: '@id'\nrequired:\n- id\nx-jsonld-extra-terms:\n  ProcessRun: http://purl.org/wf4ever/wfprov#ProcessRun\n  WorkflowRun: http://purl.org/wf4ever/wfprov#WorkflowRun\n  wasOutputFrom:\n    x-jsonld-id: http://www.w3.org/ns/prov#generated\n    x-jsonld-type: '@id'\n    x-jsonld-container: '@set'\nx-jsonld-vocab: http://purl.org/wf4ever/wfprov#\nx-jsonld-prefixes:\n  wfprov: http://purl.org/wf4ever/wfprov#\n  prov: http://www.w3.org/ns/prov#\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
+  "gitPath": "_sources/wfprov/ProcessRun"
+}

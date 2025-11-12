@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.bbr.wf4ever.ro.AggregatedAnnotation - ro:AggregatedAnnotation",
+  "bblockName": "ro:AggregatedAnnotation",
+  "bblockId": "ogc.bbr.wf4ever.ro.AggregatedAnnotation",
+  "generated": "2025-11-12T08:22:34.227163+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

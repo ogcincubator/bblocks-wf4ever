@@ -1,0 +1,9 @@
+path	@id
+/@type	
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/aggregates	http://www.openarchives.org/ore/terms/aggregates
+/rootFolder	http://purl.org/wf4ever/ro#rootFolder
+/entryName	http://purl.org/wf4ever/ro#entryName
+/annotatesAggregatedResource	http://purl.org/wf4ever/ro#annotatesAggregatedResource
+/manifest	http://purl.org/wf4ever/ro#manifest
+/isDescribedBy	http://www.openarchives.org/ore/terms/isDescribedBy

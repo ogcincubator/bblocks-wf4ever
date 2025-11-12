@@ -1,0 +1,216 @@
+path	@id
+/researchObject	http://purl.org/wf4ever/ro#ResearchObject
+/researchObject/@id	
+/researchObject/id	
+/researchObject/@type	
+/researchObject/type	
+/researchObject/title	http://purl.org/dc/terms/title
+/researchObject/description	http://purl.org/dc/terms/description
+/researchObject/aggregates	http://www.openarchives.org/ore/terms/aggregates
+/researchObject/aggregates/@id	
+/researchObject/aggregates/id	
+/researchObject/manifest	http://purl.org/wf4ever/ro#manifest
+/researchObject/created	http://purl.org/dc/terms/created
+/workflow	http://purl.org/wf4ever/wfdesc#Workflow
+/workflow/@type	
+/workflow/@id	
+/workflow/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
+/workflow/hasInput/@type	
+/workflow/hasInput/@id	
+/workflow/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/workflow/hasInput/hasArtifact/@type	
+/workflow/hasInput/hasArtifact/@id	
+/workflow/hasInput/hasArtifact/value	
+/workflow/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
+/workflow/hasOutput/@type	
+/workflow/hasOutput/@id	
+/workflow/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/workflow/hasOutput/hasArtifact/@type	
+/workflow/hasOutput/hasArtifact/@id	
+/workflow/hasOutput/hasArtifact/value	
+/workflow/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess
+/workflow/hasSubProcess/@type	
+/workflow/hasSubProcess/@id	
+/workflow/hasSubProcess/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasSubProcess/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasSubProcess/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
+/workflow/hasSubProcess/hasInput/@type	
+/workflow/hasSubProcess/hasInput/@id	
+/workflow/hasSubProcess/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasSubProcess/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasSubProcess/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/workflow/hasSubProcess/hasInput/hasArtifact/@type	
+/workflow/hasSubProcess/hasInput/hasArtifact/@id	
+/workflow/hasSubProcess/hasInput/hasArtifact/value	
+/workflow/hasSubProcess/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasSubProcess/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
+/workflow/hasSubProcess/hasOutput/@type	
+/workflow/hasSubProcess/hasOutput/@id	
+/workflow/hasSubProcess/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasSubProcess/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasSubProcess/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/workflow/hasSubProcess/hasOutput/hasArtifact/@type	
+/workflow/hasSubProcess/hasOutput/hasArtifact/@id	
+/workflow/hasSubProcess/hasOutput/hasArtifact/value	
+/workflow/hasSubProcess/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink
+/workflow/hasDataLink/@type	
+/workflow/hasDataLink/@id	
+/workflow/hasDataLink/hasSource	http://purl.org/wf4ever/wfdesc#hasSource
+/workflow/hasDataLink/hasSource/@type	
+/workflow/hasDataLink/hasSource/@id	
+/workflow/hasDataLink/hasSource/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasDataLink/hasSource/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasDataLink/hasSource/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/workflow/hasDataLink/hasSource/hasArtifact/@type	
+/workflow/hasDataLink/hasSource/hasArtifact/@id	
+/workflow/hasDataLink/hasSource/hasArtifact/value	
+/workflow/hasDataLink/hasSource/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasDataLink/hasSink	http://purl.org/wf4ever/wfdesc#hasSink
+/workflow/hasDataLink/hasSink/@type	
+/workflow/hasDataLink/hasSink/@id	
+/workflow/hasDataLink/hasSink/name	http://www.w3.org/2000/01/rdf-schema#label
+/workflow/hasDataLink/hasSink/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflow/hasDataLink/hasSink/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
+/workflow/hasDataLink/hasSink/hasArtifact/@type	
+/workflow/hasDataLink/hasSink/hasArtifact/@id	
+/workflow/hasDataLink/hasSink/hasArtifact/value	
+/workflow/hasDataLink/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+/workflowRun	http://purl.org/wf4ever/wfprov#WorkflowRun
+/workflowRun/wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
+/workflowRun/wasInfluencedBy/provType	
+/workflowRun/wasInfluencedBy/prov:type	
+/workflowRun/wasInfluencedBy/type	
+/workflowRun/wasInfluencedBy/hadMember	
+/workflowRun/wasInfluencedBy/id	
+/workflowRun/wasInfluencedBy/featureType	
+/workflowRun/wasInfluencedBy/entityType	
+/workflowRun/wasInfluencedBy/has_provenance	
+/workflowRun/wasInfluencedBy/has_provenance/provType	
+/workflowRun/wasInfluencedBy/has_provenance/type	
+/workflowRun/wasInfluencedBy/has_provenance/agentType	
+/workflowRun/wasInfluencedBy/has_provenance/prov:type	
+/workflowRun/wasInfluencedBy/has_provenance/name	
+/workflowRun/wasInfluencedBy/has_provenance/id	
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf	
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/href	http://www.w3.org/ns/oa#hasTarget
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/rel	http://www.iana.org/assignments/relation
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/anchor	
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/type	http://purl.org/dc/terms/type
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/hreflang	http://purl.org/dc/terms/language
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/title	http://www.w3.org/2000/01/rdf-schema#label
+/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/length	http://purl.org/dc/terms/extent
+/workflowRun/wasInfluencedBy/has_provenance/atLocation	
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation	
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/id	
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/type	
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/agent	
+/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/hadActivity	
+/workflowRun/wasInfluencedBy/wasGeneratedBy	
+/workflowRun/wasInfluencedBy/wasAttributedTo	
+/workflowRun/wasInfluencedBy/wasDerivedFrom	
+/workflowRun/wasInfluencedBy/alternateOf	
+/workflowRun/wasInfluencedBy/hadPrimarySource	
+/workflowRun/wasInfluencedBy/specializationOf	
+/workflowRun/wasInfluencedBy/wasInvalidatedBy	
+/workflowRun/wasInfluencedBy/wasQuotedFrom	
+/workflowRun/wasInfluencedBy/wasRevisionOf	
+/workflowRun/wasInfluencedBy/atLocation	
+/workflowRun/wasInfluencedBy/links	
+/workflowRun/wasInfluencedBy/links/href	http://www.w3.org/ns/oa#hasTarget
+/workflowRun/wasInfluencedBy/links/rel	http://www.iana.org/assignments/relation
+/workflowRun/wasInfluencedBy/links/anchor	
+/workflowRun/wasInfluencedBy/links/type	http://purl.org/dc/terms/type
+/workflowRun/wasInfluencedBy/links/hreflang	http://purl.org/dc/terms/language
+/workflowRun/wasInfluencedBy/links/title	http://www.w3.org/2000/01/rdf-schema#label
+/workflowRun/wasInfluencedBy/links/length	http://purl.org/dc/terms/extent
+/workflowRun/wasInfluencedBy/qualifiedGeneration	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/id	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/atTime	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/hadRole	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/influencer	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/hadActivity	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/activity	
+/workflowRun/wasInfluencedBy/qualifiedGeneration/type	
+/workflowRun/wasInfluencedBy/qualifiedInvalidation	
+/workflowRun/wasInfluencedBy/qualifiedInvalidation/type	
+/workflowRun/wasInfluencedBy/qualifiedDerivation	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/id	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/type	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration/type	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadActivity	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/id	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/type	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/atTime	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/entity	
+/workflowRun/wasInfluencedBy/qualifiedDerivation/entity	
+/workflowRun/wasInfluencedBy/qualifiedAttribution	
+/workflowRun/wasInfluencedBy/qualifiedAttribution/id	
+/workflowRun/wasInfluencedBy/qualifiedAttribution/type	
+/workflowRun/wasInfluencedBy/qualifiedAttribution/agent	
+/workflowRun/qualifiedInfluence	http://www.w3.org/ns/prov#qualifiedInfluence
+/workflowRun/qualifiedInfluence/id	@id
+/workflowRun/qualifiedInfluence/influencer	http://www.w3.org/ns/prov#influencer
+/workflowRun/qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
+/workflowRun/qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
+/workflowRun/qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
+/workflowRun/id	@id
+/workflowRun/type	@type
+/workflowRun/activityType	
+/workflowRun/prov:type	
+/workflowRun/endedAtTime	http://www.w3.org/ns/prov#endedAtTime
+/workflowRun/wasAssociatedWith	
+/workflowRun/wasInformedBy	
+/workflowRun/used	
+/workflowRun/wasStartedBy	
+/workflowRun/wasEndedBy	
+/workflowRun/invalidated	
+/workflowRun/generated	
+/workflowRun/atLocation	
+/workflowRun/qualifiedUsage	
+/workflowRun/qualifiedCommunication	
+/workflowRun/qualifiedCommunication/type	
+/workflowRun/qualifiedStart	
+/workflowRun/qualifiedStart/id	
+/workflowRun/qualifiedStart/type	
+/workflowRun/qualifiedStart/atTime	
+/workflowRun/qualifiedStart/entity	
+/workflowRun/qualifiedStart/hadActivity	
+/workflowRun/qualifiedEnd	
+/workflowRun/qualifiedEnd/type	
+/workflowRun/qualifiedAssociation	
+/workflowRun/qualifiedAssociation/id	
+/workflowRun/qualifiedAssociation/type	
+/workflowRun/qualifiedAssociation/agent	
+/workflowRun/qualifiedAssociation/hadRole	
+/workflowRun/qualifiedAssociation/hadPlan	
+/workflowRun/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
+/workflowRun/usedInput	http://purl.org/wf4ever/wfprov#usedInput
+/workflowRun/usedInput/id	
+/workflowRun/startedAtTime	http://www.w3.org/ns/prov#startedAtTime
+/workflowRun/wasPartOfWorkflowRun	http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun
+/workflowRun/wasEnactedBy	http://www.w3.org/ns/prov#wasAssociatedWith
+/workflowRun/describedByWorkflow	http://purl.org/wf4ever/wfprov#describedByWorkflow
+/workflowRun/hadSubProcessRun	wfprov:wasPartOfWorkflowRun
+/workflowRun/hadSubProcessRun/id	
+/manifest	http://purl.org/wf4ever/ro#Manifest
+/manifest/@id	
+/manifest/@type	
+/manifest/describes	http://www.openarchives.org/ore/terms/describes
+/manifest/createdBy	http://purl.org/dc/terms/creator
+/manifest/createdOn	http://purl.org/dc/terms/created
+/metadata	http://purl.org/wf4ever/profiles#metadata
+/metadata/created	http://purl.org/dc/terms/created
+/metadata/creator	http://purl.org/dc/terms/creator
+/metadata/description	http://purl.org/dc/terms/description
+/metadata/keywords	http://www.w3.org/ns/dcat#keyword

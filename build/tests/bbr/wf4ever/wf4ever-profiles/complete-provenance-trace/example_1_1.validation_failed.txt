@@ -1,0 +1,80 @@
+Validation report for ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace - Complete Workflow Provenance Trace
+Generated 2025-11-12T08:22:35.158760+00:00
+=== Files ===
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: '@type' is a required property
+
+Failed validating 'required' in schema['properties']['workflow']['allOf'][0]['allOf'][0]:
+    {'$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'description': 'A computational process in a workflow',
+     'properties': {'@id': {'description': 'Unique identifier for this '
+                                           'process',
+                            'format': 'uri',
+                            'type': 'string'},
+                    '@type': {'description': 'Type identifier for a wfdesc '
+                                             'Process or Workflow',
+                              'oneOf': [{'const': 'Process'},
+                                        {'const': 'Workflow'}]},
+                    'description': {'description': 'Description of what '
+                                                   'this process does',
+                                    'type': 'string',
+                                    'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#comment'},
+                    'hasInput': {'description': 'Input parameters for this '
+                                                'process',
+                                 'items': {'$ref': 'https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml'},
+                                 'type': 'array',
+                                 'x-jsonld-container': '@set',
+                                 'x-jsonld-id': 'http://purl.org/wf4ever/wfdesc#hasInput',
+                                 'x-jsonld-type': '@id'},
+                    'hasOutput': {'description': 'Output parameters '
+                                                 'produced by this process',
+                                  'items': {'$ref': 'https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml'},
+                                  'type': 'array',
+                                  'x-jsonld-container': '@set',
+                                  'x-jsonld-id': 'http://purl.org/wf4ever/wfdesc#hasOutput',
+                                  'x-jsonld-type': '@id'},
+                    'name': {'description': 'Name of the process',
+                             'type': 'string',
+                             'x-jsonld-id': 'http://www.w3.org/2000/01/rdf-schema#label'}},
+     'required': ['@type'],
+     'type': 'object',
+     'x-jsonld-extra-terms': {'Input': 'http://purl.org/wf4ever/wfdesc#Input',
+                              'Output': 'http://purl.org/wf4ever/wfdesc#Output',
+                              'Process': 'http://purl.org/wf4ever/wfdesc#Process'},
+     'x-jsonld-prefixes': {'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
+                           'wfdesc': 'http://purl.org/wf4ever/wfdesc#'}}
+
+On instance['workflow']:
+    {'hasInput': [{'description': 'Maximum cloud coverage percentage',
+                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/cloud_cover_max',
+                   'label': 'cloud_cover_max',
+                   'type': 'Input'},
+                  {'description': 'Number of days to look back for imagery',
+                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/days_back',
+                   'label': 'days_back',
+                   'type': 'Input'},
+                  {'description': 'Eastern boundary longitude',
+                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/east',
+                   'label': 'east',
+                   'type': 'Input'},
+                  {'description': 'Northern boundary latitude',
+                   'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north',
+                   'label': 'north',
+                   'type': 'Input'}],
+     'hasOutput': [{'description': 'Processed mangrove mapping results',
+                    'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs',
+                    'label': 'outputs',
+                    'type': 'Output'}],
+     'id': 'arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main',
+     'label': 'Mangrove Mapping Workflow',
+     'type': 'Workflow'}
+=== End JSON Schema ===
+
