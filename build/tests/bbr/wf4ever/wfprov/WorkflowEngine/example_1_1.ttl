@@ -1,9 +1,0 @@
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
-
-<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine,
-        prov:Agent,
-        prov:SoftwareAgent ;
-    rdfs:label "cwltool 3.1.20251031082601" .
-
