@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Complete workflow provenance trace combining Research Object, Workflow Description, and Execution Provenance",
+  "type": "object",
+  "properties": {
+    "researchObject": {
+      "description": "The Research Object container aggregating all workflow resources",
+      "allOf": [
+        {
+          "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.json"
+        }
+      ],
+      "x-jsonld-id": "http://purl.org/wf4ever/ro#ResearchObject",
+      "x-jsonld-type": "@id"
+    },
+    "workflow": {
+      "description": "The workflow description (prospective provenance)",
+      "allOf": [
+        {
+          "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.json"
+        }
+      ],
+      "x-jsonld-id": "http://purl.org/wf4ever/wfdesc#Workflow",
+      "x-jsonld-type": "@id"
+    },
+    "workflowRun": {
+      "description": "The workflow execution trace (retrospective provenance)",
+      "allOf": [
+        {
+          "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.json"
+        }
+      ],
+      "x-jsonld-id": "http://purl.org/wf4ever/wfprov#WorkflowRun",
+      "x-jsonld-type": "@id"
+    },
+    "manifest": {
+      "description": "The RO manifest describing the research object",
+      "allOf": [
+        {
+          "$ref": "https://geolabs.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.json"
+        }
+      ],
+      "x-jsonld-id": "http://purl.org/wf4ever/ro#Manifest",
+      "x-jsonld-type": "@id"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata about the complete trace",
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this trace was created",
+          "x-jsonld-id": "http://purl.org/dc/terms/created",
+          "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "creator": {
+          "type": "string",
+          "description": "Who created this trace",
+          "x-jsonld-id": "http://purl.org/dc/terms/creator",
+          "x-jsonld-type": "@id"
+        },
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of this workflow execution",
+          "x-jsonld-id": "http://purl.org/dc/terms/description"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Keywords describing this workflow and execution",
+          "x-jsonld-id": "http://www.w3.org/ns/dcat#keyword"
+        }
+      },
+      "x-jsonld-id": "http://purl.org/wf4ever/profiles#metadata"
+    }
+  },
+  "required": [
+    "researchObject",
+    "workflow",
+    "workflowRun"
+  ],
+  "x-jsonld-extra-terms": {
+    "CompleteProvenanceTrace": "http://purl.org/wf4ever/profiles#CompleteProvenanceTrace"
+  },
+  "x-jsonld-vocab": "http://purl.org/wf4ever/",
+  "x-jsonld-prefixes": {
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "ro": "http://purl.org/wf4ever/ro#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}
