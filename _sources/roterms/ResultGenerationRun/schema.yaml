@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roterms",
+  "title": "ResultGenerationRun",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the result generation run."
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the result generation run."
+    }
+  },
+  "required": ["name"]
+}

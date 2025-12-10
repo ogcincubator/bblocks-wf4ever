@@ -1,0 +1,18 @@
+{
+  "name": "roevo:VersionableResource",
+  "abstract": "A resource within an RO that can be versioned with change specifications.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [
+    { "title": "Research Object Evolution Ontology - VersionableResource", "link": "http://purl.org/wf4ever/roevo#VersionableResource" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["roevo", "versioning"],
+  "group": "Wf4Ever - roevo",
+  "itemIdentifier": "ogc.bbr.wf4ever.roevo.VersionableResource"
+}

@@ -1,0 +1,16 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roevo/context.jsonld",
+  "@id": "http://example.org/ro/myRO",
+  "@type": ["roevo:LiveRO", "ro:ResearchObject"],
+  "dcterms:title": "My Research Object",
+  "roevo:hasVersion": [
+    "http://example.org/ro/myRO-v0",
+    "http://example.org/ro/myRO-v1",
+    "http://example.org/ro/myRO-v2"
+  ],
+  "roevo:modifiedAtTime": "2025-11-28T12:00:00Z",
+  "dcterms:creator": {
+    "@type": "foaf:Person",
+    "foaf:name": "Dr. Jane Smith"
+  }
+}

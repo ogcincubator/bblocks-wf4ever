@@ -1,0 +1,19 @@
+{
+  "name": "roterms:ScientificMethod",
+  "abstract": "A description of the scientific method or approach used.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [ { "title": "Research Object Terms - ScientificMethod", "link": "http://purl.org/wf4ever/roterms#ScientificMethod" } ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.ogc-utils.prov-activity"
+  ],
+  "tags": ["roterms", "method", "annotation"],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.ScientificMethod"
+}

@@ -1,0 +1,20 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roterms/context.jsonld",
+  "@id": "experiment-001",
+  "@type": "ro:ResearchObject",
+  "dcterms:title": "Temperature Effect on Reaction Rate",
+  "roterms:hypothesis": {
+    "@id": "hypothesis-001",
+    "@type": "roterms:Hypothesis",
+    "description": "Higher temperature increases chemical reaction rate exponentially"
+  },
+  "roterms:methodology": "Controlled laboratory experiment with varying temperature",
+  "aggregates": [
+    {
+      "@id": "results.csv",
+      "@type": "wf4ever:Dataset",
+      "roterms:supports": "hypothesis-001",
+      "roterms:sampleSize": 100
+    }
+  ]
+}

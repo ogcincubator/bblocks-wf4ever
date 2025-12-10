@@ -20,7 +20,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfdesc"
+    "ogc.bbr.wf4ever.wfdesc",
+    "ogc.ogc-utils.prov"
   ],
   "tags": [
     "workflow",

@@ -1,0 +1,28 @@
+{
+  "name": "roterms:ProspectiveRun",
+  "abstract": "Represents a prospective run of a workflow in the context of a Research Object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-02T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-02",
+  "sources": [
+    {
+      "title": "Research Object Terms - ProspectiveRun",
+      "link": "http://purl.org/wf4ever/roterms#ProspectiveRun"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.wfprov.WorkflowRun"
+  ],
+  "tags": [
+    "roterms",
+    "workflow",
+    "prospective"
+  ],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.ProspectiveRun"
+}

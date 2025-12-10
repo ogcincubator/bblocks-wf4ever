@@ -1,0 +1,22 @@
+{
+  "name": "roevo:ArchivedRO",
+  "abstract": "A Research Object that has been archived and is immutable, with associated archival metadata.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [
+    { "title": "Research Object Evolution Ontology - ArchivedRO", "link": "http://purl.org/wf4ever/roevo#ArchivedRO" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.ResearchObject",
+    "ogc.ogc-utils.prov-entity"
+  ],
+  "tags": ["roevo", "archival", "versioning"],
+  "group": "Wf4Ever - roevo",
+  "itemIdentifier": "ogc.bbr.wf4ever.roevo.ArchivedRO"
+}

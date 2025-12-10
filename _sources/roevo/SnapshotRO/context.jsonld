@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "roevo": "http://purl.org/wf4ever/roevo#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "@vocab": "http://purl.org/wf4ever/roevo#",
+    "SnapshotRO": "roevo:SnapshotRO",
+    "name": "dcterms:title",
+    "description": "dcterms:description"
+  }
+}

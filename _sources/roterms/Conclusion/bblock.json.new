@@ -1,0 +1,28 @@
+{
+  "name": "roterms:Conclusion",
+  "abstract": "A conclusion drawn from evidence within the research object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [
+    {
+      "title": "Research Object Terms - Conclusion",
+      "link": "http://purl.org/wf4ever/roterms#Conclusion"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.ogc-utils.prov-entity"
+  ],
+  "tags": [
+    "roterms",
+    "conclusion",
+    "annotation"
+  ],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.Conclusion"
+}

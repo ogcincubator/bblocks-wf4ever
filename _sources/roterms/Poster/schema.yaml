@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roterms",
+  "title": "Poster",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Title of the poster."
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the poster."
+    }
+  },
+  "required": ["name"]
+}

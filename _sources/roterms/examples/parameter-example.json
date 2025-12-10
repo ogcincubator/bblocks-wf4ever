@@ -1,0 +1,9 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roterms/context.jsonld",
+  "@id": "threshold-param",
+  "@type": "wfdesc:Input",
+  "dcterms:title": "Confidence Threshold",
+  "dcterms:description": "Minimum confidence level for classification",
+  "roterms:exampleValue": 0.95,
+  "roterms:defaultValue": 0.8
+}

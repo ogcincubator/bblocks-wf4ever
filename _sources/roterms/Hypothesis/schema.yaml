@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A scientific hypothesis
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Identifier
+  '@type':
+    type: string
+    description: RDF type (roterms:Hypothesis)
+  name:
+    type: string
+    description: Title
+  description:
+    type: string
+    description: Narrative description
+required:
+  - '@id'

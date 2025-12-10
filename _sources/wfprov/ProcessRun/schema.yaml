@@ -1,60 +1,22 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-description: An execution instance of a process (PROV-O Activity - accepts both compact and expanded JSON-LD)
+description: An execution instance of a process (based on prov:Activity)
 allOf:
   - $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Activity
 type: object
 properties:
-  # Compact form properties
   id:
     type: string
     format: uri
-    description: Unique identifier for the process run (compact form)
+    description: Unique identifier for the process run
     x-jsonld-id: '@id'
   type:
     type: string
-    description: Type indicator (compact form)
+    description: Type indicator (Activity or sub-type)
     x-jsonld-id: '@type'
-  # Expanded form properties
-  '@id':
-    type: string
-    format: uri
-    description: Unique identifier (expanded form)
-  '@type':
-    description: Type indicator (expanded form - array of URIs)
-    oneOf:
-      - type: string
-      - type: array
-  'http://www.w3.org/2000/01/rdf-schema#label':
-    description: Label in expanded PROV-O form
-    type: array
-    items:
-      type: object
-  'http://www.w3.org/ns/prov#startedAtTime':
-    description: Start time in expanded form
-    type: array
-    items:
-      type: object
-      properties:
-        '@type':
-          const: http://www.w3.org/2001/XMLSchema#dateTime
-        '@value':
-          type: string
-  'http://www.w3.org/ns/prov#endedAtTime':
-    description: End time in expanded form
-    type: array
-  'http://www.w3.org/ns/prov#wasAssociatedWith':
-    description: Associated agents in expanded form
-    type: array
-  'http://purl.org/wf4ever/wfprov#describedByProcess':
-    description: Described by process in expanded form
-    type: array
-  'http://purl.org/wf4ever/wfprov#describedByWorkflow':
-    description: Described by workflow in expanded form  
-    type: array
   describedByProcess:
     type: string
     format: uri
-    description: Links to the process description (compact form)
+    description: Links to the process description (wfdesc:Process) that was executed
     x-jsonld-id: http://purl.org/wf4ever/wfprov#describedByProcess
     x-jsonld-type: '@id'
   usedInput:
@@ -71,11 +33,11 @@ properties:
   startedAtTime:
     type: string
     format: date-time
-    description: Start time of the execution (compact form)
+    description: Start time of the execution
   endedAtTime:
     type: string
     format: date-time
-    description: End time of the execution (compact form)
+    description: End time of the execution
   wasPartOfWorkflowRun:
     type: string
     format: uri
@@ -88,7 +50,5 @@ properties:
     description: The workflow engine that enacted this process run
     x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith
     x-jsonld-type: '@id'
-# Accept either compact id or expanded @id
-anyOf:
-  - required: [id]
-  - required: ['@id']
+required:
+  - id

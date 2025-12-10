@@ -1,0 +1,29 @@
+- title: Workflow Parameter with Example Value
+  description: Document expected input format with example value
+  snippets:
+    - language: json
+      ref: examples/parameter-example.json
+
+- title: Process with Task Description
+  description: Semantic description of process functionality
+  snippets:
+    - language: json
+      ref: examples/task-description.json
+
+- title: Research Object with Hypothesis
+  description: Linking research to scientific hypothesis
+  snippets:
+    - language: json
+      ref: examples/hypothesis.json
+
+- title: Quality Annotation
+  description: Quality assessment with validation information
+  snippets:
+    - language: json
+      ref: examples/quality-annotation.json
+
+- title: Software Resource with Dependencies
+  description: Software artifact with requirements
+  snippets:
+    - language: json
+      ref: examples/software.json

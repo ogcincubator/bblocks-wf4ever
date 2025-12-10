@@ -1,0 +1,10 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roterms/context.jsonld",
+  "@id": "quality-annotation-001",
+  "@type": "roterms:QualityAnnotation",
+  "annotates": "workflow.cwl",
+  "roterms:qualityScore": 0.87,
+  "roterms:validatedBy": "CWL Validator 1.2",
+  "roterms:technicalStandard": "CWL v1.2 Specification",
+  "dcterms:created": "2025-11-28T10:00:00Z"
+}

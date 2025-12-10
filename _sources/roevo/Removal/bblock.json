@@ -1,0 +1,19 @@
+{
+  "name": "roevo:Removal",
+  "abstract": "Represents the removal of a resource in the context of Research Object evolution.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-02T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-02",
+  "sources": [ { "title": "Research Object Evolution - Removal", "link": "http://purl.org/wf4ever/roevo#Removal" } ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.roevo.Change"
+  ],
+  "tags": ["roevo", "evolution", "removal"],
+  "group": "Wf4Ever - roevo",
+  "itemIdentifier": "ogc.bbr.wf4ever.roevo.Removal"
+}

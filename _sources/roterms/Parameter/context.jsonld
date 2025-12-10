@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "roterms": "http://purl.org/wf4ever/roterms#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "@vocab": "http://purl.org/wf4ever/roterms#",
+    "Parameter": {
+      "@id": "roterms:Parameter",
+      "@type": "@id",
+      "rdfs:subClassOf": [
+        {"@id": "wfdesc:Parameter"},
+        {"@id": "prov:Entity"}
+      ]
+    },
+    "name": "dcterms:title",
+    "value": "roterms:value",
+    "description": "dcterms:description"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roterms",
+  "title": "Presentation",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Title of the presentation."
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the presentation."
+    }
+  },
+  "required": ["name"]
+}

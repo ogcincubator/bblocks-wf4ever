@@ -1,0 +1,22 @@
+{
+  "name": "roevo:SnapshotRO",
+  "abstract": "An immutable snapshot of a Research Object at a given time.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [
+    { "title": "Research Object Evolution Ontology - SnapshotRO", "link": "http://purl.org/wf4ever/roevo#SnapshotRO" }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.ResearchObject",
+    "ogc.ogc-utils.prov-entity"
+  ],
+  "tags": ["roevo", "snapshot", "versioning"],
+  "group": "Wf4Ever - roevo",
+  "itemIdentifier": "ogc.bbr.wf4ever.roevo.SnapshotRO"
+}

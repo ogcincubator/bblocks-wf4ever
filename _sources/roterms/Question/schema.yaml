@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roterms",
+  "title": "Question",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Title of the question."
+    },
+    "description": {
+      "type": "string",
+      "description": "Content of the question."
+    }
+  },
+  "required": ["name"]
+}

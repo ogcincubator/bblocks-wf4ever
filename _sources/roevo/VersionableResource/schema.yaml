@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A resource that can have versions and associated changes
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Identifier of the versionable resource
+  '@type':
+    type: string
+    description: The RDF type of this object (roevo:VersionableResource)
+  name:
+    type: string
+    description: Name of the resource
+  description:
+    type: string
+    description: Description of the resource
+required:
+  - '@id'

@@ -1,0 +1,16 @@
+{
+  "name": "roterms:Presentation",
+  "abstract": "Represents a presentation in the context of a Research Object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-02T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-02",
+  "sources": [ { "title": "Research Object Terms - Presentation", "link": "http://purl.org/wf4ever/roterms#Presentation" } ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["roterms", "presentation", "publication"],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.Presentation"
+}

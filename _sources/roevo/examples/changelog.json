@@ -1,0 +1,23 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roevo/context.jsonld",
+  "@id": "http://example.org/ro/myRO-v2",
+  "@type": "roevo:SnapshotRO",
+  "roevo:wasSnapshotOf": "http://example.org/ro/myRO",
+  "roevo:createdAtTime": "2025-02-20T14:00:00Z",
+  "prov:wasRevisionOf": "http://example.org/ro/myRO-v1",
+  "roevo:hasChangeLog": {
+    "@id": "changelog-v2",
+    "@type": "roevo:ChangeSpecification",
+    "roevo:hasAdditions": [
+      "new-workflow-step.cwl",
+      "additional-data.json"
+    ],
+    "roevo:hasModifications": [
+      "existing-data.csv"
+    ],
+    "roevo:hasRemovals": [
+      "old-script.py"
+    ],
+    "dcterms:description": "Added new processing step, updated data format, removed deprecated script"
+  }
+}

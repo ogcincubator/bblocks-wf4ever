@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roterms",
+  "title": "Commit",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Commit message."
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the commit."
+    },
+    "commitId": {
+      "type": "string",
+      "description": "Unique identifier for the commit."
+    }
+  },
+  "required": ["commitId"]
+}

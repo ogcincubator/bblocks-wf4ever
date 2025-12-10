@@ -21,14 +21,14 @@ The Workflow Description ontology (wfdesc) is part of the Wf4Ever Research Objec
 
 ## Key Properties
 
-- `hasInput` - Process has an input parameter
-- `hasOutput` - Process has an output parameter
-- `hasSubProcess` - Workflow contains a sub-process
-- `hasSubWorkflow` - Workflow contains a nested workflow (specialization of hasSubProcess)
-- `hasDataLink` - Workflow has data flow connection
-- `hasSource` - DataLink source output
-- `hasSink` - DataLink sink input
-- `hasArtifact` - Parameter associated with an artifact
+- `wfdesc:hasInput` - Object property; domain `wfdesc:Process`, range `wfdesc:Input`.
+- `wfdesc:hasOutput` - Object property; domain `wfdesc:Process`, range `wfdesc:Output`.
+- `wfdesc:hasSubProcess` - Object property; domain `wfdesc:Workflow`, range `wfdesc:Process`.
+- `wfdesc:hasSubWorkflow` - Object property; domain `wfdesc:Workflow`, range `wfdesc:Workflow`; sub-property of `wfdesc:hasSubProcess`.
+- `wfdesc:hasDataLink` - Object property; domain `wfdesc:Workflow`, range `wfdesc:DataLink`.
+- `wfdesc:hasSource` - Object property; domain `wfdesc:DataLink`, range `wfdesc:Output`.
+- `wfdesc:hasSink` - Object property; domain `wfdesc:DataLink`, range `wfdesc:Input`.
+- `wfdesc:hasArtifact` - Object property; domain `wfdesc:Parameter`, range `wfdesc:Artifact`.
 
 ## Usage
 

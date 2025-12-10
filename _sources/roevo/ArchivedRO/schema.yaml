@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An archived Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Identifier of the archived research object
+  '@type':
+    type: string
+    description: The RDF type of this object (roevo:ArchivedRO)
+  name:
+    type: string
+    description: Title of the archived research object
+  description:
+    type: string
+    description: Narrative description
+required:
+  - '@id'

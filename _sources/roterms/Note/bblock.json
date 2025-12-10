@@ -1,0 +1,16 @@
+{
+  "name": "roterms:Note",
+  "abstract": "A note or free-text comment relevant to the research object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [ { "title": "Research Object Terms - Note", "link": "http://purl.org/wf4ever/roterms#Note" } ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["roterms", "note", "annotation"],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.Note"
+}

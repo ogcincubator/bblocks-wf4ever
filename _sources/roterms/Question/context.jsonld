@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "roterms": "http://purl.org/wf4ever/roterms#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "@vocab": "http://purl.org/wf4ever/roterms#",
+    "Question": "roterms:Question",
+    "name": "dcterms:title",
+    "description": "dcterms:description"
+  }
+}

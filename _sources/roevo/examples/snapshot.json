@@ -1,0 +1,19 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roevo/context.jsonld",
+  "@id": "http://example.org/ro/myRO-v1",
+  "@type": ["roevo:SnapshotRO", "ro:ResearchObject"],
+  "dcterms:title": "My Research Object - Version 1",
+  "roevo:wasSnapshotOf": "http://example.org/ro/myRO",
+  "roevo:createdAtTime": "2025-01-15T10:30:00Z",
+  "prov:wasRevisionOf": "http://example.org/ro/myRO-v0",
+  "aggregates": [
+    {
+      "@id": "workflow.cwl",
+      "@type": "wfdesc:Workflow"
+    },
+    {
+      "@id": "input-data.csv",
+      "@type": "wf4ever:Dataset"
+    }
+  ]
+}

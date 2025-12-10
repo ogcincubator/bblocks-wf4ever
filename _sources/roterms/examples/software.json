@@ -1,0 +1,17 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roterms/context.jsonld",
+  "@id": "analysis-tool",
+  "@type": "roterms:Software",
+  "dcterms:title": "Genomic Analysis Tool",
+  "dcterms:version": "2.1.0",
+  "roterms:requiresSoftware": [
+    "R >= 4.0",
+    "Bioconductor >= 3.12"
+  ],
+  "roterms:performsTask": "Gene expression analysis",
+  "roterms:authoredBy": {
+    "@type": "foaf:Person",
+    "foaf:name": "Dr. Alice Johnson"
+  },
+  "roterms:authoredOn": "2025-06-15T00:00:00Z"
+}

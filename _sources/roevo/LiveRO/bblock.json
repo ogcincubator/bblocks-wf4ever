@@ -1,0 +1,29 @@
+{
+  "name": "roevo:LiveRO",
+  "abstract": "A live Research Object that is mutable and can evolve over time before being snapshotted or archived.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [
+    {
+      "title": "Research Object Evolution Ontology - LiveRO",
+      "link": "http://purl.org/wf4ever/roevo#LiveRO"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro.ResearchObject",
+    "ogc.ogc-utils.prov-entity"
+  ],
+  "tags": [
+    "roevo",
+    "research-object",
+    "versioning"
+  ],
+  "group": "Wf4Ever - roevo",
+  "itemIdentifier": "ogc.bbr.wf4ever.roevo.LiveRO"
+}

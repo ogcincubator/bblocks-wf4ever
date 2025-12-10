@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roterms",
+  "title": "Rating",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Title of the rating."
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the rating."
+    },
+    "value": {
+      "type": "number",
+      "description": "Value of the rating or score."
+    }
+  },
+  "required": ["name", "value"]
+}

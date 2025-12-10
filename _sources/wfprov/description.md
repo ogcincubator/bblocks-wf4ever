@@ -17,12 +17,13 @@ The Workflow Provenance ontology (wfprov) extends PROV-O to describe workflow ex
 
 ## Key Properties
 
-- `wasPartOfWorkflowRun` - Links process run to workflow run
-- `usedInput` - Input artifacts used
-- `wasOutputFrom` - Output artifacts generated
-- `describedByWorkflow` - Links run to workflow description
-- `describedByProcess` - Links process run to process description
-- `wasEnactedBy` - Links run to workflow engine
+- `wfprov:wasPartOfWorkflowRun` - Object property; domain `wfprov:ProcessRun`, range `wfprov:WorkflowRun`; sub-property of `prov:wasInformedBy`.
+- `wfprov:usedInput` - Object property; domain `wfprov:ProcessRun`, range `wfprov:Artifact`; sub-property of `prov:used`.
+- `wfprov:wasOutputFrom` - Object property; domain `wfprov:Artifact`, range `wfprov:ProcessRun`; sub-property of `prov:wasGeneratedBy`.
+- `wfprov:describedByWorkflow` - Object property; domain `wfprov:WorkflowRun`, range `wfdesc:Workflow`.
+- `wfprov:describedByProcess` - Object property; domain `wfprov:ProcessRun`, range `wfdesc:Process`.
+- `wfprov:wasEnactedBy` - Object property; domain `wfprov:WorkflowRun`, range `wfprov:WorkflowEngine`; sub-property of `prov:wasAssociatedWith`.
+- `wfprov:describedByParameter` - Object property; domain `wfprov:Artifact`, range `wfdesc:Parameter`.
 
 ## Usage
 

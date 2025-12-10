@@ -1,0 +1,31 @@
+{
+  "name": "Research Object Terms (roterms)",
+  "abstract": "The Research Object Terms vocabulary defines classes and properties for annotations on Research Objects and their resources.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-28T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-28",
+  "sources": [
+    {
+      "title": "Research Object Terms",
+      "link": "http://purl.org/wf4ever/roterms"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "research-object",
+    "roterms",
+    "vocabulary",
+    "annotation",
+    "metadata",
+    "wf4ever"
+  ],
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro",
+    "ogc.ogc-utils.prov"
+  ],
+  "group": "Wf4Ever Ontologies"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "roterms:Question",
+  "abstract": "Represents a question in the context of a Research Object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-02T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-02",
+  "sources": [ { "title": "Research Object Terms - Question", "link": "http://purl.org/wf4ever/roterms#Question" } ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["roterms", "question", "collaboration"],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.Question"
+}

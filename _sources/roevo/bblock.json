@@ -1,0 +1,37 @@
+{
+  "name": "Research Object Evolution Ontology (roevo)",
+  "abstract": "The Research Object Evolution ontology (roevo) extends ro to capture lifecycle, versioning, and evolution of research objects using PROV-O.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-28T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-11-28",
+  "sources": [
+    {
+      "title": "Research Object Evolution Ontology",
+      "link": "http://purl.org/wf4ever/roevo"
+    },
+    {
+      "title": "PROV-O: The PROV Ontology",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "research-object",
+    "roevo",
+    "evolution",
+    "versioning",
+    "lifecycle",
+    "prov",
+    "ontology",
+    "wf4ever"
+  ],
+  "dependsOn": [
+    "ogc.bbr.wf4ever.ro",
+    "ogc.ogc-utils.prov"
+  ],
+  "group": "Wf4Ever Ontologies"
+}

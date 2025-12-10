@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "roevo": "http://purl.org/wf4ever/roevo#",
+    "ro": "http://purl.org/wf4ever/ro#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    
+    "LiveRO": "roevo:LiveRO",
+    "SnapshotRO": "roevo:SnapshotRO",
+    "ArchivedRO": "roevo:ArchivedRO",
+    "VersionableResource": "roevo:VersionableResource",
+    "VersionInfo": "roevo:VersionInfo",
+    "ChangeSpecification": "roevo:ChangeSpecification",
+    
+    "hasVersion": {
+      "@id": "roevo:hasVersion",
+      "@type": "@id"
+    },
+    "isVersionOf": {
+      "@id": "roevo:isVersionOf",
+      "@type": "@id"
+    },
+    "wasSnapshotOf": {
+      "@id": "roevo:wasSnapshotOf",
+      "@type": "@id"
+    },
+    "wasArchivedFrom": {
+      "@id": "roevo:wasArchivedFrom",
+      "@type": "@id"
+    },
+    "wasRevisionOf": {
+      "@id": "prov:wasRevisionOf",
+      "@type": "@id"
+    },
+    "createdAtTime": {
+      "@id": "roevo:createdAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "modifiedAtTime": {
+      "@id": "roevo:modifiedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "archivedAtTime": {
+      "@id": "roevo:archivedAtTime",
+      "@type": "xsd:dateTime"
+    },
+    "hasChangeLog": {
+      "@id": "roevo:hasChangeLog",
+      "@type": "@id"
+    },
+    "hasAdditions": {
+      "@id": "roevo:hasAdditions",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasRemovals": {
+      "@id": "roevo:hasRemovals",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "hasModifications": {
+      "@id": "roevo:hasModifications",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "archiveLocation": {
+      "@id": "roevo:archiveLocation",
+      "@type": "@id"
+    }
+  }
+}

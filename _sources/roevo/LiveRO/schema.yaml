@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A live Research Object under active evolution
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Identifier of the live research object
+  '@type':
+    type: string
+    description: The RDF type of this object (roevo:LiveRO)
+  name:
+    type: string
+    description: Title of the live research object
+  description:
+    type: string
+    description: Narrative description
+required:
+  - '@id'

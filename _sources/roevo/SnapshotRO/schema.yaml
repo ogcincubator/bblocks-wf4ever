@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: An immutable snapshot of a Research Object
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Identifier of the snapshot
+  '@type':
+    type: string
+    description: The RDF type of this object (roevo:SnapshotRO)
+  name:
+    type: string
+    description: Title of the snapshot
+  description:
+    type: string
+    description: Description of what is captured by the snapshot
+required:
+  - '@id'

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roevo",
+  "title": "Addition",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the addition."
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the addition."
+    }
+  },
+  "required": ["name"]
+}

@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "roterms": "http://purl.org/wf4ever/roterms#",
+    "ro": "http://purl.org/wf4ever/ro#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    
+    "Hypothesis": "roterms:Hypothesis",
+    "Conclusion": "roterms:Conclusion",
+    "ExperimentalDesign": "roterms:ExperimentalDesign",
+    "ScientificMethod": "roterms:ScientificMethod",
+    "Sketch": "roterms:Sketch",
+    "Note": "roterms:Note",
+    "ProspectivePlan": "roterms:ProspectivePlan",
+    "Software": "roterms:Software",
+    "WebService": "roterms:WebService",
+    "QualityAnnotation": "roterms:QualityAnnotation",
+    "Review": "roterms:Review",
+    "Rating": "roterms:Rating",
+    "Task": "roterms:Task",
+    
+    "exampleValue": "roterms:exampleValue",
+    "defaultValue": "roterms:defaultValue",
+    "sampleSize": {
+      "@id": "roterms:sampleSize",
+      "@type": "xsd:integer"
+    },
+    "performsTask": {
+      "@id": "roterms:performsTask",
+      "@type": "@id"
+    },
+    "requiresHardware": "roterms:requiresHardware",
+    "requiresSoftware": {
+      "@id": "roterms:requiresSoftware",
+      "@container": "@set"
+    },
+    "wasInputTo": {
+      "@id": "roterms:wasInputTo",
+      "@type": "@id"
+    },
+    "wasOutputFrom": {
+      "@id": "roterms:wasOutputFrom",
+      "@type": "@id"
+    },
+    "authoredBy": {
+      "@id": "roterms:authoredBy",
+      "@type": "@id"
+    },
+    "authoredOn": {
+      "@id": "roterms:authoredOn",
+      "@type": "xsd:dateTime"
+    },
+    "hypothesis": {
+      "@id": "roterms:hypothesis",
+      "@type": "@id"
+    },
+    "supports": {
+      "@id": "roterms:supports",
+      "@type": "@id"
+    },
+    "refutes": {
+      "@id": "roterms:refutes",
+      "@type": "@id"
+    },
+    "methodology": "roterms:methodology",
+    "technicalStandard": "roterms:technicalStandard",
+    "validatedBy": "roterms:validatedBy",
+    "qualityScore": {
+      "@id": "roterms:qualityScore",
+      "@type": "xsd:float"
+    }
+  }
+}

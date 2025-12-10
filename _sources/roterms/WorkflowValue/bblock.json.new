@@ -1,0 +1,28 @@
+{
+  "name": "roterms:WorkflowValue",
+  "abstract": "Represents a value associated with a workflow parameter in the context of a Research Object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-02T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-02",
+  "sources": [
+    {
+      "title": "Research Object Terms - WorkflowValue",
+      "link": "http://purl.org/wf4ever/roterms#WorkflowValue"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.ogc-utils.prov-entity"
+  ],
+  "tags": [
+    "roterms",
+    "workflow",
+    "value"
+  ],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.WorkflowValue"
+}

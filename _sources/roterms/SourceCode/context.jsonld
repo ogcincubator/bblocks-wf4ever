@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "roterms": "http://purl.org/wf4ever/roterms#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@vocab": "http://purl.org/wf4ever/roterms#",
+    "SourceCode": {
+      "@id": "roterms:SourceCode",
+      "@type": "@id",
+      "rdfs:subClassOf": {"@id": "prov:Entity"}
+    },
+    "name": "dcterms:title",
+    "description": "dcterms:description"
+  }
+}

@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: A set of changes applied between two versions
+type: object
+properties:
+  '@id':
+    type: string
+    format: uri
+    description: Identifier of the change specification
+  '@type':
+    type: string
+    description: The RDF type of this object (roevo:ChangeSpecification)
+  name:
+    type: string
+    description: Human-readable name for the change set
+  description:
+    type: string
+    description: Details of the changes
+required:
+  - '@id'

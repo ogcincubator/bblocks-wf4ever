@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://purl.org/wf4ever/roevo",
+  "title": "Research Object Evolution Ontology",
+  "description": "Schema for the Research Object Evolution ontology (roevo) providing lifecycle and versioning concepts",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.json"
+    }
+  ],
+  "properties": {
+    "@type": {
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": [
+            "roevo:LiveRO",
+            "roevo:SnapshotRO",
+            "roevo:ArchivedRO",
+            "roevo:VersionableResource",
+            "roevo:VersionInfo",
+            "roevo:ChangeSpecification"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "roevo:hasVersion": {
+      "description": "Links a versionable resource to its versions",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/ResourceReference"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ResourceReference"
+          }
+        }
+      ]
+    },
+    "roevo:wasSnapshotOf": {
+      "description": "Links a snapshot to the live RO it was created from",
+      "$ref": "#/$defs/ResourceReference"
+    },
+    "roevo:wasArchivedFrom": {
+      "description": "Links an archive to the snapshot it was created from",
+      "$ref": "#/$defs/ResourceReference"
+    },
+    "roevo:createdAtTime": {
+      "description": "When a version was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "roevo:modifiedAtTime": {
+      "description": "When a resource was last modified",
+      "type": "string",
+      "format": "date-time"
+    },
+    "roevo:archivedAtTime": {
+      "description": "When a resource was archived",
+      "type": "string",
+      "format": "date-time"
+    },
+    "roevo:hasChangeLog": {
+      "description": "Links to a change log document",
+      "$ref": "#/$defs/ResourceReference"
+    },
+    "roevo:hasAdditions": {
+      "description": "Resources added in this version",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ResourceReference"
+      }
+    },
+    "roevo:hasRemovals": {
+      "description": "Resources removed in this version",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ResourceReference"
+      }
+    },
+    "roevo:hasModifications": {
+      "description": "Resources modified in this version",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ResourceReference"
+      }
+    }
+  },
+  "$defs": {
+    "ResourceReference": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "object",
+          "required": ["@id"],
+          "properties": {
+            "@id": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

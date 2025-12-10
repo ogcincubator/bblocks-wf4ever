@@ -1,0 +1,16 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roterms/context.jsonld",
+  "@id": "image-classifier",
+  "@type": "wfdesc:Process",
+  "dcterms:title": "Image Classifier",
+  "roterms:performsTask": {
+    "@type": "roterms:Task",
+    "label": "Image Classification",
+    "description": "Classifies images using deep learning model"
+  },
+  "roterms:requiresSoftware": [
+    "TensorFlow 2.0+",
+    "Python 3.8+"
+  ],
+  "roterms:requiresHardware": "GPU with 8GB VRAM minimum"
+}

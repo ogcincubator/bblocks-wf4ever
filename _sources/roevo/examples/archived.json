@@ -1,0 +1,10 @@
+{
+  "@context": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/roevo/context.jsonld",
+  "@id": "http://example.org/ro/myRO-v1-archived",
+  "@type": "roevo:ArchivedRO",
+  "roevo:wasArchivedFrom": "http://example.org/ro/myRO-v1",
+  "roevo:archivedAtTime": "2025-12-31T23:59:59Z",
+  "roevo:archiveLocation": "https://archive.example.org/ro/myRO-v1",
+  "dcterms:description": "Archived for long-term preservation",
+  "dcterms:format": "application/zip"
+}

@@ -1,0 +1,23 @@
+- title: Research Object Snapshot Example
+  description: Example of creating a snapshot version of a live research object
+  snippets:
+    - language: json
+      ref: examples/snapshot.json
+
+- title: Research Object with Change Log
+  description: Version with detailed change tracking
+  snippets:
+    - language: json
+      ref: examples/changelog.json
+
+- title: Archived Research Object
+  description: Long-term archived version for preservation
+  snippets:
+    - language: json
+      ref: examples/archived.json
+
+- title: Live Research Object with Version History
+  description: Current working version with links to all versions
+  snippets:
+    - language: json
+      ref: examples/live-ro.json

@@ -1,0 +1,16 @@
+{
+  "name": "roterms:WebService",
+  "abstract": "A web service referenced or used by the research object.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-01T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-wf4ever",
+  "version": "1.0",
+  "dateOfLastChange": "2025-12-01",
+  "sources": [ { "title": "Research Object Terms - WebService", "link": "http://purl.org/wf4ever/roterms#WebService" } ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": ["roterms", "web-service", "annotation"],
+  "group": "Wf4Ever - roterms",
+  "itemIdentifier": "ogc.bbr.wf4ever.roterms.WebService"
+}
