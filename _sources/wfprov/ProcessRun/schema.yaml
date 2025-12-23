@@ -50,5 +50,3 @@ properties:
     description: The workflow engine that enacted this process run
     x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith
     x-jsonld-type: '@id'
-required:
-  - id

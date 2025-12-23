@@ -25,5 +25,3 @@ allOf:
         type: string
         format: uri
         description: The workflow engine that executed this workflow
-    required:
-      - describedByWorkflow
