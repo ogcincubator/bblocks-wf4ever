@@ -258,30 +258,6 @@ Links to the schema:
     "@id": {
       "@context": {}
     },
-    "name": {},
-    "description": {},
-    "describedBy": {},
-    "value": {},
-    "hasArtifact": {},
-    "hasInput": {},
-    "hasOutput": {},
-    "hasSubProcess": {},
-    "hasSource": {},
-    "hasSink": {},
-    "hasDataLink": {},
-    "engine": {},
-    "version": {},
-    "environment": {},
-    "scheduler": {},
-    "cpu": {},
-    "memory": {},
-    "disk": {},
-    "gpu": {},
-    "resources": {},
-    "executionSettings": {},
-    "readyForExecution": {},
-    "validatedAt": {},
-    "configurationHash": {},
     "@version": 1.1
   }
 }

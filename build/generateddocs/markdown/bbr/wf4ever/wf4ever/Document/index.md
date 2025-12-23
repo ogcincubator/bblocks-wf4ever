@@ -50,8 +50,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "title": {},
-    "format": {},
     "@version": 1.1
   }
 }

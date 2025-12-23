@@ -1,16 +1,15 @@
 path	@id
 /wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
-/wasInfluencedBy/provType	@type
-/wasInfluencedBy/prov:type	
 /wasInfluencedBy/type	
 /wasInfluencedBy/hadMember	http://www.w3.org/ns/prov#hadMember
 /wasInfluencedBy/id	@id
+/wasInfluencedBy/provType	@type
+/wasInfluencedBy/prov:type	
 /wasInfluencedBy/featureType	@type
 /wasInfluencedBy/entityType	@type
 /wasInfluencedBy/has_provenance	http://purl.org/dc/terms/provenance
-/wasInfluencedBy/has_provenance/provType	@type
-/wasInfluencedBy/has_provenance/type	
 /wasInfluencedBy/has_provenance/agentType	@type
+/wasInfluencedBy/has_provenance/provType	@type
 /wasInfluencedBy/has_provenance/prov:type	
 /wasInfluencedBy/has_provenance/name	http://www.w3.org/2000/01/rdf-schema#label
 /wasInfluencedBy/has_provenance/id	@id
@@ -78,10 +77,9 @@ path	@id
 /qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
 /qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
 /qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
+/id	@id
 /provType	@type
 /prov:type	
-/type	@type
-/id	@id
 /activityType	@type
 /endedAtTime	http://www.w3.org/ns/prov#endedAtTime
 /wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
@@ -109,6 +107,7 @@ path	@id
 /qualifiedAssociation/agent	http://www.w3.org/ns/prov#agent
 /qualifiedAssociation/hadRole	http://www.w3.org/ns/prov#hadRole
 /qualifiedAssociation/hadPlan	http://www.w3.org/ns/prov#hadPlan
+/type	@type
 /describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
 /usedInput	http://purl.org/wf4ever/wfprov#usedInput
 /usedInput/id	

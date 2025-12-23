@@ -54,7 +54,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "aggregates": {},
     "@version": 1.1
   }
 }

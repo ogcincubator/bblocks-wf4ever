@@ -52,9 +52,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "format": {},
-    "width": {},
-    "height": {},
     "@version": 1.1
   }
 }

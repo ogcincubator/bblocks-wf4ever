@@ -74,9 +74,6 @@
       "x-jsonld-type": "@id"
     }
   },
-  "required": [
-    "id"
-  ],
   "x-jsonld-extra-terms": {
     "ProcessRun": "http://purl.org/wf4ever/wfprov#ProcessRun",
     "WorkflowRun": "http://purl.org/wf4ever/wfprov#WorkflowRun",

@@ -10,7 +10,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2025-11-12",
+  "dateOfLastChange": "2025-12-23",
   "sources": [
     {
       "title": "Wf4Ever Ontology - WorkflowResearchObject",
@@ -20,8 +20,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfdesc.Workflow",
-    "ogc.bbr.wf4ever.ro.ResearchObject"
+    "ogc.bbr.wf4ever.ro.ResearchObject",
+    "ogc.bbr.wf4ever.wfdesc.Workflow"
   ],
   "tags": [
     "wf4ever",

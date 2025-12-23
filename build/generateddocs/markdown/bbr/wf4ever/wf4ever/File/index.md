@@ -115,10 +115,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "basename": {},
-    "checksum": {},
-    "size": {},
-    "format": {},
     "@version": 1.1
   }
 }

@@ -209,17 +209,6 @@ Links to the schema:
     "@id": {
       "@context": {}
     },
-    "value": {},
-    "mediaType": {},
-    "size": {},
-    "algorithm": {},
-    "checksum": {},
-    "description": {},
-    "name": {},
-    "encoding": {},
-    "location": {},
-    "createdAt": {},
-    "modifiedAt": {},
     "@version": 1.1
   }
 }

@@ -1,9 +1,8 @@
 path	@id
 /wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
+/wasInfluencedBy/id	@id
 /wasInfluencedBy/provType	@type
 /wasInfluencedBy/prov:type	
-/wasInfluencedBy/type	
-/wasInfluencedBy/id	@id
 /wasInfluencedBy/activityType	@type
 /wasInfluencedBy/endedAtTime	http://www.w3.org/ns/prov#endedAtTime
 /wasInfluencedBy/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
@@ -16,11 +15,11 @@ path	@id
 /wasInfluencedBy/wasAssociatedWith/length	http://purl.org/dc/terms/extent
 /wasInfluencedBy/wasInformedBy	http://www.w3.org/ns/prov#wasInformedBy
 /wasInfluencedBy/used	http://www.w3.org/ns/prov#used
-/wasInfluencedBy/used/provType	@type
-/wasInfluencedBy/used/prov:type	
 /wasInfluencedBy/used/type	
 /wasInfluencedBy/used/hadMember	http://www.w3.org/ns/prov#hadMember
 /wasInfluencedBy/used/id	@id
+/wasInfluencedBy/used/provType	@type
+/wasInfluencedBy/used/prov:type	
 /wasInfluencedBy/used/featureType	@type
 /wasInfluencedBy/used/entityType	@type
 /wasInfluencedBy/used/has_provenance	http://purl.org/dc/terms/provenance
@@ -96,9 +95,8 @@ path	@id
 /qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
 /qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
 /qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
-/provType	@type
-/type	
 /agentType	@type
+/provType	@type
 /prov:type	
 /name	http://www.w3.org/2000/01/rdf-schema#label
 /id	@id

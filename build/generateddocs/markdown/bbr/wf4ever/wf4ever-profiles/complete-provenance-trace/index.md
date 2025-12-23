@@ -669,7 +669,7 @@ To complete the master profile validation:
 
 <urn:uuid:5ac7d6f3-79c4-4b27-988f-56232cbb9999> ro:about "workflow/packed.cwl" .
 
-<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> dct:type "Artifact" ;
+<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> a wfprov:Artifact ;
     wfprov:basename "outputs" .
 
 <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> prov:hadRole <file:///github/workspace/days_back> ;
@@ -835,7 +835,6 @@ Links to the schema:
         "@type": {
           "@context": {}
         },
-        "type": {},
         "title": "dcterms:title",
         "description": "dcterms:description",
         "aggregates": {
@@ -1013,7 +1012,6 @@ Links to the schema:
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
             "hreflang": "dcterms:language",
             "title": "rdfs:label",
             "length": "dcterms:extent"
@@ -1037,7 +1035,6 @@ Links to the schema:
                   "@id": "http://www.iana.org/assignments/relation",
                   "@type": "@id"
                 },
-                "anchor": {},
                 "hreflang": "dcterms:language",
                 "title": "rdfs:label",
                 "length": "dcterms:extent"
@@ -1047,473 +1044,6 @@ Links to the schema:
             },
             "entity": {
               "@context": {
-                "type": "dcterms:type",
-                "wasAttributedTo": {
-                  "@context": {
-                    "href": {
-                      "@type": "@id",
-                      "@id": "oa:hasTarget"
-                    },
-                    "rel": {
-                      "@context": {
-                        "@base": "http://www.iana.org/assignments/relation/"
-                      },
-                      "@id": "http://www.iana.org/assignments/relation",
-                      "@type": "@id"
-                    },
-                    "anchor": {},
-                    "hreflang": "dcterms:language",
-                    "title": "rdfs:label",
-                    "length": "dcterms:extent"
-                  },
-                  "@id": "prov:wasAttributedTo",
-                  "@type": "@id"
-                },
-                "links": {
-                  "@context": {
-                    "href": {
-                      "@type": "@id",
-                      "@id": "oa:hasTarget"
-                    },
-                    "rel": {
-                      "@context": {
-                        "@base": "http://www.iana.org/assignments/relation/"
-                      },
-                      "@id": "http://www.iana.org/assignments/relation",
-                      "@type": "@id"
-                    },
-                    "anchor": {},
-                    "hreflang": "dcterms:language",
-                    "title": "rdfs:label",
-                    "length": "dcterms:extent"
-                  },
-                  "@id": "rdfs:seeAlso"
-                },
-                "actedOnBehalfOf": {
-                  "@id": "prov:actedOnBehalfOf",
-                  "@type": "@id",
-                  "@context": {
-                    "href": {
-                      "@type": "@id",
-                      "@id": "oa:hasTarget"
-                    },
-                    "rel": {
-                      "@context": {
-                        "@base": "http://www.iana.org/assignments/relation/"
-                      },
-                      "@id": "http://www.iana.org/assignments/relation",
-                      "@type": "@id"
-                    },
-                    "anchor": {},
-                    "hreflang": "dcterms:language",
-                    "title": "rdfs:label",
-                    "length": "dcterms:extent"
-                  }
-                }
-              },
-              "@id": "prov:entity",
-              "@type": "@id"
-            },
-            "agent": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "type": "dcterms:type",
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "prov:agent",
-              "@type": "@id"
-            }
-          },
-          "@id": "prov:qualifiedInfluence",
-          "@type": "@id"
-        },
-        "prov:type": {},
-        "type": "@type",
-        "wasAssociatedWith": {
-          "@context": {
-            "href": {
-              "@type": "@id",
-              "@id": "oa:hasTarget"
-            },
-            "rel": {
-              "@context": {
-                "@base": "http://www.iana.org/assignments/relation/"
-              },
-              "@id": "http://www.iana.org/assignments/relation",
-              "@type": "@id"
-            },
-            "anchor": {},
-            "type": "dcterms:type",
-            "hreflang": "dcterms:language",
-            "title": "rdfs:label",
-            "length": "dcterms:extent"
-          },
-          "@id": "prov:wasAssociatedWith",
-          "@type": "@id"
-        },
-        "used": {
-          "@context": {
-            "type": "dcterms:type",
-            "wasAttributedTo": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "prov:wasAttributedTo",
-              "@type": "@id"
-            },
-            "links": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "rdfs:seeAlso"
-            },
-            "actedOnBehalfOf": {
-              "@id": "prov:actedOnBehalfOf",
-              "@type": "@id",
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              }
-            }
-          },
-          "@id": "prov:used",
-          "@type": "@id"
-        },
-        "wasStartedBy": {
-          "@context": {
-            "type": "dcterms:type",
-            "wasAttributedTo": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "prov:wasAttributedTo",
-              "@type": "@id"
-            },
-            "links": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "rdfs:seeAlso"
-            },
-            "actedOnBehalfOf": {
-              "@id": "prov:actedOnBehalfOf",
-              "@type": "@id",
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              }
-            }
-          },
-          "@id": "prov:wasStartedBy",
-          "@type": "@id"
-        },
-        "wasEndedBy": {
-          "@context": {
-            "type": "dcterms:type",
-            "wasAttributedTo": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "prov:wasAttributedTo",
-              "@type": "@id"
-            },
-            "links": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "rdfs:seeAlso"
-            },
-            "actedOnBehalfOf": {
-              "@id": "prov:actedOnBehalfOf",
-              "@type": "@id",
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              }
-            }
-          },
-          "@id": "prov:wasEndedBy",
-          "@type": "@id"
-        },
-        "invalidated": {
-          "@context": {
-            "type": "dcterms:type",
-            "wasAttributedTo": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "prov:wasAttributedTo",
-              "@type": "@id"
-            },
-            "links": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "rdfs:seeAlso"
-            },
-            "actedOnBehalfOf": {
-              "@id": "prov:actedOnBehalfOf",
-              "@type": "@id",
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              }
-            }
-          },
-          "@id": "prov:invalidated",
-          "@type": "@id"
-        },
-        "generated": {
-          "@context": {
-            "type": "dcterms:type",
-            "wasAttributedTo": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "prov:wasAttributedTo",
-              "@type": "@id"
-            },
-            "links": {
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              },
-              "@id": "rdfs:seeAlso"
-            },
-            "actedOnBehalfOf": {
-              "@id": "prov:actedOnBehalfOf",
-              "@type": "@id",
-              "@context": {
-                "href": {
-                  "@type": "@id",
-                  "@id": "oa:hasTarget"
-                },
-                "rel": {
-                  "@context": {
-                    "@base": "http://www.iana.org/assignments/relation/"
-                  },
-                  "@id": "http://www.iana.org/assignments/relation",
-                  "@type": "@id"
-                },
-                "anchor": {},
-                "hreflang": "dcterms:language",
-                "title": "rdfs:label",
-                "length": "dcterms:extent"
-              }
-            }
-          },
-          "@id": "prov:generated",
-          "@type": "@id"
-        },
-        "qualifiedStart": {
-          "@context": {
-            "entity": {
-              "@context": {
-                "type": "dcterms:type",
                 "has_provenance": {
                   "@context": {
                     "actedOnBehalfOf": {
@@ -1529,7 +1059,7 @@ Links to the schema:
                           "@id": "http://www.iana.org/assignments/relation",
                           "@type": "@id"
                         },
-                        "anchor": {},
+                        "type": "dcterms:type",
                         "hreflang": "dcterms:language",
                         "title": "rdfs:label",
                         "length": "dcterms:extent"
@@ -1554,7 +1084,7 @@ Links to the schema:
                       "@id": "http://www.iana.org/assignments/relation",
                       "@type": "@id"
                     },
-                    "anchor": {},
+                    "type": "dcterms:type",
                     "hreflang": "dcterms:language",
                     "title": "rdfs:label",
                     "length": "dcterms:extent"
@@ -1575,7 +1105,664 @@ Links to the schema:
                       "@id": "http://www.iana.org/assignments/relation",
                       "@type": "@id"
                     },
-                    "anchor": {},
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "rdfs:seeAlso"
+                }
+              },
+              "@id": "prov:entity",
+              "@type": "@id"
+            },
+            "agent": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "prov:agent",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:qualifiedInfluence",
+          "@type": "@id"
+        },
+        "wasAssociatedWith": {
+          "@context": {
+            "href": {
+              "@type": "@id",
+              "@id": "oa:hasTarget"
+            },
+            "rel": {
+              "@context": {
+                "@base": "http://www.iana.org/assignments/relation/"
+              },
+              "@id": "http://www.iana.org/assignments/relation",
+              "@type": "@id"
+            },
+            "type": "dcterms:type",
+            "hreflang": "dcterms:language",
+            "title": "rdfs:label",
+            "length": "dcterms:extent"
+          },
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id"
+        },
+        "used": {
+          "@context": {
+            "has_provenance": {
+              "@context": {
+                "actedOnBehalfOf": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "prov:actedOnBehalfOf",
+                  "@type": "@id"
+                }
+              },
+              "@id": "dcterms:provenance",
+              "@type": "@id"
+            },
+            "wasAttributedTo": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "prov:wasAttributedTo",
+              "@type": "@id"
+            },
+            "links": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "rdfs:seeAlso"
+            },
+            "qualifiedAttribution": {
+              "@context": {
+                "agent": {
+                  "@context": {
+                    "actedOnBehalfOf": {
+                      "@context": {
+                        "href": {
+                          "@type": "@id",
+                          "@id": "oa:hasTarget"
+                        },
+                        "rel": {
+                          "@context": {
+                            "@base": "http://www.iana.org/assignments/relation/"
+                          },
+                          "@id": "http://www.iana.org/assignments/relation",
+                          "@type": "@id"
+                        },
+                        "type": "dcterms:type",
+                        "hreflang": "dcterms:language",
+                        "title": "rdfs:label",
+                        "length": "dcterms:extent"
+                      },
+                      "@id": "prov:actedOnBehalfOf",
+                      "@type": "@id"
+                    }
+                  },
+                  "@id": "prov:agent",
+                  "@type": "@id"
+                }
+              },
+              "@id": "prov:qualifiedAttribution",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:used",
+          "@type": "@id"
+        },
+        "wasStartedBy": {
+          "@context": {
+            "has_provenance": {
+              "@context": {
+                "actedOnBehalfOf": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "prov:actedOnBehalfOf",
+                  "@type": "@id"
+                }
+              },
+              "@id": "dcterms:provenance",
+              "@type": "@id"
+            },
+            "wasAttributedTo": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "prov:wasAttributedTo",
+              "@type": "@id"
+            },
+            "links": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "rdfs:seeAlso"
+            },
+            "qualifiedAttribution": {
+              "@context": {
+                "agent": {
+                  "@context": {
+                    "actedOnBehalfOf": {
+                      "@context": {
+                        "href": {
+                          "@type": "@id",
+                          "@id": "oa:hasTarget"
+                        },
+                        "rel": {
+                          "@context": {
+                            "@base": "http://www.iana.org/assignments/relation/"
+                          },
+                          "@id": "http://www.iana.org/assignments/relation",
+                          "@type": "@id"
+                        },
+                        "type": "dcterms:type",
+                        "hreflang": "dcterms:language",
+                        "title": "rdfs:label",
+                        "length": "dcterms:extent"
+                      },
+                      "@id": "prov:actedOnBehalfOf",
+                      "@type": "@id"
+                    }
+                  },
+                  "@id": "prov:agent",
+                  "@type": "@id"
+                }
+              },
+              "@id": "prov:qualifiedAttribution",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:wasStartedBy",
+          "@type": "@id"
+        },
+        "wasEndedBy": {
+          "@context": {
+            "has_provenance": {
+              "@context": {
+                "actedOnBehalfOf": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "prov:actedOnBehalfOf",
+                  "@type": "@id"
+                }
+              },
+              "@id": "dcterms:provenance",
+              "@type": "@id"
+            },
+            "wasAttributedTo": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "prov:wasAttributedTo",
+              "@type": "@id"
+            },
+            "links": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "rdfs:seeAlso"
+            },
+            "qualifiedAttribution": {
+              "@context": {
+                "agent": {
+                  "@context": {
+                    "actedOnBehalfOf": {
+                      "@context": {
+                        "href": {
+                          "@type": "@id",
+                          "@id": "oa:hasTarget"
+                        },
+                        "rel": {
+                          "@context": {
+                            "@base": "http://www.iana.org/assignments/relation/"
+                          },
+                          "@id": "http://www.iana.org/assignments/relation",
+                          "@type": "@id"
+                        },
+                        "type": "dcterms:type",
+                        "hreflang": "dcterms:language",
+                        "title": "rdfs:label",
+                        "length": "dcterms:extent"
+                      },
+                      "@id": "prov:actedOnBehalfOf",
+                      "@type": "@id"
+                    }
+                  },
+                  "@id": "prov:agent",
+                  "@type": "@id"
+                }
+              },
+              "@id": "prov:qualifiedAttribution",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:wasEndedBy",
+          "@type": "@id"
+        },
+        "invalidated": {
+          "@context": {
+            "has_provenance": {
+              "@context": {
+                "actedOnBehalfOf": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "prov:actedOnBehalfOf",
+                  "@type": "@id"
+                }
+              },
+              "@id": "dcterms:provenance",
+              "@type": "@id"
+            },
+            "wasAttributedTo": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "prov:wasAttributedTo",
+              "@type": "@id"
+            },
+            "links": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "rdfs:seeAlso"
+            },
+            "qualifiedAttribution": {
+              "@context": {
+                "agent": {
+                  "@context": {
+                    "actedOnBehalfOf": {
+                      "@context": {
+                        "href": {
+                          "@type": "@id",
+                          "@id": "oa:hasTarget"
+                        },
+                        "rel": {
+                          "@context": {
+                            "@base": "http://www.iana.org/assignments/relation/"
+                          },
+                          "@id": "http://www.iana.org/assignments/relation",
+                          "@type": "@id"
+                        },
+                        "type": "dcterms:type",
+                        "hreflang": "dcterms:language",
+                        "title": "rdfs:label",
+                        "length": "dcterms:extent"
+                      },
+                      "@id": "prov:actedOnBehalfOf",
+                      "@type": "@id"
+                    }
+                  },
+                  "@id": "prov:agent",
+                  "@type": "@id"
+                }
+              },
+              "@id": "prov:qualifiedAttribution",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:invalidated",
+          "@type": "@id"
+        },
+        "generated": {
+          "@context": {
+            "has_provenance": {
+              "@context": {
+                "actedOnBehalfOf": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "prov:actedOnBehalfOf",
+                  "@type": "@id"
+                }
+              },
+              "@id": "dcterms:provenance",
+              "@type": "@id"
+            },
+            "wasAttributedTo": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "prov:wasAttributedTo",
+              "@type": "@id"
+            },
+            "links": {
+              "@context": {
+                "href": {
+                  "@type": "@id",
+                  "@id": "oa:hasTarget"
+                },
+                "rel": {
+                  "@context": {
+                    "@base": "http://www.iana.org/assignments/relation/"
+                  },
+                  "@id": "http://www.iana.org/assignments/relation",
+                  "@type": "@id"
+                },
+                "type": "dcterms:type",
+                "hreflang": "dcterms:language",
+                "title": "rdfs:label",
+                "length": "dcterms:extent"
+              },
+              "@id": "rdfs:seeAlso"
+            },
+            "qualifiedAttribution": {
+              "@context": {
+                "agent": {
+                  "@context": {
+                    "actedOnBehalfOf": {
+                      "@context": {
+                        "href": {
+                          "@type": "@id",
+                          "@id": "oa:hasTarget"
+                        },
+                        "rel": {
+                          "@context": {
+                            "@base": "http://www.iana.org/assignments/relation/"
+                          },
+                          "@id": "http://www.iana.org/assignments/relation",
+                          "@type": "@id"
+                        },
+                        "type": "dcterms:type",
+                        "hreflang": "dcterms:language",
+                        "title": "rdfs:label",
+                        "length": "dcterms:extent"
+                      },
+                      "@id": "prov:actedOnBehalfOf",
+                      "@type": "@id"
+                    }
+                  },
+                  "@id": "prov:agent",
+                  "@type": "@id"
+                }
+              },
+              "@id": "prov:qualifiedAttribution",
+              "@type": "@id"
+            }
+          },
+          "@id": "prov:generated",
+          "@type": "@id"
+        },
+        "qualifiedStart": {
+          "@context": {
+            "entity": {
+              "@context": {
+                "has_provenance": {
+                  "@context": {
+                    "actedOnBehalfOf": {
+                      "@context": {
+                        "href": {
+                          "@type": "@id",
+                          "@id": "oa:hasTarget"
+                        },
+                        "rel": {
+                          "@context": {
+                            "@base": "http://www.iana.org/assignments/relation/"
+                          },
+                          "@id": "http://www.iana.org/assignments/relation",
+                          "@type": "@id"
+                        },
+                        "type": "dcterms:type",
+                        "hreflang": "dcterms:language",
+                        "title": "rdfs:label",
+                        "length": "dcterms:extent"
+                      },
+                      "@id": "prov:actedOnBehalfOf",
+                      "@type": "@id"
+                    }
+                  },
+                  "@id": "dcterms:provenance",
+                  "@type": "@id"
+                },
+                "wasAttributedTo": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
+                    "hreflang": "dcterms:language",
+                    "title": "rdfs:label",
+                    "length": "dcterms:extent"
+                  },
+                  "@id": "prov:wasAttributedTo",
+                  "@type": "@id"
+                },
+                "links": {
+                  "@context": {
+                    "href": {
+                      "@type": "@id",
+                      "@id": "oa:hasTarget"
+                    },
+                    "rel": {
+                      "@context": {
+                        "@base": "http://www.iana.org/assignments/relation/"
+                      },
+                      "@id": "http://www.iana.org/assignments/relation",
+                      "@type": "@id"
+                    },
+                    "type": "dcterms:type",
                     "hreflang": "dcterms:language",
                     "title": "rdfs:label",
                     "length": "dcterms:extent"
@@ -1599,7 +1786,7 @@ Links to the schema:
                               "@id": "http://www.iana.org/assignments/relation",
                               "@type": "@id"
                             },
-                            "anchor": {},
+                            "type": "dcterms:type",
                             "hreflang": "dcterms:language",
                             "title": "rdfs:label",
                             "length": "dcterms:extent"
@@ -1627,7 +1814,6 @@ Links to the schema:
           "@context": {
             "entity": {
               "@context": {
-                "type": "dcterms:type",
                 "has_provenance": {
                   "@context": {
                     "actedOnBehalfOf": {
@@ -1643,7 +1829,7 @@ Links to the schema:
                           "@id": "http://www.iana.org/assignments/relation",
                           "@type": "@id"
                         },
-                        "anchor": {},
+                        "type": "dcterms:type",
                         "hreflang": "dcterms:language",
                         "title": "rdfs:label",
                         "length": "dcterms:extent"
@@ -1668,7 +1854,7 @@ Links to the schema:
                       "@id": "http://www.iana.org/assignments/relation",
                       "@type": "@id"
                     },
-                    "anchor": {},
+                    "type": "dcterms:type",
                     "hreflang": "dcterms:language",
                     "title": "rdfs:label",
                     "length": "dcterms:extent"
@@ -1689,7 +1875,7 @@ Links to the schema:
                       "@id": "http://www.iana.org/assignments/relation",
                       "@type": "@id"
                     },
-                    "anchor": {},
+                    "type": "dcterms:type",
                     "hreflang": "dcterms:language",
                     "title": "rdfs:label",
                     "length": "dcterms:extent"
@@ -1713,7 +1899,7 @@ Links to the schema:
                               "@id": "http://www.iana.org/assignments/relation",
                               "@type": "@id"
                             },
-                            "anchor": {},
+                            "type": "dcterms:type",
                             "hreflang": "dcterms:language",
                             "title": "rdfs:label",
                             "length": "dcterms:extent"
@@ -1754,7 +1940,6 @@ Links to the schema:
                       "@id": "http://www.iana.org/assignments/relation",
                       "@type": "@id"
                     },
-                    "anchor": {},
                     "type": "dcterms:type",
                     "hreflang": "dcterms:language",
                     "title": "rdfs:label",
@@ -1771,6 +1956,7 @@ Links to the schema:
           "@id": "prov:qualifiedAssociation",
           "@type": "@id"
         },
+        "type": "@type",
         "describedByProcess": {
           "@id": "wfprov:describedByProcess",
           "@type": "@id"

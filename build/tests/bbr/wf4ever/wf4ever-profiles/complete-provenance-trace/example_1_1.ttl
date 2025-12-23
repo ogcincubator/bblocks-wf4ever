@@ -68,7 +68,7 @@
 
 <urn:uuid:5ac7d6f3-79c4-4b27-988f-56232cbb9999> ro:about "workflow/packed.cwl" .
 
-<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> dct:type "Artifact" ;
+<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> a wfprov:Artifact ;
     wfprov:basename "outputs" .
 
 <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> prov:hadRole <file:///github/workspace/days_back> ;

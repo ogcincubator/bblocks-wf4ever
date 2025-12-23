@@ -86,17 +86,16 @@ path	@id
 /workflow/hasDataLink/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
 /workflowRun	http://purl.org/wf4ever/wfprov#WorkflowRun
 /workflowRun/wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
-/workflowRun/wasInfluencedBy/provType	@type
-/workflowRun/wasInfluencedBy/prov:type	
 /workflowRun/wasInfluencedBy/type	
 /workflowRun/wasInfluencedBy/hadMember	http://www.w3.org/ns/prov#hadMember
 /workflowRun/wasInfluencedBy/id	@id
+/workflowRun/wasInfluencedBy/provType	@type
+/workflowRun/wasInfluencedBy/prov:type	
 /workflowRun/wasInfluencedBy/featureType	@type
 /workflowRun/wasInfluencedBy/entityType	@type
 /workflowRun/wasInfluencedBy/has_provenance	http://purl.org/dc/terms/provenance
-/workflowRun/wasInfluencedBy/has_provenance/provType	@type
-/workflowRun/wasInfluencedBy/has_provenance/type	
 /workflowRun/wasInfluencedBy/has_provenance/agentType	@type
+/workflowRun/wasInfluencedBy/has_provenance/provType	@type
 /workflowRun/wasInfluencedBy/has_provenance/prov:type	
 /workflowRun/wasInfluencedBy/has_provenance/name	http://www.w3.org/2000/01/rdf-schema#label
 /workflowRun/wasInfluencedBy/has_provenance/id	@id
@@ -164,10 +163,9 @@ path	@id
 /workflowRun/qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
 /workflowRun/qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
 /workflowRun/qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
+/workflowRun/id	@id
 /workflowRun/provType	@type
 /workflowRun/prov:type	
-/workflowRun/type	@type
-/workflowRun/id	@id
 /workflowRun/activityType	@type
 /workflowRun/endedAtTime	http://www.w3.org/ns/prov#endedAtTime
 /workflowRun/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
@@ -195,6 +193,7 @@ path	@id
 /workflowRun/qualifiedAssociation/agent	http://www.w3.org/ns/prov#agent
 /workflowRun/qualifiedAssociation/hadRole	http://www.w3.org/ns/prov#hadRole
 /workflowRun/qualifiedAssociation/hadPlan	http://www.w3.org/ns/prov#hadPlan
+/workflowRun/type	@type
 /workflowRun/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
 /workflowRun/usedInput	http://purl.org/wf4ever/wfprov#usedInput
 /workflowRun/usedInput/id	

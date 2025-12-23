@@ -5,11 +5,9 @@
     "@id": {
       "@context": {}
     },
-    "id": {},
     "@type": {
       "@context": {}
     },
-    "type": {},
     "title": "dcterms:title",
     "description": "dcterms:description",
     "aggregates": {

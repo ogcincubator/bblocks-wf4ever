@@ -73,11 +73,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "title": {},
-    "description": {},
-    "creator": {},
-    "temporalCoverage": {},
-    "spatialCoverage": {},
     "@version": 1.1
   }
 }

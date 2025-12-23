@@ -22,8 +22,7 @@
             },
             "@id": {
               "@context": {}
-            },
-            "value": {}
+            }
           },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
@@ -47,8 +46,7 @@
             },
             "@id": {
               "@context": {}
-            },
-            "value": {}
+            }
           },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"

@@ -52,8 +52,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "endpoint": {},
-    "method": {},
     "@version": 1.1
   }
 }

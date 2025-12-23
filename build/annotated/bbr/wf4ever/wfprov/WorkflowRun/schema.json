@@ -41,10 +41,7 @@
           "x-jsonld-id": "http://www.w3.org/ns/prov#wasAssociatedWith",
           "x-jsonld-type": "@id"
         }
-      },
-      "required": [
-        "describedByWorkflow"
-      ]
+      }
     }
   ],
   "x-jsonld-extra-terms": {

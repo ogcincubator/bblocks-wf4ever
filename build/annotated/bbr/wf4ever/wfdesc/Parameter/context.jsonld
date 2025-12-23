@@ -16,8 +16,7 @@
         },
         "@id": {
           "@context": {}
-        },
-        "value": {}
+        }
       },
       "@id": "wfdesc:hasArtifact",
       "@type": "@id"

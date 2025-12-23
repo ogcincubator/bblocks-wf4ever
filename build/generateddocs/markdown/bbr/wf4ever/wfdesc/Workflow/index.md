@@ -162,8 +162,7 @@ Links to the schema:
             },
             "@id": {
               "@context": {}
-            },
-            "value": {}
+            }
           },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
@@ -188,8 +187,7 @@ Links to the schema:
             },
             "@id": {
               "@context": {}
-            },
-            "value": {}
+            }
           },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
@@ -245,8 +243,7 @@ Links to the schema:
                 },
                 "@id": {
                   "@context": {}
-                },
-                "value": {}
+                }
               },
               "@id": "wfdesc:hasArtifact",
               "@type": "@id"
@@ -270,8 +267,7 @@ Links to the schema:
                 },
                 "@id": {
                   "@context": {}
-                },
-                "value": {}
+                }
               },
               "@id": "wfdesc:hasArtifact",
               "@type": "@id"

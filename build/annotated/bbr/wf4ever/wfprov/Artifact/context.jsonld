@@ -3,7 +3,6 @@
     "@vocab": "http://purl.org/wf4ever/wfprov#",
     "wasInfluencedBy": {
       "@context": {
-        "type": "dct:type",
         "href": {
           "@type": "@id",
           "@id": "oa:hasTarget"
@@ -15,7 +14,7 @@
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
+        "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent"
@@ -27,7 +26,6 @@
       "@context": {
         "influencer": {
           "@context": {
-            "type": "dct:type",
             "href": {
               "@type": "@id",
               "@id": "oa:hasTarget"
@@ -39,7 +37,7 @@
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
+            "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
@@ -49,7 +47,6 @@
         },
         "activity": {
           "@context": {
-            "type": "dct:type",
             "wasAssociatedWith": {
               "@context": {
                 "href": {
@@ -63,7 +60,7 @@
                   "@id": "http://www.iana.org/assignments/relation",
                   "@type": "@id"
                 },
-                "anchor": {},
+                "type": "dct:type",
                 "hreflang": "dct:language",
                 "title": "rdfs:label",
                 "length": "dct:extent"
@@ -88,7 +85,6 @@
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
             "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
@@ -101,22 +97,18 @@
       "@id": "prov:qualifiedInfluence",
       "@type": "@id"
     },
-    "provType": "@type",
-    "prov:type": {},
     "type": "@type",
     "hadMember": {
       "@id": "prov:hadMember",
       "@type": "@id"
     },
     "id": "@id",
+    "provType": "@type",
     "featureType": "@type",
     "entityType": "@type",
     "has_provenance": {
       "@context": {
-        "type": "dct:type",
         "wasAssociatedWith": {
-          "@id": "prov:wasAssociatedWith",
-          "@type": "@id",
           "@context": {
             "href": {
               "@type": "@id",
@@ -129,11 +121,13 @@
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
+            "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
-          }
+          },
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id"
         }
       },
       "@id": "dct:provenance",
@@ -141,7 +135,6 @@
     },
     "wasGeneratedBy": {
       "@context": {
-        "type": "dct:type",
         "wasAssociatedWith": {
           "@context": {
             "href": {
@@ -155,7 +148,7 @@
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
+            "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
@@ -180,7 +173,6 @@
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -207,7 +199,6 @@
     },
     "wasInvalidatedBy": {
       "@context": {
-        "type": "dct:type",
         "wasAssociatedWith": {
           "@context": {
             "href": {
@@ -221,7 +212,7 @@
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
-            "anchor": {},
+            "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
@@ -258,7 +249,6 @@
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -278,7 +268,6 @@
       "@context": {
         "hadActivity": {
           "@context": {
-            "type": "dct:type",
             "wasAssociatedWith": {
               "@context": {
                 "href": {
@@ -292,7 +281,7 @@
                   "@id": "http://www.iana.org/assignments/relation",
                   "@type": "@id"
                 },
-                "anchor": {},
+                "type": "dct:type",
                 "hreflang": "dct:language",
                 "title": "rdfs:label",
                 "length": "dct:extent"
@@ -568,8 +557,6 @@
       "@id": "wfprov:wasOutputFrom",
       "@type": "@id"
     },
-    "algorithm": {},
-    "checksum": {},
     "prov": "http://www.w3.org/ns/prov#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

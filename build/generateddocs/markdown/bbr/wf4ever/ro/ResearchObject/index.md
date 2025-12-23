@@ -301,11 +301,9 @@ Links to the schema:
     "@id": {
       "@context": {}
     },
-    "id": {},
     "@type": {
       "@context": {}
     },
-    "type": {},
     "title": "dcterms:title",
     "description": "dcterms:description",
     "aggregates": {

@@ -30,8 +30,6 @@ allOf:
       description: The workflow engine that executed this workflow
       x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith
       x-jsonld-type: '@id'
-  required:
-  - describedByWorkflow
 x-jsonld-extra-terms:
   WorkflowRun: http://purl.org/wf4ever/wfprov#WorkflowRun
 x-jsonld-vocab: http://purl.org/wf4ever/wfprov#

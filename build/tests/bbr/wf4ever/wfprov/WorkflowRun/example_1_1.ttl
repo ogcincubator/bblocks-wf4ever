@@ -25,7 +25,7 @@
 <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> dct:type "WorkflowEngine" ;
     wfprov:label "cwltool 3.1.20251031082601" .
 
-<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> dct:type "Artifact" ;
+<urn:uuid:83c8708e-ccbd-494e-b939-1298b65b1539> a wfprov:Artifact ;
     wfprov:basename "outputs" .
 
 <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> prov:hadRole <file:///github/workspace/days_back> ;

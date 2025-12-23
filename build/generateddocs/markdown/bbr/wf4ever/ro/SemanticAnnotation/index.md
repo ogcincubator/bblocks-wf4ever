@@ -100,10 +100,6 @@ Links to the schema:
     "@type": {
       "@context": {}
     },
-    "body": {},
-    "annotatesResource": {},
-    "created": {},
-    "creator": {},
     "@version": 1.1
   }
 }
