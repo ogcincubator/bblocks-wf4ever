@@ -88,26 +88,6 @@ Links to the schema:
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.yaml)
 
-
-# JSON-LD Context
-
-```jsonld
-{
-  "@context": {
-    "@id": {
-      "@context": {}
-    },
-    "@type": {
-      "@context": {}
-    },
-    "@version": 1.1
-  }
-}
-```
-
-You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/context.jsonld)
-
 ## Sources
 
 * [Research Object Ontology - SemanticAnnotation](http://purl.org/wf4ever/ro#SemanticAnnotation)

@@ -149,18 +149,23 @@
       "rdfData": {
         "@id": "prof:hasResource",
         "@type": "@id"
+      },
+      "links": {
+        "@id": "prof:hasResource",
+        "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
       }
     }
   ],
   "name": "Building Blocks - Wf4Ever Building Blocks",
   "abstract": "Building blocks for the Wf4Ever ontologies suite (wfdesc, wfprov, ro, wf4ever) enabling\nworkflow description, provenance tracking, research object aggregation, and specialized artifact types.\n",
   "description": "This repository contains four separate building blocks for the **Wf4Ever ontologies**:\n\n- **wfdesc**: Workflow Description Ontology for describing workflow structure (prospective provenance)\n- **wfprov**: Workflow Provenance Ontology for tracking execution traces (retrospective provenance)\n- **ro**: Research Object Ontology for packaging and aggregating research artifacts\n- **wf4ever**: Extension ontology providing specialized artifact types (File, Dataset, Document, Image) and process types (WebServiceProcess, WorkflowResearchObject)\n\nAll examples are based on real CWL (Common Workflow Language) provenance data from\nscientific workflow executions.\n",
-  "modified": "2025-12-23T10:50:16.442894",
+  "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
+  "modified": "2026-01-13T22:38:23.196610",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"12464416e050ab82480099f0e7dea7f860a85c0a",
-      "shortCommitId": "\"124644",
-      "date": "2025-12-22T10:53:32+00:00\""
+      "commitId": "\"e31f9b7205a141a60831e312d473ddf981d03c99",
+      "shortCommitId": "\"e31f9b",
+      "date": "2026-01-13T14:30:58+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-wf4ever",
@@ -177,6 +182,26 @@
     "https://ogcincubator.github.io/bblocks-cwl/build/register.json"
   ],
   "remoteCacheDir": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-wf4ever/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-wf4ever/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-wf4ever/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ],
   "@type": [
     "skos:ConceptScheme",
     "dcat:Catalog"
@@ -192,7 +217,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - Resource",
@@ -271,7 +296,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - Folder",
@@ -353,7 +378,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - SemanticAnnotation",
@@ -386,12 +411,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/SemanticAnnotation/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/SemanticAnnotation/",
       "rdfData": [],
       "validationPassed": true,
@@ -416,6 +435,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "ro:SemanticAnnotation",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "profileOf": null,
@@ -432,7 +452,7 @@
       "itemClass": "schema",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology",
@@ -522,7 +542,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology - Dataset",
@@ -556,12 +576,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Dataset/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Dataset/",
       "rdfData": [],
       "validationPassed": true,
@@ -586,6 +600,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wf4ever:Dataset",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "dependsOn": null,
@@ -602,7 +617,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology - Document",
@@ -636,12 +651,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Document/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Document/",
       "rdfData": [],
       "validationPassed": true,
@@ -666,6 +675,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wf4ever:Document",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "dependsOn": null,
@@ -682,7 +692,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology - File",
@@ -716,12 +726,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/File/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/File/",
       "rdfData": [],
       "validationPassed": true,
@@ -746,6 +750,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wf4ever:File",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "dependsOn": null,
@@ -762,7 +767,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology - Image",
@@ -796,12 +801,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Image/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Image/",
       "rdfData": [],
       "validationPassed": true,
@@ -826,6 +825,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wf4ever:Image",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "dependsOn": null,
@@ -842,7 +842,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology - WebServiceProcess",
@@ -876,12 +876,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WebServiceProcess/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WebServiceProcess/",
       "rdfData": [],
       "validationPassed": true,
@@ -906,6 +900,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wf4ever:WebServiceProcess",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "dependsOn": null,
@@ -922,7 +917,7 @@
       "itemClass": "schema",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Workflow Description Ontology",
@@ -1008,7 +1003,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "dependsOn": null,
       "sources": [
         {
@@ -1042,12 +1037,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Artifact/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Artifact/",
       "rdfData": [],
       "validationPassed": true,
@@ -1072,6 +1061,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wfdesc:Artifact",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "profileOf": null,
@@ -1088,7 +1078,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "profileOf": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Workflow"
       ],
@@ -1124,12 +1114,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/",
       "rdfData": [],
       "validationPassed": true,
@@ -1154,6 +1138,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wfdesc:WorkflowInstance",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "dependsOn": null,
@@ -1170,7 +1155,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - AggregatedAnnotation",
@@ -1253,7 +1238,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - Manifest",
@@ -1334,7 +1319,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - FolderEntry",
@@ -1416,7 +1401,7 @@
       "itemClass": "schema",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Workflow Provenance Ontology",
@@ -1510,7 +1495,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "dependsOn": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Artifact"
       ],
@@ -1584,88 +1569,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
-      "name": "wfprov:WorkflowEngine",
-      "abstract": "A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources.",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-07T00:00:00Z",
-      "itemClass": "datatype",
-      "register": "ogc-wf4ever",
-      "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
-      "sources": [
-        {
-          "title": "Workflow Provenance Ontology - WorkflowEngine",
-          "link": "http://purl.org/wf4ever/wfprov#WorkflowEngine"
-        }
-      ],
-      "maturity": "development",
-      "scope": "unstable",
-      "tags": [
-        "wfprov",
-        "workflow-engine",
-        "agent",
-        "execution"
-      ],
-      "group": "Wf4Ever - wfprov",
-      "shaclShapes": null,
-      "dependsOn": [
-        "bblocks://ogc.ogc-utils.prov"
-      ],
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "schema": [
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/schema.yaml",
-      "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/",
-      "rdfData": [],
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowEngine/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowEngine/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.WorkflowEngine"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine",
-      "@type": [
-        "bblocks:Datatype",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "wfprov:WorkflowEngine",
-      "openAPIDocument": null,
-      "ontology": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://ogcincubator.github.io/bblocks-wf4ever/"
-      }
-    },
-    {
       "itemIdentifier": "ogc.bbr.wf4ever.ro.ResearchObject",
       "name": "ro:ResearchObject",
       "abstract": "A Research Object that bundles resources, data, methods, and contextual information. It provides a structured way to package research outputs with their provenance, making them portable, shareable, and preservable.",
@@ -1675,7 +1578,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Research Object Ontology - ResearchObject",
@@ -1758,7 +1661,7 @@
       "itemClass": "schema",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology",
@@ -1801,12 +1704,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/",
       "rdfData": [],
       "validationPassed": true,
@@ -1831,6 +1728,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "Wf4Ever Extension Ontology",
+      "ldContext": null,
       "openAPIDocument": null,
       "profileOf": null,
       "skos:topConceptOf": {
@@ -1846,7 +1744,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "profileOf": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Parameter"
       ],
@@ -1930,7 +1828,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "profileOf": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Parameter"
       ],
@@ -2014,10 +1912,10 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "dependsOn": [
-        "bblocks://ogc.bbr.wf4ever.wfdesc.Parameter",
-        "bblocks://ogc.ogc-utils.prov"
+        "bblocks://ogc.ogc-utils.prov",
+        "bblocks://ogc.bbr.wf4ever.wfdesc.Parameter"
       ],
       "sources": [
         {
@@ -2089,6 +1987,88 @@
       }
     },
     {
+      "itemIdentifier": "ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+      "name": "wfprov:WorkflowEngine",
+      "abstract": "A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources.",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-07T00:00:00Z",
+      "itemClass": "datatype",
+      "register": "ogc-wf4ever",
+      "version": "1.0",
+      "dateOfLastChange": "2026-01-13",
+      "sources": [
+        {
+          "title": "Workflow Provenance Ontology - WorkflowEngine",
+          "link": "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "tags": [
+        "wfprov",
+        "workflow-engine",
+        "agent",
+        "execution"
+      ],
+      "group": "Wf4Ever - wfprov",
+      "shaclShapes": null,
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.prov"
+      ],
+      "ldContext": {
+        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "schema": [
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowEngine/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowEngine/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.WorkflowEngine"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+      "@type": [
+        "bblocks:Datatype",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "wfprov:WorkflowEngine",
+      "openAPIDocument": null,
+      "ontology": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/bblocks-wf4ever/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.bbr.wf4ever.wfdesc.DataLink",
       "name": "wfdesc:DataLink",
       "abstract": "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow.",
@@ -2097,7 +2077,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "dependsOn": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Input",
         "bblocks://ogc.bbr.wf4ever.wfdesc.Output"
@@ -2180,7 +2160,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "dependsOn": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Input",
         "bblocks://ogc.bbr.wf4ever.wfdesc.Output"
@@ -2264,14 +2244,14 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "profileOf": [
         "bblocks://ogc.bbr.wf4ever.wfdesc.Process"
       ],
       "dependsOn": [
-        "bblocks://ogc.bbr.wf4ever.wfdesc.DataLink",
         "bblocks://ogc.api.processes.v1.schemas.process",
-        "bblocks://ogc.bbr.wf4ever.wfdesc.Process"
+        "bblocks://ogc.bbr.wf4ever.wfdesc.Process",
+        "bblocks://ogc.bbr.wf4ever.wfdesc.DataLink"
       ],
       "sources": [
         {
@@ -2350,7 +2330,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Workflow Provenance Ontology - ProcessRun",
@@ -2360,10 +2340,10 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine",
+        "bblocks://ogc.ogc-utils.prov",
         "bblocks://ogc.bbr.wf4ever.wfprov.Artifact",
         "bblocks://ogc.bbr.wf4ever.wfdesc.Process",
-        "bblocks://ogc.ogc-utils.prov"
+        "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine"
       ],
       "tags": [
         "wfprov",
@@ -2436,7 +2416,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Wf4Ever Ontology - WorkflowResearchObject",
@@ -2471,12 +2451,6 @@
         }
       ],
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WorkflowResearchObject/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
       "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WorkflowResearchObject/",
       "rdfData": [],
       "validationPassed": true,
@@ -2501,6 +2475,7 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "wf4ever:WorkflowResearchObject",
+      "ldContext": null,
       "openAPIDocument": null,
       "ontology": null,
       "profileOf": null,
@@ -2518,7 +2493,7 @@
       "itemClass": "datatype",
       "register": "ogc-wf4ever",
       "version": "1.0",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "sources": [
         {
           "title": "Workflow Provenance Ontology - WorkflowRun",
@@ -2531,8 +2506,8 @@
         "bblocks://ogc.bbr.wf4ever.wfprov.ProcessRun"
       ],
       "dependsOn": [
-        "bblocks://ogc.bbr.wf4ever.wfprov.ProcessRun",
-        "bblocks://ogc.bbr.wf4ever.wfdesc.Workflow"
+        "bblocks://ogc.bbr.wf4ever.wfdesc.Workflow",
+        "bblocks://ogc.bbr.wf4ever.wfprov.ProcessRun"
       ],
       "tags": [
         "wfprov",
@@ -2604,7 +2579,7 @@
       "itemClass": "schema",
       "register": "wf4ever",
       "version": "0.1",
-      "dateOfLastChange": "2025-12-23",
+      "dateOfLastChange": "2026-01-13",
       "maturity": "development",
       "scope": "unstable",
       "sources": [
@@ -2620,10 +2595,10 @@
       "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever-profiles/complete-provenance-trace/schema.yaml",
       "sourceContext": "context.jsonld",
       "dependsOn": [
+        "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowRun",
         "bblocks://ogc.bbr.wf4ever.ro.ResearchObject",
-        "bblocks://ogc.bbr.wf4ever.ro.Manifest",
         "bblocks://ogc.bbr.wf4ever.wfdesc.Workflow",
-        "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowRun"
+        "bblocks://ogc.bbr.wf4ever.ro.Manifest"
       ],
       "tags": [
         "provenance",
@@ -2742,9 +2717,6 @@
       "@id": "bblocks://ogc.bbr.wf4ever.wfdesc.Parameter"
     },
     {
-      "@id": "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine"
-    },
-    {
       "@id": "bblocks://ogc.bbr.wf4ever.ro.ResearchObject"
     },
     {
@@ -2758,6 +2730,9 @@
     },
     {
       "@id": "bblocks://ogc.bbr.wf4ever.wfprov.Artifact"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine"
     },
     {
       "@id": "bblocks://ogc.bbr.wf4ever.wfdesc.DataLink"

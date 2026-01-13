@@ -97,7 +97,6 @@
       "@id": "prov:qualifiedInfluence",
       "@type": "@id"
     },
-    "type": "@type",
     "hadMember": {
       "@id": "prov:hadMember",
       "@type": "@id"
@@ -109,6 +108,8 @@
     "has_provenance": {
       "@context": {
         "wasAssociatedWith": {
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id",
           "@context": {
             "href": {
               "@type": "@id",
@@ -125,9 +126,7 @@
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
-          },
-          "@id": "prov:wasAssociatedWith",
-          "@type": "@id"
+          }
         }
       },
       "@id": "dct:provenance",
@@ -549,6 +548,7 @@
     },
     "name": "rdfs:label",
     "Artifact": "wfprov:Artifact",
+    "type": "@type",
     "describedByParameter": {
       "@id": "wfprov:describedByParameter",
       "@type": "@id"

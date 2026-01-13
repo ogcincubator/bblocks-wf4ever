@@ -83,7 +83,6 @@ Links to the schema:
     "@vocab": "http://purl.org/wf4ever/wfprov#",
     "wasInfluencedBy": {
       "@context": {
-        "type": "dct:type",
         "href": {
           "@type": "@id",
           "@id": "oa:hasTarget"
@@ -95,6 +94,7 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
+        "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
         "length": "dct:extent"
@@ -106,7 +106,6 @@ Links to the schema:
       "@context": {
         "influencer": {
           "@context": {
-            "type": "dct:type",
             "href": {
               "@type": "@id",
               "@id": "oa:hasTarget"
@@ -118,6 +117,7 @@ Links to the schema:
               "@id": "http://www.iana.org/assignments/relation",
               "@type": "@id"
             },
+            "type": "dct:type",
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
@@ -1163,12 +1163,6 @@ Links to the schema:
     },
     "links": "rdfs:seeAlso",
     "WorkflowEngine": "wfprov:WorkflowEngine",
-    "@id": {
-      "@context": {}
-    },
-    "@type": {
-      "@context": {}
-    },
     "version": "http://schema.org/version",
     "description": "rdfs:comment",
     "prov": "http://www.w3.org/ns/prov#",

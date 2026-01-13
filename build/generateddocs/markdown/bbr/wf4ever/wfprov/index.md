@@ -235,9 +235,6 @@ Links to the schema:
     "ProcessRun": "wfprov:ProcessRun",
     "WorkflowEngine": "wfprov:WorkflowEngine",
     "Artifact": "wfprov:Artifact",
-    "@type": {
-      "@context": {}
-    },
     "name": "rdfs:label",
     "describedByWorkflow": {
       "@id": "wfprov:describedByWorkflow",

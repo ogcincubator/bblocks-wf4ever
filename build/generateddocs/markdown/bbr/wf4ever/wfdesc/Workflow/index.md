@@ -139,31 +139,11 @@ Links to the schema:
     "Process": "wfdesc:Process",
     "Input": "wfdesc:Input",
     "Output": "wfdesc:Output",
-    "@type": {
-      "@context": {}
-    },
-    "@id": {
-      "@context": {}
-    },
     "name": "rdfs:label",
     "description": "rdfs:comment",
     "hasInput": {
       "@context": {
-        "@type": {
-          "@context": {}
-        },
-        "@id": {
-          "@context": {}
-        },
         "hasArtifact": {
-          "@context": {
-            "@type": {
-              "@context": {}
-            },
-            "@id": {
-              "@context": {}
-            }
-          },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
         }
@@ -174,21 +154,7 @@ Links to the schema:
     },
     "hasOutput": {
       "@context": {
-        "@type": {
-          "@context": {}
-        },
-        "@id": {
-          "@context": {}
-        },
         "hasArtifact": {
-          "@context": {
-            "@type": {
-              "@context": {}
-            },
-            "@id": {
-              "@context": {}
-            }
-          },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
         }
@@ -208,43 +174,15 @@ Links to the schema:
       "@type": "@id"
     },
     "hasSubProcess": {
-      "@context": {
-        "@type": {
-          "@context": {}
-        },
-        "@id": {
-          "@context": {}
-        }
-      },
       "@id": "wfdesc:hasSubProcess",
       "@type": "@id",
       "@container": "@set"
     },
     "hasDataLink": {
       "@context": {
-        "@type": {
-          "@context": {}
-        },
-        "@id": {
-          "@context": {}
-        },
         "hasSource": {
           "@context": {
-            "@type": {
-              "@context": {}
-            },
-            "@id": {
-              "@context": {}
-            },
             "hasArtifact": {
-              "@context": {
-                "@type": {
-                  "@context": {}
-                },
-                "@id": {
-                  "@context": {}
-                }
-              },
               "@id": "wfdesc:hasArtifact",
               "@type": "@id"
             }
@@ -254,21 +192,7 @@ Links to the schema:
         },
         "hasSink": {
           "@context": {
-            "@type": {
-              "@context": {}
-            },
-            "@id": {
-              "@context": {}
-            },
             "hasArtifact": {
-              "@context": {
-                "@type": {
-                  "@context": {}
-                },
-                "@id": {
-                  "@context": {}
-                }
-              },
               "@id": "wfdesc:hasArtifact",
               "@type": "@id"
             }

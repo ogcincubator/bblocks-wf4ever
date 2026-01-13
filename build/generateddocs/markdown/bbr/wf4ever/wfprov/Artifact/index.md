@@ -189,7 +189,6 @@ Links to the schema:
       "@id": "prov:qualifiedInfluence",
       "@type": "@id"
     },
-    "type": "@type",
     "hadMember": {
       "@id": "prov:hadMember",
       "@type": "@id"
@@ -201,6 +200,8 @@ Links to the schema:
     "has_provenance": {
       "@context": {
         "wasAssociatedWith": {
+          "@id": "prov:wasAssociatedWith",
+          "@type": "@id",
           "@context": {
             "href": {
               "@type": "@id",
@@ -217,9 +218,7 @@ Links to the schema:
             "hreflang": "dct:language",
             "title": "rdfs:label",
             "length": "dct:extent"
-          },
-          "@id": "prov:wasAssociatedWith",
-          "@type": "@id"
+          }
         }
       },
       "@id": "dct:provenance",
@@ -641,6 +640,7 @@ Links to the schema:
     },
     "name": "rdfs:label",
     "Artifact": "wfprov:Artifact",
+    "type": "@type",
     "describedByParameter": {
       "@id": "wfprov:describedByParameter",
       "@type": "@id"

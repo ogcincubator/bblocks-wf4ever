@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "wf4ever",
   "version": "0.1",
-  "dateOfLastChange": "2025-12-23",
+  "dateOfLastChange": "2026-01-13",
   "maturity": "development",
   "scope": "unstable",
   "sources": [
@@ -25,10 +25,10 @@
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever-profiles/complete-provenance-trace/schema.yaml",
   "sourceContext": "context.jsonld",
   "dependsOn": [
+    "ogc.bbr.wf4ever.wfprov.WorkflowRun",
     "ogc.bbr.wf4ever.ro.ResearchObject",
-    "ogc.bbr.wf4ever.ro.Manifest",
     "ogc.bbr.wf4ever.wfdesc.Workflow",
-    "ogc.bbr.wf4ever.wfprov.WorkflowRun"
+    "ogc.bbr.wf4ever.ro.Manifest"
   ],
   "tags": [
     "provenance",

@@ -2,6 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <http://www.iana.org/assignments/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -9,22 +11,8 @@
 @prefix role: <http://www.w3.org/ns/dx/prof/role/> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://ogcincubator.github.io/bblocks-wf4ever/build/bblocks.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N5de885f5d2d54e6baf7e23d9f7ba84ea ;
-    prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2025-12-23T10:50:26.960494"^^xsd:dateTime ;
-            prov:startedAtTime "2025-12-23T10:50:26.824043"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
-                    dct:format "application/json" ;
-                    dct:hasVersion "git:3e7b541df9e636bf52edd956c49ef837d9bcfe09" ;
-                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-wf4ever/build/register.json> ] ;
-            prov:wasAssociatedWith _:N5de885f5d2d54e6baf7e23d9f7ba84ea ] .
 
 <bblocks://ogc.bbr.wf4ever.ro.AggregatedAnnotation> a skos:Concept,
         dcat:Dataset,
@@ -39,7 +27,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/AggregatedAnnotation/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#AggregatedAnnotation> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:AggregatedAnnotation" ;
@@ -47,14 +35,14 @@
     dcat:keyword "annotation",
         "metadata",
         "ro" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/context.jsonld> ;
             prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.yaml> ;
@@ -72,14 +60,14 @@
     rdfs:label "ro:FolderEntry" ;
     dct:abstract "An entry within a folder that associates a name with a resource. FolderEntries provide the mapping between folder paths and actual resources, similar to filesystem directory entries."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.FolderEntry> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/FolderEntry/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/FolderEntry/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/FolderEntry/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.FolderEntry> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#FolderEntry> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:FolderEntry" ;
@@ -87,18 +75,18 @@
     dcat:keyword "folder-entry",
         "organization",
         "ro" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/FolderEntry/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.ro.Folder>,
         <bblocks://ogc.bbr.wf4ever.ro.Resource> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/FolderEntry/context.jsonld> ;
@@ -112,14 +100,14 @@
     rdfs:label "Wf4Ever Extension Ontology" ;
     dct:abstract "The wf4ever ontology extends ro, wfdesc and wfprov with specialized artifact and process types commonly used in workflow research objects."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "Wf4Ever Extension Ontology" ;
@@ -132,17 +120,13 @@
             dct:format "text/turtle" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/ontology.ttl> ;
             prof:hasRole role:specification ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.json> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.ro>,
         <bblocks://ogc.bbr.wf4ever.wfdesc>,
@@ -157,12 +141,12 @@
     rdfs:label "Complete Workflow Provenance Trace" ;
     dct:abstract "Master profile combining Research Object, Workflow Description, and Workflow Execution Provenance"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-11T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/index.md> ],
         """## Description
 
 This master profile combines all elements of the Wf4Ever ontology suite to represent a complete workflow provenance trace:
@@ -218,7 +202,7 @@ Research Object
 - **ORE**: Research Object uses ORE aggregation model
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/model>,
         <https://w3id.org/cwl/prov> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
@@ -230,18 +214,18 @@ Research Object
         "provenance",
         "research-object",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.ro.Manifest>,
         <bblocks://ogc.bbr.wf4ever.ro.ResearchObject>,
         <bblocks://ogc.bbr.wf4ever.wfdesc.Workflow>,
@@ -257,14 +241,14 @@ Research Object
     rdfs:label "wf4ever:Dataset" ;
     dct:abstract "A dataset artifact - a collection of data values or files representing a scientific dataset."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.Dataset> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Dataset/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/Dataset/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/Dataset/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.Dataset> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever#Dataset> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wf4ever:Dataset" ;
@@ -273,17 +257,13 @@ Research Object
         "dataset",
         "wf4ever" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Dataset/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Artifact> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -295,14 +275,14 @@ Research Object
     rdfs:label "wf4ever:Document" ;
     dct:abstract "A document artifact - textual or formatted content such as PDF, HTML, or text files."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Document/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/Document/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Document/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.Document> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever#Document> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wf4ever:Document" ;
@@ -310,11 +290,7 @@ Research Object
     dcat:keyword "artifact",
         "document",
         "wf4ever" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/schema.json> ;
             prof:hasRole role:schema ],
@@ -333,14 +309,14 @@ Research Object
     rdfs:label "wf4ever:File" ;
     dct:abstract "A file artifact - a specialization of wfdesc:Artifact representing a file-based data entity used or produced by workflow execution."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.File> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/File/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/File/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/File/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.File> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever#File> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wf4ever:File" ;
@@ -349,17 +325,13 @@ Research Object
         "file",
         "wf4ever" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Artifact> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -378,7 +350,7 @@ Research Object
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/Image/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever#Image> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wf4ever:Image" ;
@@ -387,16 +359,12 @@ Research Object
         "image",
         "wf4ever" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.yaml> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Artifact> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -409,14 +377,14 @@ Research Object
     rdfs:label "wf4ever:WebServiceProcess" ;
     dct:abstract "A web service process - a process description whose enactment involves making a web service call."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/WebServiceProcess/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/WebServiceProcess/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.WebServiceProcess> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/WebServiceProcess/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.WebServiceProcess> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever#WebServiceProcess> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wf4ever:WebServiceProcess" ;
@@ -428,10 +396,6 @@ Research Object
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.json> ;
@@ -447,14 +411,14 @@ Research Object
     rdfs:label "wf4ever:WorkflowResearchObject" ;
     dct:abstract "A research object that aggregates at least one workflow description, along with associated resources and provenance."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wf4ever/WorkflowResearchObject/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/WorkflowResearchObject/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wf4ever/WorkflowResearchObject/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wf4ever#WorkflowResearchObject> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wf4ever:WorkflowResearchObject" ;
@@ -463,16 +427,12 @@ Research Object
         "wf4ever",
         "workflow" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.ro.ResearchObject>,
         <bblocks://ogc.bbr.wf4ever.wfdesc.Workflow> ;
@@ -486,14 +446,14 @@ Research Object
     rdfs:label "wfdesc:WorkflowInstance" ;
     dct:abstract "A specialized workflow description that includes all concrete data, parameters, and settings required to execute a specific workflow run. It bridges the gap between abstract workflow descriptions and concrete workflow executions."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/WorkflowInstance/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/WorkflowInstance/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.WorkflowInstance> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/WorkflowInstance/index.md> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/WorkflowInstance/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#WorkflowInstance> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:WorkflowInstance" ;
@@ -503,17 +463,13 @@ Research Object
         "instance",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Workflow> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -582,6 +538,21 @@ Research Object
 
 <http://www.openarchives.org/ore/> rdfs:label "OAI-ORE" .
 
+<https://ogcincubator.github.io/bblocks-wf4ever/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:Nb7311acf642b439d8d7bc752dd74edb8 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-01-13T22:38:33.519620"^^xsd:dateTime ;
+            prov:startedAtTime "2026-01-13T22:38:33.250844"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:76679e4d464359b968b00c4a3bdbf898fe3d4f9b" ;
+                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-wf4ever/build/register.json> ] ;
+            prov:wasAssociatedWith _:Nb7311acf642b439d8d7bc752dd74edb8 ] .
+
 <https://w3id.org/cwl/prov> rdfs:label "CWLProv - Provenance profiles for Common Workflow Language" .
 
 <https://www.w3.org/TR/prov-o/> rdfs:label "PROV-O" .
@@ -592,14 +563,14 @@ Research Object
     rdfs:label "Research Object Ontology (ro)" ;
     dct:abstract "The Research Object ontology (ro) provides concepts for bundling and aggregating research artifacts, describing folder structures and annotations."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro>,
         <http://www.openarchives.org/ore/> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
@@ -610,22 +581,22 @@ Research Object
         "research-object",
         "ro",
         "wf4ever" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.json> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ontology.ttl> ;
             prof:hasRole role:specification ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -644,7 +615,7 @@ Research Object
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Folder/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#Folder> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:Folder" ;
@@ -652,18 +623,18 @@ Research Object
     dcat:keyword "folder",
         "organization",
         "ro" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/schema.json> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Folder/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.ro.Resource> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/Folder/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -676,14 +647,14 @@ Research Object
     rdfs:label "ro:SemanticAnnotation" ;
     dct:abstract "A semantic annotation is a specialization of ao:Annotation which requires that the annotation body points to an RDF Graph containing semantic information about the annotated resource."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/SemanticAnnotation/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/SemanticAnnotation/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.SemanticAnnotation> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.SemanticAnnotation> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/SemanticAnnotation/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#SemanticAnnotation> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:SemanticAnnotation" ;
@@ -693,16 +664,12 @@ Research Object
         "ro",
         "semantic" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/SemanticAnnotation/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -714,14 +681,14 @@ Research Object
     rdfs:label "wfdesc:DataLink" ;
     dct:abstract "A connection between processes in a workflow, linking an output of one process to an input of another process. DataLinks define the data flow in a workflow."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/DataLink/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/DataLink/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/DataLink/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.DataLink> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#DataLink> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:DataLink" ;
@@ -731,17 +698,17 @@ Research Object
         "wfdesc",
         "workflow" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Input>,
         <bblocks://ogc.bbr.wf4ever.wfdesc.Output> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/DataLink/context.jsonld> ;
@@ -762,7 +729,7 @@ Research Object
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfprov>,
         <https://www.w3.org/TR/prov-o/> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
@@ -802,14 +769,14 @@ Research Object
     rdfs:label "wfprov:Artifact" ;
     dct:abstract "A data entity that was used as input or generated as output during a workflow execution. Artifacts are the data products consumed or produced by process runs."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.Artifact> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/Artifact/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/Artifact/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/Artifact/index.md> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.Artifact> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfprov#Artifact> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfprov:Artifact" ;
@@ -818,18 +785,18 @@ Research Object
         "data",
         "provenance",
         "wfprov" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/Artifact/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Parameter>,
         <bblocks://ogc.ogc-utils.prov> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/Artifact/context.jsonld> ;
@@ -843,14 +810,14 @@ Research Object
     rdfs:label "wfprov:WorkflowEngine" ;
     dct:abstract "A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowEngine/index.md> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.WorkflowEngine> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowEngine/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowEngine/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowEngine/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfprov#WorkflowEngine> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfprov:WorkflowEngine" ;
@@ -860,17 +827,17 @@ Research Object
         "wfprov",
         "workflow-engine" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowEngine/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.ogc-utils.prov> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/WorkflowEngine/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -883,14 +850,14 @@ Research Object
     rdfs:label "wfprov:WorkflowRun" ;
     dct:abstract "An execution instance of a workflow. A WorkflowRun is a special type of ProcessRun that represents the execution of a complete workflow (wfdesc:Workflow), containing multiple ProcessRuns for its sub-processes."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowRun/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.WorkflowRun> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowRun/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/WorkflowRun/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/WorkflowRun/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfprov:WorkflowRun" ;
@@ -900,17 +867,17 @@ Research Object
         "wfprov",
         "workflow-run" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfprov.ProcessRun> ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Workflow>,
         <bblocks://ogc.bbr.wf4ever.wfprov.ProcessRun> ;
@@ -925,14 +892,14 @@ Research Object
     rdfs:label "ro:Manifest" ;
     dct:abstract "A manifest that describes the structure and contents of a Research Object. The manifest provides metadata about the Research Object, its aggregated resources, annotations, and organizational structure."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Manifest/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/Manifest/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.Manifest> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Manifest/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.Manifest> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#Manifest> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:Manifest" ;
@@ -940,17 +907,17 @@ Research Object
     dcat:keyword "manifest",
         "metadata",
         "ro" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.ro.Resource> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/Manifest/context.jsonld> ;
@@ -966,12 +933,12 @@ Research Object
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.ResearchObject> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/ResearchObject/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/ResearchObject/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/ResearchObject/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/ResearchObject/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#ResearchObject> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:ResearchObject" ;
@@ -980,16 +947,16 @@ Research Object
         "research-object",
         "ro" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.json> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.ro.Manifest>,
         <bblocks://ogc.bbr.wf4ever.ro.Resource> ;
@@ -1004,14 +971,14 @@ Research Object
     rdfs:label "Workflow Description Ontology (wfdesc)" ;
     dct:abstract "The Workflow Description ontology (wfdesc) describes the structure of workflows, including processes, inputs, outputs, and data flow."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "Workflow Description Ontology (wfdesc)" ;
@@ -1020,11 +987,7 @@ Research Object
         "wf4ever",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/schema.json> ;
             prof:hasRole role:schema ],
@@ -1035,7 +998,11 @@ Research Object
         [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/ontology.ttl> ;
-            prof:hasRole role:specification ] ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -1047,14 +1014,14 @@ Research Object
     rdfs:label "wfdesc:Input" ;
     dct:abstract "An input parameter to a workflow process. Inputs receive data from external sources or from outputs of other processes via DataLinks."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Input/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Input> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Input/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Input/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#Input> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:Input" ;
@@ -1063,18 +1030,18 @@ Research Object
         "parameter",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/schema.json> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Parameter> ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Parameter> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Input/context.jsonld> ;
@@ -1090,12 +1057,12 @@ Research Object
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Output/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Output/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Output> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Output> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Output/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#Output> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:Output" ;
@@ -1104,17 +1071,17 @@ Research Object
         "parameter",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Output/schema.yaml> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Parameter> ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Parameter> ;
@@ -1131,12 +1098,12 @@ Research Object
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfprov/ProcessRun/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.ProcessRun> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/ProcessRun/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfprov/ProcessRun/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfprov.ProcessRun> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfprov#ProcessRun> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfprov:ProcessRun" ;
@@ -1145,18 +1112,18 @@ Research Object
         "process-run",
         "provenance",
         "wfprov" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Process>,
         <bblocks://ogc.bbr.wf4ever.wfprov.Artifact>,
         <bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine>,
@@ -1172,14 +1139,14 @@ Research Object
     rdfs:label "wfdesc:Process" ;
     dct:abstract "A computational process or task in a workflow. Processes have inputs, outputs, and perform computations. This is the base class for atomic processes and composite Workflows."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Process/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Process> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Process/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Process/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#Process> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:Process" ;
@@ -1192,14 +1159,14 @@ Research Object
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Input>,
         <bblocks://ogc.bbr.wf4ever.wfdesc.Output> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Process/context.jsonld> ;
@@ -1213,14 +1180,14 @@ Research Object
     rdfs:label "wfdesc:Workflow" ;
     dct:abstract "A composite process that contains sub-processes connected by data links. Workflows are directed graphs where nodes are processes and edges are data flow connections."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Workflow/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Workflow/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Workflow/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Workflow> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#Workflow> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:Workflow" ;
@@ -1229,17 +1196,17 @@ Research Object
         "graph",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml> ;
             prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.bbr.wf4ever.wfdesc.Process> ;
     bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.process>,
@@ -1256,14 +1223,14 @@ Research Object
     rdfs:label "ro:Resource" ;
     dct:abstract "A resource that can be aggregated in a Research Object. Resources represent any artifact that contributes to the research outcome, such as data files, workflows, documentation, or external references."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Resource/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/ro/Resource/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/ro/Resource/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.ro.Resource> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/ro#Resource> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "ro:Resource" ;
@@ -1276,12 +1243,12 @@ Research Object
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Resource/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/ro/Resource/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -1294,14 +1261,14 @@ Research Object
     rdfs:label "wfdesc:Artifact" ;
     dct:abstract "An artifact representing a data value, file, or resource that can be used as input or generated as output by workflow processes. Artifacts provide concrete data representations for parameter binding."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Artifact> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Artifact/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Artifact/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Artifact> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Artifact/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#Artifact> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:Artifact" ;
@@ -1311,17 +1278,13 @@ Research Object
         "parameter",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Artifact/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -1335,12 +1298,12 @@ Research Object
     dct:created "2025-11-07T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/markdown/bbr/wf4ever/wfdesc/Parameter/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Parameter> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Parameter/index.json> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/build/generateddocs/json-full/bbr/wf4ever/wfdesc/Parameter/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-wf4ever/bblock/ogc.bbr.wf4ever.wfdesc.Parameter> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-23"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <http://purl.org/wf4ever/wfdesc#Parameter> ;
     skos:inScheme <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     skos:prefLabel "wfdesc:Parameter" ;
@@ -1349,18 +1312,18 @@ Research Object
         "parameter",
         "wfdesc",
         "workflow" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.wf4ever.wfdesc.Artifact> ;
     bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Parameter/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -1383,7 +1346,8 @@ workflow description, provenance tracking, research object aggregation, and spec
 All examples are based on real CWL (Common Workflow Language) provenance data from
 scientific workflow executions.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2025-12-23T10:50:16.442894"^^xsd:dateTime ;
+    dct:modified "2026-01-13T22:38:23.196610"^^xsd:dateTime ;
+    void:sparqlEndpoint <https://defs-dev.opengis.net/fuseki/query> ;
     owl:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
         <https://ogcincubator.github.io/bblocks-cwl/build/register.json>,
         <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
@@ -1420,12 +1384,24 @@ scientific workflow executions.
         <bblocks://ogc.bbr.wf4ever.wfprov.WorkflowEngine>,
         <bblocks://ogc.bbr.wf4ever.wfprov.WorkflowRun> ;
     skos:prefLabel "Building Blocks - Wf4Ever Building Blocks" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://ogcincubator.github.io/bblocks-wf4ever/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://ogcincubator.github.io/bblocks-wf4ever/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://ogcincubator.github.io/bblocks-wf4ever/build/bblocks.jsonld> ] ;
     foaf:homepage <https://ogcincubator.github.io/bblocks-wf4ever/> ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-wf4ever/build/tests/report.html> .
 
-_:N5de885f5d2d54e6baf7e23d9f7ba84ea a prov:Agent,
+_:Nb7311acf642b439d8d7bc752dd74edb8 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.5.10" ;
+    dct:hasVersion "0.5.14" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

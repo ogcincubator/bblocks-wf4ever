@@ -71,12 +71,6 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/ro#",
     "FolderEntry": "ro:FolderEntry",
-    "@id": {
-      "@context": {}
-    },
-    "@type": {
-      "@context": {}
-    },
     "entryName": "ro:entryName",
     "proxyFor": {
       "@id": "ore:proxyFor",

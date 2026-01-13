@@ -68,29 +68,9 @@ Links to the schema:
 {
   "@context": {
     "DataLink": "wfdesc:DataLink",
-    "@type": {
-      "@context": {}
-    },
-    "@id": {
-      "@context": {}
-    },
     "hasSource": {
       "@context": {
-        "@type": {
-          "@context": {}
-        },
-        "@id": {
-          "@context": {}
-        },
         "hasArtifact": {
-          "@context": {
-            "@type": {
-              "@context": {}
-            },
-            "@id": {
-              "@context": {}
-            }
-          },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
         }
@@ -100,21 +80,7 @@ Links to the schema:
     },
     "hasSink": {
       "@context": {
-        "@type": {
-          "@context": {}
-        },
-        "@id": {
-          "@context": {}
-        },
         "hasArtifact": {
-          "@context": {
-            "@type": {
-              "@context": {}
-            },
-            "@id": {
-              "@context": {}
-            }
-          },
           "@id": "wfdesc:hasArtifact",
           "@type": "@id"
         }

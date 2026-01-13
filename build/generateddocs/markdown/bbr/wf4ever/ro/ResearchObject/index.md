@@ -298,20 +298,9 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/ro#",
     "ResearchObject": "ro:ResearchObject",
-    "@id": {
-      "@context": {}
-    },
-    "@type": {
-      "@context": {}
-    },
     "title": "dcterms:title",
     "description": "dcterms:description",
     "aggregates": {
-      "@context": {
-        "@id": {
-          "@context": {}
-        }
-      },
       "@id": "ore:aggregates",
       "@type": "@id",
       "@container": "@set"

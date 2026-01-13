@@ -107,7 +107,5 @@ path	@id
 /qualifiedDelegation/type	
 /qualifiedDelegation/agent	http://www.w3.org/ns/prov#agent
 /qualifiedDelegation/hadActivity	http://www.w3.org/ns/prov#hadActivity
-/@id	
-/@type	
 /version	http://schema.org/version
 /description	http://www.w3.org/2000/01/rdf-schema#comment

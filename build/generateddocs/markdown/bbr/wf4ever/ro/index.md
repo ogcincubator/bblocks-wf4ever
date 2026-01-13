@@ -126,9 +126,6 @@ Links to the schema:
     "FolderEntry": "ro:FolderEntry",
     "AggregatedAnnotation": "ro:AggregatedAnnotation",
     "Manifest": "ro:Manifest",
-    "@type": {
-      "@context": {}
-    },
     "name": "rdfs:label",
     "aggregates": {
       "@id": "ore:aggregates",

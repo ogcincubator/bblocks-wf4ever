@@ -106,23 +106,6 @@ Links to the schema:
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/schema.yaml)
 
-
-# JSON-LD Context
-
-```jsonld
-{
-  "@context": {
-    "@type": {
-      "@context": {}
-    },
-    "@version": 1.1
-  }
-}
-```
-
-You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/File/context.jsonld)
-
 ## Sources
 
 * [Wf4Ever Ontology - File](http://purl.org/wf4ever/wf4ever#File)

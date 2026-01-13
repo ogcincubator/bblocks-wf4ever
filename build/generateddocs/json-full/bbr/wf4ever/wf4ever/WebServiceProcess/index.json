@@ -9,7 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2025-12-23",
+  "dateOfLastChange": "2026-01-13",
   "sources": [
     {
       "title": "Wf4Ever Ontology - WebServiceProcess",
@@ -33,7 +33,6 @@
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WebServiceProcess/schema.yaml",
-  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WebServiceProcess/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WebServiceProcess/",
   "rdfData": [],
   "validationPassed": true,

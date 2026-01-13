@@ -1,5 +1,4 @@
 path	@id
-/@type	
 /name	http://www.w3.org/2000/01/rdf-schema#label
 /description	http://www.w3.org/2000/01/rdf-schema#comment
 /hasInput	http://purl.org/wf4ever/wfdesc#hasInput

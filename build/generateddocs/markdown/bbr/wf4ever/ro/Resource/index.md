@@ -68,12 +68,6 @@ Links to the schema:
   "@context": {
     "@vocab": "http://purl.org/wf4ever/ro#",
     "Resource": "ro:Resource",
-    "@id": {
-      "@context": {}
-    },
-    "@type": {
-      "@context": {}
-    },
     "name": "dcterms:title",
     "description": "dcterms:description",
     "ro": "http://purl.org/wf4ever/ro#",

@@ -9,7 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2025-12-23",
+  "dateOfLastChange": "2026-01-13",
   "profileOf": [
     "ogc.bbr.wf4ever.wfdesc.Workflow"
   ],
@@ -35,7 +35,6 @@
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/schema.yaml",
-  "ldContext": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/WorkflowInstance/",
   "rdfData": [],
   "validationPassed": true,

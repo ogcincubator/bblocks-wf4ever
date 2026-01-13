@@ -246,26 +246,6 @@ Links to the schema:
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/schema.yaml)
 
-
-# JSON-LD Context
-
-```jsonld
-{
-  "@context": {
-    "@type": {
-      "@context": {}
-    },
-    "@id": {
-      "@context": {}
-    },
-    "@version": 1.1
-  }
-}
-```
-
-You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/WorkflowInstance/context.jsonld)
-
 ## Sources
 
 * [Workflow Description Ontology - WorkflowInstance](http://purl.org/wf4ever/wfdesc#WorkflowInstance)
