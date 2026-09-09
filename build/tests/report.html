@@ -46,12 +46,25 @@
                     border-width: var(--bs-accordion-border-width);
                 }
             }
+            .anchor {
+                color: black;
+                opacity: 0;
+                text-decoration: none;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            .anchor-container:hover .anchor {
+                opacity: 60%;
+            }
+            .anchor-container:hover .anchor:hover {
+                opacity: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-01-13T22:38:33.247425+00:00</small>
+            <small class="datetime">Generated at 2026-09-09T13:26:47.998340+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 29 / 30 (96.67%)
                 </p>
@@ -61,13 +74,14 @@
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.Resource" id="bblock-ogc.bbr.wf4ever.ro.Resource">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.Resource">
                                     <div class="flex-fill">
                                         ro:Resource
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.Resource</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.Resource">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -83,13 +97,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.Folder" id="bblock-ogc.bbr.wf4ever.ro.Folder">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.Folder">
                                     <div class="flex-fill">
                                         ro:Folder
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.Folder</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.Folder">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -103,9 +118,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.wf4ever.ro.Folder-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-1"
                                                             aria-expanded="false" aria-controls="uid-1"
@@ -115,6 +130,7 @@
                                                     </button>
                                                     <a href="bbr/wf4ever/ro/Folder/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.wf4ever.ro.Folder-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -122,11 +138,18 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/mangrove-folder.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
@@ -136,13 +159,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.SemanticAnnotation" id="bblock-ogc.bbr.wf4ever.ro.SemanticAnnotation">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.SemanticAnnotation">
                                     <div class="flex-fill">
                                         ro:SemanticAnnotation
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.SemanticAnnotation</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.SemanticAnnotation">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -158,13 +182,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro" id="bblock-ogc.bbr.wf4ever.ro">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro">
                                     <div class="flex-fill">
                                         Research Object Ontology (ro)
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -180,13 +205,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever.Dataset" id="bblock-ogc.bbr.wf4ever.wf4ever.Dataset">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever\.Dataset">
                                     <div class="flex-fill">
                                         wf4ever:Dataset
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever.Dataset</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever.Dataset">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -202,13 +228,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever.Document" id="bblock-ogc.bbr.wf4ever.wf4ever.Document">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever\.Document">
                                     <div class="flex-fill">
                                         wf4ever:Document
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever.Document</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever.Document">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -224,13 +251,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever.File" id="bblock-ogc.bbr.wf4ever.wf4ever.File">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever\.File">
                                     <div class="flex-fill">
                                         wf4ever:File
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever.File</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever.File">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -246,13 +274,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever.Image" id="bblock-ogc.bbr.wf4ever.wf4ever.Image">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever\.Image">
                                     <div class="flex-fill">
                                         wf4ever:Image
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever.Image</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever.Image">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -268,13 +297,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever.WebServiceProcess" id="bblock-ogc.bbr.wf4ever.wf4ever.WebServiceProcess">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever\.WebServiceProcess">
                                     <div class="flex-fill">
                                         wf4ever:WebServiceProcess
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever.WebServiceProcess</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever.WebServiceProcess">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -290,13 +320,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc" id="bblock-ogc.bbr.wf4ever.wfdesc">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc">
                                     <div class="flex-fill">
                                         Workflow Description Ontology (wfdesc)
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -310,9 +341,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.wf4ever.wfdesc-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-2"
                                                             aria-expanded="false" aria-controls="uid-2"
@@ -322,6 +353,7 @@
                                                     </button>
                                                     <a href="bbr/wf4ever/wfdesc/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.wf4ever.wfdesc-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -329,11 +361,18 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
@@ -343,13 +382,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.Artifact" id="bblock-ogc.bbr.wf4ever.wfdesc.Artifact">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.Artifact">
                                     <div class="flex-fill">
                                         wfdesc:Artifact
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.Artifact</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.Artifact">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -365,13 +405,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.WorkflowInstance" id="bblock-ogc.bbr.wf4ever.wfdesc.WorkflowInstance">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.WorkflowInstance">
                                     <div class="flex-fill">
                                         wfdesc:WorkflowInstance
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.WorkflowInstance</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.WorkflowInstance">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -387,13 +428,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.AggregatedAnnotation" id="bblock-ogc.bbr.wf4ever.ro.AggregatedAnnotation">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.AggregatedAnnotation">
                                     <div class="flex-fill">
                                         ro:AggregatedAnnotation
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.AggregatedAnnotation</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.AggregatedAnnotation">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -409,13 +451,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.Manifest" id="bblock-ogc.bbr.wf4ever.ro.Manifest">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.Manifest">
                                     <div class="flex-fill">
                                         ro:Manifest
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.Manifest</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.Manifest">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -431,13 +474,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.FolderEntry" id="bblock-ogc.bbr.wf4ever.ro.FolderEntry">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.FolderEntry">
                                     <div class="flex-fill">
                                         ro:FolderEntry
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.FolderEntry</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.FolderEntry">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -453,13 +497,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfprov" id="bblock-ogc.bbr.wf4ever.wfprov">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfprov">
                                     <div class="flex-fill">
                                         Workflow Provenance Ontology (wfprov)
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfprov</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfprov">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -473,9 +518,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.wf4ever.wfprov-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-3"
                                                             aria-expanded="false" aria-controls="uid-3"
@@ -485,6 +530,7 @@
                                                     </button>
                                                     <a href="bbr/wf4ever/wfprov/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.wf4ever.wfprov-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -492,11 +538,18 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
@@ -506,13 +559,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.Parameter" id="bblock-ogc.bbr.wf4ever.wfdesc.Parameter">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.Parameter">
                                     <div class="flex-fill">
                                         wfdesc:Parameter
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.Parameter</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.Parameter">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -528,13 +582,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.ro.ResearchObject" id="bblock-ogc.bbr.wf4ever.ro.ResearchObject">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.ro\.ResearchObject">
                                     <div class="flex-fill">
                                         ro:ResearchObject
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.ro.ResearchObject</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.ro.ResearchObject">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -548,9 +603,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.wf4ever.ro.ResearchObject-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-4"
                                                             aria-expanded="false" aria-controls="uid-4"
@@ -560,6 +615,7 @@
                                                     </button>
                                                     <a href="bbr/wf4ever/ro/ResearchObject/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.wf4ever.ro.ResearchObject-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -567,11 +623,18 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/mangrove-ro.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
@@ -581,13 +644,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever" id="bblock-ogc.bbr.wf4ever.wf4ever">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever">
                                     <div class="flex-fill">
                                         Wf4Ever Extension Ontology
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -603,13 +667,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.Input" id="bblock-ogc.bbr.wf4ever.wfdesc.Input">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.Input">
                                     <div class="flex-fill">
                                         wfdesc:Input
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.Input</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.Input">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -625,13 +690,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.Output" id="bblock-ogc.bbr.wf4ever.wfdesc.Output">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.Output">
                                     <div class="flex-fill">
                                         wfdesc:Output
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.Output</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.Output">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -647,13 +713,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfprov.Artifact" id="bblock-ogc.bbr.wf4ever.wfprov.Artifact">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfprov\.Artifact">
                                     <div class="flex-fill">
                                         wfprov:Artifact
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfprov.Artifact</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfprov.Artifact">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -669,13 +736,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfprov.WorkflowEngine" id="bblock-ogc.bbr.wf4ever.wfprov.WorkflowEngine">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfprov\.WorkflowEngine">
                                     <div class="flex-fill">
                                         wfprov:WorkflowEngine
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfprov.WorkflowEngine</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfprov.WorkflowEngine">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -691,13 +759,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.DataLink" id="bblock-ogc.bbr.wf4ever.wfdesc.DataLink">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.DataLink">
                                     <div class="flex-fill">
                                         wfdesc:DataLink
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.DataLink</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.DataLink">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -713,13 +782,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.Process" id="bblock-ogc.bbr.wf4ever.wfdesc.Process">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.Process">
                                     <div class="flex-fill">
                                         wfdesc:Process
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.Process</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.Process">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -735,13 +805,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfdesc.Workflow" id="bblock-ogc.bbr.wf4ever.wfdesc.Workflow">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfdesc\.Workflow">
                                     <div class="flex-fill">
                                         wfdesc:Workflow
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfdesc.Workflow</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfdesc.Workflow">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -757,13 +828,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfprov.ProcessRun" id="bblock-ogc.bbr.wf4ever.wfprov.ProcessRun">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfprov\.ProcessRun">
                                     <div class="flex-fill">
                                         wfprov:ProcessRun
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfprov.ProcessRun</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfprov.ProcessRun">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -779,13 +851,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject" id="bblock-ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever\.WorkflowResearchObject">
                                     <div class="flex-fill">
                                         wf4ever:WorkflowResearchObject
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -801,13 +874,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wfprov.WorkflowRun" id="bblock-ogc.bbr.wf4ever.wfprov.WorkflowRun">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wfprov\.WorkflowRun">
                                     <div class="flex-fill">
                                         wfprov:WorkflowRun
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wfprov.WorkflowRun</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wfprov.WorkflowRun">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -821,9 +895,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.wf4ever.wfprov.WorkflowRun-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-5"
                                                             aria-expanded="false" aria-controls="uid-5"
@@ -833,6 +907,7 @@
                                                     </button>
                                                     <a href="bbr/wf4ever/wfprov/WorkflowRun/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.wf4ever.wfprov.WorkflowRun-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -840,12 +915,191 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/mangrove-workflowrun.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - https://www.w3.org/ns/prov-o</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/prov/#End-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab164: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Usage-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab62: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#InstantaneousEvent-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab140: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab56: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab194: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Association-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab152: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Agent-shape&gt;: &lt;urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f&gt;
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab182: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Revision-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab240: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab80: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab226: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab224: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab246: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab2: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Activity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Plan-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab50: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Derivation-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab176: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#PrimarySource-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EntityInfluence-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Quotation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab258: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab26: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Start-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab122: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab14: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab146: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#SoftwareAgent-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab44: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Influence-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab234: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab188: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab104: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab206: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Communication-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab92: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Person-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EmptyCollection-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab8: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab218: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab116: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Organization-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab74: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab128: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab38: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab86: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab170: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab32: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab212: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Generation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#ActivityInfluence-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab110: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Entity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab225: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab20: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#AgentInfluence-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Attribution-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Invalidation-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab134: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab252: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Delegation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab200: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Collection-shape&gt;: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab158: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;/sh:or/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab68: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Bundle-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n636daa423ba742fa82f3821b3197167ab98: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -854,13 +1108,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace" id="bblock-ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.wf4ever\.wf4ever-profiles\.complete-provenance-trace">
                                     <div class="flex-fill">
                                         Complete Workflow Provenance Trace
                                         <small class="ms-2 bblock-id">ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace</small>
+                                        <a class="anchor" href="#bblock-ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -874,9 +1129,9 @@
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-6"
                                                             aria-expanded="false" aria-controls="uid-6"
@@ -886,6 +1141,7 @@
                                                     </button>
                                                     <a href="bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.wf4ever.wf4ever-profiles.complete-provenance-trace-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -893,11 +1149,18 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/mangrove-complete-trace.json from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;@type&#x27; is a required property
 
 Failed validating &#x27;required&#x27; in schema[&#x27;properties&#x27;][&#x27;workflow&#x27;][&#x27;allOf&#x27;][0][&#x27;allOf&#x27;][0]:
@@ -964,6 +1227,178 @@ On instance[&#x27;workflow&#x27;]:
      &#x27;id&#x27;: &#x27;arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main&#x27;,
      &#x27;label&#x27;: &#x27;Mangrove Mapping Workflow&#x27;,
      &#x27;type&#x27;: &#x27;Workflow&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
+ - https://www.w3.org/ns/prov-o</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:
+ - Shape &lt;https://www.ogc.org/rules/prov/#End-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Usage-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b92: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#InstantaneousEvent-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b2: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b20: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Association-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInfluence&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Agent-shape&gt;: &lt;urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f&gt;
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b32: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Revision-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b226: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b158: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b122: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Activity-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b140: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Plan-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b44: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b98: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Derivation-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b26: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedQuotation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#PrimarySource-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b246: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EntityInfluence-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Quotation-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b50: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b200: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b164: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b240: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Start-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b134: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b8: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b104: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b194: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b176: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b212: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b62: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedGeneration&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasGeneratedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInformedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasQuotedFrom&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b80: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#SoftwareAgent-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b258: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b56: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasEndedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDelegation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedRevision&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInfluencedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasStartedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Influence-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b68: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedDerivation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasRevisionOf&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Communication-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b86: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Person-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#EmptyCollection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b182: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-activity&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b252: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Organization-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b74: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadGeneration&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b116: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAssociation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-atLocation&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPrimarySource&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-used&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Generation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadMember&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b38: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAttributedTo&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b146: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadRole&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#ActivityInfluence-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b218: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Entity-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-agent&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedEnd&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b188: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedAttribution&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#AgentInfluence-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b225: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadUsage&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Attribution-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Invalidation-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b152: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-alternateOf&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b206: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-generated&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Delegation-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadPlan&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b110: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Collection-shape&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-hadActivity&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b128: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b224: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedCommunication&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasAssociatedWith&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#Bundle-shape&gt;: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b14: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-entity&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-invalidated&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-influencer&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-wasDerivedFrom&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;/sh:or/rdf:rest/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedUsage&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-specializationOf&gt;/sh:or/rdf:first: *none*
+ - Shape &lt;https://www.ogc.org/rules/prov/#prop-qualifiedStart&gt;/sh:or/rdf:first: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b170: *none*
+ - Shape _:n869377e7ef6c4b7f9babaa9583b28a50b234: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -985,13 +1420,20 @@ On instance[&#x27;workflow&#x27;]:
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
-                if (location.hash.startsWith('#bblock-')) {
+                if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
                         highlight.querySelector('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
+                document.addEventListener('click', ev => {
+                    if (!ev.target.classList.contains('anchor') || !ev.target.href) {
+                      return;
+                    }
+                    ev.stopPropagation();
+                    navigator?.clipboard?.writeText(ev.target.href);
+                });
             });
         </script>
     </body>

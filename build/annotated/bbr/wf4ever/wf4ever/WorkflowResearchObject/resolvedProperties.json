@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["aggregates"],"description":"Must include at least one workflow","required":true,"schema_type":"array","sources":["bblocks://ogc.bbr.wf4ever.wf4ever.WorkflowResearchObject"]}]}

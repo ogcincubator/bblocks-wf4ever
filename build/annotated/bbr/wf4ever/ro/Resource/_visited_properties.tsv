@@ -1,3 +1,3 @@
-path	@id
-/name	http://purl.org/dc/terms/title
-/description	http://purl.org/dc/terms/description
+path	@id	schema
+/name	http://purl.org/dc/terms/title	/github/workspace/build/annotated/bbr/wf4ever/ro/Resource/schema.yaml
+/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/bbr/wf4ever/ro/Resource/schema.yaml

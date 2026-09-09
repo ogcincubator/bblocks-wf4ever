@@ -1,181 +1,157 @@
-path	@id
-/researchObject	http://purl.org/wf4ever/ro#ResearchObject
-/researchObject/id	
-/researchObject/type	
-/researchObject/title	http://purl.org/dc/terms/title
-/researchObject/description	http://purl.org/dc/terms/description
-/researchObject/aggregates	http://www.openarchives.org/ore/terms/aggregates
-/researchObject/aggregates/id	
-/researchObject/manifest	http://purl.org/wf4ever/ro#manifest
-/researchObject/created	http://purl.org/dc/terms/created
-/workflow	http://purl.org/wf4ever/wfdesc#Workflow
-/workflow/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
-/workflow/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/workflow/hasInput/hasArtifact/value	
-/workflow/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
-/workflow/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/workflow/hasOutput/hasArtifact/value	
-/workflow/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess
-/workflow/hasSubProcess/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasSubProcess/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasSubProcess/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
-/workflow/hasSubProcess/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasSubProcess/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasSubProcess/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/workflow/hasSubProcess/hasInput/hasArtifact/value	
-/workflow/hasSubProcess/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasSubProcess/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
-/workflow/hasSubProcess/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasSubProcess/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasSubProcess/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/workflow/hasSubProcess/hasOutput/hasArtifact/value	
-/workflow/hasSubProcess/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink
-/workflow/hasDataLink/hasSource	http://purl.org/wf4ever/wfdesc#hasSource
-/workflow/hasDataLink/hasSource/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasDataLink/hasSource/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasDataLink/hasSource/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/workflow/hasDataLink/hasSource/hasArtifact/value	
-/workflow/hasDataLink/hasSource/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasDataLink/hasSink	http://purl.org/wf4ever/wfdesc#hasSink
-/workflow/hasDataLink/hasSink/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflow/hasDataLink/hasSink/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflow/hasDataLink/hasSink/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/workflow/hasDataLink/hasSink/hasArtifact/value	
-/workflow/hasDataLink/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/workflowRun	http://purl.org/wf4ever/wfprov#WorkflowRun
-/workflowRun/wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy
-/workflowRun/wasInfluencedBy/type	
-/workflowRun/wasInfluencedBy/hadMember	http://www.w3.org/ns/prov#hadMember
-/workflowRun/wasInfluencedBy/id	@id
-/workflowRun/wasInfluencedBy/provType	@type
-/workflowRun/wasInfluencedBy/prov:type	
-/workflowRun/wasInfluencedBy/featureType	@type
-/workflowRun/wasInfluencedBy/entityType	@type
-/workflowRun/wasInfluencedBy/has_provenance	http://purl.org/dc/terms/provenance
-/workflowRun/wasInfluencedBy/has_provenance/agentType	@type
-/workflowRun/wasInfluencedBy/has_provenance/provType	@type
-/workflowRun/wasInfluencedBy/has_provenance/prov:type	
-/workflowRun/wasInfluencedBy/has_provenance/name	http://www.w3.org/2000/01/rdf-schema#label
-/workflowRun/wasInfluencedBy/has_provenance/id	@id
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf	http://www.w3.org/ns/prov#actedOnBehalfOf
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/href	http://www.w3.org/ns/oa#hasTarget
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/rel	http://www.iana.org/assignments/relation
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/anchor	
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/type	http://purl.org/dc/terms/type
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/hreflang	http://purl.org/dc/terms/language
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/title	http://www.w3.org/2000/01/rdf-schema#label
-/workflowRun/wasInfluencedBy/has_provenance/actedOnBehalfOf/length	http://purl.org/dc/terms/extent
-/workflowRun/wasInfluencedBy/has_provenance/atLocation	http://www.w3.org/ns/prov#atLocation
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation	http://www.w3.org/ns/prov#qualifiedDelegation
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/id	@id
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/type	
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/agent	http://www.w3.org/ns/prov#agent
-/workflowRun/wasInfluencedBy/has_provenance/qualifiedDelegation/hadActivity	http://www.w3.org/ns/prov#hadActivity
-/workflowRun/wasInfluencedBy/wasGeneratedBy	http://www.w3.org/ns/prov#wasGeneratedBy
-/workflowRun/wasInfluencedBy/wasAttributedTo	http://www.w3.org/ns/prov#wasAttributedTo
-/workflowRun/wasInfluencedBy/wasDerivedFrom	http://www.w3.org/ns/prov#wasDerivedFrom
-/workflowRun/wasInfluencedBy/alternateOf	http://www.w3.org/ns/prov#alternateOf
-/workflowRun/wasInfluencedBy/hadPrimarySource	http://www.w3.org/ns/prov#hadPrimarySource
-/workflowRun/wasInfluencedBy/specializationOf	http://www.w3.org/ns/prov#specializationOf
-/workflowRun/wasInfluencedBy/wasInvalidatedBy	http://www.w3.org/ns/prov#wasInvalidatedBy
-/workflowRun/wasInfluencedBy/wasQuotedFrom	http://www.w3.org/ns/prov#wasQuotedFrom
-/workflowRun/wasInfluencedBy/wasRevisionOf	http://www.w3.org/ns/prov#wasRevisionOf
-/workflowRun/wasInfluencedBy/atLocation	http://www.w3.org/ns/prov#atLocation
-/workflowRun/wasInfluencedBy/links	http://www.w3.org/2000/01/rdf-schema#seeAlso
-/workflowRun/wasInfluencedBy/links/href	http://www.w3.org/ns/oa#hasTarget
-/workflowRun/wasInfluencedBy/links/rel	http://www.iana.org/assignments/relation
-/workflowRun/wasInfluencedBy/links/anchor	
-/workflowRun/wasInfluencedBy/links/type	http://purl.org/dc/terms/type
-/workflowRun/wasInfluencedBy/links/hreflang	http://purl.org/dc/terms/language
-/workflowRun/wasInfluencedBy/links/title	http://www.w3.org/2000/01/rdf-schema#label
-/workflowRun/wasInfluencedBy/links/length	http://purl.org/dc/terms/extent
-/workflowRun/wasInfluencedBy/qualifiedGeneration	http://www.w3.org/ns/prov#qualifiedGeneration
-/workflowRun/wasInfluencedBy/qualifiedGeneration/id	@id
-/workflowRun/wasInfluencedBy/qualifiedGeneration/atTime	http://www.w3.org/ns/prov#atTime
-/workflowRun/wasInfluencedBy/qualifiedGeneration/hadRole	http://www.w3.org/ns/prov#hadRole
-/workflowRun/wasInfluencedBy/qualifiedGeneration/influencer	http://www.w3.org/ns/prov#influencer
-/workflowRun/wasInfluencedBy/qualifiedGeneration/hadActivity	http://www.w3.org/ns/prov#hadActivity
-/workflowRun/wasInfluencedBy/qualifiedGeneration/activity	http://www.w3.org/ns/prov#activity
-/workflowRun/wasInfluencedBy/qualifiedGeneration/type	
-/workflowRun/wasInfluencedBy/qualifiedInvalidation	http://www.w3.org/ns/prov#qualifiedInvalidation
-/workflowRun/wasInfluencedBy/qualifiedInvalidation/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation	http://www.w3.org/ns/prov#qualifiedDerivation
-/workflowRun/wasInfluencedBy/qualifiedDerivation/id	@id
-/workflowRun/wasInfluencedBy/qualifiedDerivation/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration	http://www.w3.org/ns/prov#hadGeneration
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadGeneration/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadActivity	http://www.w3.org/ns/prov#hadActivity
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage	http://www.w3.org/ns/prov#hadUsage
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/id	@id
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/type	
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/atTime	http://www.w3.org/ns/prov#atTime
-/workflowRun/wasInfluencedBy/qualifiedDerivation/hadUsage/entity	http://www.w3.org/ns/prov#entity
-/workflowRun/wasInfluencedBy/qualifiedDerivation/entity	http://www.w3.org/ns/prov#entity
-/workflowRun/wasInfluencedBy/qualifiedAttribution	http://www.w3.org/ns/prov#qualifiedAttribution
-/workflowRun/wasInfluencedBy/qualifiedAttribution/id	@id
-/workflowRun/wasInfluencedBy/qualifiedAttribution/type	
-/workflowRun/wasInfluencedBy/qualifiedAttribution/agent	http://www.w3.org/ns/prov#agent
-/workflowRun/qualifiedInfluence	http://www.w3.org/ns/prov#qualifiedInfluence
-/workflowRun/qualifiedInfluence/id	@id
-/workflowRun/qualifiedInfluence/influencer	http://www.w3.org/ns/prov#influencer
-/workflowRun/qualifiedInfluence/entity	http://www.w3.org/ns/prov#entity
-/workflowRun/qualifiedInfluence/activity	http://www.w3.org/ns/prov#activity
-/workflowRun/qualifiedInfluence/agent	http://www.w3.org/ns/prov#agent
-/workflowRun/id	@id
-/workflowRun/provType	@type
-/workflowRun/prov:type	
-/workflowRun/activityType	@type
-/workflowRun/endedAtTime	http://www.w3.org/ns/prov#endedAtTime
-/workflowRun/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
-/workflowRun/wasInformedBy	http://www.w3.org/ns/prov#wasInformedBy
-/workflowRun/used	http://www.w3.org/ns/prov#used
-/workflowRun/wasStartedBy	http://www.w3.org/ns/prov#wasStartedBy
-/workflowRun/wasEndedBy	http://www.w3.org/ns/prov#wasEndedBy
-/workflowRun/invalidated	http://www.w3.org/ns/prov#invalidated
-/workflowRun/generated	http://www.w3.org/ns/prov#generated
-/workflowRun/atLocation	http://www.w3.org/ns/prov#atLocation
-/workflowRun/qualifiedUsage	http://www.w3.org/ns/prov#qualifiedUsage
-/workflowRun/qualifiedCommunication	http://www.w3.org/ns/prov#qualifiedCommunication
-/workflowRun/qualifiedCommunication/type	
-/workflowRun/qualifiedStart	http://www.w3.org/ns/prov#qualifiedStart
-/workflowRun/qualifiedStart/id	@id
-/workflowRun/qualifiedStart/type	
-/workflowRun/qualifiedStart/atTime	http://www.w3.org/ns/prov#atTime
-/workflowRun/qualifiedStart/entity	http://www.w3.org/ns/prov#entity
-/workflowRun/qualifiedStart/hadActivity	http://www.w3.org/ns/prov#hadActivity
-/workflowRun/qualifiedEnd	http://www.w3.org/ns/prov#qualifiedEnd
-/workflowRun/qualifiedEnd/type	
-/workflowRun/qualifiedAssociation	http://www.w3.org/ns/prov#qualifiedAssociation
-/workflowRun/qualifiedAssociation/id	@id
-/workflowRun/qualifiedAssociation/type	
-/workflowRun/qualifiedAssociation/agent	http://www.w3.org/ns/prov#agent
-/workflowRun/qualifiedAssociation/hadRole	http://www.w3.org/ns/prov#hadRole
-/workflowRun/qualifiedAssociation/hadPlan	http://www.w3.org/ns/prov#hadPlan
-/workflowRun/type	@type
-/workflowRun/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
-/workflowRun/usedInput	http://purl.org/wf4ever/wfprov#usedInput
-/workflowRun/usedInput/id	
-/workflowRun/startedAtTime	http://www.w3.org/ns/prov#startedAtTime
-/workflowRun/wasPartOfWorkflowRun	http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun
-/workflowRun/wasEnactedBy	http://www.w3.org/ns/prov#wasAssociatedWith
-/workflowRun/describedByWorkflow	http://purl.org/wf4ever/wfprov#describedByWorkflow
-/workflowRun/hadSubProcessRun	wfprov:wasPartOfWorkflowRun
-/workflowRun/hadSubProcessRun/id	
-/manifest	http://purl.org/wf4ever/ro#Manifest
-/manifest/describes	http://www.openarchives.org/ore/terms/describes
-/manifest/createdBy	http://purl.org/dc/terms/creator
-/manifest/createdOn	http://purl.org/dc/terms/created
-/metadata	http://purl.org/wf4ever/profiles#metadata
-/metadata/created	http://purl.org/dc/terms/created
-/metadata/creator	http://purl.org/dc/terms/creator
-/metadata/description	http://purl.org/dc/terms/description
-/metadata/keywords	http://www.w3.org/ns/dcat#keyword
+path	@id	schema
+/researchObject	http://purl.org/wf4ever/ro#ResearchObject	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/researchObject/id		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/type		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/title	http://purl.org/dc/terms/title	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/description	http://purl.org/dc/terms/description	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/aggregates	http://www.openarchives.org/ore/terms/aggregates	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/aggregates/id		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/manifest	http://purl.org/wf4ever/ro#manifest	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/researchObject/created	http://purl.org/dc/terms/created	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/workflow	http://purl.org/wf4ever/wfdesc#Workflow	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/workflow/name	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/workflow/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/workflow/hasInput	http://purl.org/wf4ever/wfdesc#hasInput	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/workflow/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/workflow/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/workflow/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/workflow/hasInput/hasArtifact/value		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/workflow/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/workflow/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/workflow/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml
+/workflow/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml
+/workflow/hasDataLink/hasSource	http://purl.org/wf4ever/wfdesc#hasSource	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml
+/workflow/hasDataLink/hasSink	http://purl.org/wf4ever/wfdesc#hasSink	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml
+/workflowRun	http://purl.org/wf4ever/wfprov#WorkflowRun	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/workflowRun/wasInfluencedBy	http://www.w3.org/ns/prov#wasInfluencedBy	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/_anyOf/0/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/_anyOf/0/hadMember	http://www.w3.org/ns/prov#hadMember	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/_anyOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/_anyOf/1/hadMember	http://www.w3.org/ns/prov#hadMember	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/provType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/prov:type	http://www.w3.org/ns/prov#type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/featureType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/entityType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance	http://purl.org/dc/terms/provenance	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/agentType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/provType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/prov:type	http://www.w3.org/ns/prov#type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/name	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/actedOnBehalfOf	http://www.w3.org/ns/prov#actedOnBehalfOf	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/atLocation	http://www.w3.org/ns/prov#atLocation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/qualifiedDelegation	http://www.w3.org/ns/prov#qualifiedDelegation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/qualifiedDelegation/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/qualifiedDelegation/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/qualifiedDelegation/_oneOf/1/agent	http://www.w3.org/ns/prov#agent	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/has_provenance/_oneOf/1/qualifiedDelegation/_oneOf/1/hadActivity	http://www.w3.org/ns/prov#hadActivity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/wasGeneratedBy	http://www.w3.org/ns/prov#wasGeneratedBy	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/wasAttributedTo	http://www.w3.org/ns/prov#wasAttributedTo	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/wasDerivedFrom	http://www.w3.org/ns/prov#wasDerivedFrom	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/alternateOf	http://www.w3.org/ns/prov#alternateOf	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/hadPrimarySource	http://www.w3.org/ns/prov#hadPrimarySource	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/specializationOf	http://www.w3.org/ns/prov#specializationOf	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/wasInvalidatedBy	http://www.w3.org/ns/prov#wasInvalidatedBy	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/wasQuotedFrom	http://www.w3.org/ns/prov#wasQuotedFrom	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/wasRevisionOf	http://www.w3.org/ns/prov#wasRevisionOf	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/generatedAtTime	http://www.w3.org/ns/prov#generatedAtTime	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/invalidatedAtTime	http://www.w3.org/ns/prov#invalidatedAtTime	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/value	http://www.w3.org/ns/prov#value	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource	http://www.w3.org/ns/prov#qualifiedPrimarySource	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/atTime	http://www.w3.org/ns/prov#atTime	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration	http://www.w3.org/ns/prov#hadGeneration	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/atTime	http://www.w3.org/ns/prov#atTime	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/hadRole	http://www.w3.org/ns/prov#hadRole	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/influencer	http://www.w3.org/ns/prov#influencer	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/hadActivity	http://www.w3.org/ns/prov#hadActivity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/activity	http://www.w3.org/ns/prov#activity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadGeneration/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadActivity	http://www.w3.org/ns/prov#hadActivity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadUsage	http://www.w3.org/ns/prov#hadUsage	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadUsage/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadUsage/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadUsage/_oneOf/1/atTime	http://www.w3.org/ns/prov#atTime	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/hadUsage/_oneOf/1/entity	http://www.w3.org/ns/prov#entity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/entity	http://www.w3.org/ns/prov#entity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedPrimarySource/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedQuotation	http://www.w3.org/ns/prov#qualifiedQuotation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedQuotation/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedRevision	http://www.w3.org/ns/prov#qualifiedRevision	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedRevision/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/atLocation	http://www.w3.org/ns/prov#atLocation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links	http://www.w3.org/2000/01/rdf-schema#seeAlso	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/href	http://www.w3.org/ns/oa#hasTarget	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/rel	http://www.iana.org/assignments/relation	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/anchor		https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/type	http://purl.org/dc/terms/type	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/hreflang	http://purl.org/dc/terms/language	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/title	http://www.w3.org/2000/01/rdf-schema#label	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/links/length	http://purl.org/dc/terms/extent	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedGeneration	http://www.w3.org/ns/prov#qualifiedGeneration	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedGeneration/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedInvalidation	http://www.w3.org/ns/prov#qualifiedInvalidation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedInvalidation/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedDerivation	http://www.w3.org/ns/prov#qualifiedDerivation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedDerivation/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedAttribution	http://www.w3.org/ns/prov#qualifiedAttribution	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-entity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedAttribution/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedAttribution/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInfluencedBy/_anyOf/1/_oneOf/1/qualifiedAttribution/_oneOf/1/agent	http://www.w3.org/ns/prov#agent	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedInfluence	http://www.w3.org/ns/prov#qualifiedInfluence	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/qualifiedInfluence/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/qualifiedInfluence/_oneOf/1/influencer	http://www.w3.org/ns/prov#influencer	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/qualifiedInfluence/_oneOf/1/entity	http://www.w3.org/ns/prov#entity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/qualifiedInfluence/_oneOf/1/activity	http://www.w3.org/ns/prov#activity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/qualifiedInfluence/_oneOf/1/agent	http://www.w3.org/ns/prov#agent	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+/workflowRun/id	@id	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/provType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/prov:type	http://www.w3.org/ns/prov#type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/activityType	@type	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/startedAtTime	http://www.w3.org/ns/prov#startedAtTime	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/endedAtTime	http://www.w3.org/ns/prov#endedAtTime	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasInformedBy	http://www.w3.org/ns/prov#wasInformedBy	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/used	http://www.w3.org/ns/prov#used	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasStartedBy	http://www.w3.org/ns/prov#wasStartedBy	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/wasEndedBy	http://www.w3.org/ns/prov#wasEndedBy	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/invalidated	http://www.w3.org/ns/prov#invalidated	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/generated	http://www.w3.org/ns/prov#generated	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/atLocation	http://www.w3.org/ns/prov#atLocation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedUsage	http://www.w3.org/ns/prov#qualifiedUsage	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedCommunication	http://www.w3.org/ns/prov#qualifiedCommunication	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedCommunication/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedStart	http://www.w3.org/ns/prov#qualifiedStart	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedStart/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedStart/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedStart/_oneOf/1/atTime	http://www.w3.org/ns/prov#atTime	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedStart/_oneOf/1/entity	http://www.w3.org/ns/prov#entity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedStart/_oneOf/1/hadActivity	http://www.w3.org/ns/prov#hadActivity	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedEnd	http://www.w3.org/ns/prov#qualifiedEnd	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedEnd/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedAssociation	http://www.w3.org/ns/prov#qualifiedAssociation	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.yaml
+/workflowRun/qualifiedAssociation/_oneOf/1/id	@id	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/qualifiedAssociation/_oneOf/1/type		https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/qualifiedAssociation/_oneOf/1/agent	http://www.w3.org/ns/prov#agent	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/qualifiedAssociation/_oneOf/1/hadRole	http://www.w3.org/ns/prov#hadRole	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/qualifiedAssociation/_oneOf/1/hadPlan	http://www.w3.org/ns/prov#hadPlan	https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-agent/schema.yaml
+/workflowRun/type	@type	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/usedInput	http://purl.org/wf4ever/wfprov#usedInput	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/usedInput/id		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/wasPartOfWorkflowRun	http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/ProcessRun/schema.yaml
+/workflowRun/wasEnactedBy	http://www.w3.org/ns/prov#wasAssociatedWith	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml
+/workflowRun/describedByWorkflow	http://purl.org/wf4ever/wfprov#describedByWorkflow	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml
+/workflowRun/hadSubProcessRun	wfprov:wasPartOfWorkflowRun	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml
+/workflowRun/hadSubProcessRun/id		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/WorkflowRun/schema.yaml
+/manifest	http://purl.org/wf4ever/ro#Manifest	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/manifest/describes	http://www.openarchives.org/ore/terms/describes	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml
+/manifest/createdBy	http://purl.org/dc/terms/creator	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml
+/manifest/createdOn	http://purl.org/dc/terms/created	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml
+/metadata	http://purl.org/wf4ever/profiles#metadata	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/metadata/created	http://purl.org/dc/terms/created	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/metadata/creator	http://purl.org/dc/terms/creator	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/metadata/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml
+/metadata/keywords	http://www.w3.org/ns/dcat#keyword	/github/workspace/build/annotated/bbr/wf4ever/wf4ever-profiles/complete-provenance-trace/schema.yaml

@@ -1,8 +1,8 @@
-path	@id
-/name	http://www.w3.org/2000/01/rdf-schema#label
-/aggregates	http://www.openarchives.org/ore/terms/aggregates
-/rootFolder	http://purl.org/wf4ever/ro#rootFolder
-/entryName	http://purl.org/wf4ever/ro#entryName
-/annotatesAggregatedResource	http://purl.org/wf4ever/ro#annotatesAggregatedResource
-/manifest	http://purl.org/wf4ever/ro#manifest
-/isDescribedBy	http://www.openarchives.org/ore/terms/isDescribedBy
+path	@id	schema
+/name	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml
+/aggregates	http://www.openarchives.org/ore/terms/aggregates	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml
+/rootFolder	http://purl.org/wf4ever/ro#rootFolder	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml
+/entryName	http://purl.org/wf4ever/ro#entryName	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml
+/annotatesAggregatedResource	http://purl.org/wf4ever/ro#annotatesAggregatedResource	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml
+/manifest	http://purl.org/wf4ever/ro#manifest	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml
+/isDescribedBy	http://www.openarchives.org/ore/terms/isDescribedBy	/github/workspace/build/annotated/bbr/wf4ever/ro/schema.yaml

@@ -10,7 +10,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-01-13",
+  "dateOfLastChange": "2026-09-09",
   "sources": [
     {
       "title": "Wf4Ever Ontology - WorkflowResearchObject",
@@ -35,8 +35,8 @@
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WorkflowResearchObject/schema.yaml",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/WorkflowResearchObject/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/WorkflowResearchObject/",
-  "rdfData": [],
   "validationPassed": true,
   "description": "# wf4ever:WorkflowResearchObject\n\nA research object that aggregates at least one workflow description.\n",
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A workflow research object\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: WorkflowResearchObject\n    - type: array\n      contains:\n        const: WorkflowResearchObject\n  aggregates:\n    type: array\n    description: Must include at least one workflow\n    contains:\n      type: object\n      properties:\n        '@type':\n          const: Workflow\nrequired:\n- '@type'\n- aggregates\n",

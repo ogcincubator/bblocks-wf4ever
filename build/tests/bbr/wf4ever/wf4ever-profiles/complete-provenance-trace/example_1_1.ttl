@@ -58,7 +58,7 @@
 <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> prov:hadRole <file:///github/workspace/cloud_cover_max> ;
     prov:value 2e+01 .
 
-<urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f> dct:type "Agent" ;
+<urn:uuid:2dee96f7-ed94-4ef7-8562-6f26cdecd46f> a prov:Agent ;
     wfprov:label "Container execution of image r2d-2ftmp-2frepo2cwl-5fzbz5cbsp-2frepo1762182696" .
 
 <urn:uuid:55443a59-6a39-4b4c-89de-871dbceb5b84> ro:about "urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c" ;
@@ -113,8 +113,8 @@
         <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/north> ;
     wfdesc:hasOutput <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main/outputs> .
 
-<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> rdfs:label "cwltool 3.1.20251031082601" ;
-    dct:type "WorkflowEngine" ;
+<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;
+    rdfs:label "cwltool 3.1.20251031082601" ;
     wfprov:label "cwltool 3.1.20251031082601" .
 
 [] ns1:metadata [ dct:created "2025-11-03T15:14:17+00:00"^^xsd:dateTime ;

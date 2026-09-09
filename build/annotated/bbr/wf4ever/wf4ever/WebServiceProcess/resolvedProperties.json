@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["endpoint"],"description":"Web service endpoint URL","schema_type":"string","format":"uri","sources":["bblocks://ogc.bbr.wf4ever.wf4ever.WebServiceProcess"]},{"path":["method"],"description":"HTTP method (GET, POST, etc.)","schema_type":"string","sources":["bblocks://ogc.bbr.wf4ever.wf4ever.WebServiceProcess"]}]}

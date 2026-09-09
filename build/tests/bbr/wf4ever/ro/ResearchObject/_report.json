@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.wf4ever.ro.ResearchObject - ro:ResearchObject",
   "bblockName": "ro:ResearchObject",
   "bblockId": "ogc.bbr.wf4ever.ro.ResearchObject",
-  "generated": "2026-01-13T22:38:32.582912+00:00",
+  "generated": "2026-09-09T13:26:45.730757+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.json from examples"
+              "message": "Using examples/mangrove-ro.json from examples"
             },
             {
               "op": "jsonld-uplift",

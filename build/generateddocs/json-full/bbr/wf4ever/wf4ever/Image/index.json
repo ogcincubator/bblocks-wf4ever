@@ -9,7 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-01-13",
+  "dateOfLastChange": "2026-09-09",
   "sources": [
     {
       "title": "Wf4Ever Ontology - Image",
@@ -18,9 +18,6 @@
   ],
   "maturity": "development",
   "scope": "unstable",
-  "profileOf": [
-    "ogc.bbr.wf4ever.wfdesc.Artifact"
-  ],
   "tags": [
     "wf4ever",
     "artifact",
@@ -28,13 +25,16 @@
   ],
   "group": "Wf4Ever - wf4ever",
   "shaclShapes": {},
+  "isProfileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Artifact"
+  ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Image/schema.yaml",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Image/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Image/",
-  "rdfData": [],
   "validationPassed": true,
   "description": "# wf4ever:Image\n\nAn image artifact - visual representation (PNG, JPEG, GeoTIFF).\n",
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An image artifact\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: Image\n    - type: array\n      contains:\n        const: Image\n  format:\n    type: string\n    description: Image format (e.g., \"image/png\", \"image/tiff\")\n  width:\n    type: integer\n  height:\n    type: integer\nrequired:\n- '@type'\n",

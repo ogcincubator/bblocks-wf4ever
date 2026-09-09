@@ -1,43 +1,14 @@
-path	@id
-/name	http://www.w3.org/2000/01/rdf-schema#label
-/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
-/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasInput/hasArtifact/value	
-/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
-/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasOutput/hasArtifact/value	
-/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess
-/hasSubProcess/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasSubProcess/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasSubProcess/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
-/hasSubProcess/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasSubProcess/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasSubProcess/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasSubProcess/hasInput/hasArtifact/value	
-/hasSubProcess/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasSubProcess/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
-/hasSubProcess/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasSubProcess/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasSubProcess/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasSubProcess/hasOutput/hasArtifact/value	
-/hasSubProcess/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink
-/hasDataLink/hasSource	http://purl.org/wf4ever/wfdesc#hasSource
-/hasDataLink/hasSource/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasDataLink/hasSource/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasDataLink/hasSource/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasDataLink/hasSource/hasArtifact/value	
-/hasDataLink/hasSource/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasDataLink/hasSink	http://purl.org/wf4ever/wfdesc#hasSink
-/hasDataLink/hasSink/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasDataLink/hasSink/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasDataLink/hasSink/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasDataLink/hasSink/hasArtifact/value	
-/hasDataLink/hasSink/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+path	@id	schema
+/name	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/hasInput	http://purl.org/wf4ever/wfdesc#hasInput	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/hasArtifact/value		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml
+/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Workflow/schema.yaml
+/hasDataLink/hasSource	http://purl.org/wf4ever/wfdesc#hasSource	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml
+/hasDataLink/hasSink	http://purl.org/wf4ever/wfdesc#hasSink	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/DataLink/schema.yaml

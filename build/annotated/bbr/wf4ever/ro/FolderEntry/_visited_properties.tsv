@@ -1,3 +1,3 @@
-path	@id
-/entryName	http://purl.org/wf4ever/ro#entryName
-/proxyFor	http://www.openarchives.org/ore/terms/proxyFor
+path	@id	schema
+/entryName	http://purl.org/wf4ever/ro#entryName	/github/workspace/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.yaml
+/proxyFor	http://www.openarchives.org/ore/terms/proxyFor	/github/workspace/build/annotated/bbr/wf4ever/ro/FolderEntry/schema.yaml

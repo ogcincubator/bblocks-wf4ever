@@ -1,15 +1,10 @@
-path	@id
-/name	http://www.w3.org/2000/01/rdf-schema#label
-/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
-/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasInput/hasArtifact/value	
-/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
-/hasOutput/name	http://www.w3.org/2000/01/rdf-schema#label
-/hasOutput/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasOutput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasOutput/hasArtifact/value	
-/hasOutput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+path	@id	schema
+/name	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/description	http://www.w3.org/2000/01/rdf-schema#comment	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/hasInput	http://purl.org/wf4ever/wfdesc#hasInput	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml
+/hasInput/name	http://www.w3.org/2000/01/rdf-schema#label	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/hasArtifact/value		https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasInput/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment	https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Process/schema.yaml

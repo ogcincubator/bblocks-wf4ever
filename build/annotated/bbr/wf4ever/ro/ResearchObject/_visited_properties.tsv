@@ -1,9 +1,9 @@
-path	@id
-/id	
-/type	
-/title	http://purl.org/dc/terms/title
-/description	http://purl.org/dc/terms/description
-/aggregates	http://www.openarchives.org/ore/terms/aggregates
-/aggregates/id	
-/manifest	http://purl.org/wf4ever/ro#manifest
-/created	http://purl.org/dc/terms/created
+path	@id	schema
+/id		/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/type		/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/title	http://purl.org/dc/terms/title	/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/aggregates	http://www.openarchives.org/ore/terms/aggregates	/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/aggregates/id		/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/manifest	http://purl.org/wf4ever/ro#manifest	/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml
+/created	http://purl.org/dc/terms/created	/github/workspace/build/annotated/bbr/wf4ever/ro/ResearchObject/schema.yaml

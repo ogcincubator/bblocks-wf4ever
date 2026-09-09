@@ -1,4 +1,4 @@
-path	@id
-/describes	http://www.openarchives.org/ore/terms/describes
-/createdBy	http://purl.org/dc/terms/creator
-/createdOn	http://purl.org/dc/terms/created
+path	@id	schema
+/describes	http://www.openarchives.org/ore/terms/describes	/github/workspace/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml
+/createdBy	http://purl.org/dc/terms/creator	/github/workspace/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml
+/createdOn	http://purl.org/dc/terms/created	/github/workspace/build/annotated/bbr/wf4ever/ro/Manifest/schema.yaml

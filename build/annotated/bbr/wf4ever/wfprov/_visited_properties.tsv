@@ -1,10 +1,10 @@
-path	@id
-/name	http://www.w3.org/2000/01/rdf-schema#label
-/describedByWorkflow	http://purl.org/wf4ever/wfprov#describedByWorkflow
-/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess
-/wasPartOfWorkflowRun	http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun
-/usedInput	http://purl.org/wf4ever/wfprov#usedInput
-/wasOutputFrom	http://purl.org/wf4ever/wfprov#wasOutputFrom
-/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith
-/wasEnactedBy	http://purl.org/wf4ever/wfprov#wasEnactedBy
-/value	http://www.w3.org/ns/prov#value
+path	@id	schema
+/name	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/describedByWorkflow	http://purl.org/wf4ever/wfprov#describedByWorkflow	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/describedByProcess	http://purl.org/wf4ever/wfprov#describedByProcess	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/wasPartOfWorkflowRun	http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/usedInput	http://purl.org/wf4ever/wfprov#usedInput	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/wasOutputFrom	http://purl.org/wf4ever/wfprov#wasOutputFrom	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/wasEnactedBy	http://purl.org/wf4ever/wfprov#wasEnactedBy	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml
+/value	http://www.w3.org/ns/prov#value	/github/workspace/build/annotated/bbr/wf4ever/wfprov/schema.yaml

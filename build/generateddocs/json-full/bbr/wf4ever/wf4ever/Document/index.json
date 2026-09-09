@@ -9,7 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-01-13",
+  "dateOfLastChange": "2026-09-09",
   "sources": [
     {
       "title": "Wf4Ever Ontology - Document",
@@ -18,9 +18,6 @@
   ],
   "maturity": "development",
   "scope": "unstable",
-  "profileOf": [
-    "ogc.bbr.wf4ever.wfdesc.Artifact"
-  ],
   "tags": [
     "wf4ever",
     "artifact",
@@ -28,13 +25,16 @@
   ],
   "group": "Wf4Ever - wf4ever",
   "shaclShapes": {},
+  "isProfileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Artifact"
+  ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Document/schema.yaml",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wf4ever/Document/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wf4ever/Document/",
-  "rdfData": [],
   "validationPassed": true,
   "description": "# wf4ever:Document\n\nA document artifact representing textual or formatted content.\n",
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A document artifact\ntype: object\nproperties:\n  '@type':\n    oneOf:\n    - const: Document\n    - type: array\n      contains:\n        const: Document\n  title:\n    type: string\n  format:\n    type: string\n    description: Document format (e.g., \"application/pdf\", \"text/html\")\nrequired:\n- '@type'\n",

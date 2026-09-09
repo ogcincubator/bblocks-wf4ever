@@ -1,4 +1,4 @@
-path	@id
-/name	http://purl.org/dc/terms/title
-/description	http://purl.org/dc/terms/description
-/hasEntry	http://purl.org/wf4ever/ro#hasEntry
+path	@id	schema
+/name	http://purl.org/dc/terms/title	/github/workspace/build/annotated/bbr/wf4ever/ro/Folder/schema.yaml
+/description	http://purl.org/dc/terms/description	/github/workspace/build/annotated/bbr/wf4ever/ro/Folder/schema.yaml
+/hasEntry	http://purl.org/wf4ever/ro#hasEntry	/github/workspace/build/annotated/bbr/wf4ever/ro/Folder/schema.yaml

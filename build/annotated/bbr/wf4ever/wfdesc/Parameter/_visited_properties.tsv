@@ -1,6 +1,6 @@
-path	@id
-/name	http://www.w3.org/2000/01/rdf-schema#label
-/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact
-/hasArtifact/value	
-/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment
+path	@id	schema
+/name	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/description	http://www.w3.org/2000/01/rdf-schema#comment	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasArtifact	http://purl.org/wf4ever/wfdesc#hasArtifact	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasArtifact/value		/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml
+/hasArtifact/description	http://www.w3.org/2000/01/rdf-schema#comment	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml

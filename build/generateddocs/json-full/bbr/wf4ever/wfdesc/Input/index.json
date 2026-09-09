@@ -9,10 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-01-13",
-  "profileOf": [
-    "ogc.bbr.wf4ever.wfdesc.Parameter"
-  ],
+  "dateOfLastChange": "2026-09-09",
   "sources": [
     {
       "title": "Workflow Description Ontology - Input",
@@ -29,6 +26,9 @@
   ],
   "group": "Wf4Ever - wfdesc",
   "shaclShapes": {},
+  "isProfileOf": [
+    "ogc.bbr.wf4ever.wfdesc.Parameter"
+  ],
   "dependsOn": [
     "ogc.bbr.wf4ever.wfdesc.Parameter"
   ],
@@ -39,8 +39,8 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Input/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Input/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Input/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfdesc/Input/",
-  "rdfData": [],
   "validationPassed": true,
   "description": "# wfdesc:Input\n\n## Description\n\nAn **Input** is a parameter that receives data into a workflow process. Inputs can receive data from:\n- External sources (workflow inputs)\n- Outputs of other processes (via DataLinks)\n- Default values or configurations\n\n## Class Hierarchy\n\n```\nwfdesc:Parameter\n\u2514\u2500\u2500 wfdesc:Input\n```\n\n## Usage in Workflows\n\nInputs are declared using the `hasInput` property on a Process.\n\n## Data Flow\n\nInputs can be connected to Outputs via DataLinks.\n\n## Related Classes\n\n- **Parameter**: Base class (parent)\n- **Output**: Complementary class for process outputs\n- **DataLink**: Connects Outputs to Inputs\n- **Process**: Container that has inputs via `hasInput` property\n",
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An input parameter to a workflow process\ntype: object\nallOf:\n- $ref: https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfdesc/Parameter/schema.yaml\nproperties:\n  '@type':\n    const: Input\n    description: Type identifier for a wfdesc Input\nx-jsonld-extra-terms:\n  Input: http://purl.org/wf4ever/wfdesc#Input\n  name: http://www.w3.org/2000/01/rdf-schema#label\n  description: http://www.w3.org/2000/01/rdf-schema#comment\nx-jsonld-prefixes:\n  wfdesc: http://purl.org/wf4ever/wfdesc#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",

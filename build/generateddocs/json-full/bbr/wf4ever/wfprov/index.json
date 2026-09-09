@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-01-13",
+  "dateOfLastChange": "2026-09-09",
   "sources": [
     {
       "title": "Workflow Provenance Ontology",
@@ -43,8 +43,8 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/context.jsonld",
+  "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/resolvedProperties.json",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-wf4ever/_sources/wfprov/",
-  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-wf4ever/blob/master/build/tests/bbr/wf4ever/wfprov/",
   "description": "# Workflow Provenance Ontology (wfprov)\n\n## Overview\n\nThe Workflow Provenance ontology (wfprov) extends PROV-O to describe workflow execution traces. It links workflow runs to their descriptions and tracks the provenance of workflow executions.\n\n## Namespace\n\n`http://purl.org/wf4ever/wfprov#`\n\n## Key Classes\n\n- **WorkflowRun** - An execution of a workflow\n- **ProcessRun** - An execution of a process\n- **WorkflowEngine** - Software that executes workflows\n- **Artifact** - Data entity used or generated\n\n## Key Properties\n\n- `wasPartOfWorkflowRun` - Links process run to workflow run\n- `usedInput` - Input artifacts used\n- `wasOutputFrom` - Output artifacts generated\n- `describedByWorkflow` - Links run to workflow description\n- `describedByProcess` - Links process run to process description\n- `wasEnactedBy` - Links run to workflow engine\n\n## Usage\n\nThis ontology is used to describe the retrospective provenance of workflows - what actually happened during execution, linking it to the workflow description (wfdesc).\n",
@@ -54,18 +54,21 @@
       "snippets": [
         {
           "language": "json",
-          "code": "{\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"@type\": \"WorkflowRun\",\n  \"name\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": {\n    \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n    \"@type\": [\"wfdesc:Workflow\", \"wfdesc:Process\"]\n  },\n  \"wasAssociatedWith\": [\n    {\n      \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"@type\": \"WorkflowEngine\",\n      \"name\": \"cwltool 3.1.20251031082601\"\n    }\n  ],\n  \"usedInput\": [\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0\n    },\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90\n    }\n  ]\n}\n",
-          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.json",
+          "sizeBytes": 746,
+          "code": "{\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"@type\": \"WorkflowRun\",\n  \"name\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": {\n    \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n    \"@type\": [\"wfdesc:Workflow\", \"wfdesc:Process\"]\n  },\n  \"wasAssociatedWith\": [\n    {\n      \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"@type\": \"WorkflowEngine\",\n      \"name\": \"cwltool 3.1.20251031082601\"\n    }\n  ],\n  \"usedInput\": [\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0\n    },\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90\n    }\n  ]\n}\n"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/context.jsonld\",\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"@type\": \"WorkflowRun\",\n  \"name\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": {\n    \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n    \"@type\": [\n      \"wfdesc:Workflow\",\n      \"wfdesc:Process\"\n    ]\n  },\n  \"wasAssociatedWith\": [\n    {\n      \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"@type\": \"WorkflowEngine\",\n      \"name\": \"cwltool 3.1.20251031082601\"\n    }\n  ],\n  \"usedInput\": [\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0\n    },\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90\n    }\n  ]\n}",
-          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.jsonld"
+          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.jsonld",
+          "sizeBytes": 877,
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-wf4ever/build/annotated/bbr/wf4ever/wfprov/context.jsonld\",\n  \"@id\": \"urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c\",\n  \"@type\": \"WorkflowRun\",\n  \"name\": \"Run of workflow/packed.cwl#main\",\n  \"describedByWorkflow\": {\n    \"@id\": \"arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main\",\n    \"@type\": [\n      \"wfdesc:Workflow\",\n      \"wfdesc:Process\"\n    ]\n  },\n  \"wasAssociatedWith\": [\n    {\n      \"@id\": \"urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60\",\n      \"@type\": \"WorkflowEngine\",\n      \"name\": \"cwltool 3.1.20251031082601\"\n    }\n  ],\n  \"usedInput\": [\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d\",\n      \"value\": 20.0\n    },\n    {\n      \"@type\": \"Artifact\",\n      \"@id\": \"urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258\",\n      \"value\": 90\n    }\n  ]\n}"
         },
         {
           "language": "ttl",
-          "code": "@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;\n    rdfs:label \"Run of workflow/packed.cwl#main\" ;\n    wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;\n    wfprov:usedInput <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d>,\n        <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> ;\n    prov:wasAssociatedWith <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> .\n\n<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> a wfdesc:Process,\n        wfdesc:Workflow .\n\n<urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> a wfprov:Artifact ;\n    prov:value 2e+01 .\n\n<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;\n    rdfs:label \"cwltool 3.1.20251031082601\" .\n\n<urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> a wfprov:Artifact ;\n    prov:value 90 .\n\n",
-          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-wf4ever/build/tests/bbr/wf4ever/wfprov/example_1_1.ttl",
+          "sizeBytes": 1117,
+          "code": "@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .\n@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<urn:uuid:f02b8997-a6b1-4909-9946-9129c2b3f10c> a wfprov:WorkflowRun ;\n    rdfs:label \"Run of workflow/packed.cwl#main\" ;\n    wfprov:describedByWorkflow <arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> ;\n    wfprov:usedInput <urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d>,\n        <urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> ;\n    prov:wasAssociatedWith <urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> .\n\n<arcp://uuid,f02b8997-a6b1-4909-9946-9129c2b3f10c/workflow/packed.cwl#main> a wfdesc:Process,\n        wfdesc:Workflow .\n\n<urn:uuid:192e18cb-9182-4147-ad13-03076e7a3b3d> a wfprov:Artifact ;\n    prov:value 2e+01 .\n\n<urn:uuid:5b925446-32a4-4104-9724-fa7360e1ef60> a wfprov:WorkflowEngine ;\n    rdfs:label \"cwltool 3.1.20251031082601\" .\n\n<urn:uuid:91b4ec49-d11a-4407-9685-032bf7e95258> a wfprov:Artifact ;\n    prov:value 90 .\n\n"
         }
       ]
     }

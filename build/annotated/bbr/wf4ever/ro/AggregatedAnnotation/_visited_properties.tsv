@@ -1,4 +1,4 @@
-path	@id
-/annotatesAggregatedResource	http://purl.org/wf4ever/ro#annotatesAggregatedResource
-/body	http://www.w3.org/ns/oa#hasBody
-/created	http://purl.org/dc/terms/created
+path	@id	schema
+/annotatesAggregatedResource	http://purl.org/wf4ever/ro#annotatesAggregatedResource	/github/workspace/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.yaml
+/body	http://www.w3.org/ns/oa#hasBody	/github/workspace/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.yaml
+/created	http://purl.org/dc/terms/created	/github/workspace/build/annotated/bbr/wf4ever/ro/AggregatedAnnotation/schema.yaml

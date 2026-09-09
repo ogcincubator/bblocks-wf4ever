@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["title"],"schema_type":"string","sources":["bblocks://ogc.bbr.wf4ever.wf4ever.Document"]},{"path":["format"],"description":"Document format (e.g., \"application/pdf\", \"text/html\")","schema_type":"string","sources":["bblocks://ogc.bbr.wf4ever.wf4ever.Document"]}]}

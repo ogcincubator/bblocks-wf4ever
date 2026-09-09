@@ -1,9 +1,9 @@
-path	@id
-/name	http://www.w3.org/2000/01/rdf-schema#label
-/description	http://www.w3.org/2000/01/rdf-schema#comment
-/hasInput	http://purl.org/wf4ever/wfdesc#hasInput
-/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput
-/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess
-/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink
-/hasSource	http://purl.org/wf4ever/wfdesc#hasSource
-/hasSink	http://purl.org/wf4ever/wfdesc#hasSink
+path	@id	schema
+/name	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/description	http://www.w3.org/2000/01/rdf-schema#comment	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/hasInput	http://purl.org/wf4ever/wfdesc#hasInput	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/hasOutput	http://purl.org/wf4ever/wfdesc#hasOutput	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/hasSubProcess	http://purl.org/wf4ever/wfdesc#hasSubProcess	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/hasDataLink	http://purl.org/wf4ever/wfdesc#hasDataLink	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/hasSource	http://purl.org/wf4ever/wfdesc#hasSource	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
+/hasSink	http://purl.org/wf4ever/wfdesc#hasSink	/github/workspace/build/annotated/bbr/wf4ever/wfdesc/schema.yaml
