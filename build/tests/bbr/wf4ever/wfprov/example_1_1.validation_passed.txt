@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.wf4ever.wfprov - Workflow Provenance Ontology (wfprov)
-Generated 2026-09-09T13:26:45.705703+00:00
+Generated 2026-09-16T22:20:19.239250+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

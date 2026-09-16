@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.wf4ever.ro.ResearchObject - ro:ResearchObject
-Generated 2026-09-09T13:26:45.730676+00:00
+Generated 2026-09-16T22:20:19.397296+00:00
 === Files ===
 Using examples/mangrove-ro.json from examples
 JSON-LD context is present - uplifting

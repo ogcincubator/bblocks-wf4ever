@@ -10,10 +10,10 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-09",
+  "dateOfLastChange": "2026-09-16",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfdesc.DataLink",
     "ogc.api.processes.v1.schemas.process",
+    "ogc.bbr.wf4ever.wfdesc.DataLink",
     "ogc.bbr.wf4ever.wfdesc.Process"
   ],
   "sources": [

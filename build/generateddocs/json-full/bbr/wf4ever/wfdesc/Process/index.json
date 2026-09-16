@@ -9,7 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-09",
+  "dateOfLastChange": "2026-09-16",
   "dependsOn": [
     "ogc.bbr.wf4ever.wfdesc.Output",
     "ogc.bbr.wf4ever.wfdesc.Input"

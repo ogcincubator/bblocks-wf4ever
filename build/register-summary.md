@@ -119,6 +119,12 @@ The Workflow Provenance ontology (wfprov) extends PROV-O to describe workflow ex
 
 A parameter (input or output) of a workflow process. This is the base class for Input, Output, and Configuration.
 
+### `ogc.bbr.wf4ever.wfprov.WorkflowEngine` — wfprov:WorkflowEngine
+
+**Type:** datatype
+
+A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources.
+
 ### `ogc.bbr.wf4ever.ro.ResearchObject` — ro:ResearchObject
 
 **Type:** datatype
@@ -148,12 +154,6 @@ An output parameter from a workflow process. Outputs produce data that can be co
 **Type:** datatype
 
 A data entity that was used as input or generated as output during a workflow execution. Artifacts are the data products consumed or produced by process runs.
-
-### `ogc.bbr.wf4ever.wfprov.WorkflowEngine` — wfprov:WorkflowEngine
-
-**Type:** datatype
-
-A software agent that executes workflows. The WorkflowEngine is responsible for enacting workflow and process executions, managing the execution environment and resources.
 
 ### `ogc.bbr.wf4ever.wfdesc.DataLink` — wfdesc:DataLink
 

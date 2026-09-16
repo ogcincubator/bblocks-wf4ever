@@ -9,7 +9,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-09",
+  "dateOfLastChange": "2026-09-16",
   "sources": [
     {
       "title": "Research Object Ontology - FolderEntry",
@@ -19,8 +19,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.wf4ever.ro.Folder",
-    "ogc.bbr.wf4ever.ro.Resource"
+    "ogc.bbr.wf4ever.ro.Resource",
+    "ogc.bbr.wf4ever.ro.Folder"
   ],
   "tags": [
     "ro",
