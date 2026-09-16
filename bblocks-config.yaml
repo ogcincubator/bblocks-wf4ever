@@ -24,13 +24,13 @@ identifier-prefix: ogc.bbr.wf4ever.
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
-  - https://ogcincubator.github.io/bblocks-ogcapi-processes/
-  - https://ogcincubator.github.io/geodcat-ogcapi-records/
+  - '@ogc/ogcapi-processes'
+  - '@ogc/geodcat-ogcapi-records'
   # PROV-O Building Blocks - W3C PROV model schemas
-  - https://ogcincubator.github.io/bblock-prov-schema/
+  - '@ogc/prov-schema'
   # CWL Building Blocks - Common Workflow Language schemas and validation
   # Note: Reference for future integration when bblocks-cwl is published
-  - https://ogcincubator.github.io/bblocks-cwl/
+  - '@ogc/cwl'
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version
