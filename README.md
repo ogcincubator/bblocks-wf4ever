@@ -2,6 +2,8 @@
 
 This repository contains [OGC Building Blocks](https://ogcincubator.github.io/bblocks-docs) for the **Wf4Ever ontologies suite**, enabling workflow description, provenance tracking, and research object aggregation with semantic annotations.
 
+Note - wf4ever is a legacy and RO-crate should be used according to the authors. TBD - provide link to RO-crate BB when available.
+
 [![Build Status](https://github.com/ogcincubator/bblocks-wf4ever/workflows/Process%20building%20blocks/badge.svg)](https://github.com/ogcincubator/bblocks-wf4ever/actions)
 
 ## Overview
