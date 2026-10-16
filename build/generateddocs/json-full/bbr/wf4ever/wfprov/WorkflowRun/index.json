@@ -10,7 +10,7 @@
   "itemClass": "datatype",
   "register": "ogc-wf4ever",
   "version": "1.0",
-  "dateOfLastChange": "2026-09-16",
+  "dateOfLastChange": "2026-10-16",
   "sources": [
     {
       "title": "Workflow Provenance Ontology - WorkflowRun",
@@ -20,8 +20,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.bbr.wf4ever.wfprov.ProcessRun",
-    "ogc.bbr.wf4ever.wfdesc.Workflow"
+    "ogc.bbr.wf4ever.wfdesc.Workflow",
+    "ogc.bbr.wf4ever.wfprov.ProcessRun"
   ],
   "tags": [
     "wfprov",
